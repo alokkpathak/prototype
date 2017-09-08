@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+          adc.workshop.redirect.url.mapping="[signin_en_GB::/content/adc/fsl/countries{0}libre/sign-in.html?opr={1}&amp;idx=1\
+          ,signin_pdf_en_GB::/content/adc/fsl/countries{0}libre/sign-in.html?id={1}&amp;opr={2}&amp;idx=1\
+          ,signin_it_IT::/content/adc/fsl/countries{0}libre/registrati.html?opr={1}&amp;idx=1\
+          ,signin_pdf_it_IT::/content/adc/fsl/countries{0}libre/registrati.html?id={1}&amp;opr={2}&amp;idx=1\
+          ,orderhistory_en_GB::/content/adc/fsl/countries{0}libre/account-overview.html?idx=1\
+          ,orderhistory_it_IT::/content/adc/fsl/countries{0}libre/il-tuo-conto.html?idx=1\
+          ,errorpage::/content/adc/fsl/countries{0}libre/utilities/errors/unauthorized.html]"
+         />

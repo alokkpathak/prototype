@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2016-08-08T09:25:32.043-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="sling:OsgiConfig"
+    prop.replication-action-type="ACTIVATE"
+    prop.rules.hierarchical="[/content/adc/fsl/countries/gb/(.*)=/content/gb/en/content/adc/fsl/countries/gb/$1,/content/adc/fsl/countries/lu/(.*)=/content/lu/fr/content/adc/fsl/countries/lu/$1,/content/adc/fsl/countries/tr/(.*)=/content/tr/tr/content/adc/fsl/countries/tr/$1,/content/adc/fsl/countries/it/(.*)=/content/it/it/content/adc/fsl/countries/it/$1,/etc/designs/adccommon/(.*)=/content/gb/en/etc/designs/adccommon/$1&amp;/content/it/it/etc/designs/adccommon/$1&amp;/content/lu/fr/etc/designs/adccommon/$1&amp;/content/tr/tr/etc/designs/adccommon/$1,/etc/designs/adcworkshop/(.*)=/content/gb/en/etc/designs/adcworkshop/$1&amp;/content/it/it/etc/designs/adcworkshop/$1&amp;/content/lu/fr/etc/designs/adcworkshop/$1&amp;/content/tr/tr/etc/designs/adcworkshop/$1,/content/dam/adc/fsl/(.*)=/content/gb/en/content/dam/adc/fsl/$1&amp;/content/it/it/content/dam/adc/fsl/$1&amp;/content/tr/tr/content/dam/adc/fsl/$1&amp;/content/lu/fr/content/dam/adc/fsl/$1]"
+    prop.rules.resource-only="[]"/>

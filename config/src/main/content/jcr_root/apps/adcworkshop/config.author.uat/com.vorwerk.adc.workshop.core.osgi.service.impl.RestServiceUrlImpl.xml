@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+	adc.workshop.url.mapping="[login::/adc/service/{0}/login\
+            ,registration::/adc/service/{0}/registration\
+            ,productDetail::/adc/service/{0}/product/{1}\
+            ,productPrice::/adc/service/{0}/productPrice/{1}/final_price_inclall\,sku\,allowed_qty_limit\,is_saleable\,bundle_option\
+            ,sessionService::/adc/service/{0}/sessioninfo,getAllProducts::/adc/service/{0}/getProducts\
+            ,addtoCart::/adc/service/{0}/cart/add,viewCart::/adc/service/{0}/cart/list\
+            ,removeItem::/adc/service/{0}/cart/,isCustomer::/adc/service/{0}/isCustomer\
+            ,timeoutService::/adc/service/resetSession\
+			,createUpdateAddress::/adc/service/{0}/customer/address/createorupdate\
+            ,createAddress::/adc/service/{0}/customer/address/create\
+            ,updateAddress::/adc/service/{0}/customer/address/update\
+            ,deleteAddress::/adc/service/{0}/customer/address/delete\
+            ,listAddress::/adc/service/{0}/customer/list\
+            ,updateCartQty::/adc/service/{0}/cart/update\
+            ,getfinalPaymentDetails::/adc/service/{0}/checkout/quote\
+            ,updateVoucherCode::/adc/service/{0}/cart/update/coupon\
+            ,profiledetails::/adc/service/{0}/customer/profiledetails\
+            ,updatepersonaldetails::/adc/service/{0}/customer/updatepersonaldetails\
+            ,extendWarranty::/adc/service/{0}/customer/extendWarranty\
+            ,vatAddress::/adc/service/{0}/checkout/vatdeclaration\
+            ,send_resetpwd_email::/adc/service/{0}/customer/resetpassword\
+            ,resetPassword::/adc/service/{0}/customer/updatepassword\
+            ,createOrder::/adc/service/{0}/checkout/payment\
+            ,setShipping::/adc/service/{0}/checkout/address/setshipping\
+            ,payonandPayPal::https://test.ctpe.net/frontend/widget/v4/widget.js;jsessionid=\
+            ,getshippingMethod::/adc/service/{0}/checkout/shipping/methods\
+            ,getToken::/adc/service/{0}/gettoken\
+            ,QASAddress::/adc/service/{0}/QAS/Address\
+            ,getAddressByMoniker::/adc/service/{0}/QAS/Addressbyid\
+            ,confirmaccount::/adc/service/{0}/customer/confirmaccount\
+            ,fetchOrderHistoryList::/adc/service/{0}/customer/orders\
+            ,orderStatusCheck::/adc/service/{0}/payon/status\
+            ,reorder::/adc/service/{0}/cart/reorder\
+            ,orderdetails::/adc/service/{0}/order/\
+            ,invoicepdf::/adc/service/pdf/{0}/order/invoicepdf\
+            ,refundpdf::/adc/service/pdf/{0}/order/creditmemopdf\
+            ,returnpdf::/adc/service/pdf/{0}/order/returnPdf\
+            ,ordershipmentTrack::/adc/service/{0}/order/track/{1}\
+			,contactUs::/adc/service/{0}/contactus\
+			,customerlogin::/adc/service/{0}/customer/dologin\
+			,createReturn::/adc/service/{0}/order/create_return/{1}\
+			,paymentMethods::/adc/service/{0}/checkout/payment/methods/quote\
+            ,checkOutNewsLetterSubscription::/adc/service/{0}/customer/subscribecomm\
+            ,profilevalidate::/adc/service/{0}/customer/profile/validate\
+            ,pdfdocid::/adc/service/pdf/{0}/order/pdfdocid/" />
+	

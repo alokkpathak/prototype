@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+          adc.workshop.region.url.mapping="[/gb/en/::en_GB\
+          ,/it/it/::it_IT\
+          ,/fr/fr/::fr_FR\
+          ,/tr/tr/::tr_TR\
+          ,/lu/fr/::fr_LU]"
+          adc.workshop.region.domain.mapping="[en_GB::https://src-libre-uat1.freestylelibre.co.uk\
+          ,it_IT::https://src-libre-uat1.freestylelibre.it\
+		  ,tr_TR::https://src-libre-uat1.freestylelibre.com.tr\
+		  ,fr_LU::http://src-libre-uat1-pub.freestylelibre.lu]"
+         />

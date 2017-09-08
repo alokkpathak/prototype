@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+          adc.workshop.region.url.mapping="[/gb/en/::en_GB\
+          ,/it/it/::it_IT\
+          ,/fr/fr/::fr_FR\
+		  ,/tr/tr/::tr_TR\
+		  ]"
+          adc.workshop.region.domain.mapping="[en_GB::http://libre-dev1-app.freestylelibre.co.uk\
+          ,it_IT::http://libre-dev1-app.freestylelibre.it]"
+         />
