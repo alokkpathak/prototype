@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  Copyright 2015 Adobe Systems Incorporated
+ |
+ |  Licensed under the Apache License, Version 2.0 (the "License");
+ |  you may not use this file except in compliance with the License.
+ |  You may obtain a copy of the License at
+ |
+ |      http://www.apache.org/licenses/LICENSE-2.0
+ |
+ |  Unless required by applicable law or agreed to in writing, software
+ |  distributed under the License is distributed on an "AS IS" BASIS,
+ |  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ |  See the License for the specific language governing permissions and
+ |  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.vorwerk.adc.workshop</groupId>
+        <artifactId>adc-workshop</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>adc-workshop-bundle</artifactId>
+    <packaging>bundle</packaging>
+    <name>Libra ADC Workshop - Bundle</name>
+    <description>Core bundle for adcworkshop</description>
+    <build>
+	
+	
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <!--
+                        <Embed-Dependency>
+                            artifactId1,
+                            artifactId2;inline=true
+                        </Embed-Dependency>
+                        -->
+                        <Sling-Model-Packages>
+                            com.vorwerk.adc.workshop.core
+                        </Sling-Model-Packages>
+                        <Embed-Dependency>json-simple,oogle-http-client,geoip2,jackson-core,jackson-databind,jsr305,jackson-annotations,maxmind-db </Embed-Dependency>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <!-- Development profile: install only the bundle -->
+        <profile>
+            <id>local-author</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <configuration>
+						<user>${sling.user}</user>
+			                        <password>${sling.password}</password>
+			                        <slingUrl>http://${aem.host}:${aem.port}/crx/repository/crx.default</slingUrl> 
+		                            
+                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+                            <!--    This is typically the case when ui.apps is deployed first                -->
+                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+						<slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+						<usePut>true</usePut>
+
+						<failOnError>true</failOnError>
+							
+							
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>local-publish</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <configuration>
+                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+                            <!--    This is typically the case when ui.apps is deployed first                -->
+                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+                            <failOnError>true</failOnError>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>dev-author</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                         <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>true</usePut>
+			                        <user>${sling.dev.user}</user>
+			                        <password>${sling.dev.password}</password>
+			                        <slingUrl>http://${aem.dev.host}:${aem.dev.port}/crx/repository/crx.default</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>dev-publish</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>false</usePut>
+			                        <user>${sling.dev.user}</user>
+			                        <password>${sling.dev.password}</password>
+			                        <slingUrl>http://${aem.dev.publish.host}:${aem.dev.publish.port}/system/console/bundles</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>dev2-author</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                         <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>true</usePut>
+			                        <user>${sling.dev2.user}</user>
+			                        <password>${sling.dev2.password}</password>
+			                        <slingUrl>http://${aem.dev2.host}:${aem.dev2.port}/crx/repository/crx.default</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>dev2-publish</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>false</usePut>
+			                        <user>${sling.dev2.user}</user>
+			                        <password>${sling.dev2.password}</password>
+			                        <slingUrl>http://${aem.dev2.publish.host}:${aem.dev2.publish.port}/system/console/bundles</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>stg-author</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>true</usePut>
+			                        <user>${sling.stg.user}</user>
+			                        <password>${sling.stg.password}</password>
+			                        <slingUrl>http://${aem.stg.host}:${aem.stg.port}/crx/repository/crx.default</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                     </execution>
+		                </executions> 
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>stg-publish</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>false</usePut>
+			                        <user>${sling.stg.publish.user}</user>
+									<password>${sling.stg.publish.password}</password>
+			                        <slingUrl>http://${aem.stg.publish.host}:${aem.stg.publish.port}/system/console/bundles</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                     </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>uat-author</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>true</usePut>
+			                        <user>${sling.uat.user}</user>
+			                        <password>${sling.uat.password}</password>
+			                        <slingUrl>http://${aem.uat.host}:${aem.uat.port}/crx/repository/crx.default</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                     </execution>
+		                </executions> 
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>uat-publish</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>false</usePut>
+			                        <user>${sling.uat.publish.user}</user>
+			                        <password>${sling.uat.publish.password}</password>
+			                        <slingUrl>http://${aem.uat.publish.host}:${aem.uat.publish.port}/system/console/bundles</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                     </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>pref-author</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                         <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>true</usePut>
+			                        <user>${sling.pref.user}</user>
+			                        <password>${sling.pref.password}</password>
+			                        <slingUrl>http://${aem.pref.host}:${aem.pref.port}/crx/repository/crx.default</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>pref-publish</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>false</usePut>
+			                        <user>${sling.pref.publish.user}</user>
+			                        <password>${sling.pref.publish.password}</password>
+			                        <slingUrl>http://${aem.pref.publish.host}:${aem.pref.publish.port}/system/console/bundles</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>prod-author</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                         <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>true</usePut>
+			                        <user>${sling.prod.user}</user>
+			                        <password>${sling.prod.password}</password>
+			                        <slingUrl>http://${aem.prod.host}:${aem.prod.port}/crx/repository/crx.default</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+        <profile>
+            <id>prod-publish</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+							<execution>
+	                        	<id>deploy-bundle-to-cq</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+		                        <configuration>
+		                        	<usePut>false</usePut>
+			                        <user>${sling.prod.publish.user}</user>
+			                        <password>${sling.prod.publish.password}</password>
+			                        <slingUrl>http://${aem.prod.publish.host}:${aem.prod.publish.port}/system/console/bundles</slingUrl> 
+		                            <!-- Note that this requires /apps/adcworkshop/install to exist!!          -->
+		                            <!--    This is typically the case when ui.apps is deployed first                -->
+		                            <!--    Otherwise, create /apps/adcworkshop/install manually (CRXDE|Lite)  -->
+		                            <slingUrlSuffix>/apps/adcworkshop/install/</slingUrlSuffix>
+		                            <failOnError>true</failOnError>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
+    </profiles>
+    <dependencies>
+        <!-- OSGi Dependencies -->
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr.annotations</artifactId>
+        </dependency>
+		 <dependency>
+                  <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.0</version>
+                 </dependency>
+             
+        <dependency>
+            <groupId>biz.aQute</groupId>
+            <artifactId>bndlib</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+        </dependency>
+        <!-- Other Dependencies -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>aem-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.models.api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit-addons</groupId>
+            <artifactId>junit-addons</artifactId>
+        </dependency>
+        <dependency>
+			<groupId>com.day.cq.wcm</groupId>
+			<artifactId>cq-wcm-taglib</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+	        <groupId>org.apache.httpcomponents</groupId>
+	        <artifactId>httpclient</artifactId>
+	        <scope>provided</scope>
+	    </dependency>
+	    
+	    <dependency>
+             <groupId>com.googlecode.json-simple</groupId>
+             <artifactId>json-simple</artifactId>
+         </dependency>
+         <dependency>
+    <groupId>com.maxmind.geoip2</groupId>
+    <artifactId>geoip2</artifactId>
+     <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.google.http-client</groupId>
+    <artifactId>google-http-client</artifactId>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+   <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.google.code.findbugs</groupId>
+    <artifactId>jsr305</artifactId>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.maxmind.db</groupId>
+    <artifactId>maxmind-db</artifactId>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>commons-lang</groupId>
+    <artifactId>commons-lang</artifactId>
+    <version>2.2</version>
+</dependency>
+    </dependencies>
+</project>

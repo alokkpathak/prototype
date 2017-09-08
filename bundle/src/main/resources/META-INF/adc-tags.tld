@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<description>A supporting Shared tab library for the Vorwerk Applications</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>adc</short-name>
+	<uri>http://www.vorwerk.com/taglibs/adc-workshop/1.0</uri>
+
+	
+	<tag>
+        <description>
+            Gets the osgi config properties for pid
+        </description>
+        <name>osgiConfig</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.OsgiConfigTag
+        </tag-class>
+        <body-content>empty</body-content>        
+        <attribute>
+            <description>
+                String value indicating the name of the context attribute that will contain the osgi pid property value
+            </description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>osgi pid or factory pid</description>
+            <name>pid</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>osgi pid property</description>
+            <name>property</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>osgi property value prefix</description>
+            <name>key</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>
+            Gets the multi field values value
+        </description>
+        <name>multicompositefield</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.MultiCompositeField
+        </tag-class>
+        <body-content>empty</body-content>        
+        <attribute>
+            <description>
+                String value indicating the value returned by the tag
+            </description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+         <attribute>
+            <description>Multi field node name</description>
+            <name>fieldNodeName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Multi field properties</description>
+            <name>fieldPropertyNames</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String[]</type>
+        </attribute>
+        <attribute>
+            <description>Return type String Array or List</description>
+            <name>returnType</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+   
+    <tag>
+        <description>
+            Construct the service url from the property
+        </description>
+        <name>restServiceUrl</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.ServiceUrlTag
+        </tag-class>
+        <body-content>empty</body-content>        
+        <attribute>
+            <description>
+                String value indicating the name of the context attribute that will contain the osgi pid property value
+            </description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>        
+        <attribute>
+            <description>osgi property value prefix</description>
+            <name>key</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Product skuid</description>
+            <name>skuid</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Skips transforming the url and uses it as is.</description>
+            <name>skip</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>
+            Construct the relative url from the absolute URL based on runmode configuration
+        </description>
+        <name>minifyUrlTag</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.MinifyUrlTag
+        </tag-class>
+        <body-content>empty</body-content>        
+        <attribute>
+            <description>
+                String value indicating the name of the context attribute that will contain the minified url property value
+            </description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>        
+        <attribute>
+            <description>String value indicating the name of the context attribute that contains the path of absolute URL received from component dialog</description>
+            <name>actualUrl</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+	
+    <tag>
+        <description>
+            To get global application specific properties
+        </description>
+        <name>globalSettingsTag</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.GlobalSettingsTag
+        </tag-class>
+        <body-content>empty</body-content>        
+        <attribute>
+            <description>
+                String value indicating the name of the context attribute that will contain the property value
+            </description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>        
+        <attribute>
+            <description>String value indicating the name of the context attribute that contains the key</description>
+            <name>key</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>String value indicating requested field is to get current domain</description>
+            <name>currentDomain</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>String value indicating requested field is to get all domains</description>
+            <name>allDomains</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>
+            To initialize Analytics
+        </description>
+        <name>initAnalytics</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.InitAnalyticsTag
+        </tag-class>
+        <body-content>empty</body-content>        
+    </tag>
+    <tag>
+        <description>
+            To initialize meta tag, canonical tag and alternate hreflang tags
+        </description>
+        <name>initMetaTags</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.InitMetaTag
+        </tag-class>
+        <body-content>empty</body-content>   
+        <attribute>
+            <description>String value indicating the inclusion of CanonicalTag</description>
+            <name>includeCanonicalTag</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <description>
+            Construct the service url from the property
+        </description>
+        <name>imageSkuQueryTag</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.ImageSkuQueryTag
+        </tag-class>
+        <body-content>empty</body-content>        
+        <attribute>
+            <description>
+                String value indicating the name of the context attribute that will contain the image sku map property value
+            </description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>    
+    </tag>
+    
+    <tag>
+        <description>
+            Reads the Share component properties
+        </description>
+        <name>shareProperties</name>
+        <tag-class>
+             com.vorwerk.adc.workshop.core.tags.SharePropertyTag
+        </tag-class>
+        <body-content>empty</body-content>        
+        <attribute>
+            <description>
+                This tag is responsible for reading the share component property value
+            </description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>    
+    </tag>
+</taglib>
+	
