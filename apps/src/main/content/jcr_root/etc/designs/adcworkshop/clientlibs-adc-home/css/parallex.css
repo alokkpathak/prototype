@@ -1,0 +1,314 @@
+.jarallax {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.jarallax {
+    height: 700px;
+}
+
+/* full height demo */
+
+html.demo-full-height .jarallax {
+    height: 100%;
+}
+html.demo-full-height .jarallax,
+html.demo-full-height .demo-table {
+    min-height: 600px;
+}
+
+
+/* -------------------------------------------------
+    Below CSS is copied over from styles.css
+-------------------------------------------------- */
+
+#crsl-landingpage .carousel-indicators>li, #parallax-landingpage .carousel-indicators>li{
+    display:block;
+    border: 1px solid #222;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+#crsl-landingpage .carousel-indicators .active, #parallax-landingpage .carousel-indicators .active,#parallax-landingpage .carousel-indicators .activeLi{
+    background-color:#222;
+}
+#parallax-landingpage .carousel-indicators.white>li {
+	border: 1px solid #fff;
+}
+#parallax-landingpage .carousel-indicators.white .activeLi {
+	background-color:#fff;
+} 
+.parallex-ol{   
+    display: none;
+    position:fixed;
+    top:50%;
+    right: 55px;                    
+    height: 125px;
+    z-index: 1;
+    width: 10%;
+    background: transparent;
+    transform: translateY(-50%);
+} 
+.parallex  .carousel-desc p, #crsl-landingpage .carousel-desc p{
+    color: #212121;
+    font-family: 'Gotham-Book-Regular';
+}
+.parallex  .carousel-desc h3 p{
+    color: #212121;
+    font-family: Gotham-Bold !important;
+    font-size:36px;
+}
+
+.vertical_line{
+    position: absolute;
+    top:0%;
+    left:180px;
+    height:80px; 
+    width:2px;
+    background-color:#000;
+
+}
+.v-img{
+    position: absolute;
+    top:85px;
+    left:152px;
+}
+.vertical_line2{
+    position: absolute;
+    top:150px;
+    bottom:0%;
+    left:180px;
+    width:2px;
+    background-color:#000;
+}
+.carousel-desc{
+     position:absolute;
+     top: 60px;
+     width: 30%;
+    left: 250px;    
+}
+.carousel-desc h3{
+    letter-spacing: 5px;
+}
+.carousel-left:after{
+    border-bottom: 3px solid black;
+}
+.carousel-desc p, .carousel-desc button{
+    margin-top:35px;
+}
+.carousel-desc>.btn,.prod-row-desc>.btn,.item .btn{
+     border-color: black;
+     color: black; 
+     background: transparent;
+     font-family: 'Gotham-Medium-Regular';
+     margin-top: 10px;
+}
+
+/************************** lg *******************************/
+
+@media (min-width: 1200px) {
+    .parallex .carousel-desc h3{
+        width:153%;
+    }
+    .parallex .carousel-desc h3 p{
+        text-align:left;
+    }
+	.parallex  .carousel-desc p{
+		line-height:37px;
+        }
+    #crsl-landingpage>ol, #parallax-landingpage>ol{
+        padding-left: 95%;
+        width: 100%;
+        top:50%;
+        margin-left:0;
+        left:0;
+    }
+}
+/******************* end of lg *****************************/    
+
+/****************** md **************************************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .parallex .carousel-desc h3 {
+        width: 186%;
+        letter-spacing: 2px;            
+    }
+    #crsl-landingpage>ol,   #parallax-landingpage>ol{
+        padding-left: 95%;
+        width: 100%;
+        top:50%;
+        margin-left:0;
+        left:0;
+    }
+    .vertical_line, .vertical_line2 {
+		left: 58px;
+    }
+	.v-img {
+        left: 30px;
+    }
+    .carousel-desc {
+		left: 110px;
+    } 
+}
+/******************* end of md *****************************/
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    #crsl-landingpage .carousel-desc {
+        text-align: center;    
+        top: 80px;
+        width: auto;
+        left: 0px; 
+        right:0px;   
+    }   
+    .v-img {        
+        left: 46%;
+        z-index: 999999;
+        top: 100px;
+    }
+    .carousel-desc h3 p{
+        letter-spacing: 2px;
+        font-family: 'Gotham-Bold'!important;
+        font-size:36px;     
+        margin-top: 120px;
+    }
+    .carousel-desc p{   
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 26px;
+    }
+    #crsl-landingpage .carousel-indicators li,#crsl-landingpage .carousel-indicators .active{
+        width:18px;
+        height:5px;
+    }
+    #crsl-landingpage .item{
+        min-height:720px;
+    } 
+
+    .carousel-desc .btn{
+        margin-right:0;
+        font-weight: bold;
+    }
+    #crsl-landingpage .carousel-indicators>li{
+        display:inline-block;
+        background-color: #212121;
+    }
+    #crsl-landingpage .carousel-indicators .active{
+        background-color:#ffffff;
+        border:1px solid #ffffff;
+    }
+    #crsl-landingpage .item .padding-right{
+        padding-left:0;
+    }
+    .nav-crsl-landingpage .glyphicon{
+        position:absolute;
+        top:50%;
+    }
+    .carsl-img{
+        width:100%;
+    	height:768px;
+    }
+}
+/******************* end of SM *****************************/
+
+
+/********************************* Mobile ************************/
+@media (max-width: 767px) {
+    .carousel-desc .btn{
+         margin-top:0px !important;
+    }
+    .carousel-control.right, .carousel-control.left {
+        margin-top: 0%;
+    }
+    #crsl-landingpage .carousel-control.right,#crsl-landingpage .carousel-control.left{
+          margin-top: 30%;
+    	  height:40px;
+    }
+    .bothdesktopmobile img {
+        width: 100%;
+    }
+    #crsl-landingpage .carousel-desc {
+        text-align: center;    
+        top: 40px;
+        width: auto;
+        left: 0;
+        right: 0;
+    }
+    .v-img {        
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 999999;
+        top: 20px;
+        width:40px;
+    }
+    .carousel-desc h3 p{
+        letter-spacing: 2px;    
+        font-size: 18px;
+        margin-top:30px;    
+         font-family: 'Gotham-Bold'!important;
+         color:#212121;
+        padding-left:3%;
+        padding-right:3%;
+    }
+    .carousel-desc p{   
+        padding-left: 12%;
+        padding-right: 12%;
+        font-size: 14px;
+        margin-top:10px;
+        margin-bottom:20px;
+        font-family: 'Gotham-Book-Regular';
+    }
+    .carousel-indicators li,.carousel-indicators .active{
+        width: 15px;
+        height: 4px;
+    }
+    .carousel-indicators{
+        bottom:20px;
+        }
+    #crsl-landingpage .carousel-indicators {        
+        bottom: -10px;      
+    }
+    .carousel-desc .btn{
+        margin-right:0px;
+        font-weight: bold;
+    }
+    #crsl-landingpage .carousel-indicators>li{
+        display:inline-block;
+        background-color:#212121;
+    }
+    #crsl-landingpage .carousel-indicators .active{
+        background-color:#ffffff;
+        border-color:#ffffff;
+    }
+    #crsl-landingpage .item .padding-right{
+        padding-left:0px;
+    }
+    .nav-crsl-landingpage .glyphicon{
+        position:absolute;
+        top:50%;
+    }  
+}
+/******************* end of XS portrait*****************************/
+
+
+@media (min-width: 1380px) {
+	.parallex {
+    	direction: rtl;
+    }
+	.parallex-ol {
+    	float: right;
+    	margin-right: 55px;
+    	right: inherit;
+	}
+    .carousel-desc {
+        direction: ltr;
+    }
+}
+
+@media (min-width: 1680px) {
+
+	.parallex-ol {
+    	-webkit-transform: translateY(-50%) translateZ(0);
+    }
+}

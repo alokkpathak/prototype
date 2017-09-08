@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Traffic"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Table Heading">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Heading 1"
+                        name="./heading1"
+                        xtype="textfield"/>
+                    <heading2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Heading 2"
+                        name="./heading2"
+                        xtype="textfield"/>
+                    <heading3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Heading 3"
+                        name="./heading3"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Table Description">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <multirows
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new image"
+                        fieldLabel="Row Information"
+                        name="./multirows"
+                        xtype="mtmulticompositefield">
+                        <listeners jcr:primaryType="nt:unstructured"/>
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <row_image
+                                jcr:primaryType="cq:Widget"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 24x24px Resolution"
+                                fieldLabel="Row Image"
+                                name="image"
+                                width="300"
+                                xtype="pathfield"/>
+							<imageMobile
+								jcr:primaryType="cq:Widget"
+								allowBlank="{Boolean}false"	
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 26x27px Resolution"	
+								fieldLabel="RowMobile image Label"
+								mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+								name="imgMobile"
+								width="300"
+								sizeLimit="{Long}1"
+								xtype="pathfield"/>	
+                            <row1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Row -1"
+                                name="row1"
+                                xtype="textarea"/>
+                            <row2
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Row -2"
+                                name="row2"
+                                xtype="textarea"/>
+                            <row3
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Row -3"
+                                name="row3"
+                                xtype="textarea"/>
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="imagealt"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </multirows>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

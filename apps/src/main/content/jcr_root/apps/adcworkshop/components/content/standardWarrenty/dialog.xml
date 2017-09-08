@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="standardWarrenty"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <subtitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty Sub Title"
+                        name="./subtitle"
+                        xtype="textfield"/>
+                    <serno
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty Ser No"
+                        name="./serno"
+                        xtype="textfield"/>
+					<sernoInfoModaltext
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text to display on Information Overlay"
+                                name="./stdPopUpText"
+                                xtype="richtext">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <formats jcr:primaryType="cq:WidgetCollection">
+                                            <format1
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading1"
+                                                tag="h1"/>
+                                            <format2
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading2"
+                                                tag="h2"/>
+                                            <format3
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading3"
+                                                tag="h3"/>
+                                            <format4
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading4"
+                                                tag="h4"/>
+                                            <format5
+                                                jcr:primaryType="nt:unstructured"
+                                                description="paragraph"
+                                                tag="p"/>
+                                            <format6
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading5"
+                                                tag="h5"/>
+                                        </formats>
+                                    </paraformat>
+                                    <findreplace
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="[bold,italic]"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <lists
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <justify
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <linkDialogConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            height="{Long}316">
+                                            <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                                <linkAdvanced
+                                                    jcr:primaryType="cq:Widget"
+                                                    collapsed="{Boolean}true"
+                                                    collapsible="{Boolean}true"
+                                                    inputValue="advanced"
+                                                    name="./linkdialog/cq:adhocLinkTrackingTab"
+                                                    title="Link tracking"
+                                                    xtype="dialogfieldset">
+                                                    <items jcr:primaryType="cq:WidgetCollection">
+                                                        <enable
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="enabletracking"
+                                                            fieldDescription="override analytics framework settings"
+                                                            fieldLabel="Custom link tracking"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                            xtype="checkbox">
+                                                            <listeners
+                                                                jcr:primaryType="nt:unstructured"
+                                                                check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                        </enable>
+                                                        <events
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevents"
+                                                            fieldDescription="e.g.: event2, event7"
+                                                            fieldLabel="Include SiteCatalyst events"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                            xtype="textfield"/>
+                                                        <evars
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevars"
+                                                            fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                            fieldLabel="Include SiteCatalyst variables"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                            xtype="textfield"/>
+                                                    </items>
+                                                </linkAdvanced>
+                                            </linkAttributes>
+                                        </linkDialogConfig>
+                                    </links>
+                                    <misctools
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <colorpicker
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                </rtePlugins>
+                     </sernoInfoModaltext>	
+                    <accept
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty accept"
+                        name="./accept"
+                        xtype="textfield"/>
+                    <popup
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty terms and cond"
+                        name="./popup"
+                        xtype="textfield"/>
+                    <popuplink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty Condition Link"
+                        name="./popuplink"
+                        xtype="pathfield"/>
+                    <extendwarrentycheckbox
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Extend warrenty check box required?"
+                        itemId="extendwarrentycheckbox"
+                        name="./extendwarrentycheckbox1"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                type="yes"
+                                value="Yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                type="no"
+                                value="No"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;extendwarrentycheckbox&quot;).getValue();&#xa; &#xa; var warrenty=panel.getComponent(&quot;warrenty&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; warrenty.show();&#xa; &#xa; }&#xa; else{&#xa; warrenty.hide();&#xa; }&#xa;} &#xa;"
+                            selectionchanged="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;extendwarrentycheckbox&quot;).getValue();&#xa; &#xa; var warrenty=panel.getComponent(&quot;warrenty&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; warrenty.show();&#xa; &#xa; }&#xa; else{&#xa; warrenty.hide();&#xa; }&#xa;} &#xa;"/>
+                    </extendwarrentycheckbox>
+                    <extendwarrenty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty checkbox"
+                        hidden="{Boolean}true"
+                        itemId="warrenty"
+                        name="./ectwarrenty"
+                        xtype="textfield"/>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty button text"
+                        name="./buttontext"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Standard Warrenty button link"
+                        name="./buttonlink"
+                        xtype="pathfield"/>
+                    <successText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the success message "
+                        name="./successText"
+                        xtype="textfield"/>
+                    <enterSerialNumLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Serial number label "
+                        name="./enterSerialNumLabel"
+                        xtype="textfield"/>
+                    <dupilcateWarrantyErrorMsg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the message to be displayed when warranty for product already exist"
+                        name="./dupilcateWarrantyErrorMsg"
+                        xtype="textfield"/>
+                    <invalidWarrantyErrorMsg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the message to be displayed when serial number for product is invalid"
+                        name="./invalidWarrantyErrorMsg"
+                        xtype="textfield"/>
+                    <invalidSerialNumberMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the message to be displayed when serial number is less/more than 50 chars"
+                        name="./invalidSerialNumberMessage"
+                        xtype="textfield"/>
+                    <mandatoryWarrantyErrorMsg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the message to be displayed when serial number is blank"
+                        name="./warranty_error_mandatory"
+                        xtype="textfield"/>
+                    <mandatoryCheckboxError
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the message to be displayed when checkbox is not selected"
+                        name="./checkboxError"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

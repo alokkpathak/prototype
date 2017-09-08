@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Get Software"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 80"
+                        fieldLabel="Headline"
+                        maxLength="{Long}80"
+                        name="./ptitle"
+                        xtype="textfield"/>
+                    <desc
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 300"
+                        fieldLabel="Sub-text"
+                        maxLength="{Long}300"
+                        name="./pdesc"
+                        xtype="textfield"/>
+                    <titleimage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Image block"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./imagename1"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <imageMobile
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Image block label for Mobile"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./imagename1Mobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>
+                    <buttonname
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter the Button Text"
+                        name="./buttonname"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Button Link"
+                        name="./buttonlink"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Enter The Icon image and text Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icons
+                        jcr:primaryType="cq:Widget"
+                        baseName="multiicons_"
+                        fieldLabel="Configure the Icon Fields"
+                        name="./multiicons"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the image Content Eg: Spot patterns more quickly."
+                                name="icontext"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Icon image for desktop"
+                                name="iconimagename"
+                                width="{Long}300"
+                                xtype="pathfield"/>
+                            <imageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Icon image  for mobile"
+                                name="iconimagenameMobile"
+                                width="{Long}300"
+                                xtype="pathfield"/>
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Icon image  alt"
+                                name="iconimagealt"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </icons>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

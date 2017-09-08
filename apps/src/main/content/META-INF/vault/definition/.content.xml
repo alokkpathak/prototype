@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2016-06-21T19:55:08.638+05:30"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2016-06-21T19:55:08.638+05:30"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="20"
+    builtWith="Adobe Experience Manager-6.1.0.20150507"
+    dependencies="[]"
+    group="my_packages"
+    lastUnwrapped="{Date}2016-06-21T19:55:08.638+05:30"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2016-06-21T19:55:08.638+05:30"
+    lastWrappedBy="admin"
+    name="adc-workshop-apps-1.0-SNAPSHOT"
+    requiresRestart="{Boolean}false"
+    requiresRoot="{Boolean}false"
+    version="1.0">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/adcworkshop"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/adc"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/designs/adcworkshop"
+            rules="[]"/>
+        <f3
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/dam/adcWorkshop"
+            rules="[]"/>
+    </filter>
+</jcr:root>

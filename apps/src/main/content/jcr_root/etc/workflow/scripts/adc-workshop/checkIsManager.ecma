@@ -1,0 +1,27 @@
+function check() {
+
+    if (workflowData.getPayloadType() == "JCR_PATH") {
+     var path = workflowData.getPayload().toString()+"/jcr:content";
+        var session = workflowSession.getSession();
+        var node = session.getRootNode().getNode(path.substring(1));
+        var originalPath = node.getPath();
+        var isManager = false;
+		log.info("IS MANAGER ECMA SCRIPT =============> "+originalPath);
+        if(session.itemExists(path))  {
+            var node = session.getItem(path);
+            if(node.hasProperty("wfApproverStep") ) { 
+                   var wfInitiator = node.getProperty("wfApproverStep").getValue().getString();
+                   if(wfInitiator!="" && wfInitiator.contains("manager")){
+                      isManager = true;
+					 log.info("IS NOT AUTHOR VALUE isManager =============> "+isManager); 
+                   }
+                  
+              }
+            }
+			log.info("IS NOT AUTHOR VALUE SCRIPT =============> "+isManager);
+        return isManager ;
+    } else {
+        // should not happen
+        return false;
+    }
+}

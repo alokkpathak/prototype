@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Text and Image Component"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            fieldLabel="Headline and Text Description"
+            name="./textanddesc"
+            xtype="richtext">
+            <rtePlugins
+                jcr:primaryType="nt:unstructured"
+                features="*">
+                <paraformat
+                    jcr:primaryType="nt:unstructured"
+                    features="*">
+                    <formats jcr:primaryType="cq:WidgetCollection">
+                        <h1
+                            jcr:primaryType="nt:unstructured"
+                            description="Heading1"
+                            tag="h1"/>
+                        <h2
+                            jcr:primaryType="nt:unstructured"
+                            description="Heading2"
+                            tag="h2"/>
+                        <h3
+                            jcr:primaryType="nt:unstructured"
+                            description="Heading3"
+                            tag="h3"/>
+                        <h4
+                            jcr:primaryType="nt:unstructured"
+                            description="Heading4"
+                            tag="h4"/>
+                        <p
+                            jcr:primaryType="nt:unstructured"
+                            description="paragraph"
+                            tag="p"/>
+                    </formats>
+                </paraformat>
+                <styles
+                    jcr:primaryType="nt:unstructured"
+                    features="*">
+                    <styles jcr:primaryType="cq:WidgetCollection">
+                        <orange
+                            jcr:primaryType="nt:unstructured"
+                            cssName="text-orange"
+                            text="orange"/>
+                    </styles>
+                </styles>
+                <misctools
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+				<subsuperscript
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+            </rtePlugins>
+        </title>
+        <image
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+			fieldDescription="Upload only .jpg or .png images of 1MB or less with 162x256px Resolution"
+            fieldLabel="Product image"
+            name="./imagename"
+            xtype="pathfield"/>
+		<imageMobile
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"			
+            fieldLabel="Product image Label for Mobile"
+            mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+            name="./imagenameMobile"
+            sizeLimit="{Long}1"
+            xtype="pathfield"/>	
+        <productaltimage
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Enter the text for ProductImage alt"
+            name="./productimagealt"
+            xtype="textfield"/>
+        <buttonlink
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button Link"
+            name="./buttonlink"
+            xtype="textfield"/>
+        <buttonname
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button Name"
+            name="./buttonname"
+            xtype="textfield"/>
+        <alignmentSide
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Choose the side to display"
+            name="./alignmentside"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <left
+                    jcr:primaryType="nt:unstructured"
+                    text="Align the text on the left Side"
+                    value="left"/>
+                <right
+                    jcr:primaryType="nt:unstructured"
+                    text="Align the text on the right Side"
+                    value="right"/>
+            </options>
+        </alignmentSide>
+        <buttoncolor
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button Colour"
+            name="./buttoncolor"
+            showHexValue="{Boolean}true"
+            width="{Long}300"
+            xtype="colorfield"/>
+    </items>
+</jcr:root>

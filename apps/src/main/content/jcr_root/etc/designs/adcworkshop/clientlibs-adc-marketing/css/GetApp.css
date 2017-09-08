@@ -1,0 +1,164 @@
+.gettheapp .gs-row3 h2, .gettheapp .gs-row3 h3{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 90px;
+    font-family: 'Gotham-Bold';
+    font-size:42px;
+	color:#83630c;
+}
+.gettheapp .gs-row3 .gs-subheading{
+    color: #83630c; 
+	margin-bottom: 60px;
+    margin-top: 40px;
+    font-family:Gotham-Book-Regular;
+    font-size:18px;
+}
+.getapp{
+	padding-bottom: 50px;
+}
+.getapp .soon{
+    font-family:Gotham-Medium-Regular;
+    font-size:14px;
+}
+.getapp .gs-btn{
+    border:2px solid #83630c;
+    color: #83630c; 
+}
+.getapp .gs-btn,.getapp .gs-btn:hover{
+    border-color: #83630c;
+    color: #83630c; 
+    background: transparent;
+    font-family: 'Gotham-Medium-Regular';
+}
+.getapp .media-body h5{
+    font-size:24px;
+    font-family:Gotham-Medium-Regular;
+}
+.getapp h5{
+    text-transform: uppercase;
+    font-size:16px;
+}
+.soon{
+    margin:20px 0px 10px;
+    text-transform: uppercase;    
+}
+.getapp h2, .getapp h3,.getapp h5,.getapp >.gs-subheading,.soon{
+    color:#83630C;
+}
+.downloadAndroid{       
+    margin: 3px 0 3px 0;              
+}
+.media-app{
+    padding-top: 30px;
+}	
+.media-app p{
+    padding-top:0px;
+    font-size:18px;
+}
+.media-app p{
+    color:#83630C;
+}
+.getAppimg {
+    margin-top:52px;
+ }
+/************************** lg *******************************/
+
+@media (min-width: 1200px) {
+.getapp .imgSwap{
+    padding-left:25px;
+}
+.downloadAndroid{
+    margin-right:0px;
+}
+.downloadAndroid,.soon{
+    margin-right: 0px;
+}
+.gs-btn{
+    margin-right: 0px;
+}
+.hidden-sm .col-md-12 .getAppimg{
+    float: right;
+    margin-right: 120px;
+    display: inline !important;
+    padding-left: 0px;
+}
+}
+
+/****************** md **************************************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.getapp .imgSwap{
+    padding-left:15px;
+}
+.gettheapp{
+	margin-bottom:25px;
+}
+}
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+.gs-btn {
+	font-size:24px;
+}
+.getAppimg{
+    margin-left: 0%;
+	margin-top:20px;
+}
+.gs-row3 .gs-subheading{
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 28px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.gs-row3 h2 ,.gs-row3 h3{
+    margin-top: 95px;
+    font-size:40px;
+}
+.gettheapp .gs-row3 .gs-subheading{
+font-size: 28px;
+    }
+.gettheapp{
+	margin-bottom:25px;
+}
+}
+
+/********************************* XS Portrait ************************/
+@media (max-width: 767px) {
+.gettheapp .gs-row3 h2 ,.gettheapp .gs-row3 h3{
+    font-size: 20px;
+     margin-top:0;
+    padding-top:45px;
+	letter-spacing: 4px;
+}
+.gs-row3 .gs-subheading {
+       margin-bottom: 20px;
+    margin-top: 16px;
+ font-size:14px;
+}
+.getapp .media-left img {
+    width: 80px;
+}
+.getapp {
+    padding-bottom: 0px;
+}
+.getapp .media-body h5 {
+    font-size: 16px;
+    padding-top:20px;
+}
+.getAppimg{
+	margin-top:0;
+}
+.getapp .margin-bottom{
+    margin-bottom:20px;
+ }
+.soon{
+	margin:0;
+}
+.media-app{
+	padding-top:0;
+}
+.getapp .col-md-12{
+  padding:0;
+}
+}

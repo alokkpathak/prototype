@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="checkout_header"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Edit header">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <displayCustomerCareInfo
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Should Customer Care Information be displayed?"
+                                name="./displayCust"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <option1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="Yes"/>
+                                    <option2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="No"/>
+                                </options>
+                    </displayCustomerCareInfo>
+                    <checkoutheader_logoImage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select logo image"
+                        name="./logoImage"
+                        xtype="pathfield"/>
+					<mobilecheckoutheader_logoImage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select logo image for Mobile"
+                        name="./logoImagemobile"
+                        xtype="pathfield"/>	
+                    <checkoutheader_logoLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select logo image link"
+                        name="./logoLink"
+                        xtype="pathfield"/>
+                    <checkoutheader_secureIconImage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select secure icon"
+                        name="./iconImage"
+                        xtype="pathfield"/>
+					<mobilecheckoutheader_secureIconImage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select secure icon for mobile"
+                        name="./iconImagemobile"
+                        xtype="pathfield"/>	
+                    <checkoutheader_secureText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter secure Text"
+                        name="./secureText"
+                        xtype="textfield"/>
+                    <logoutUrl
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Logout URL"
+                        name="./logoutUrl"
+                        xtype="pathfield"/>
+                    <errorPageURL
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the link to Redirect eg: /content/adc/fsl/countries/gb/en/utilities/errors/500"
+                        fieldLabel="Error page path"
+                        name="./errorPageURL"
+                        width="300"
+                        xtype="pathfield"/>
+					<checkoutheader_middle
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="You can contact us from 8:00 AM to 6:00 PM every day except Sunday - Call Free from a landline"
+                        fieldLabel="Enter text for middle logo"
+                        name="./middletext"
+                        xtype="textfield"/>    
+
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

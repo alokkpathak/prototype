@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="text_button"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <richtext
+                jcr:primaryType="cq:Panel"
+                title="Text">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./richtext"
+                        title="Text"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </title>
+                    <buttonOption
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="button"
+                        name="./valueSelected"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <buttonname
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Button Text"
+                        name="./buttonname"
+                        title="Button"
+                        xtype="textfield"/>
+                </items>
+            </richtext>
+        </items>
+    </items>
+</jcr:root>

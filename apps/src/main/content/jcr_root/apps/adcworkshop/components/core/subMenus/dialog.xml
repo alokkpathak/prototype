@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Sub Menu"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <generalConfig
+                jcr:primaryType="cq:Panel"
+                title="SubMenu Type">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <subMenuType
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sub Menu Type"
+                        name="./subMenuType"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <generic
+                                jcr:primaryType="nt:unstructured"
+                                text="Generic"
+                                value="generic"/>
+                            <products
+                                jcr:primaryType="nt:unstructured"
+                                text="Products"
+                                value="products"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged=""/>
+                    </subMenuType>
+                    <parentPath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Choose the Parent page path"
+                        name="./pagePath"
+                        rootPath="/content/fsl"
+                        xtype="pathfield"/>
+                    <allProductsLinkText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="All products Button Link Text"
+                        name="./allProductsLinkText"
+                        xtype="textfield"/>
+                    <allProductsLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="All Products Link"
+                        name="./allProductsLink"
+                        xtype="textfield"/>
+                </items>
+            </generalConfig>
+            <products
+                jcr:primaryType="cq:Panel"
+                title="Products">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <prodTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the category label for products"
+                        name="./prodTitle"
+                        xtype="textfield"/>
+                    <prodConfig
+                        jcr:primaryType="cq:Widget"
+                        baseName="prod_"
+                        fieldLabel="Click on &quot;+&quot; to configure the products"
+                        name="./prodConfig"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <productLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Product Label"
+                                maxLength="50"
+                                name="prodLabel"
+                                xtype="textfield"/>
+                            <prodLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Product Link"
+                                name="prodLink"
+                                rootPath="/content/fsl"
+                                width="500"
+                                xtype="pathfield"/>
+                            <productImage
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Product Image"
+                                name="prodImage"
+                                rootPath="/content/dam/adc/fsl/images/global/en"
+                                width="500"
+                                xtype="pathfield"/>
+							<productImageMobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Product Image for mobile"
+                                name="prodImageMobile"                                
+                                width="500"
+                                xtype="pathfield"/>	
+							<productImageAlt
+                                jcr:primaryType="cq:Widget"                                
+                                fieldLabel="Product Image Alt Attribute"
+                                name="prodImageAlt"                                
+                                width="500"
+                                xtype="textfield"/>	
+                        </fieldConfigs>
+                    </prodConfig>
+                </items>
+            </products>
+            <packs
+                jcr:primaryType="cq:Panel"
+                title="Packs">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <packTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the category label for pack"
+                        name="./packTitle"
+                        xtype="textfield"/>
+                    <packConfig
+                        jcr:primaryType="cq:Widget"
+                        baseName="pack_"
+                        fieldLabel="Click on &quot;+&quot; to configure the products"
+                        name="./packConfig"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <packLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Pack Label"
+                                maxLength="50"
+                                name="packLabel"
+                                xtype="textfield"/>
+                            <packLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Pack Link"
+                                name="packLink"
+                                rootPath="/content/fsl"
+                                width="500"
+                                xtype="pathfield"/>
+                            <packImage
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Pack Image"
+                                name="packImage"
+                                rootPath="/content/dam/adc/fsl/images/global/en"
+                                width="500"
+                                xtype="pathfield"/>
+							<packImageMobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Pack Image for mobile"
+                                name="packImageMobile"                                
+                                width="500"
+                                xtype="pathfield"/>	
+							<packImageAlt
+                                jcr:primaryType="cq:Widget"                                
+                                fieldLabel="Pack Image Alt Attribute"
+                                name="packImageAlt"
+                                rootPath="/content/dam/adc/fsl/images/global/en"
+                                width="500"
+                                xtype="textfield"/>	
+                        </fieldConfigs>
+                    </packConfig>
+                </items>
+            </packs>
+            <splOffers
+                jcr:primaryType="cq:Panel"
+                title="Special Offers">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <splOfferTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the category label for Special offer"
+                        name="./splOfferTitle"
+                        xtype="textfield"/>
+                    <splOfferConfig
+                        jcr:primaryType="cq:Widget"
+                        baseName="splOffer_"
+                        fieldLabel="Click on &quot;+&quot; to configure the special Offer"
+                        name="./splOfferConfig"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <splOfferLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Special Offer Label"
+                                maxLength="50"
+                                name="splOfferLabel"
+                                xtype="textfield"/>
+                            <splOfferLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Special Offer Link"
+                                name="splOfferLink"
+                                rootPath="/content/fsl"
+                                width="500"
+                                xtype="pathfield"/>
+                            <splOfferImage
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Special Offer Image"
+                                name="splOfferImage"
+                                rootPath="/content/dam/adc/fsl/images/global/en"
+                                width="500"
+                                xtype="pathfield"/>
+							<splOfferImageMobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="splOfferImage for mobile"
+                                name="splOfferImageMobile"                                
+                                width="500"
+                                xtype="pathfield"/>	
+                        </fieldConfigs>
+                    </splOfferConfig>
+                </items>
+            </splOffers>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Breadcrumb (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <absParent
+            jcr:primaryType="nt:unstructured"
+            fieldDescription="(eg: 1 for /content/site)"
+            fieldLabel="Parent Level (absolute)"
+            name="./absParent"
+			minValue="0"
+			maxValue="10"
+            xtype="numberfield"/>
+        <relParent
+            jcr:primaryType="nt:unstructured"
+            fieldDescription="(eg: 0 for current page)"
+            fieldLabel="Relative stop level"
+            name="./relParent"
+            minValue="0"
+			maxValue="10"
+            xtype="numberfield"/>
+        <homePage
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Select Home Page Path"
+            fieldLabel="Home Page"
+            name="./homePage"
+            xtype="pathfield"/>
+        <homeTitle
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Enter Label for Home Page"
+            fieldLabel="Home Label"
+            name="./homeTitle"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

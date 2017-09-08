@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Contact Us Success Page"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <contactussuccespage
+                jcr:primaryType="cq:Panel"
+                title="Contact Success Form&#xa;">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <succesmessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact  Us Success"
+                        name="./contacttext"
+                        title="Contact Us Success"
+                        xtype="textfield"/>
+                    <buttonname
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Button Text"
+                        name="./buttonname"
+                        title="Button"
+                        xtype="textfield"/>
+                    <contactsuccessUrl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the home page url"
+                        fieldLabel="Homepage URL"
+                        name="./location"
+                        xtype="pathfield"/>
+                </items>
+            </contactussuccespage>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,32 @@
+    <table id="faq-ecommerce-table" class="col-xs-12 col-lg-12 padding-zero">
+        <tbody>
+            {{#faqQestionAnswers}}
+             <tr>
+             <td style="display: block;">
+             <div class="panel panel-default faq">                    
+             <div class="panel-heading text-left" role="tab" id="hOne">
+             <div class="row">
+             <div class="heading-row col-xs-12 col-lg-12 padding-zero">
+             <div class="heading-cell col-md-11 col-xs-10"> 
+             <h3 class="panel-title" data-toggle="collapse" href="#One{{{@index}}}" aria-expanded="false" aria-controls="One"><a href=""><span class="pnl-title">{{question}}</span></a>
+</h3>
+</div>
+<div class="arrow-cell col-md-1 col-xs-2"> 
+    <span class="glyphicon glyphicon-menu-right pull-right" data-toggle="collapse" href="#One{{{@index}}}" aria-expanded="false" aria-controls="One"></span>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="One{{{@index}}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body col-md-11">         
+        <p class="more" >{{breaklines answer}}</p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+{{/faqQestionAnswers}} 
+</tbody>
+</table>

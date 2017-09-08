@@ -1,0 +1,537 @@
+header{position:relative;}
+.header_top{
+    padding: 8px 10px;
+}
+.color-white,.color-white:hover{
+    color:white;
+    font-size: 13px;
+    padding-top: 4px;
+    padding-left:0px;
+    font-family:Gotham-Medium-Regular;
+}
+.header_top a,.header_top a:hover{
+    font-size: 13px;
+    font-family:Gotham-Book-Regular;
+    color: #212121 !important;
+    text-decoration: underline;
+}
+#cookieLink{        
+    color:#83630c !important;
+    padding-left:45px;
+}
+.text-orange,.text-orange:hover{
+    color:#E4572D;
+}
+.li-text{
+    color:#77c004;
+    font-size: 10px;
+    padding-top: 3px;
+    font-family: 'Gotham-Medium-Regular';
+    cursor: pointer;
+}
+.padding-nav2{
+    padding-top: 25px;
+}
+.profile_head{
+    padding-right: 0px;
+    padding-top: 15px;
+}
+.m-padding{
+    padding-right: 25px !important;
+}
+.profile_head>ul>li>a:hover,.profile_head>ul>li>a:focus{
+    text-decoration: none;
+}
+.logo_scetion{
+    border-bottom: 1px solid #E2E2E2;
+    padding:0px;
+}
+.logo_scetion a img,.counrty-head a img,.banner-desc img, .errorPageText p a{
+    cursor: pointer;
+}
+.banner-desc h1 span{
+    font-family: 'Gotham-Medium-Regular' !important;
+    text-transform:uppercase;
+}
+.menu ul > li{
+    padding:30px 80px 30px 0px;
+    color:#05658e;
+    text-transform: uppercase;
+}
+.menu ul > li>span,.side-menu ul > li>a>span{
+    cursor: pointer;
+    font-family: 'Gotham-Medium-Regular';
+    font-size: 14px;
+}
+.menu{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -175px;
+    top: 67px;
+    background-color: #E4572D;
+    min-width: 400px;
+    z-index: 1000;
+    height:145px;
+}
+.Luxemberg #myDropdown {
+    min-width: 450px;
+}
+.dropdown-content p{
+  color:white;
+  padding-top:20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+.profile_head li:nth-child(3) .img-responsive{
+    display: block;
+}
+.profile_head ul {
+    padding-top: 15px;
+}
+.profile_head li:nth-child(3){
+    vertical-align: bottom;
+}
+.profile_head li p{
+    margin-bottom: 4px;
+}
+.profile_head li:nth-child(2){
+    padding-right: 20px;
+}
+.submenu-panel{
+    text-align:center;         
+    display: none;
+    height:200px;
+    color: #5C5C5C;
+    z-index: 999999;
+    position: absolute;
+    max-width: 1380px;   
+    width: 100%;
+    left:0;
+    right:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    max-width: 1380px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+	width: 100%;
+}
+ .submenu-panel h3{
+    color:white;
+ }
+ .submenu-panel ul li span a{
+    color:#4f4f4f;
+
+} 
+
+.submenu-panel ul li a:hover{
+    background-color: transparent;
+    text-decoration: none;
+}
+.submenu-panel .nav-justified>li {
+    vertical-align: top;
+}
+.prod-sub-panel:not(:first-child) {
+    border-left: 5px solid #c3c3c3;
+}
+#logout{
+  border: 1px solid white !important;
+  border-radius: 0px;
+  color: white;
+  margin-right: 20px;
+}
+#myaccount{
+  color:#E4572D;
+}
+.submenuContainer {
+    position: relative;
+}
+.prod-submenu-group{
+    border:none !important;
+}
+.prod-submenu-group h3{
+    color:white;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 22px;
+}
+.prod-sub-text{
+    color:white;
+    padding-top:20px;
+    font-weight:bold;
+    text-align: center;
+    font-family: Gotham-Medium-Regular;
+}
+.nav li a:hover{
+    background: transparent;
+}
+.prod-submenu-group li{
+    padding-bottom :10px;
+}
+.img-prod-menu{
+        height:120px;
+}
+.nav li>span>a {
+    font-family: 'Gotham-Light-Regular';
+    font-size: 16px;
+    color: #05658e;
+    letter-spacing: 1px;
+}
+.basketitems {
+    color: #fff;
+    font-family: Gotham-Book-Regular;
+    font-size: 12px;
+    background-color: #77c004;
+    position: absolute;
+    top: 29%;
+    left: 63%;
+    -webkit-transform: translate(-50%,-90%);
+    -moz-transform: translate(-50%,-90%);
+    transform: translate(-50%,-90%);
+    padding: 0;
+    border-radius: 12px;
+    height: 20px;
+    width: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+a,a:hover{
+	text-decoration: none;
+	color:#E4572D;
+	font-weight: normal;
+    font-family: Gotham-Book-Regular;
+}
+.shoppingbasket {
+  position:relative;
+}
+.dropdown .account-logged-in-bar {
+    width: 71px;
+    height: 5px;
+    background-color: #E4572D;
+    position: absolute;
+    bottom: -14px;
+    display: none;
+}
+.italy .dropdown .account-logged-in-bar { 
+	width: 87px;
+}
+.logo_scetion .libre-logo {
+	margin-left: -14px;
+}
+.logo_scetion .signed-in-account-icon {
+    display: none;
+}
+header .vorwerk-header-logo {
+	padding-right: 0px;
+    margin-right: -17px;
+}
+.padding-zero .submenu-panel .nav-justified>li{
+	cursor: pointer;
+}
+/************************* lg ******************************/
+@media (min-width: 1200px) {
+    .header{
+        padding-left:65px;
+        padding-right:65px;    
+    }
+    .padding-zero .submenu-panel,.prod-sub-panel .shadow{
+		box-shadow: 0 3px 5px #e1e1e1;
+        }
+    .padding-zero .submenu-panel .nav-justified>li {
+    	vertical-align: top;
+    	padding-top:6%;
+    	height:200px;
+	}
+    .padding-zero .submenu-panel .nav-justified>li:hover{
+	background-color:#e1e1e1;
+            }
+    .prod-sub-panel .nav-justified>li a:hover img {
+ 		 -moz-transform: scale(1.1);
+ 		 -webkit-transform: scale(1.1);
+ 		 transform: scale(1.1);
+	}
+    .header_top a{
+        padding-right:40px;
+    }
+    .submenu-panel .nav-justified>li:nth-last-of-type(2)>span{
+    	margin:0 30px;
+    }
+    #panel_1 ul li span{
+        float: left;
+    	margin:0 30px;
+    	text-align:center;
+    }
+	#panel_1 ul li:nth-last-of-type(6)>span{
+		margin:0 51px;
+	}
+.italy #panel_1 ul li:nth-last-of-type(6)>span{
+		margin:0 30px;
+        float:none;    
+	}
+	.logo_scetion .libre-logo {
+        max-width: none;
+    }
+}
+/********************** end of lg **************************/
+/********************** md *********************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav li>span>a{
+	letter-spacing:0px;
+        }
+    .padding-zero .submenu-panel .nav-justified>li {
+    	vertical-align: top;
+    	padding-top:6%;
+    	height:200px;
+	}
+	.padding-zero .submenu-panel,.prod-sub-panel .shadow{
+		box-shadow: 0 3px 5px #e1e1e1;
+        }
+    .submenu-panel .nav-justified>li:hover{
+	background-color:#e1e1e1;
+            }
+    .dropdown-content{
+        top:65px;
+    }
+     .img-prod-menu{
+        height:90px;
+    }
+    .logo_scetion .libre-logo {
+        max-width: none;
+    }
+}
+/********************** end of md ************************/
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {    
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav li>span>a{
+		letter-spacing:0px;
+        }
+	.padding-zero .submenu-panel .nav-justified>li {
+    	vertical-align: top;
+    	padding-top:6%;
+    	height:200px;
+	}
+    .padding-zero .submenu-panel,.prod-sub-panel .shadow{
+		box-shadow: 0 3px 5px #e1e1e1;
+        }
+    .logo_scetion{
+        height: 95px;
+    }
+    .logo_scetion .libre-logo {
+		margin-left: -9px;
+        height: 70px;
+        width: auto;
+        max-width: none;
+        margin-top: 14px;
+    }
+    .profile_head{
+        padding-top: 0px;
+    }
+    .profile_head ul {
+        padding-top: 20px;
+    }
+    .dropdown-content{
+        top:65px;
+    }
+    .menu ul > li {
+        padding: 20px 40px 20px 0px;
+    }
+    .nav>li>a{
+        padding:10px 6px;
+    } 
+    .img-prod-menu{
+       height:70px;
+    }  
+	.dropdown .account-logged-in-bar {
+        bottom: -17px;
+    }
+    .logo_scetion .libre-logo {
+        margin-left: -9px;
+        margin-top: 7px;
+    }
+}
+/************************** end of sm***************************/
+
+/************************* XS Portrait ************************/
+
+@media (max-width: 767px) {
+	.logo_scetion{
+        border-bottom: transparent;
+    }
+    .profile_head ul li img,.navbar-header button img {
+        vertical-align: bottom;
+        width: 16px;
+        height: auto;
+    }
+    .profile_head ul {
+         padding-top: 5px;
+    }
+    .profile_head {
+        padding-top: 3px;
+    }    
+    .m-padding{
+        padding-right: 5px !important;
+    }
+    .m-padding1{
+        padding-right: 15px !important;
+    }
+    .dropdown-content{
+        left: -267px;
+        top: 36px;
+        min-width:370px;
+    }
+    .humberg {
+        position: absolute;
+    	top: 30px;
+        right: 0;
+        margin-right: 8px;
+    	margin-top: 0;
+        padding: 9px 8px;
+    }
+    .arrow-up{
+        left:230px;
+    }
+    .menu ul > li {
+        display: block;
+        float: none;
+        padding: 10px 0px;
+        text-align: left;
+		cursor:pointer;
+    }
+    .nav-pills>li {
+        border-bottom: 1px solid #E2E2E2;
+    }
+
+    #logout{
+        margin-right: 0px;
+    }
+    .FSL-logo{
+        padding-left: 20px;
+    } 
+    .shoppingbasket{
+        margin-right:20px;
+    }  
+    .prod-sub-panel ul{
+        padding-left:0px;
+    }
+    .prod-sub-panel li{
+        border:none !important;
+        margin-bottom:10px;
+    } 
+    .prod-sub-panel .nav-justified>li{
+        padding:0px;
+    }
+    .prod-sub-panel .nav-justified>li>a{
+        text-align:center;
+    }
+    .prod-submenu-group h3{
+        padding-top:20px;
+		margin-top:0px;
+    }
+	.prod-sub-panel .col-md-12{
+        text-align:center;
+    }
+	.prod-sub-panel:not(:first-child) {
+        border-left:none;
+    }
+     .img-prod-menu {
+        height: 75px;
+    }
+    .menu-arrow {
+        width: 25px;
+        padding-top: 5px;
+        float: right;
+    }
+	.submenu-panel{
+        position: relative; 
+        height:auto;
+        z-index: 0;
+        border:none;
+        box-shadow:none;
+    }
+    .submenu-panel ul span, .submenu-panel ul span a {
+    	display: block;
+	}
+    .submenu-panel ul li>span>a{
+        width: 100%; 
+    }
+
+    .submenu-panel ul{
+        padding-top:0px;
+        padding-left:0px;
+    }
+	.logo_scetion {
+		height: 72px;
+    	padding-top: 28px;
+    }
+	.dropdown .account-logged-in-bar {
+        display: none;
+    }
+	header {
+    	z-index: 1;
+	}
+	header .header {
+		margin: 0;
+    	padding: 0;
+	}
+	header .libre-logo {
+    	width: auto;
+    	height: 38px;
+	}
+	.basketitems {
+        top: inherit;
+    	bottom: -1px;
+    	left: inherit;
+    	right: 0;
+    	padding: 0;
+    	width: 15px;
+    	border-radius: 8px;
+        height: 15px;
+        line-height: 1.4;
+        text-indent: 1px;
+        font-size: 10px;
+    }
+    .list-inline>li {
+		padding-right: 6px;
+    	padding-left: 6px;
+    }
+    .logo_scetion .libre-logo {
+        margin-left: 0;
+    }
+}  
+/*************************end of XS Portrait ************************/
+
+@media (min-width: 320px) and (max-width: 374px) { 
+.dropdown-content {
+	left: -215px;
+	top: 40px;
+	min-width: 320px;
+}
+}

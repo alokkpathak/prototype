@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Menue List">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <menueList
+                        jcr:primaryType="cq:Widget"
+                        baseName="menuemulti_"
+                        fieldLabel="Configure the  Menue List"
+                        name="./menuemulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <menueText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter Menue Items"
+                                name="menuetext"
+                                xtype="textfield"/>
+                            <menueOption
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter the Menue Items link"
+                                itemId="menue_id"
+                                name="menueoption"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <accountOverview
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Account Overview"
+                                        value="accountOverview"/>
+                                    <orders
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Orders"
+                                        value="orders"/>
+                                    <standardWarrenty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Standard Warrenty"
+                                        value="stdWarrenty"/>
+                                    <personalDetails
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Personal Details"
+                                        value="persDetails"/>
+                                <prescriptionOrders
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Prescription Orders"
+                                        value="prescriptionorders"/>
+                                </options>
+                            </menueOption>
+                        </fieldConfigs>
+                    </menueList>
+                    <menueButtonText
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Button Text"
+                        name="./menuebuttontext"
+                        xtype="textfield"/>
+                    <menueButtonLink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Button Link"
+                        name="./menuebuttonlink"
+                        xtype="pathfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

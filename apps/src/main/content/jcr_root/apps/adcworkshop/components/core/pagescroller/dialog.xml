@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="PageNavigator"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selectType
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Links with Page title"
+                        name="./valueselected"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <selectPrevious
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Prev page needed ?"
+                        name="./prevcheck"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="true"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="false"/>
+                        </options>
+                    </selectPrevious>
+                    <selectNext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Next page needed ?"
+                        name="./nextcheck"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="true"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="false"/>
+                        </options>
+                    </selectNext>
+					 <leftarrowimagepath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Left Arrow Image"
+                        name="./leftarrow"
+                        xtype="pathfield"/>
+					<leftarrowimagepathMobile
+                        jcr:primaryType="cq:Widget"                        
+                        fieldLabel="Mobile Left Arrow image"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./leftarrowMobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+					 <rightarrowimagepath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Right Arrow Image"
+                        name="./rightarrow"
+                        xtype="pathfield"/>
+					<rightarrowimagepathMobile
+                        jcr:primaryType="cq:Widget"                        
+                        fieldLabel="Mobile Right Arrow image"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./rightarrowMobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>	
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

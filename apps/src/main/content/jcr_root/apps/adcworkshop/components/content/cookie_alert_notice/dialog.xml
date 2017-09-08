@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text1
+                        jcr:primaryType="cq:Widget"
+						allowBlank="{Boolean}false"
+                        fieldLabel="Cookie Link Text1"
+                        name="./text1"
+                        xtype="textfield"/>
+                    <pathfield1
+                        jcr:primaryType="cq:Widget"
+						allowBlank="{Boolean}false"
+                        fieldLabel="PathLink1"
+                        name="./pathfield1"
+                        xtype="pathfield"/>
+                    <text2
+                        jcr:primaryType="cq:Widget"
+						allowBlank="{Boolean}false"
+                        fieldLabel="Text In Cookie Followed by Link"
+                        name="./text2"
+                        xtype="textarea"/>
+                    <text3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Cookie Link Text2"
+                        name="./text3"
+                        xtype="textfield"/>
+                    <pathfield2
+                        jcr:primaryType="cq:Widget"
+						allowBlank="{Boolean}false"
+                        fieldLabel="TextPathLink2"
+                        name="./pathfield2"
+                        xtype="pathfield"/>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+						allowBlank="{Boolean}false"
+                        fieldLabel="ButtonText"
+                        name="./text4"
+                        xtype="textfield"/>
+                    
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

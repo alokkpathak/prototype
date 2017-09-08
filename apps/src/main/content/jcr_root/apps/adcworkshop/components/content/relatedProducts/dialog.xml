@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Related Products"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headline
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Maximum 35 characters"
+                        fieldLabel="Headline"
+                        invalidText="Maximum 25 characters"
+                        maxLength="{Long}35"
+                        name="./headline"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Product Element 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Maximum 25 characters"
+                        fieldLabel="Title"
+                        invalidText="Maximum 25 characters"
+                        maxLength="{Long}25"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <urlLabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Maximum 18 characters"
+                        fieldLabel="URL Label"
+                        invalidText="Maximum 18 characters"
+                        maxLength="{Long}18"
+                        name="./urlLabel1"
+                        xtype="textfield"/>
+                    <urlLink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the redirection link"
+                        fieldLabel="URL Link"
+                        name="./urlLink1"
+                        xtype="textfield"/>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Product Element 2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Maximum 25 characters"
+                        fieldLabel="Title"
+                        invalidText="Maximum 25 characters"
+                        maxLength="{Long}25"
+                        name="./title2"
+                        xtype="textfield"/>
+                    <urlLabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Maximum 18 characters"
+                        fieldLabel="URL Label"
+                        invalidText="Maximum 18 characters"
+                        maxLength="{Long}18"
+                        name="./urlLabel2"
+                        xtype="textfield"/>
+                    <urlLink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the redirection link"
+                        fieldLabel="URL Link"
+                        name="./urlLink2"
+                        xtype="textfield"/>
+                </items>
+            </tab3>
+			<tab4
+                jcr:primaryType="cq:Panel"
+                title="Images">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <image1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="image1 Label"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./fileReference1"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <image1Mobile
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="image1 Mobile Label"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./fileReference1Mobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <image2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="image2 Label"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./fileReference2"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <image2Mobile
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="image2 Mobile Label"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./fileReference2Mobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <altimage1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for first Image alt"
+                        name="./imagealt1"
+                        xtype="textfield"/>
+                    <altimage2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Second Image alt"
+                        name="./imagealt2"
+                        xtype="textfield"/>
+                </items>
+            </tab4>			
+        </items>
+    </items>
+</jcr:root>

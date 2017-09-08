@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Details"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <editForm
+                jcr:primaryType="cq:Panel"
+                title="Edit Form">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <formOption
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Include postal look up code?"
+                        name="./formSelected"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <createAddressLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for create address form"
+                        name="./createAddressLabel"
+                        xtype="textfield"/>
+                    <editAddressLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for edit address form"
+                        name="./editAddressLabel"
+                        xtype="textfield"/>
+                    <titleLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for title field"
+                        name="./titleLabel"
+                        xtype="textfield"/>
+                    <defaultoptionselect
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter default Select Value eg: Select"
+                        fieldLabel="Default Prefix Value"
+                        name="./defaultoptionselect"
+                        xtype="textfield"/>
+                    <titleOptions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Add the options for title"
+                        name="./titleOptions"
+                        xtype="multifield"/>
+                    <firstName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for first name field"
+                        name="./fname"
+                        xtype="textfield"/>
+                    <lastName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for last name field"
+                        name="./lname"
+                        xtype="textfield"/>
+                    <addressOne
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for address field Line 1"
+                        name="./addressOne"
+                        xtype="textfield"/>
+                    <addressPlaceHolderLabelOne
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the place holder text for address block"
+                        fieldLabel="Address Place Holder Text "
+                        name="./addressPlaceHolder1"
+                        width="300"
+                        xtype="textfield"/>
+                    <addresstwocheckbox
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="AddressField2 Required?"
+                        itemId="addressfield2checbox"
+                        name="./addressfield2checbox"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                type="yes"
+                                value="Yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                type="no"
+                                value="No"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;addressfield2checbox&quot;).getValue();&#xa; &#xa; var addressfield2=panel.getComponent(&quot;addressfield2&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; addressfield2.show();&#xa; &#xa; }&#xa; else{&#xa; addressfield2.hide();&#xa; }&#xa;} "
+                            selectionchanged="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;addressfield2checbox&quot;).getValue();&#xa; &#xa; var addressfield2=panel.getComponent(&quot;addressfield2&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; addressfield2.show();&#xa; &#xa; }&#xa; else{&#xa; addressfield2.hide();&#xa; }&#xa;} "/>
+                    </addresstwocheckbox>
+                    <addressTwo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for address field Line 2"
+                        itemId="addressfield2"
+                        name="./addressTwo"
+                        xtype="textfield"/>
+                    <addressPlaceHolderLabelTwo
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the place holder text for address block"
+                        fieldLabel="Address Place Holder Text "
+                        name="./addressPlaceHolder2"
+                        width="300"
+                        xtype="textfield"/>
+                    <postalCodeLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Label for Postal Code e.g L-"
+                        fieldLabel="Label for Luxemburg Postal Code"
+                        name="./postalCodeLabel"
+                        xtype="textfield"/>
+                    <postalCode
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for postal code"
+                        name="./pcode"
+                        xtype="textfield"/>
+                    <defaultoptionselectAddr
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter default Select Value eg: &quot;Please select your Address&quot;"
+                        fieldLabel="Default address option"
+                        name="./defaultoptaddr"
+                        xtype="textfield"/>
+                    <city
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for city name field"
+                        name="./city"
+                        xtype="textfield"/>
+                    <country
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for country field"
+                        name="./country"
+                        xtype="textfield"/>
+                    <countryLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Country eg: UNITED KINGDOM, ITALY"
+                        fieldLabel="Name of the Country"
+                        name="./countryLabel"
+                        xtype="textfield"/>
+                    <phone
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for phone field"
+                        name="./phone"
+                        xtype="textfield"/>
+                    <phoneInfo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for phone Info: Eg: Enter your phone number without first '0'. Ex. 1262424012"
+                        name="./phoneInfo"
+                        xtype="textfield"/>
+                    <countryDialCode
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Value to be displayed on phone number field by default; eg:+44"
+                        fieldLabel="Country dial code"
+                        name="./dialcode"
+                        xtype="textfield"/>
+                    <addressName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Address Name"
+                        name="./addressName"
+                        xtype="textfield"/>
+                    <checkLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="label for CheckBox"
+                        name="./checkLabel"
+                        xtype="textfield"/>
+                    <cancelCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Cancellation Button"
+                        name="./cancelCTA"
+                        xtype="textfield"/>
+                    <addCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label eg: 'FIND ADDRESS'"
+                        fieldLabel="Label for Addition button"
+                        name="./addCTA"
+                        xtype="textfield"/>
+                    <findAddress
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;FIND MY ADDRESS&quot;"
+                        fieldLabel="Label for find address"
+                        name="./findadd"
+                        xtype="textfield"/>
+                    <mannualAddress
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;ENTER ADDRESS MANUALLY&quot;"
+                        fieldLabel="Label for manual address"
+                        name="./manualadd"
+                        xtype="textfield"/>
+                    <findCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;FIND ADDRESS&quot;"
+                        fieldLabel="Label for find address button"
+                        name="./findCTA"
+                        xtype="textfield"/>
+                    <addressDropdownLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;Select address&quot;"
+                        fieldLabel="Label for select address dropdown"
+                        name="./slctdrpdown"
+                        xtype="textfield"/>
+                    <displayPostalCodePrefix
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="no"
+                        fieldLabel="should postal code prefix be displayed ?"
+                        name="./displayPostalCodePrefix"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                    </displayPostalCodePrefix>
+                    <secondPhoneNumberLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as &quot;Veuillez entrer un numéro de mobile afin d’avoir un suivi de vos commandes"
+                        fieldLabel="Label for Text Above Phone Number Field"
+                        name="./secondPhoneLabel"
+                        xtype="textfield"/>
+                </items>
+            </editForm>
+            <errorMessages
+                jcr:primaryType="cq:Widget"
+                title="Error Messages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <mandatoryField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for field to be mandatory"
+                        fieldLabel="Mandatory Field Text"
+                        name="./is_mandatory"
+                        width="300"
+                        xtype="textfield"/>
+                    <validpostcodeErr
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for incorrect postalCode format"
+                        fieldLabel="Invalid postalCode errorMessage"
+                        name="./PcodeERR"
+                        width="300"
+                        xtype="textfield"/>
+                    <onlyNumbersField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if field should have only numbers"
+                        fieldLabel="Only Numbers Field"
+                        name="./onlyNumbersMessage"
+                        width="300"
+                        xtype="textfield"/>
+                    <invalidCharactersField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if field has any invalid characters"
+                        fieldLabel="Invalid Character Field"
+                        name="./invalidCharMessage"
+                        width="300"
+                        xtype="textfield"/>
+                    <selectValidOptionField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if option is not selected from the drop-down"
+                        fieldLabel="select Valid Option Message"
+                        name="./selectValidOptionFromList"
+                        width="300"
+                        xtype="textfield"/>
+                    <phoneNumberCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for Luxemburg Phone Number Format"
+                        fieldLabel="Luxemburg Invalid Phone Number Text"
+                        name="./phoneNumberInvalid"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </errorMessages>
+        </items>
+    </items>
+</jcr:root>

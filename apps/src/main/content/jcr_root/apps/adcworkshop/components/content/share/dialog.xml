@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Share"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Share Options">
+                <items jcr:primaryType="cq:WidgetCollection">
+					<shareIconDesktop
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Enter the path for the image with 13 x 17 px Resolution"
+                            fieldLabel="Image path for share icon (Desktop)"
+                            name="./shareIconDesktop"
+                            xtype="pathfield"/>
+					<shareIconMobile
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Enter the path for the image with 13 x 17 px Resolution"
+                            fieldLabel="Image path for share icon(Mobile)"
+                            name="./shareIconMobile"
+                            xtype="pathfield"/>
+                    <facebook
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="Facebook"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <fbimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path"
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./fbimage"
+                                xtype="pathfield"/>
+							 <fbMobileimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="ImageMobile Path"
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./fbimageMobile"
+                                xtype="pathfield"/>	
+                            <fbaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="./fbimagealt"
+                                xtype="textfield"/>
+                            <fbcheck
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Include Button"
+                                name="./fbcheck"
+                                type="checkbox"
+                                xtype="selection"/>
+                        </items>
+                    </facebook>
+                    <twitter
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="Twitter"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <twitterimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path"	
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./twitterimage"
+                                xtype="pathfield"/>
+							<twitterMobileimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="ImageMobile Path"
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./twitterimageMobile"
+                                xtype="pathfield"/>	
+                            <twitteraltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="./twitterimagealt"
+                                xtype="textfield"/>
+                            <twittercheck
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Include  Button"
+                                name="./twittercheck"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <twittertext
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Tweet Text"
+                                name="./twittertext"
+                                xtype="textarea"/>
+                        </items>
+                    </twitter>
+                    <pinterest
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="Pinterest"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <pinimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path"
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./pinimage"
+                                xtype="pathfield"/>
+							<pinimageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="ImageMobile Path Label"
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./pinimageMobile"
+                                xtype="pathfield"/>	
+                            <pinaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="./pinimagealt"
+                                xtype="textfield"/>
+                            <pincheck
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Include Button"
+                                name="./pincheck"
+                                type="checkbox"
+                                xtype="selection"/>
+                        </items>
+                    </pinterest>
+                    <email
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="E-mail"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <emailimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path"
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./emailimage"
+                                xtype="pathfield"/>
+							<emailimageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="ImageMobile Path"
+								fieldDescription="Enter the path for the image with 30 x 30 px Resolution"
+                                name="./emailimageMobile"
+                                xtype="pathfield"/>	
+                            <emailaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="./emailimagealt"
+                                xtype="textfield"/>
+                            <emailcheck
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Include button"
+                                name="./emailcheck"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <emailtext
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Body Text"
+                                name="./emailtext"
+                                xtype="textarea"/>
+                        </items>
+                    </email>
+                    <paramtext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Sharing"
+                        name="./paramtext"
+                        xtype="textfield"/>
+                    <paramimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the image for Share Image Desktop"
+                        name="./paramimage"
+                        xtype="pathfield"/>
+                    <paramimageMobile
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the image for Share Image Mobile"
+                        name="./paramimageMobile"
+                        xtype="pathfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Share Image alt"
+                        name="./shareimagealt"
+                        xtype="textfield"/>
+                    <hidecomponent
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide component presentation"
+                        name="./hidecomponent"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <accessabilitytab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Field Label for Opens in New Tab"
+                        name="./opensnewtab"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

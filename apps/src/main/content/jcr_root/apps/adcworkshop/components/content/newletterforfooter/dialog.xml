@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','mp4','ogg'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="News Letter Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Type"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <newsletterselector
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="News Letter Type"
+                    itemId="newsletterselector_id"
+                    name="./newsletterselector"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <cnewsletter
+                            jcr:primaryType="nt:unstructured"
+                            text="Common News Letter"
+                            value="cnewsletter"/>
+                        <fnewsletter
+                            jcr:primaryType="nt:unstructured"
+                            text="Footer News Letter"
+                            value="fnewsletter"/>
+                        <ecnewsletter
+                            jcr:primaryType="nt:unstructured"
+                            text="Ecommerce News Letter"
+                            value="ecnewsletter"/>
+                    </options>
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field){return hideandshowTabs(field);}"
+                        selectionchanged="function(field){return hideandshowTabs(field);}"/>
+                </newsletterselector>
+            </items>
+        </list>
+        <cnewsletter
+            jcr:primaryType="cq:Widget"
+            id="cnewsletter"
+            title="Common News Letter"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <headlinetext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Headline"
+                    maxLength="{Long}40"
+                    name="./cheadlinetext"
+                    xtype="textfield"/>
+                <checkboxtext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="CheckBox Description"
+                    name="./ccheckboxtext"
+                    xtype="richtext">
+					<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+				</checkboxtext>
+                <emailaddress
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Please enter Text eg:Please Enter Email Address"
+                    fieldLabel="Sign-up field"
+                    maxLength="{Long}50"
+                    name="./cemailaddress"
+                    xtype="textfield"/>
+                <commonlegaltext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Legal Text eg: Vorwerk collects your personal data when you register with us to provide you with useful information on our products and services. For more details explaining how we use your personal data, please see our Privacy Policy. Please accept the privacy policy by ticking the box below. From time to time, we may also contact you in order to collect feedback in order to help us improve our customer services. If you do not want us to get in touch please contact the Workwerk Customer Careline on  to have your name removed from our contact list. "
+                    fieldLabel="Legal Text"
+                    name="./commonlegaltext"
+                    xtype="richtext">
+					<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+				</commonlegaltext>
+                <buttontext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Maximum of 18 Characters"
+                    fieldLabel="Validation Button"
+                    maxLength="{Long}50"
+                    name="./cbuttonname"
+                    xtype="textfield"/>
+            </items>
+        </cnewsletter>
+        <fnewsletter
+            jcr:primaryType="cq:Widget"
+            id="fnewsletter"
+            title="Footer News Letter"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <headlinetext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Headline"
+                    maxLength="{Long}40"
+                    name="./fheadlinetext"
+                    xtype="textfield"/>
+                <checkboxtext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="CheckBox Description"
+                    maxLength="{Long}150"
+                    name="./fcheckboxtext"
+                    xtype="richtext">
+					<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+				</checkboxtext>
+                <emailaddress
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Please enter Text eg:Email Address"
+                    fieldLabel="Sign-up field"
+                    maxLength="{Long}50"
+                    name="./femailaddress"
+                    xtype="textfield"/>
+                <footerlegaltext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Legal Text eg: Vorwerk collects your personal data when you register with us to provide you with useful information on our products and services. For more details explaining how we use your personal data, please see our Privacy Policy. Please accept the privacy policy by ticking the box below. From time to time, we may also contact you in order to collect feedback in order to help us improve our customer services. If you do not want us to get in touch please contact the Vorwerk Customer Careline to have your name removed from our contact list. "
+                    fieldLabel="Legal Text"
+                    name="./footerlegaltext"
+                    xtype="richtext">
+					<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+				</footerlegaltext>
+                <buttontext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Maximum of 18 Characters"
+                    fieldLabel="Validation Button"
+                    maxLength="{Long}50"
+                    name="./fbuttonname"
+                    xtype="textfield"/>
+            </items>
+        </fnewsletter>
+        <ecnewsletter
+            jcr:primaryType="cq:Widget"
+            id="ecnewsletter"
+            title="Ecommerce News Letter"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <imagePath
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter Image path"
+                    name="./imagepath"
+                    xtype="pathfield"/>
+                <altimage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter the text for Image alt"
+                    name="./imagealt"
+                    xtype="textfield"/>
+                <headLineText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter the Headline"
+                    name="./echeadlinetext"
+                    xtype="textfield"/>
+                <subtext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter Description"
+                    name="./subtext"
+                    xtype="textfield"/>
+                <emailaddress
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Sign-up field"
+                    maxLength="{Long}50"
+                    name="./ecemailaddress"
+                    xtype="textfield"/>
+                <ecommercelegaltext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Legal Text eg: Vorwerk collects your personal data when you register with us to provide you with useful information on our products and services. For more details explaining how we use your personal data, please see our Privacy Policy. Please accept the privacy policy by ticking the box below. From time to time, we may also contact you in order to collect feedback in order to help us improve our customer services. If you do not want us to get in touch please contact the Vorwerk Customer  to have your name removed from our contact list. "
+                    fieldLabel="Legal Text"
+                    name="./ecommercelegaltext"
+                    xtype="richtext">
+					<rtePlugins jcr:primaryType="nt:unstructured">
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <formats jcr:primaryType="cq:WidgetCollection">
+                                            <format1
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading1"
+                                                tag="h1"/>
+                                            <format2
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading2"
+                                                tag="h2"/>
+                                            <format3
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading3"
+                                                tag="h3"/>
+                                            <format4
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading4"
+                                                tag="h4"/>
+                                            <format5
+                                                jcr:primaryType="nt:unstructured"
+                                                description="paragraph"
+                                                tag="p"/>
+                                            <format6
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading5"
+                                                tag="h5"/>
+                                        </formats>
+                                    </paraformat>
+                                    <findreplace
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="[bold,italic]"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <lists
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <justify
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>                                   
+                                    <misctools
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <colorpicker
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <subsuperscript
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                </rtePlugins>
+				</ecommercelegaltext>	
+                <buttontext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter Button Name"
+                    maxLength="{Long}50"
+                    name="./ecbuttonname"
+                    xtype="textfield"/>
+                <ecommerceTermsandConditionsText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter Terms and Conditions Text eg: I agree with the Privacy Policy. "
+                    name="./ecommerceTermsandConditionsText"
+                    xtype="richtext">
+					<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+				</ecommerceTermsandConditionsText>
+            </items>
+        </ecnewsletter>
+        <items jcr:primaryType="cq:WidgetCollection">
+            <errorMessages
+                jcr:primaryType="cq:Widget"
+                title="Error Messages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <invalidEmail
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the subscription fails"
+                        fieldLabel="Subscription failed text"
+                        name="./subscriptionfailed"
+                        width="300"
+                        xtype="textfield"/>
+                    <emailexists
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the Email already exists"
+                        fieldLabel="Email already exists text"
+                        name="./emailexists"
+                        width="300"
+                        xtype="textfield"/>
+                    <subscriptionsuccess
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Subscription success message"
+                        name="./subscriptionsuccess"
+                        xtype="textfield"/>
+                    <invalidEmailFormat
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the email format is not valid"
+                        fieldLabel="Email invalid format text"
+                        name="./invalidEmailFormat"
+                        width="300"
+                        xtype="textfield"/>
+                    <emptycheckBoxtext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the checkbox is empty"
+                        fieldLabel="Checkbox empty check text"
+                        name="./emptycheckBoxtext"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </errorMessages>
+        </items>
+    </items>
+</jcr:root>

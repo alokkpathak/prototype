@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:primaryType="cq:Dialog"
+    title="Shipping Address"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <formEdit
+                jcr:primaryType="cq:Panel"
+                title="Edit form here">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <titleLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for title field"
+                        name="./titleLabel"
+                        xtype="textfield"/>
+                    <mandatoryLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter mandatory Label text: "
+                        name="./mandatory"
+                        xtype="textfield"/>
+                    <titleOptions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Add the options for title"
+                        name="./titleOptions"
+                        xtype="multifield"/>
+                    <defaultoptionselect
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter default Select Value eg: Select"
+                        fieldLabel="Default Prefix Value"
+                        name="./defaultoptionselectaddress"
+                        xtype="textfield"/>
+                    <firstName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for first name field"
+                        name="./fname"
+                        xtype="textfield"/>
+                    <lastName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for last name field"
+                        name="./lname"
+                        xtype="textfield"/>
+                    <address
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for address Line 1"
+                        name="./address"
+                        xtype="textfield"/>
+                    <addressPlaceHolderLabelOne
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the place holder text for address block"
+                        fieldLabel="Address Place Holder Text "
+                        name="./addressPlaceHolder1"
+                        width="300"
+                        xtype="textfield"/>
+                    <addressline2checkbox
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Address Line 2 Required?"
+                        itemId="addressline2checbox"
+                        name="./addresslinetwocheckbox"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                type="yes"
+                                value="Yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                type="no"
+                                value="No"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;addressline2checbox&quot;).getValue();&#xa; &#xa; var addressline2=panel.getComponent(&quot;address1&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; addressline2.show();&#xa; &#xa; }&#xa; else{&#xa; addressline2.hide();&#xa; }&#xa;} "
+                            selectionchanged="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;addressline2checbox&quot;).getValue();&#xa; &#xa; var addressline2=panel.getComponent(&quot;address1&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; addressline2.show();&#xa; &#xa; }&#xa; else{&#xa; addressline2.hide();&#xa; }&#xa;} "/>
+                    </addressline2checkbox>
+                    <address1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for address Line 2"
+                        itemId="address1"
+                        name="./address1"
+                        xtype="textfield"/>
+                    <addressPlaceHolderLabelTwo
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the place holder text for address block"
+                        fieldLabel="Address Place Holder Text "
+                        name="./addressPlaceHolder2"
+                        width="300"
+                        xtype="textfield"/>
+                    <postalCodeLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Label for Postal Code e.g L-"
+                        fieldLabel="Label for Luxemburg Postal Code"
+                        name="./postalCodeLabel"
+                        xtype="textfield"/>
+                    <postalCode
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for postal code"
+                        name="./pcode"
+                        xtype="textfield"/>
+                    <city
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for city name field"
+                        name="./city"
+                        xtype="textfield"/>
+                    <country
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for country field"
+                        name="./country"
+                        xtype="textfield"/>
+                    <countryLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Country eg: UNITED KINGDOM, ITALY"
+                        fieldLabel="Name of the Country"
+                        name="./countryLabel"
+                        xtype="textfield"/>
+                    <phone
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for phone field"
+                        name="./phone"
+                        xtype="textfield"/>
+                    <phoneInfo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for phone Info: Eg: Enter your phone number without first '0'. Ex. 1262424012"
+                        name="./telephoneInfo"
+                        xtype="textfield"/>
+                    <countryDialCode
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Value to be displayed on phone number field by default; eg:+44"
+                        fieldLabel="Country dial code"
+                        name="./dialCode"
+                        xtype="textfield"/>
+                    <findAddress
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;FIND MY ADDRESS&quot;"
+                        fieldLabel="Label for find address"
+                        name="./findaddInline"
+                        xtype="textfield"/>
+                    <mannualAddress
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;ENTER ADDRESS MANUALLY&quot;"
+                        fieldLabel="Label for manual address"
+                        name="./manualaddInline"
+                        xtype="textfield"/>
+                    <findCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;FIND ADDRESS&quot;"
+                        fieldLabel="Label for find address button"
+                        name="./findInlineCTA"
+                        xtype="textfield"/>
+                    <addressDropdownLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as eg: &quot;Select address&quot;"
+                        fieldLabel="Label for select address dropdown"
+                        name="./slctdrpdownInline"
+                        xtype="textfield"/>
+                    <deafaultShippingAddressName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for primary delivery address field"
+                        name="./addressNameShipping"
+                        xtype="textfield"/>
+                    <deafaultBillingAddressName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for primary billing address field"
+                        name="./addressNameBilling"
+                        xtype="textfield"/>
+                    <phoneNumberCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for Luxemburg Phone Number Format"
+                        fieldLabel="Luxemburg Invalid Phone Number Text"
+                        name="./phoneNumberInvalid1"
+                        width="300"
+                        xtype="textfield"/>
+                    <displayPostalCodePrefix
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="no"
+                        fieldLabel="should postal code prefix be displayed ?"
+                        name="./displayPostalCodePrefix"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                    </displayPostalCodePrefix>
+                    <secondPhoneNumberLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter label as &quot;Veuillez entrer un numéro de mobile afin d’avoir un suivi de vos commandes"
+                        fieldLabel="Label for Text Above Phone Number Field"
+                        name="./secondPhoneLabel"
+                        xtype="textfield"/>
+                </items>
+            </formEdit>
+            <headingsAndLabels
+                jcr:primaryType="cq:Panel"
+                title="Headings and buttons">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <panelHeading
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter label as eg: &quot;SHIPPING METHOD AND ADDRESS&quot;"
+                        fieldLabel="Add panel heading text"
+                        name="./panelText"
+                        xtype="textfield"/>
+                    <terms_x0026_deliveryInfo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Text for Terms of delivery:"
+                        name="./todtext"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pad-b18"
+                                        text="padding-bottom-18px"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[cut,copy,paste-plaintext]"/>
+                            <findreplace
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold,italic]"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:adhocLinkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <enable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="enabletracking"
+                                                    fieldDescription="override analytics framework settings"
+                                                    fieldLabel="Custom link tracking"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                    xtype="checkbox">
+                                                    <listeners
+                                                        jcr:primaryType="nt:unstructured"
+                                                        check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                </enable>
+                                                <events
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevents"
+                                                    fieldDescription="e.g.: event2, event7"
+                                                    fieldLabel="Include SiteCatalyst events"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                    xtype="textfield"/>
+                                                <evars
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevars"
+                                                    fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                    fieldLabel="Include SiteCatalyst variables"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                    xtype="textfield"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <misctools
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </terms_x0026_deliveryInfo>
+                    <shippingAddressCaption
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter heading Text for Shipping:"
+                        name="./shippingtext"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pad-b18"
+                                        text="padding-bottom-18px"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[cut,copy,paste-plaintext]"/>
+                            <findreplace
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold,italic]"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:adhocLinkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <enable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="enabletracking"
+                                                    fieldDescription="override analytics framework settings"
+                                                    fieldLabel="Custom link tracking"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                    xtype="checkbox">
+                                                    <listeners
+                                                        jcr:primaryType="nt:unstructured"
+                                                        check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                </enable>
+                                                <events
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevents"
+                                                    fieldDescription="e.g.: event2, event7"
+                                                    fieldLabel="Include SiteCatalyst events"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                    xtype="textfield"/>
+                                                <evars
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevars"
+                                                    fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                    fieldLabel="Include SiteCatalyst variables"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                    xtype="textfield"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <misctools
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </shippingAddressCaption>
+                    <billingAddressCaption
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter heading Text for Billing:"
+                        name="./billingaddresstext"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pad-b18"
+                                        text="padding-bottom-18px"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[cut,copy,paste-plaintext]"/>
+                            <findreplace
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold,italic]"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:adhocLinkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <enable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="enabletracking"
+                                                    fieldDescription="override analytics framework settings"
+                                                    fieldLabel="Custom link tracking"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                    xtype="checkbox">
+                                                    <listeners
+                                                        jcr:primaryType="nt:unstructured"
+                                                        check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                </enable>
+                                                <events
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevents"
+                                                    fieldDescription="e.g.: event2, event7"
+                                                    fieldLabel="Include SiteCatalyst events"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                    xtype="textfield"/>
+                                                <evars
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevars"
+                                                    fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                    fieldLabel="Include SiteCatalyst variables"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                    xtype="textfield"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <misctools
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </billingAddressCaption>
+                    <vatCheckboxText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for VAT checkbox:"
+                        name="./vatFormCheckBoxText"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pad-b18"
+                                        text="padding-bottom-18px"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[cut,copy,paste-plaintext]"/>
+                            <findreplace
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold,italic]"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:adhocLinkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <enable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="enabletracking"
+                                                    fieldDescription="override analytics framework settings"
+                                                    fieldLabel="Custom link tracking"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                    xtype="checkbox">
+                                                    <listeners
+                                                        jcr:primaryType="nt:unstructured"
+                                                        check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                </enable>
+                                                <events
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevents"
+                                                    fieldDescription="e.g.: event2, event7"
+                                                    fieldLabel="Include SiteCatalyst events"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                    xtype="textfield"/>
+                                                <evars
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevars"
+                                                    fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                    fieldLabel="Include SiteCatalyst variables"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                    xtype="textfield"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <misctools
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </vatCheckboxText>
+                    <billingtCheckboxText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for billing differs checkbox:"
+                        name="./billingdiff"
+                        xtype="textfield"/>
+                    <shhipingFormName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Shipping address form name: "
+                        name="./shippingForm"
+                        xtype="textfield"/>
+                    <vatformheading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter heading for VAT ExemptionForm: "
+                        name="./vatformheading"
+                        xtype="textfield"/>
+                    <billingFormName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Billing address form name: "
+                        name="./billingForm"
+                        xtype="textfield"/>
+                    <createCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter create address link label: "
+                        name="./createaddr"
+                        xtype="textfield"/>
+                    <nextCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Next button text: "
+                        name="./nextButtonText"
+                        xtype="textfield"/>
+                    <deleteoverlayHeading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter delete address heading text "
+                        name="./deletaddoverlayheading"
+                        xtype="textfield"/>
+                    <cancelDeleteCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter cancel button label: "
+                        name="./cancelbtn"
+                        xtype="textfield"/>
+                    <deleteCTA
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter delete button label "
+                        name="./dltbtn"
+                        xtype="textfield"/>
+                    <addressLoadingMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Message for Loading Icon eg: Working on Loading Addresses..."
+                        fieldLabel="Delivery Address Load Icon Message"
+                        name="./addressLoadingMessage"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </headingsAndLabels>
+        </items>
+    </items>
+</jcr:root>

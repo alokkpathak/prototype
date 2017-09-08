@@ -1,0 +1,5 @@
+#base=js
+jquery.min.js
+cookieManager.js
+jquery.cookie.js
+geoLocation.js

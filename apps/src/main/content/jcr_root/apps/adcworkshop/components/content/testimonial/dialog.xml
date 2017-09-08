@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Testimonial"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <multiTestimonial
+                        jcr:primaryType="cq:Widget"
+                        baseName="testimonial_"
+                        fieldDescription="Click on &quot;+&quot; to add each testimonial "
+                        name="./testimonials"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <testimonialType
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Testimonial Type"
+                                name="testimonialType"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <video
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Video Testimonial"
+                                        value="video"/>
+                                    <text
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Text testimonial"
+                                        value="text"/>
+                                </options>
+                            </testimonialType>
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="imagealt"
+                                xtype="textfield"/>
+							<shareImageDesktop
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;File formats: JPG or PNG&#xa;"
+                                fieldLabel=" Share Image for desktop"
+                                name="share_image_desktop"
+                                xtype="pathfield"/>
+							<shareImageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;File formats: JPG or PNG&#xa;"
+                                fieldLabel=" Share Image for mobile"
+                                name="share_image_mobile"
+                                xtype="pathfield"/>
+                            <name
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Input first name and last initial only, a comma, then age"
+                                fieldLabel="Name"
+                                maxLength="25"
+                                name="name"
+                                xtype="textfield"/>
+                            <heading
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Heading"
+                                maxLength="25"
+                                name="heading"
+                                xtype="textfield"/>
+                            <bodyCopy
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Body Copy"
+                                maxLength="1800"
+                                name="bodyCopy"
+                                xtype="textarea"/>
+                            <imageDesktop
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;File formats: JPG or PNG&#xa;"
+                                fieldLabel="Image for desktop"
+                                name="testimonial_image_desktop"
+                                xtype="pathfield"/>
+							<imageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;File formats: JPG or PNG&#xa;"
+                                fieldLabel="Image for mobile"
+                                name="testimonial_image_mobile"
+                                xtype="pathfield"/>
+                            <testimonialaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for testimonial Image alt"
+                                name="testimonialimagealt"
+                                xtype="textfield"/>
+                            <videoUrl
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Video"
+                                name="videoUrl"
+                                xtype="textarea"/>
+                        </fieldConfigs>
+                    </multiTestimonial>
+                    <openstestimonialnewtab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Field Label for Opens in New Tab"
+                        name="./openstestimonialnewtab"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Contact Us "
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <contactusform
+                jcr:primaryType="cq:Panel"
+                title="Contact Us Form Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <requiredfield
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter Required Field"
+                        fieldLabel="RequiredField"
+                        maxLength="{Long}25"
+                        maxLengthText="{Long}25"
+                        name="./requiredfield"
+                        xtype="textfield"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter your Title"
+                        fieldLabel="Title"
+                        maxLength="{Long}25"
+                        maxLengthText="{Long}25"
+                        name="./title"
+                        xtype="textfield"/>
+                    <titlemulti
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter your Title"
+                        fieldLabel="Title"
+                        name="./option"
+                        xtype="multifield"/>
+                    <defaultoptionselect
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter default Select Value eg: Select"
+                        fieldLabel="Default Prefix Value"
+                        name="./defaultoption"
+                        xtype="textfield"/>
+                    <firstname
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Please Enter FirstName"
+                        fieldLabel="First Name"
+                        maxLength="{Long}25"
+                        maxLengthText="{Long}25"
+                        name="./firstname"
+                        xtype="textfield"/>
+                    <lastname
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Please Enter LastName"
+                        fieldLabel="Last Name"
+                        maxLength="{Long}25"
+                        maxLengthText="{Long}25"
+                        name="./lastname"
+                        xtype="textfield"/>
+                    <emailaddr
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Please Enter your EmailAddress"
+                        fieldLabel="EmailAddress"
+                        maxLength="{Long}120"
+                        maxLengthText="{Long}120"
+                        name="./emailaddr"
+                        xtype="textfield"/>
+                    <question
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Please Enter your Question "
+                        fieldLabel="Question "
+                        maxLength="{Long}40"
+                        maxLengthText="{Long}40"
+                        name="./question"
+                        xtype="textfield"/>
+                    <questionmulti
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter your Question "
+                        fieldLabel="Question "
+                        name="./option1"
+                        xtype="multifield"/>
+                    <message
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Please Enter Message"
+                        fieldLabel="Message"
+                        maxLength="{Long}1000"
+                        maxLengthText="{Long}1000"
+                        name="./message"
+                        xtype="textfield"/>
+                    <checkboxtext
+                        jcr:primaryType="cq:Widget"
+						allowBlank="{Boolean}false"
+                        fieldDescription="Please Enter Confirmation Text"
+                        fieldLabel="Checkbox"
+                        name="./confirmtext"
+                        xtype="richtext">
+						<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+					</checkboxtext>
+                    <submitbutton
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter Submit Button"
+                        fieldLabel="Submit Button"
+                        name="./submittext"
+                        xtype="textfield"/>
+                    <contactsuccessUrl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter the Page on Success of Contact US eg:/content/fsl/uk/en/Help/contact-us/contact-success"
+                        fieldLabel="SuccessPage URL"
+                        name="./contactsuccessUrl"
+                        xtype="pathfield"/>
+                    <errortext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter Error Message"
+                        fieldLabel="Error Message"
+                        name="./errortext"
+                        xtype="richtext">
+						<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+					</errortext>
+                </items>
+            </contactusform>
+            <contactusformerrors
+                jcr:primaryType="cq:Panel"
+                title="Contact Form Error Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+					<mandatoryField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for field to be mandatory"
+                        fieldLabel="Mandatory Field Text"
+                        name="./is_mandatory"
+                        width="300"
+                        xtype="textfield"/>
+                    <selectValidOption
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if valid title is not selected"
+                        fieldLabel="Invalid Title Error"
+                        name="./selectValidOption"
+                        width="300"
+                        xtype="textfield"/>
+                    <invalidCharacter
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if invalid character is put in the field"
+                        fieldLabel="Invalid Character Error"
+                        name="./invalidCharacterError"
+                        width="300"
+                        xtype="textfield"/>
+                    <emailValidCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if email entered is not valid"
+                        fieldLabel="Email Not Valid Error"
+                        name="./emailErrorCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <checkboxvalid
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when checkbox is not checked"
+                        fieldLabel="checkbox not checked"
+                        name="./checkboxerror"
+                        width="300"
+                        xtype="textfield"/>
+					<alphnumericError
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when message is not alphanumeric"
+                        fieldLabel="Alphanumeric error text"
+                        name="./alphnumericError"
+                        width="300"
+                        xtype="textfield"/>
+					<invalidrequest
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when contact us request is invalid"
+                        fieldLabel="Invalid Contact Us request"
+                        name="./invalidrequest"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </contactusformerrors>
+        </items>
+    </items>
+</jcr:root>
+

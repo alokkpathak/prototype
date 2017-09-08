@@ -1,0 +1,48 @@
+.help_resources .about{
+	padding-top: 90px;
+    padding-bottom: 60px;
+}
+.help_resources .about a{
+font-family:Gotham-Medium-Regular;
+font-size:18px;
+color:#212121;
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+.help_resources .about p {
+    color: #212121;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.help_resources .about h2{
+    margin-bottom: 60px;
+}
+.help_resources .about{
+    padding-bottom: 40px;
+}
+.help_resources .about p{
+    margin-left: 2%;
+    margin-right: 2%;
+	padding-bottom:22px;
+}
+.help_resources .about a{
+font-size:24px;
+}
+}
+
+@media (max-width: 767px) {
+.help_resources .about p{
+	font-size:14px;
+    margin-bottom: 24px;
+}
+.help_resources .about a{
+	font-size:12px;
+}
+.help_resources .about {   
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+.help_resources .about h2{
+    margin-bottom: 30px;
+}
+}

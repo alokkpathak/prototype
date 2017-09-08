@@ -1,0 +1,4622 @@
+/*Pagination Desktop*/
+#orderTableMobile, .orderTablePlaceMobileHolder,.personaldetails-loading,.EditAddress-loading,.RemoveAddress-loading,.Warrenty-loading,.individualorder-loading {
+display: none;
+}  
+
+.reorderProducts { 
+	display: none;
+	 }
+.payOptions-loading {
+    display: none;
+	text-align: center;
+}
+.UserRegistration-loading{
+	display:none;
+    margin-bottom:35px;
+    text-align:left;
+}
+.Registration-loading{
+	display:none;
+    text-align:left;  
+    margin-left:50px;    
+}
+.proceedPay-loading {
+    float: left;
+    margin: 30px 0 0 20px;
+    display:none;
+}
+.Reorder-loading{
+	margin-right:4%;
+    margin-bottom:-25px;
+    display: none;
+}
+.ContactUs-loading{
+    display:none;
+    margin-bottom:-15px;
+}
+.checkout-banner a:focus{
+    color:#E4572D;
+    border:none;        
+}
+.italy #updateForm h5,.italy #shippingDetails h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.orderTablePlaceHolder {
+	margin: 15px 0;
+}
+.faqTablePlaceHolder { 
+    width: 565px;  
+	margin: 50px auto 65px;
+	text-align: center;
+ }
+.faqTablePlaceHolder a,.orderTablePlaceHolder a {
+	font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif !important;
+	cursor: pointer;
+	margin: 0 5px;
+	color: #8e8e8e;
+    border: 2px solid #8e8e8e;
+    padding: 10px 15px;
+}
+.payment-images{
+	height: 70px;
+	width: 105px;
+}
+.termscondCheckError {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+.paypalcards img{
+	width:auto;
+}
+.radio-border label{
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 7px;
+}
+.faqTablePlaceHolder a.jp-current,.orderTablePlaceHolder a.jp-current { 
+border: 2px solid #E4572D;
+    }
+
+.faqTablePlaceHolder a:hover,.orderTablePlaceHolder a:hover { 
+	background-color: #ffffff;
+	color: #8e8e8e;
+} 
+
+.faqTablePlaceHolder a.jp-previous,.orderTablePlaceHolder a.jp-previous { margin-right: 15px; }
+.faqTablePlaceHolder a.jp-next,.orderTablePlaceHolder a.jp-next { margin-left: 15px; }
+
+.orderTablePlaceHolder a.jp-current, a.jp-current:hover { 
+	color: #E4572D;
+	//font-weight: bold;
+}
+.faqTablePlaceHolder a.jp-current, a.jp-current:hover {
+color: #E4572D;
+
+}
+.orderTablePlaceHolder a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+}
+.faqTablePlaceHolder a.jp-disabled, a.jp-disabled:hover {
+color: #bbb;
+}
+.orderTablePlaceHolder a.jp-current, a.jp-current:hover,
+.orderTablePlaceHolder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default; 
+	background: none;
+}
+.faqTablePlaceHolder a.jp-current, a.jp-current:hover,
+.faqTablePlaceHolder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default; 
+	background: none;
+	text-decoration:none;
+}
+.faqTablePlaceHolder span,.orderTablePlaceHolder span { margin: 0 5px; }
+/*Pagination End*/
+.summaryQty {
+    border: 2px solid #f2f2f4;
+    padding: 5px;
+    font-size:18px;
+    letter-spacing: 0px;
+}
+.summaryMobileQty {
+    border: 2px solid #f2f2f4;
+    padding: 10px;
+}
+/*payment page */
+#paymentDetails .order-summary #productTable .table>tbody>tr>td {    
+    padding-right: 2px;
+} 
+.paymentComp .payment-step #payment #paymentDetails {
+    padding-left: 98px;
+    padding-top: 0;
+    }
+#couponform label {
+position: absolute;
+}
+#couponform #VoucherCode{
+background: #f2f2f4;
+    border: none;
+    width: 370px;
+}
+#couponform #btnCouponOk {
+//width: 370px;
+margin-left: 5px;
+margin-right: 23px;
+    padding: 13px 35px;
+}
+#couponform p {
+    margin-bottom: 20px;
+}
+#couponform {
+    margin-bottom: 46px;
+}
+.coupon_voucher h3 {
+margin-bottom: 3px;
+    }
+#paymentDetails .order-summary h3 {
+margin-bottom: 13px;
+}
+#paymentDetails .order-summary .table>tbody>tr>td {
+    padding-top: 55px;
+    padding-bottom: 57px;
+    vertical-align: middle;
+}
+#paymentDetails .tableHighlight .table>tbody>tr>td {
+    padding-top: 58px;
+    padding-bottom: 60px;
+    vertical-align: middle;
+}
+#paymentDetails .order-summary .table .tableHighlight td {
+border-top: none;
+    }
+#paymentDetails .order-summary .table .tableHighlight {
+    background-color: #F4F2F4;
+}
+#payment #condCheckId{
+
+    padding-left: 84px;
+        padding-top: 20px;
+    }
+#payment h4.paymenttitle {
+padding-left: 84px;
+margin-bottom: 20px;
+}
+#payment .payment-method {
+   padding-left: 75px;
+   padding-bottom: 0px;
+}
+.cardPayment {
+margin-left: 0;
+    }
+/*payment page end*/
+#paymentDetails #productTable td:nth-child(1){
+width: 25%;
+}
+#paymentDetails #productTable td:nth-child(2){
+font-size: 26px;
+    width: 25%;
+}
+#paymentDetails #productTable td:nth-child(3){
+font-size: 32px;
+    width: 25%;
+}
+#paymentDetails #productTable td:nth-child(4){
+font-size: 26px;
+font-family: Gotham-Bold; 
+    text-align: center;
+    width: 25%;
+}
+#paymentDetails #productTable td:nth-child(5){
+font-size: 32px;
+    width: 25%;
+}
+
+#paymentDetails #productTable tr:nth-child(2) td:nth-child(1){
+font-size: 22px;
+}
+#shippingDetails .shipping input[type=radio] {
+margin: 0;
+}
+#shippingDetails .shipping .radio-border {
+padding: 2px;
+}
+.vatFormComp .value-tax {
+padding-left: 95px;
+padding-right: 95px;
+margin-bottom: 38px;
+margin-left: 16px;
+margin-right: 16px;
+        }
+.vatFormComp .value-tax .form-group {
+padding-left: 0;
+padding-right: 0;
+ }
+.vatFormComp .value-tax .col-md-10 {
+padding-left: 0;
+padding-right: 0;
+            }
+.vatFormComp .value-tax .col-md-10 .savedata{
+margin-top: 20px;
+            }
+.vatFormComp .value-tax .form-group .col-md-6 {
+padding-left: 0;
+padding-right: 0;
+}
+.vatWrapit{
+margin-top:25px;
+}
+
+.vatinfowrap{
+margin-right:10px;
+} 
+.calenderIconHeight {
+     min-height: 100px;
+}
+.checkout-container #checkout-form .row, .checkout-container .paymentComp .row{
+margin-right: 0;
+margin-left: 0;
+}
+.create-account>.col-md-12 .panel, .shipping-address>.col-md-12 .panel, .payment>.col-md-12 .panel {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.create-account>.col-md-12 .panel {
+    padding-bottom: 0px;
+	margin-bottom: 15px;
+}
+#shipping-address .panel {
+margin-bottom: 3px;
+}
+.checkout-steps h2.panel-title .glyphicon-menu-down, .payment-step h2.panel-title .glyphicon-menu-down {
+margin-right: 20px;
+    }
+.checkout-banner a#bsktDetails .back{
+	font-family: Arial, Helvetica, sans-serif;   
+    font-weight:bold;
+} 
+.checkout-banner #bsktDetails{
+	border-bottom: 1px solid #f8ddd8;
+}
+.checkout-banner a#bsktDetailsView .details{
+font-family: Arial, Helvetica, sans-serif;
+color: #4f4f4f;
+    border-bottom: 1px solid #dcdcdc;  
+        }  
+.checkout-banner a#bsktDetailsView {
+	color: #4f4f4f;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+#payment #condCheckId p{
+	display:inline;
+}
+#payment #condCheckId p:nth-child(2){
+padding-left: 0;
+}
+#productTable td:nth-child(3)>span.vat,
+#productTable td:nth-child(5)>span.vat,
+#productTable tr:nth-child(2) td:nth-child(2)>span.vat{
+ float:left;
+} 
+.fixdialcode{
+	max-width: 40px;
+}
+.create-user  label font p{
+    color: #d61031; 
+    margin: 0;
+    font-size: 14px;
+    padding-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+#shippingDetails p b {
+		font-size: 16px;
+        color: #212121;
+        font-family: Gotham-Bold;
+        text-transform: uppercase;
+    }
+#shippingDetails #vatForUK p b {
+    text-transform: none;
+    color: #8e8e8e;
+}
+ #shippingDetails h4 {
+font-size: 16px;
+    }
+.payment-method {
+	padding-bottom:100px;
+    }
+.Checkoutpage .about {
+   /* padding-top: 57px;
+    padding-bottom: 23px; */
+
+	padding-top: 25px;
+    padding-bottom: 0px;
+        margin-top: -25px;
+    margin-bottom: 0px;
+}
+.checkout-steps input ,.checkout-steps select,.addressOverlay input,.addressOverlay select{
+	height:30px;
+    }
+.checkout-steps .form-group {
+    margin-bottom: 25px;
+}
+.checkout-steps .checkboxOrange{
+    margin-top:-10px;
+}
+.addressOverlay .modal-dialog label{
+	margin-bottom:15px;
+    }
+.checkout-steps .checkboxOrange label{
+	margin-top:-20px;
+}
+.checkout-steps #vatForUK .checkboxOrange label{
+    margin-top: -5px;
+}
+.checkout-steps .create-account .agreementTerms{
+	margin-top:-60px;
+}
+.checkout-steps .shipping .form-group label,.checkout-steps .shipping #shipping_ManualAddressData .form-group .padding-left label,
+.checkout-steps .shipping #billing_ManualAddressData .form-group .padding-left label,.value-tax label,.addressOverlay .form-group label{
+	margin-top:22px;
+  }
+.checkout-steps .shipping .form-group .padding-left label,#overlay_FindAddressData .form-group .padding-left label,
+.addressOverlay .checkboxOrange label{
+		margin-top:0px;
+                }
+.checkout-steps .shipping .form-group,.value-tax .form-group{
+		margin-bottom:0px;
+                }
+ #shipping_FindAddress, #shipping_ManualAddress,#billing_ManualAddress,#billing_FindAddress,#overlay_ManualAddress,#overlay_FindAddress{
+	margin-bottom:20px;
+    margin-top:30px;
+                }
+.value-tax input[type=radio]{
+	height:auto;  
+}
+#create-account .create-user {
+padding-left: 30px;
+
+}
+#create-account .panel-heading {
+padding-bottom: 5px; 
+
+}
+#create-account .btnCheckoutNext {
+    margin-bottom: 10px;
+}
+#paymentSection {
+    margin-top: 25px !important;
+    margin-bottom: -3px;
+}
+#shippingDetails .shipping h4 {
+	margin-top: 13px;
+}
+#payment .panel {
+    padding-bottom: 0px;
+    padding-top: 34px;
+    overflow: hidden;
+} 
+.padding-checkout {
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 25px;
+}
+.padding-nav {
+padding-right: 0px;
+    padding-top: 23px;
+    }
+	#create-account .create-user select{
+font-size: 13px;
+    color: #4f4f4f;
+
+}
+#create-account .text-orange span {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.checkout-banner #bsktDetails .glyphicon-menu-left {
+margin-right: 13px;
+    }
+.checkout-banner #bsktDetailsView .glyphicon-menu-down,.checkout-banner #bsktDetailsView .glyphicon-menu-up{
+margin-left: 16px
+        }
+.checkout-banner .col-md-9 {
+padding-left: 0px;
+        }
+.checkout-banner .col-md-3 {
+padding-right: 0px;
+text-align: right; 
+
+}
+#shipping-address #shippingDetails {
+	padding-left: 85px;
+    padding-bottom: 0px;
+	padding-top: 10px;
+
+} 
+.vatFormComp .value-tax {
+margin-top: 25px;
+border: 2px solid #c6c6c6;
+padding-top: 65px;
+        }
+#shipping-address .shippingAddressPanes {
+	padding-left: 0px;
+    margin-bottom: 45px;
+	padding-bottom: 36px;
+}
+.Checkoutpage #shipping-address .shippingAddressPanes {
+    padding-left: 0;
+    margin-bottom: 12px;
+    padding-bottom: 36px;
+}
+#shipping-address .shippingAddressPanes .col-md-4{
+padding-right: 5px;
+}
+#shipping-address .billingAddressPanes {
+padding-left: 0px;
+padding-bottom: 36px;
+}
+#shipping-address .billingAddressPanes .persAddr, #shipping-address .shippingAddressPanes .persAddr{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+#shipping-address .billingAddressPanes .col-md-4 {
+padding-right: 5px;
+}
+ .checkout-steps .create-account #chkAcceptTerms{
+	height:auto;
+                    }
+#vatForUK .form-group{
+	margin-top: 10px;
+    margin-bottom:0px;
+}
+    .checkboxOrange label>p {
+font-size: 15px;
+        }
+        .checkout-banner a {
+font-family: Arial, Helvetica, sans-serif;
+            }
+.padding-checkout span {
+	font-family: Gotham-Bold;
+    font-size: 16px;
+    color: #4f4f4f;
+    display: table-row;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#zero-addr>.checkboxOrange>label>p{
+    font-size:15px;
+}
+#vatForUK>.checkboxOrange>label>p{
+    font-size:15px;
+}				
+#shippingDetails p {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #212121;
+}
+#shippingDetails .value-tax label ,.addressOverlay .modal-dialog label{
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #4f4f4f;
+    text-transform: uppercase;
+}
+#shippingDetails .value-tax .checkboxOrange label p{
+font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8e8e8e;
+    text-transform: none;
+}
+#shippingDetails .label-checkbox p {
+font-size: 16px;
+    color: #8e8e8e;   
+}
+#shippingDetails .address-select p {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+#shippingDetails .active-address p {
+color: #ffffff;
+}
+#shippingDetails .active-address p.titlePara {
+font-size: 20px;
+color: #ffffff;
+}
+#shippingDetails .active-address p.detailsPara {
+color: #ffffff;
+}
+#shippingDetails .address-select p.titlePara {
+font-size: 20px;
+
+    font-family: Gotham-Bold;
+}
+#shippingDetails .address-select p.detailsPara {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+.checkoutDuplicateEmail{
+    color: #d61031 ;
+    margin: 0 ;
+    font-size: 14px;
+    padding-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+#create-account .form label {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+#paymentDetails .text-orange span {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.payment-step .payment h4 ,.payment-step .payment h3{
+font-family: Gotham-Bold;
+        }
+    #condCheckId h4 {
+font-family: Gotham-Bold;
+    font-size: 16px;
+        }
+.active-address #removeAddr .glyphicon-trash:before {
+    color: #ffffff;
+}
+.active-address #editAddr .glyphicon-pencil:before {
+	color: #ffffff;
+}
+#removeAddr .glyphicon-trash:before {
+    color: #4F4F4F;
+}
+.Checkoutpage .topSpacing {
+    margin-bottom: 8px;
+}
+#editAddr .glyphicon-pencil:before {
+    color: #4F4F4F;
+}
+.cardPayment .cnpForm {
+	position: relative;
+}
+.cardPayment .cnpForm .cvvInfo {
+	margin-left: 10px;
+	cursor: pointer;
+}
+.cardPayment .cnpForm .cvvTooltip {
+	font-size: 13px;
+	position: absolute;
+	left: 76px;
+	bottom: 208px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	padding: 4px 8px;
+	width: 54%;
+	background-color: #fff;
+}
+.italy .cardPayment .cnpForm .cvvTooltip{
+	bottom: 230px;
+	width: 40%;
+}
+.cardPayment .brandicon {
+display: none !important;
+}
+.cardPayment .cnpForm, .cardPayment .style-card {
+padding-top: 10px;
+display:table;
+width: 100%;
+margin-left: 100px;
+}
+.cardPayment .customLabel {
+	float: none !important;
+    margin-right: 40px;
+	margin-left: 0 !important;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: -30px;
+
+} 
+.cardPayment .brandLabel{
+	padding-top : 0px;
+    padding-bottom: 10px;
+}
+.cardPayment .brandSelect .brandSelectBox {
+height: 27px;
+border: 2px solid #c6c6c6 !important;
+        }
+.cardPayment .cardNumberLabel{
+padding-bottom : 10px;
+}
+.cardPayment .expiryMonthLabel{
+	padding-bottom : 10px;
+    padding-top: 28px;
+}
+.cardPayment .cardHolderLabel {
+padding-bottom : 10px;
+}
+.cardPayment .cvvLabel{
+padding-bottom : 10px;
+}
+
+.cardPayment .cardSubmitButton{
+padding-top : 10px;
+padding-bottom : 10px;
+float: left !important;
+border-radius: 0px;
+box-shadow: none;
+}
+.cardPayment .brandSelectBox{
+width: 150px;
+} 
+.cardPayment .cardNumberInput{
+		cellpadding: 200px;
+        width: 100%;
+}
+.cardPayment .cardHolderInput{
+width: 100%;
+}
+.cardPayment .cardNumberInputField {
+background: none;
+}
+.cardPayment .expiryMonthSelect, .cardPayment .expiryYearSelect{
+height: 46px;
+    width: 98px; 
+    margin-top: 0px !important;
+}
+.cardPayment .expiryMonthSelect {
+margin-right: 20px;
+}
+.cardPayment .expiryMonthSelect .expiryMonthSelectBox {
+    border: none;
+    outline: none;
+width: 50px;
+    height: 35px;
+        }
+     .cardPayment  .expiryYearSelect .expiryYearSelectBox {
+        border: none;
+    outline: none;
+width: 70px;
+    height: 35px;
+                }
+.cardPayment #ccNumber {
+width: 58% !important;
+    height: 46px !important;
+
+}
+.cardPayment #ccNumber input {
+border: 2px solid #c6c6c6 !important;
+}
+.cardPayment .cardHolderInputField {
+width: 25% !important;
+    height: 30px !important;
+    border: 2px solid #c6c6c6;
+}
+.italy .cardPayment #ccCvv {
+    width: 160px !important;
+    height: 46px !important;
+} 
+.cardPayment #ccCvv {
+width: 100px !important;
+    height: 46px !important;
+
+}
+.cardPayment #ccCvv input{
+border: 2px solid #c6c6c6 !important;
+}
+
+.cardPayment .customInput {
+padding-left: 0;
+margin-top:-45px;
+}
+.cardPayment .customSelect { 
+padding: 0;
+}
+.cardPayment .cnpForm input.inputError, .cardPayment .cnpForm select.inputError {
+border: 2px solid #d61031!important;
+
+    }
+.cardPayment .submitInput {
+    margin-top: 45px; 
+    margin-bottom: 30px;
+    height: auto !important;
+
+    }
+.cardPayment .errorMessage {
+margin-left: 0px;
+color: #d61031;
+     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+                }
+.cardPayment form.cnpForm input, .cardPayment form.cnpForm select, .cardPayment form.cnpForm textarea {
+    font-size: 13px !important;
+ border: 2px solid rgb(198, 198, 198) !important;
+        padding-left: 5px !important;
+    color: rgb(142, 142, 142);
+    }
+.cardPayment .cardSubmitButton, .cardPayment .cardSubmitButton:hover{
+background-color : #009c3b !important;
+border-color : #009c3b !important;
+font-family: Arial, Helvetica, sans-serif !important;
+    text-transform: uppercase;
+    padding: 12px 20px !important;
+        height: auto;
+    border-radius: 10px;
+    color:white;
+}
+
+.cardPayment .expiryMonthLabel, .cardPayment .expiryMonthSelect, .cardPayment .expiryYearSelect {
+    margin-top: 0 !important;
+}
+
+.user_orders #orders .details-container .currentOrderTitle{
+	padding-bottom:15px;
+} 
+#orders .details-container>.ecom-pdf{
+	margin-bottom:20px;
+	margin-top:0px;
+} 
+
+.user_orders #orders .orderHistoryTitle{
+	margin-bottom: 25px;
+}
+
+#persDetails #detailsForm .button-center h2, #persDetails #detailsForm .button-center h4 {
+	font-size: 16px;
+	font-family: Gotham-Bold;
+    text-transform: uppercase;
+}
+
+.account-details #personalLogOut {    
+    margin-left: 7%;
+}
+
+.account-details .side-menu .nav{
+                padding-top: 8px;
+}
+#accountOverview .prsnDetailGrid-content {
+    text-align: left;
+    padding-left: 10px;
+}	
+#pers-success{
+    font-size: 16px;
+	font-family: Gotham-Bold;
+	color:#e4572d;
+}
+#pers-failure{
+	font-size: 16px;
+	font-family: Gotham-Bold;
+	color:#e4572d;
+}
+#persDetails .form-group label {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+	color:#4f4f4f;
+}
+#persDetails .form-group .form-control{
+	height: 50px;
+	border-radius: 0px;
+    margin-bottom: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+#personal-details .profileDetailAddresses>.button-center{
+ 	border-top: 1px solid #e3e3e3;
+ 	border-bottom: 1px solid #e3e3e3;
+ 	margin-bottom: 25px;
+ 	padding-bottom: 43px;
+}
+#add-address {
+    margin-bottom: -15px;
+    margin-top: -5px;
+}
+#persDetails .form-group {
+    margin-bottom: 50px;
+}
+#persDetails .profileDetailAddresses h4{
+	font-family: Gotham-Bold;
+	font-size:16px;
+}
+#persDetails .address-panes .active-address p {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    word-break: break-word;
+}
+#persDetails .registerDescText{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:18px;
+    color:#212121;
+}
+#persDetails .registerDescTitle{
+	font-family: Gotham-Bold;
+	font-size:16px;
+}
+.address-panes .active-address .addressTitle{
+    font-family: Arial, Helvetica, sans-serif !important;
+	font-size:17px !important;
+    color:#fff;
+}
+.selectpicker{
+                color:#212121;
+}
+.address-panes .active-address .titlePara{
+    font-family: Gotham-Bold !important;
+	font-size:20px !important;
+    color:#fff;
+}
+.address-panes .active-address .detailsPara{
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size:18px !important;
+     color:#fff;
+}
+.address-panes .addressTitle{
+    font-family: Arial, Helvetica, sans-serif !important;
+	font-size:17px !important;
+   	color:#6e6e6e;
+}
+.address-panes .titlePara{
+    font-family: Gotham-Bold !important;
+	font-size:20px !important;
+    color:#212121;
+}
+.address-panes .detailsPara{
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size:18px !important;
+    color:#4f4f4f;
+}
+#persDetails .profileDetailAddresses .modal-footer .cancel, #persDetails .profileDetailAddresses .modal-footer .cancel:hover {
+    margin: 0px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#personal-details h4{
+	font-size:16px;
+	font-family: Gotham-bold;
+}
+#personal-details .button-center .form-group p{
+	font-family: Arial, Helvetica, sans-serif;
+    color: #8e8e8e;
+	font-size:15px;
+}
+#regisNotification p {
+    font-size: 18px !important;
+}
+
+.account-details #details-selector{
+background-color: #f4f2f4;   
+border-radius: 0px;
+}
+
+.left-menu, .account-details{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.left-menu{
+    margin-top:15px;
+
+}
+
+#accountOverview, #stdWarrenty, #persDetails, #orders, #singleOrder{
+border-left: 1px solid #E2E2E2;
+padding-bottom:40px;
+padding-left:25px !important;
+padding-right:25px !important;
+}
+
+#accountOverview, #stdWarrenty, #persDetails, #orders, #singleOrder{
+ margin-top:10px;
+}
+
+.account-details .account_menue .left-nav-bar {
+   padding: 15px 10px 0px 0px;
+   border-right: 0px solid #E2E2E2;
+}
+.acWellText1{
+    float: right;
+    width: 85%;
+    text-align: left;
+    padding-left: 3px;
+    padding-top:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.acWellText2{
+    float: right;
+    width: 85%;
+    text-align: left;
+    padding-left: 3px;
+    padding-top:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.acWellText3{
+    float: right;
+    width: 85%;
+    text-align: left;
+    padding-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.acWellImg{
+    width: 15%;
+    margin-top: 18px;
+    float: left;
+}
+.user_orders #orders .details-container>h2, .user_orders #orders .details-container>h4 {
+  font-size: 16px;
+}
+.user_orders #orders .details-container #timeFrame{
+                padding-bottom: 35px;
+}
+
+#order_status span{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#00aa04;
+}
+
+#last-order-place{
+    padding-right:10px;
+}
+
+#last-order-place #lastOrderTableMobile .well, #last-order-place #lastOrderTable .well{
+    background-color: #f4f2f4;
+}
+   #stdWarrenty .details-container h2, #stdWarrenty .details-container h4{
+	font-family: Gotham-Bold;
+    color:#212121;
+    font-size:20px;
+}
+
+#stdWarrenty #warrenty-success p{
+	font-family: Arial, Helvetica, sans-serif;
+    color:#212121;
+    font-size:18px;
+}
+
+#warrentyForm .serialNo{
+	font-family: Arial, Helvetica, sans-serif;
+    color:#4f4f4f;
+    font-size:16px;
+}
+
+#warrentyForm #serialNo{
+   background-color: #f4f2f4;
+    border: 0;
+}
+
+#warrenty-section>p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212121;
+    font-size: 18px;
+}
+
+#warrentyForm .serialNumberLabel{
+	font-family: Arial, Helvetica, sans-serif;
+    color:#4f4f4f;
+    font-size:16px;
+}
+/*Help FAQ End*/
+.checkout-header{
+	padding-top: 20px;
+}
+.order-summary>h2{
+	padding: 20px 0px;
+	letter-spacing: 3px;
+}
+.value-tax .checkboxOrange label{
+	left: 0px !important;
+    margin-top:0px;
+    }
+	
+	.vatDateOfBirth  .topSpacing{
+	clear: none;
+}
+#VoucherCode{
+	height:50px;
+}
+#voucher_btn-ok{
+        margin-right: 5px;
+}
+.shoppingbasket {
+  position:relative;
+}
+.sub-container .divChk a{
+    color:white;
+    font-family: Gotham-Light-Regular;
+    text-decoration:underline;
+}
+#Pleaseread{
+    margin-top:20px;
+}
+.sub-container .divChk p {
+	padding-top: 0px;
+    padding-left: 30px;
+    margin-top: -20px;
+
+    }
+.paycards, .paypalcards {
+	border:1px solid #8E8E8E;
+	padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.phoneInfo {
+	margin-top: 10px;
+	font-size: 12px;
+    color: #333;
+}
+#termscondCheckId,.remove img,.glyphicon-calendar{
+	cursor: pointer;
+}
+
+.Addfind,#createAddr {
+	font-family: Gotham-Bold;
+    font-size: 13px;
+	cursor: pointer;
+	text-decoration:underline;
+	}
+#Shipping_ShowAddress select,#billing_ShowAddress select,#tax_ShowAddress select,
+#Shipping_ShowAddress_overlay select,#shipping_ShowAddress select,#ShowAddress_vat select{
+	width:100%;
+	}
+#condCheckId{
+	padding-bottom:50px;
+	}
+.modal-footer{
+	border-top: none;
+}
+.checkout-header h4,.btnCheckoutNext{
+	margin-top:25px;
+}
+.Secure{
+	height:35px;
+    display: table-cell;
+    margin-right: 18px;
+}
+.form-group select{
+	width: 25%;
+}
+.footerLinks-secure{
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.footerLinks-secure a,.footerLinks-secure a:hover {
+	font-weight: normal;
+    color: #8E8E8E;
+    text-decoration: none;
+    font-family: Gotham-Light-Regular;
+    font-size: 12px;
+}
+.checkout-banner {
+    padding: 20px 14px 20px 14px;
+}
+.checkout-banner a{
+	cursor: pointer;
+    font-size:14px;
+}
+.bsktDetails{
+    margin-top: 24px;
+    }
+.checkout-step{
+    border-radius: 40px;
+    font-family: Gotham-Bold;
+    font-size: 40px;
+    padding: 5px 12px;
+    margin-right: 18px;
+    padding: 12px 50px 12px 30px;
+    color: #ffffff;
+    background: #4f4f4f;
+	display: inline-block;
+    width: 40px;
+}
+.checkout-step { 
+background: #4f4f4f;
+
+    } 
+#shipping-address .panel-title, #payment .panel-title{
+color: #4f4f4f;
+}
+.checkout-step.active{
+    color: white;
+    background-color: #009c3b;
+    display: inline-block;
+    width: 40px;
+}
+
+.checkout-steps h2.panel-title, .payment-step h2.panel-title{
+	font-family:Arial, Helvetica, sans-serif;
+	padding-top: 22px;
+    font-size:24px;
+	cursor: pointer;
+	text-transform:uppercase;
+	margin-top: 0;
+    margin-bottom: 0;
+	color: #4f4f4f;
+}
+.active-address>a{
+	color: white;
+}
+.radio-border { 
+	border-bottom: 2px solid #f4f2f4;
+	border-right: 2px solid #f4f2f4;
+	border-left: 2px solid #f4f2f4;
+	margin-top: -20px;
+	padding: 10px;
+	text-align: center;
+
+}
+.address-select a{
+	color: black;
+}
+.checkout-steps h2.panel-title.active, .payment-step h2.panel-title.active{
+	font-family:Gotham-Bold;
+}
+.create-account h2, .shipping-address h2, .payment h2{
+	margin-top: 25px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-family: Gotham-Bold;
+}
+.login-options {
+	margin-top:15px;
+}
+.login-options li{
+	text-align:center;
+}
+.login-options img{
+    width: 46px;
+    height: 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login-options p{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.create-account .col-md-8>p{
+	font-size:15px;
+	margin-right: 125px;
+}
+.checkout-steps input[type="checkbox"]{
+    margin-right: 10px;
+}
+input[type=radio].rad-btn {
+display:none;
+}
+input[type=radio].rad-btn+label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 2px solid #999;
+    cursor: pointer;
+}
+
+input[type=radio].rad-btn:checked+label:before {
+	content: "";
+	font-size: 0.13em;
+	text-align: center;
+	line-height: 1px;
+	width: 20px;
+	height: 20px;
+	-webkit-appearance: none;
+	box-shadow: inset 0px 0px 0px 3px #ffffff;
+	background: #e4572d;
+}
+
+input[type=radio].rad-btn:disabled+label:before {
+	cursor: no-drop;
+}
+
+/****************************
+Shipping address
+******************************/
+.checkout-steps input,.checkout-steps select,.addressOverlay input,.addressOverlay select,.contact-form select,.contact-form input,.contact-form textarea{   
+	   border: 2px solid #c6C6C6;
+}
+select[name="country"]{
+	margin-top:20px;
+}
+.shipping-address select, .lbl-sa-country,.shipping-address input[type="phone"],.modal-body select{
+	    width: 35%;
+}
+.icon-tooltip{
+	border: 1px solid #8E8E8E;
+    border-radius: 21px;    
+    float: right;
+     font-size: 13px;     
+    padding: 5px 10px;
+   
+    
+}
+#sa_firstname,#sa_lastname,#sa_address{
+	    width: 70%;
+}
+#sa_taxcode,#sa_phonenumber{
+	width: 48%;
+}
+#sa_city{
+	width: 58%;
+}
+#sa_taxcode{
+	display:inline;
+}
+label[for="sa_taxcode"]{
+	display:block;
+}
+.icon-info {
+	width: 12px;
+    height: 16px;
+    display: inline;
+}
+.shipping-address p, .payment p{             
+	  font-size: 15px;
+}
+#downloadPdfMoadal .modal-header{
+                border-bottom:0;            
+	padding:0;
+}
+#downloadPdfMoadal .modal-footer{
+	border-top:0;
+	border-bottom:0;
+}
+#downloadPdfMoadal .close{
+    padding: 5px 15px;
+    font-size: 30px;
+    background-color:#E4572D;
+    color: #fff;
+}
+#downloadPdfMoadal h4{
+	text-transform: uppercase;
+}
+#downloadPdfMoadal .modal-body,#downloadPdfMoadal .modal-footer{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/**********************Return Order*****************/
+
+.returnFields{
+	margin-top: 30px;
+}
+
+.returnFields>span{
+	font-family: 'Arial, Helvetica, sans-serif';
+	font-size: 15px;
+}
+
+#return-submit{
+	margin-top: 20px;
+}
+
+.return-error{
+    color: #d61031;
+    font-size: 14px;
+    padding-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;}
+/******************Payment*******************/
+.order-summary .table>tbody>tr>td{
+	padding-top: 25px ;
+    padding-bottom: 25px;
+}
+.order-summary table,.person{
+    border-bottom: 1px solid #ddd;
+}
+.checkout-steps .panel-default,.payment-step .panel-default{
+	    border: 0;
+    -webkit-box-shadow: none;
+}
+.checkout-steps .panel-heading, .payment-step .panel-heading {
+    background-color: transparent;
+    border-color: transparent;
+   padding-left: 0px;
+    border: 0;
+    overflow: hidden;
+}
+#couponform,#vouchercouponsucess{
+	padding-bottom:15px;
+	}
+	.coupontootipHeader
+    {
+		padding-bottom: 30px;
+        padding-top: 0;
+        padding-right: 0;
+    }
+.coupontootipBody
+        {
+	padding-top:0;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+        }
+	.basket table tr{
+		border-bottom: 2px solid #EAEDED;
+	}
+	.basket .table>tbody>tr>td, #orders .table>tbody>tr>td{
+		border-top: none;
+		vertical-align: middle;
+	}
+	#sensorRemove img,#readerRemove img,.basket .table>tbody>tr>td select{
+		cursor: pointer;
+	}
+	.margin-left{
+		margin-left: 100px;
+	}
+	.basket .table>tbody>tr>td form{
+		padding-bottom: 30px;
+	}
+	
+	.basketIcon{
+		margin-top: 20px;
+		color : #8E8E8E;
+	  }
+	.basketIcon div,.topSpacing{
+		margin-bottom: 10px;
+	  }
+	#singleTablePlace{
+		padding:0px;
+	}
+	.basketIcon div span{
+		margin-right: 10px;
+	  }
+	.vat {
+		font-size : 10px;
+		font-family: Gotham-Light-Regular;
+    	color: #8E8E8E;
+	  }
+	.express{
+		border: 5px solid #E4572D;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.express>p{
+		padding-left: 65px;
+		width: 70%;
+		padding-top: 20px;
+		font-size: 15px;
+		color:#E4572D;
+	}
+	.express>.row>p{
+		padding: 20px;
+		font-size: 15px;
+		color: white
+	}
+	.value-tax,.billing-address {
+		border: 1px solid #8E8E8E;
+		padding: 40px 50px 30px;
+		display: none;
+		margin-bottom:20px;
+		margin-top:40px;
+	}
+	#paymentSection,.savedata{
+		margin-top:50px;
+		}
+	.topSpacing input, .topSpacing select, #timeFrame select{
+		padding: 8px;
+	}
+.topSpacing > .col-md-10,.panel-padding{
+		padding-left: 55px;
+	}
+	
+	.tableHighlight,#last-order-place{
+		background-color: #F4F2F4;
+                }              
+	#basketPlace .tableHighlight td{
+		padding-top:40px;
+		padding-bottom: 40px;
+	}
+	.shipping input[type=radio] {
+		margin-top: 30px;
+	}
+	.shipping>.col-lg-12>.col-md-3>p{
+		padding:10px 20px 50px 0px;
+	}
+	.shipping>.col-lg-12>.col-md-3{
+		margin-right:20px;
+	}
+input.invalid, textarea.invalid{
+  border: 2px solid #d61031;    
+}
+	a.morelink {
+		text-decoration:none;
+		outline: none;
+	}
+
+/****Account creation******/
+.divInfo>.pull-left{
+	width:2%;
+}
+.divInfo .infoDesc{
+	margin-left:20px;
+}
+
+.checkout-steps .error_show{
+	margin:0;
+}
+
+a:focus{
+  border:0;
+}
+a{
+	color:#215e7b;
+}
+a,a:hover{
+	text-decoration: none;
+	font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.basket-table{
+	margin-top: 50px;
+}
+#express{
+	margin-right: 0px !important;
+}
+.btn-checkout,.btn-checkout:hover{
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.voucher input{
+	padding:7px;
+	margin-right: 20px;
+}
+#productTableMobile { 
+    display: none; 
+  }
+#tablePlace tr td,#tablePlaceshipping tr td,#productTable th, #singleTablePlace td{
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Gotham-Bold';
+	font-size: 14px;
+}
+.hidden{
+	display:none;
+}
+.active{
+	color: #009c3b;
+}
+.left-nav-bar{
+	border-right: 1px solid #E2E2E2;
+	padding: 15px 0px 0px 0px;
+}
+.details-container{
+	margin-left: 70px;
+}
+.button-black{
+    background-image: none;
+    color:black;
+    border-radius:0px; 
+	font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	border: 2px solid black;
+    padding: 16px 24px;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.button-white,.button-white:hover{
+	background-image: none;
+    color:white;
+    border-radius:0px; 
+    text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+	border: 2px solid white;
+    padding: 16px 24px;
+	font-size: 14px;
+}
+.well>p{
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 15px;
+	word-break: break-word;
+}
+.well {
+    background-color: #e1e1e1;
+}
+.side-menu li a{
+	float: right;
+	color: #212121;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+#orders .well{
+	border-radius: 0;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+	color: #E4572D;
+	border-color: #e1e1e1;
+	border: 2px solid #E4572D;
+	background-color: white;
+	min-height: 110px;
+}
+#orders td p{
+	text-align: center;
+	vertical-align: middle;
+	color: #E4572D;
+	font-family: Gotham-Bold;
+	margin-top: 45px;
+}
+#orders .table td{
+	width: 25%;
+}
+#accountOverview .well>a,#accountOverview .well>a:hover{
+    position: absolute;
+	left: 20px;
+	width:80%;
+    letter-spacing: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+    bottom: 25px;
+    text-decoration:none;
+}
+#payment-coupon{
+	height:36px;
+}
+.account-details h1, .account-details h2,.account-details h4, .letterSpacing{
+	letter-spacing: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.account-details .user_orders .details-container h2, .account-details .user_orders .details-container h4 {
+	font-family: Gotham-Bold;
+	text-transform: uppercase;
+}
+.account-details .user_orders .details-container  p {
+	font-size: 14px;
+}
+.account-details{
+	margin-top: 5px;
+}
+.account-details-well{
+	margin-top:0px;
+	margin-bottom:20px;
+
+}
+
+.standardWarrenty .account-details-well {
+	margin-top:10px !important;
+}
+
+#warrenty-section>p {
+    padding-bottom: 5px !important;
+}
+
+#stdWarrenty .details-container>h4{
+	margin-top:0px !important;
+}
+
+
+#accountOverview .details-container h2 , #accountOverview .details-container h4 {
+	font-family: Gotham-Bold;
+    font-size: 16px;
+}
+#accountOverview .details-container .well>p {
+	font-size: 17px;
+	color: #6e6e6e;
+}
+#accountOverview .details-container .well {
+	min-height: 260px;
+}
+
+.account-details hr{
+	width:100%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.arrow-right{
+	padding-left: 15px;
+	padding-right: 10px;
+	margin-left: 5px;
+                width: 37px;       
+}
+.green{
+	color: #2eb82e;
+}
+#orders tr td, #orders th{
+	font-family: 'Gotham-Bold';
+	font-size: 14px;
+}
+#orders tr td {
+                font-family: 'Arial, Helvetica, sans-serif';
+	color: #4f4f4f;
+}
+#timeFrame select {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #4f4f4f;
+	font-size: 18px;
+}
+#orders tr td span {
+                font-family: 'Arial, Helvetica, sans-serif';
+	font-size: 32px
+}
+#order_status span {
+    font-size: 16px!important;
+
+}
+.vat {
+	font-size: 14px !important;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8E8E8E;
+}
+#orderTable, #lastOrderTable{
+	margin-left: 15px;
+}
+#orderTable  tr, #orderTableMobile tr{
+	border-top: 2px solid #EAEDED;
+}
+.label-checkbox>div{
+    	display:inline-block;
+         margin-left: 5px;
+}
+.check-boxes label{
+		font-family: Gotham-Light-Regular;
+	}
+.address-panes{
+	margin-left: -12px;
+}
+.warrenty-boxes{
+	margin-left: -24px;
+	color: #8E8E8E;
+	margin-bottom: 25px;
+}
+.active-address{
+	background-color: #009c3b;
+}
+.active-address p{
+	color: white;
+}
+#persDetails .well>p, .create-account .well>p, .checkout-container .well>p{
+	min-height: 15px;
+}
+#persDetails .well>p,.checkout-container .well>p{
+    margin-top:10px;
+}
+#accountOverview .well{
+	min-height:250px;
+	border-radius: 0;
+	margin-top: 15px;
+    margin-bottom:0px;
+}
+#persDetails .well, .create-account .well,.checkout-container .well{
+	min-height: 292px;
+	border-radius: 0;
+	margin-top: 15px;
+}
+
+#persDetails .well{
+	min-height: 400px;	
+}
+
+.checkout-container .well{
+	min-height: 239px;	
+}
+
+#editAddr{
+    position:absolute;
+    bottom:20px;
+    right:70px;
+}
+#removeAddr{
+	position:absolute;
+    bottom:25px;
+    right:0px;
+}
+.shippingAddressPanes #removeAddr,.billingAddressPanes #removeAddr{
+    bottom:82px;
+    }
+.shippingAddressPanes #editAddr,.billingAddressPanes #editAddr {
+    bottom:80px;
+    }
+#editAddr:hover,#removeAddr:hover{
+    color:black;
+}
+#passwordForm{
+	padding-left: 35%;
+	padding-right: 20%;
+}
+.titlePara{
+	color: black;
+	font-family: Gotham-bold;
+}
+.detailsPara{
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+}
+.headPara{
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 15px;
+}
+.well .headPara, .sensor-block  .headPara  {
+    font-family: Arial, Helvetica, sans-serif!important;
+    color: white;
+    font-size: 18px!important;
+}
+
+.email-display{
+	background-color: #E6E6E6;
+	padding: 10px 0px 10px 20px;
+	margin: 20px 0px 20px 0px;
+}
+.changePassword{
+	margin-top: 30px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: white;
+}
+.mobileContent{
+	display: none;
+}
+#passwordForm{
+	margin-bottom: 30px;
+}
+#persDetails input{
+	margin-right: 15px;
+}
+.warrenty-boxes, .warrenty-boxes a, .address-checkboxes{
+    font-family: Gotham-Light-Regular;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+.warrenty-boxes>div{
+	margin-bottom: 15px;
+}
+.sensor-block{
+	margin-top: 60px;
+}
+.ecom-pending:before{
+	width: 30px;
+	height: 30px;
+	border-radius: 60px;
+	content: "\e013";
+	color: #ffffff;
+	background-color: #8e8e8e;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	font-family: 'Glyphicons Halflings';
+}
+.ecom-progress-dot:before{
+	width: 5px;
+	height: 5px;
+	line-height: 5px;
+	border-radius: 5px;
+	content: " ";
+	color: #ffffff;
+	background-color: #000000;
+	display: inline-block;
+	text-align: center;
+}
+.delivery-status{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.delivery-status .ecom-status-links li{
+	font-family: Gotham-Light-Regular;
+	font-size: 14px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#orderTable .delivery-status, #orderTableMobile .delivery-status{
+	display: none;
+}
+#singleTablePlace td{
+	width: 33%;
+	vertical-align: middle;
+}
+#singleTablePlace tr td span{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+#singleTablePlace .vat {
+    font-size: 14px !important;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#singleTablePlace .tableHighlight td{
+border-top:none;
+}
+
+.ordertotalText{
+ font-size: 18px !important;
+}
+
+#singleTablePlace .oderIDsHeader{
+    font-family: gotham-bold;
+    font-size: 20px;
+	color:#212121;
+    letter-spacing: 1px;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+#singleOrder #singleTablePlace td{
+	padding-top: 50px;
+    padding-bottom: 50px;
+}		
+
+#singleTablePlace .numOfOrders{
+	font-family: gotham-bold;
+    font-size: 18px;
+	color:#212121;
+    text-transform: lowercase;
+}
+
+.OrderHeaderBarButton{
+    padding-top:0px !important;
+}
+
+#singleTablePlace .orderBasketText{
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+}
+#singleTablePlace .productSingleOrderText{
+    font-size: 26px;
+    font-family: gotham-bold;
+    color:#4f4f4f;
+}
+#singleTablePlace .productSingleOrderQuant{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    color:#4f4f4f;
+}
+#singleTablePlace .productSingleOrderQuantNo{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    color:#4f4f4f;
+}
+
+#singleTablePlace .button-orange{
+	margin-top: 30px;
+}
+.paging-nav a {
+	padding: 6px 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 1.42857143;
+	color: #8E8E8E;
+	background-color: transparent;
+	border: 1px solid #8E8E8E;
+	display: inline-block;
+    margin-bottom: 10px;
+
+}
+.selected-page{
+	color: #E4572D !important;
+}
+.paging-nav{
+	margin-top: 40px;
+}
+#lastOrderTable .paging-nav{
+	display: none;
+}
+#persDetails .radio-border{
+	display: none;
+}
+.active-border, .active-address{
+	border-color: #009c3b;
+}
+
+/**********************Express checout EC*****************/
+
+.aChangeShippingMethod{
+	    font-size: 12px;
+	    text-decoration: underline;
+}
+.address-wrapper p{
+	font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.7em;
+    color: #505050;
+}
+.address1, .shipping_phonenumber{
+	margin-top:30px;
+	
+}
+.shipping_phonenumber{
+	margin-bottom: 35PX;
+}
+.drop_list select{
+    -webkit-appearance:none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background: transparent; 
+    height: 44px;
+    font-size: 16px;   
+    background-image:url('/content/dam/adc/fsl/images/global/en/spinner-arrow.png') ;
+    background-repeat: no-repeat;  
+    background-position: right top;
+}
+.singleOrderWell {
+    background-color: #E4572D;
+    border-radius: 0px;
+    min-height: 150px;
+}
+.singleOrderWell>p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+}
+.ecom-pdf ul li a{
+	color: black;
+	text-decoration: underline;
+	 cursor: pointer;
+    text-transform:uppercase;
+
+}
+input[type=radio]{
+	cursor: pointer;
+}
+.ecom-pdf{
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+
+#orderTablePlaceMobile,#lastOrderTableMobile {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#orders .button-orange{
+	margin-top: 10px;
+	margin-bottom: 25px;
+	width:100%;
+}
+/****Payon form****************/
+select.expiryMonthSelectBox ,select.expiryYearSelectBox,.brandSelectBox{ 
+    min-width: auto;
+}
+.expiryMonthLabel, .expiryMonthSelect, .expiryYearSelect{
+	margin-top:25px;
+}
+.cardNumberInputField,.cardHolderInputField,.cvvInputField{
+	height:28px;
+}
+.payment>.col-md-12{
+    border-bottom: 0 !important;
+}
+.serialnoInfo{
+    margin-top: 40px;
+    width: 50px;
+}
+.font-fourteen{
+    font-size:14px;
+}
+.checkout-steps .panel-default, .payment-step .panel-default{
+
+                box-shadow:none;
+}
+.checkout-steps h2.panel-title .glyphicon-menu-down,.payment-step h2.panel-title .glyphicon-menu-down{
+                                width:0px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	vertical-align: middle;
+}
+.account-details .addressOverlay h2, .account-details .addressOverlay h4 {
+	border-bottom: 1px solid #E2E2E2;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+#basket-details .table>tbody>tr>td {
+	border-top:none;
+    border-bottom: 1px solid #e1e1e1;
+}
+#bsktDetailsView{
+   font-family: Arial, Helvetica, sans-serif;
+   border-bottom: 1px solid #e1e1e1; 
+}
+.Checkoutpage .logo_scetion {
+    height: 190px;
+    padding-top: 40px;
+    border-bottom: 0;
+}
+.padding-checkout {
+    padding-top: 30px;
+}
+.padding-checkout .wrapper {
+	float: right;
+    margin-right: 22px;
+}
+.padding-checkout .secure-copy {
+	display: table-cell;
+    vertical-align: bottom;
+}
+#vat_FindAddressData .AddressBtn{
+    margin-top:57px;
+}
+label[for="billingDiffers"]{
+	margin-top:10px;
+}
+.account-details .order-loading {
+	text-align: center;
+    display: none;
+}
+.account-details .order-loading p ,.individualorder-loading p{
+	font-family: 'Gotham-Bold';
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 5px;
+}
+.login-container .login-loading {
+	display: none;
+    text-align: center;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+.login-container .login-loading p {
+	font-family: 'Gotham-Bold';
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #222;
+}
+.checkout-container .address-loading {
+	display: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.checkout-container .address-loading p {
+	font-family: 'Gotham-Bold';
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #222;
+}
+.thankyou .order-status-loading {
+	text-align: center;
+    display: none;
+    margin-top: 30px;
+}
+.thankyou .order-status-loading p {
+	font-family: 'Gotham-Bold';
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #222;
+}
+.checkout-steps .create-user .notify {
+    margin-top: 20px;
+}
+
+.checkboxOrange.savedata {
+    margin-top: 25px;
+}
+.error_show {
+    padding-bottom: 15px;
+}
+.checkout-steps .checkboxOrange.checkboxmargin{
+	margin-top:0px;
+    margin-bottom:0px;
+}
+.checkout-steps .checkboxOrange.checkboxmarginnotify{
+	margin-bottom:60px;
+    margin-top: 10px;    
+}
+.italy .checkout-steps #create-account .checkboxOrange.checkboxmargin {
+    margin-bottom: 0px;
+}
+.Luxemberg #termscondCheckId {
+    position: absolute;
+}
+.Luxemberg .checkboxOrange.notify {
+    margin-top: 0px;
+}
+.Luxemberg .checkboxOrange label {
+    position: relative;
+}
+.Luxemberg.contact-form #chkYesReceive {
+     height: 0px;
+}
+.Luxemberg #contactcheckboxerrorspan {
+    position: relative;
+    top:0px;
+}
+.Luxemberg .postalActual {
+    width: 80% !important;
+    -moz-appearance: textfield !important;
+}
+.Luxemberg .postalPrefix {
+    width: 10%;
+    padding-left: 0;
+    padding-right: 10px;
+    border: none!important;
+    box-shadow: none!important;
+    background-color: transparent !important;
+    text-align: right;
+    font-family: Gotham-Bold;
+}
+.Luxemberg .postalinlineActual {
+    width: 80% !important;
+    -moz-appearance: textfield !important;
+}
+.Luxemberg .postalinlinePrefix {
+    width: 20%;
+    padding-left: 0;
+    padding-right: 10px;
+    border: none!important;
+    box-shadow: none!important;
+    background-color: transparent !important;
+    text-align: right;
+    font-family: Gotham-Bold;
+    float: left;
+    padding-top: 13px;
+}
+.Luxemberg #persDetails #PHONE {
+  position: absolute;
+}
+.Luxemberg .fixdialcode {
+    padding-right: 5px;
+}
+
+/************************** lg *******************************/
+
+@media (min-width: 1200px) {
+.Checkoutpage .header {
+	padding-left: 40px;
+    padding-right: 40px;
+}
+.Luxemberg #termscondCheckId {
+    position: absolute;
+}
+.Luxemberg #persDetails #PHONE {
+  position: absolute;
+}
+
+.Luxemberg .checkboxOrange label {
+    position: relative;
+}
+.Luxemberg .checkout-steps .create-account .btnCheckoutNext, .checkout-steps .create-account .agreeCheck {
+    margin-top: -10px;
+}
+
+#payment .payment-method {
+   padding-left: 100px;
+}        
+#warrenty-section>p {
+  padding-bottom: 0px !important;
+}
+.acWellText2{
+	padding-top:0px;
+}
+
+.checkout-steps .create-account  .btnCheckoutNext,.checkout-steps .create-account  .agreeCheck{
+	margin-top:-10px;
+}
+.acWellImg {
+	margin-top: 8px;
+}
+.account-details .account_menue .left-nav-bar {
+    padding:15px 0px 0px;
+}
+#persDetails .form-group {
+    margin-bottom: 40px;
+}
+
+#persDetails #detailsForm .button-center h2, #persDetails #detailsForm .button-center h4 {   
+    padding-bottom: 18px;
+}
+#personal-details .profileDetailAddresses>.button-center {  
+    padding-top: 45px;
+}
+#persDetails #regisNotification{
+padding-bottom: 10px;
+}
+#persDetails #changePasswordCheckGrp{
+padding-top: 35px;
+}
+.account-details {
+    margin-bottom: 50px;
+}
+input#contact_submit{
+  border : none ;
+}
+.faxTableHr{
+	width: 89%;
+	margin-top: 0px;
+	margin-left: 16px;
+	border-top: 1px solid #e2e2e2;
+	overflow:hidden;
+	float:left;
+ }
+
+}
+
+/****************** md **************************************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.arrow-right {
+    padding-left: 10px;
+    padding-right: 0px;
+    width: 20px;
+}
+#warrenty-section>p {
+  padding-bottom: 5px !important; 
+}
+#persDetails .form-group {
+    margin-bottom: 40px;
+}
+#persDetails #detailsForm .button-center h2, #persDetails #detailsForm .button-center h4 {   
+    padding-bottom: 18px;
+}
+#personal-details .profileDetailAddresses>.button-center {  
+    padding-top: 45px;
+}
+
+#persDetails #regisNotification{
+padding-bottom: 10px;
+}
+
+#persDetails #changePasswordCheckGrp{
+padding-top: 35px;
+}
+.account-details {
+    margin-bottom: 50px;
+}		
+.summaryQty {
+    font-size:10px;
+}
+.details-container {
+    margin-left: 55px;
+}
+#editAddr {
+    right: 78px;
+}
+#persDetails .profileDetailAddresses .modal-footer .cancel, #persDetails .profileDetailAddresses .modal-footer .cancel:hover {
+    margin: 0px;
+    padding-left: 76px;
+    padding-right: 76px;
+	font-size: 12px;
+}
+
+#persDetails .profileDetailAddresses .modal-footer .button-orange, #persDetails .profileDetailAddresses .modal-footer .button-orange:hover, #persDetails .profileDetailAddresses .modal-footer .button-orange:focus{
+	font-size: 12px;
+}
+#create-account .btnCheckoutNext{
+   margin-top: -43px;
+}
+#persDetails .well {
+    min-height: 450px !important;
+}
+#accountOverview .well>p {
+    width: 100%;
+	margin-top:0px;
+}
+#accountOverview .well>a {
+		width: 100%;
+		width: 80%;
+}
+#accountOverview .well {
+		width: 100%;
+		padding:15px 10px 10px;
+}
+#removeAddr {
+		right: 15px;
+}
+	#editAddr {
+    right: 65px;
+}
+.shippingAddressPanes #editAddr, .billingAddressPanes #editAddr {
+    bottom: 78px;
+    right: 87px;
+}
+#order_status span{
+    font-size: 16px !important;
+}
+input#contact_submit{
+  border : none ;
+}
+.faxTableHr{
+	width: 89%;
+	margin-top: 0px;
+	margin-left: 16px;
+	border-top: 1px solid #e2e2e2;
+	overflow:hidden;
+	float:left;
+ }
+#payment #condCheckId ,#payment h4.paymenttitle {
+	padding-left: 100px;
+}
+.payment .checkboxOrange label {
+    left: 0px;
+}
+.cardPayment .cnpForm, .cardPayment .style-card{
+	width:80%;
+        }
+}
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+#datepickerIcon{
+    height: 70px;
+    padding: 0;
+}
+.UserRegistration-loading{
+    margin-bottom:-20px;
+    margin-top:30px;
+} 
+.italy .checkout-steps #create-account .checkboxOrange {
+    margin-bottom: 55px;
+}
+.italy .cardPayment .cnpForm .cvvInfo{
+	margin-left:5px;
+}
+.italy .cardPayment .cnpForm .cvvTooltip {
+    width: 65%;
+}                
+.padding-checkout {
+    padding-top: 30px;
+}
+#productTableMobile {
+    display: block;
+}
+.summaryMobileQty {
+    font-size:18px;
+}
+.user_orders #orders .details-container .currentOrderTitle {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#productTable {
+    display: none;
+}
+.savedata{
+	margin-top: 40px;
+}
+#tablePlaceMobileshipping .mobileSummeryProductText{
+ margin-top:20px;
+}
+
+#tablePlaceMobileshipping .mobileSummeryProductsPrice{
+ margin-top:70px;
+ font-size: 36px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #212121;
+}
+
+#tablePlaceMobileshipping .pounds, #tablePlaceMobileshipping .separator, #tablePlaceMobileshipping .pence, #tablePlaceMobileshipping .summeryCurremcy{
+    margin-top: 35px;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212121;
+}
+.prsnDetailGridImg {
+    width: 12%; 
+}
+.paymentComp #paymentDetails .order-summary .table>tbody>tr>td {
+    padding : 50px 0 50px 0;
+    width:25%;
+}
+
+#tablePlaceMobileshipping tr td{
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+    font-size: 28px;
+
+}
+#persDetails  .well  #removeAddr {
+    right: 20px;
+    bottom: 20px;
+}
+.prsnDetailGrid-content{
+	padding-top:5px;
+}
+.padding-xs{
+	padding:0px;
+}
+#persDetails  .error_show, #persDetails .error1, #persDetails .error2, #persDetails .error3, #persDetails .error4, #persDetails .error5 {
+    float: left;
+	text-align: left;
+}
+.paymentComp .payment-step #payment #paymentDetails {
+    padding-left: 55px;
+}   
+
+#accountOverview .prsnDetailGrid-content {
+    text-align: left;
+    padding-left: 0px;
+} 
+.account-details #details-selector .selectpicker{
+ width:75%
+}
+#singleTablePlace tr td span{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+#singleTablePlace .button-orange {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.account-details {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#singleTablePlace .vat {
+    font-size: 20px !important;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#orders .button-orange{
+    font-size:21px;
+     margin-bottom: 50px;   
+}
+#orders td p {    
+    margin-top: 35%;
+    margin-bottom: 35%;
+}
+#singleTablePlace .oderIDsHeader{    
+    font-size: 40px;
+}
+#singleTablePlace .numOfOrders{
+    font-size: 28px;
+}
+#singleTablePlace .productSingleOrderText {
+ font-size: 30px;
+}
+#singleTablePlace .productSingleOrderQuant {
+       font-size: 22px;   	
+}
+.ordertotalText {
+    font-size: 30px !important;
+}
+.checkout-steps input, .checkout-steps select, .addressOverlay input, .addressOverlay select{
+	height:30px!important;
+    }
+ .checkout-steps .create-account .agreementTerms,.checkout-steps .checkboxOrange label{
+	margin-top:0px;
+                    }   
+ .checkout-steps .create-account  .btnCheckoutNext, .checkout-steps .create-account  .agreeCheck{
+		margin-top:20px;
+                            }
+.Checkoutpage .about {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.account-details #details-selector .button-black{
+	border: 0px solid black;
+	color: #212121;
+}
+
+#persDetails .profileDetailAddresses .modal-footer .cancel, #persDetails .profileDetailAddresses .modal-footer .cancel:hover {
+    margin: 0px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#persDetails .profileDetailAddresses .modal-footer .button-orange, #persDetails .profileDetailAddresses .modal-footer .button-orange:hover, #persDetails .profileDetailAddresses .modal-footer .button-orange:focus{
+	font-size: 14px;
+}
+
+.warrentybutton{	
+      margin-top:40px			
+}
+.fixdialActual{
+	margin-left:0px;
+    }
+.AddressBtn, .AddressBtn:hover,#add-address{
+	padding-top:24px;
+    padding-bottom:24px;        
+        }
+#bsktDetailsView{
+	font-size:22px;
+}
+ #vatForUK .form-group {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#shipping_FindAddress, #shipping_ManualAddress, #billing_ManualAddress, #billing_FindAddress,
+#overlay_ManualAddress, #overlay_FindAddress,#vat_FindAddress ,#vat_ManualAddress{
+    margin-bottom: 30px;
+    margin-top: 50px;
+}        
+/*Help FAQ*/
+.relatedContentPanel .apply-help  .experiencePanes h2 {
+    font-family: Gotham-Bold;
+    font-size: 32px;
+    color: #3c3c3c;
+}
+
+.relatedContentPanel .apply-help  .experiencePanes p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #818181;
+}
+.relatedContentPanel .apply-help  .experiencePanes #buySupport .link-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #e4572d;
+}
+.relatedContentPanel .apply-help  .experiencePanes #buySupport2 .link-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #e4572d;
+}
+.relatedContentPanel .apply-help  .experiencePanes #buySupport3 .link-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #e4572d;
+}
+.about h1 {
+color: #009c3b;
+    font-size: 46px;
+    }
+#bsktDetails {
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+    }
+.panel-heading .panel-title {
+font-size: 40px;
+            color: #000000;
+        }
+    #create-account .form label, .checkout-steps .form label {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+                    color: #4f4f4f; 
+
+                }
+                .create-account .checkboxOrange label>p {
+font-family: Arial, Helvetica, sans-serif;
+		font-size: 21px;
+		width:750px;
+                        }
+.checkout-steps h2.panel-title, .payment-step h2.panel-title {
+
+font-size: 40px;
+            color: #000000;
+    } 
+#shippingDetails p{
+font-family: Arial, Helvetica, sans-serif;
+		font-size: 28px;
+        color: #212121;
+    }
+#shippingDetails .checkboxOrange p {
+font-size: 21px;
+}
+#shippingDetails .value-tax {
+font-size: 22px;
+}
+    #shippingDetails h5{
+font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        color: #8e8e8e;
+    }
+#shippingDetails h4{
+font-family: Gotham-Bold;
+        font-size: 24px;
+        color: #212121;
+    }
+       #shippingDetails p b{
+font-family: Gotham-Bold;
+        text-transform: uppercase;
+		font-size: 20px;
+        color: #212121;
+    }
+
+#shippingDetails .address-select p {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px
+
+}
+#shippingDetails .active-address p {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+}
+#shippingDetails .active-address p.titlePara {
+font-size: 30px;
+color: #ffffff;
+}
+#shippingDetails .active-address p.detailsPara {
+    font-family: Arial, Helvetica, sans-serif;
+color: #ffffff;
+    font-size: 26px;
+}
+#shippingDetails .address-select p.titlePara {
+font-size: 30px;
+
+    font-family: Gotham-Bold;
+}
+#shippingDetails .address-select p.detailsPara {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+ h3 {
+font-size: 24px;
+        color: #212121;
+        }
+    .Addfind {
+font-size: 24px;
+        }
+.form-group label {
+font-size: 11px;
+        color: #4f4f4f;
+    }
+.value-tax label {
+    font-size: 11px;
+    color: #4f4f4f;
+    }
+#paymentSection {
+font-size: 21px;
+
+}
+#create-heading {
+font-size: 32px;
+    color: #212121;
+    font-family: Gotham-Bold;
+
+}
+
+#paymentDetails .coupon_voucher h3, #paymentDetails .order-summary h3 {
+font-family: Gotham-Bold;
+font-size: 24px;
+        color: #212121;
+    }
+#paymentDetails #couponform p{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 28px;
+color: #212121;
+}
+.button-center {
+		text-align: center;
+	}
+
+#accountOverview .details-container .well>p {
+		font-size: 26px;
+	}
+	#accountOverview .well>a {
+		top: 175px;
+		width:100%;
+	}
+	.details-container {
+		margin-right: auto;
+		margin-left: auto;
+	}
+    .panelUserName {
+        font-family: Gotham-Bold !important;
+        font-size: 40px;
+        color: #212121;
+		text-transform: uppercase;
+	}
+	.details-container .well .font-fourteen {
+    	font-size: 26px;
+	}
+	.details-container h4 {
+    	font-size: 40px;
+	}
+    .well .headPara, .sensor-block  .headPara  {
+        font-size: 32px!important;
+	}
+	
+	.create-account.form-control{
+		width:50%;
+	}
+	.left-nav-bar{
+    	padding:0px;
+    }
+	.selectpicker{
+		width: 50%;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		border-color: black;
+		background-color: #F4F2F4;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:20px;
+	}
+	
+#details-selector{
+	width:94%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.checkout-container .well{
+	    min-height: 400px;
+        }
+#removeAddr {
+    right: 20px;
+    bottom: 83px;        
+        }
+.account-details #details-selector{
+    margin: 0 auto;
+}
+.Secure {
+    height: 35px;
+}
+.shippingAddressPanes #editAddr, .billingAddressPanes #editAddr {
+    bottom: 78px;
+}
+.Checkoutpage .shippingAddressPanes #editAddr, .billingAddressPanes #editAddr {
+    bottom: 100px;
+}	
+.Checkoutpage .shippingAddressPanes #removeAddr, .billingAddressPanes #removeAddr {
+    bottom: 102px;
+}
+.account-details h1, .account-details h2, .account-details h4 {
+   text-align:center;
+   font-family: Gotham-Bold;
+   font-size:40px;
+}
+.well .sensor-block p {
+		padding-bottom: 30px;
+	}
+#order_status span{
+    font-size: 16px !important;
+}
+
+.acWellText1 {
+  padding-top:18px;
+
+}
+.acWellText2 {
+	padding-top:18px;
+}
+#persDetails #detailsForm .button-center h2, #persDetails #detailsForm .button-center h4 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#persDetails .form-group label {   
+    font-size: 22px;   
+    float: left;
+    text-align: left;
+}
+
+#persDetails .form-group .form-control{
+	font-size: 22px;
+   	font-family:Arial, Helvetica, sans-serif;
+}
+
+#persDetails .profileDetailAddresses h4 {
+    font-size: 40px;
+}
+
+.address-panes .addressTitle {
+    font-size: 26px !important;
+}
+.address-panes .titlePara {
+    font-size: 30px !important;
+}
+.address-panes .detailsPara {
+
+    font-size: 26px !important;
+}
+.address-panes .active-address .addressTitle {
+    font-size: 26px !important;
+}
+.address-panes .active-address .titlePara {
+    font-size: 30px !important;
+}
+.address-panes .active-address .detailsPara {
+
+    font-size: 26px !important;
+}
+
+#persDetails .Addfind, #createAddr {
+    font-size: 24px;
+}
+
+#persDetails .registerDescTitle {
+    font-size: 40px;
+}
+
+#persDetails .registerDescText {
+    font-size: 28px;
+}
+
+#regisNotification p {
+    font-size: 24px !important;
+}
+#personal-details .button-center .form-group p {
+    font-size: 22px;
+    margin-top:-5px;
+}
+
+.panelUserName {
+       font-size: 40px;
+	}
+
+    #personal-details #add-address {
+    margin-top: 90px;
+    margin-right: auto;
+    margin-bottom: 70px;
+    margin-left: auto;
+}
+#accountOverview .details-container h2 , #accountOverview .details-container h4 {
+    font-size: 40px;
+}
+.user_orders #orders .details-container>h2,.user_orders #orders .details-container>h4 {
+    font-size: 40px;
+}
+
+.account-details .user_orders .details-container .well p {
+    font-size: 28px;
+}
+
+.orderprice-symbol{
+                font-size:36px !important;
+
+}
+.orderprice{
+    font-size:36px !important;
+}
+#lastOrderTable, #orderTable{
+    display:none;
+}
+.mobileContent{
+    display: block;
+}
+#orders tr td span {
+    font-size: 22px;
+}
+
+#order_status span {
+    font-size: 22px !important;
+}
+#orders .well {
+    margin-bottom: 0px;
+    vertical-align: middle;
+    min-height: 200px;
+}
+#stdWarrenty .details-container h2, #stdWarrenty .details-container h4 {
+    font-size: 40px;
+}
+
+#warrenty-section>p {
+    font-size: 28px;
+}
+
+#stdWarrenty #warrenty-success p{
+    font-size:28px;
+}
+
+#warrenty-section{
+margin-top: 90px;
+}
+
+#stdWarrenty .details-container {
+    margin-top: 35px;
+}
+
+#warrentyForm .serialNumberLabel {
+    font-size: 26px;
+    display: block;
+}
+
+#warrenty-section .button-center{
+    text-align: left;
+}
+
+#warrentyForm #serialNo{
+    width:100%
+}
+.relatedContentPanel .container{
+    padding-right: 0; 
+    padding-left: 0;
+}
+.relatedContentPanel .container .apply-help {              
+    width: 88.666667%;
+    margin: 0 auto;
+    padding-left:0;
+    padding-right: 0;
+}
+.relatedContentPanel .container .apply-help .col-md-4{
+    margin-left: 0;
+    margin-right: 0;
+     padding-right: 0; 
+    padding-left: 0;
+    overflow: hidden;
+}
+.relatedContentPanel .container .apply-help .col-md-4 .list-inline {
+    margin-left: 0;
+} 
+.relatedContentPanel .container {
+    width: 100%;
+}
+#accountOverview, #stdWarrenty, #persDetails, #orders, #singleOrder{
+ border-left: 0px solid #E2E2E2;
+}
+/*Pagination Desktop*/
+#orderTable,  .orderTablePlaceHolder {
+display: none;
+} 
+#orderTableMobile, .orderTablePlaceMobileHolder {
+display:block;
+}
+.orderTablePlaceMobileHolder {
+	margin: 15px 0;
+}
+
+.orderTablePlaceMobileHolder a {
+	font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif !important;
+	cursor: pointer;
+	margin: 0 5px;
+	color: #8e8e8e;
+    border: 2px solid #8e8e8e;
+    padding: 10px 15px;
+}
+.orderTablePlaceMobileHolder a.jp-current { 
+border: 2px solid #E4572D;
+    }
+
+.orderTablePlaceMobileHolder a:hover { 
+	background-color: #ffffff;
+	color: #8e8e8e;
+} 
+
+.orderTablePlaceMobileHolder a.jp-previous { margin-right: 15px; }
+.orderTablePlaceMobileHolder a.jp-next { margin-left: 15px; }
+
+.orderTablePlaceMobileHolder a.jp-current, a.jp-current:hover { 
+	color: #E4572D;
+	//font-weight: bold;
+}
+
+.orderTablePlaceMobileHolder a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+}
+
+.orderTablePlaceMobileHolder a.jp-current, a.jp-current:hover,
+.orderTablePlaceMobileHolder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default; 
+	background: none;
+}
+
+.orderTablePlaceMobileHolder span { margin: 0 5px:
+}
+.account-details #personalLogOut {
+    margin-left: 0px;
+}
+
+.checkout-banner .col-md-3 {
+    padding-right: 0px;
+    text-align: center;
+}
+#shipping-address .billingAddressPanes .persAddr, #shipping-address .shippingAddressPanes .persAddr {
+	position: static;
+}
+#shipping-address .shippingAddressPanes {
+    padding-bottom: 0;
+}
+.account-details .addressOverlay h2, .account-details .addressOverlay h4 {
+	padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+#payment h4.paymenttitle,#payment h4.paymenttitle,#payment #condCheckId,#payment .payment-method{
+	padding-left:0px;
+    text-align:center;    
+    }
+#condCheckId h4{
+	text-align:left;
+    padding-left: 55px;
+}
+.payment .checkboxOrange label {
+    left: 35px;
+}
+.Checkoutpage .logo_scetion {
+    height: 125px;
+    padding-top: 16px;
+}
+.faxTableHr{
+	width: 91%;
+    margin-top: 0px;
+	margin-left: 0px;
+	border-top: 1px solid #e2e2e2;
+	overflow:hidden;
+	float:left;
+ }
+.cardPayment .cnpForm, .cardPayment .style-card{
+	margin-left:60px;
+}
+.Checkoutpage #myModal-3 .modal-footer .col-md-3, .Checkoutpage #myModal-3 .modal-footer .col-md-7{
+                text-align:center;
+}
+
+.Checkoutpage #myModal-3 #remove_address{
+                margin-top:40px;
+}
+.Checkoutpage #myModal-3 .cancel{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.Checkoutpage label {
+    margin-right: 0px;
+}
+.checkboxOrange.savedata {
+    margin-top: 55px;
+}
+.checkout-steps .checkboxmargin span{
+	margin-top:10px;
+    }
+.checkout-steps .checkboxOrange.checkboxmarginnotify {
+    margin-top: 30px;
+}
+.Checkoutpage .RemoveAddress-loading{
+	margin-top:10px;
+    margin-bottom:-30px;                
+} 
+}
+
+/********************************* XS Portrait ************************/
+
+@media only screen and (max-width: 767px) {
+.Checkoutpage .RemoveAddress-loading{
+	margin-top:10px;
+    margin-bottom:-30px;                
+} 
+.Luxemberg  #warrenty-success{
+    text-align:center;             
+}
+#personal-details .button-center #changePasswordCheckGrp label>p {
+    width: auto;
+    margin-top: 2px;
+}        
+.checkout-steps .checkboxOrange.checkboxmargin {
+    margin-top: -15px;
+} 
+.checkout-steps .checkboxOrange.checkboxmarginnotify {
+    margin-top: 20px;
+}                
+.checkout-steps .create-user .notify{
+	margin-bottom:0px;
+}
+.Registration-loading {
+    margin-left: 30px;
+}
+.proceedPay-loading {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    bottom: -42px;
+}
+#paymentSection {
+    margin-top: 10px !important;
+    margin-bottom: -3px;
+}
+.cardPayment .cnpForm .cvvTooltip {
+	bottom: 172px;
+}
+.italy .cardPayment .cnpForm .cvvTooltip {
+    bottom: 196px;
+    width: 70%;
+}
+#tablePlaceMobileshipping .mobileSummeryProductText{
+ margin-top:20px;
+}
+html:lang(it) #updateForm .cancel-xs-one {
+  margin-bottom: 0!important;
+}
+html:lang(en) #updateForm .cancel-xs-one{
+	margin-bottom:20px;
+} 	
+#updateForm .modal-footer .btn+.btn {
+margin-left: 0px;
+}
+.italy #updateForm .modal-footer .col-md-offset-1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+} 
+.italy .warrentybutton {
+     margin-top: 0px !important;
+} 
+
+#accountOverview .prsnDetailGrid-content {
+    text-align: left;
+    padding-left: 0px;
+}
+#updateForm .modal-footer .col-md-offset-1{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.addressOverlay #updateForm .checkboxOrange label>p{
+   margin-top: 3px !important;
+}
+
+#warrentyForm .checkboxOrange label>p {    
+    margin-top: 3px !important;
+}
+
+.prsnDetailGridImg {
+    width: 22%; 
+}
+.createSubmit{
+  margin-left: auto;
+}
+
+.user_orders #orders .details-container .currentOrderTitle {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.product-basket #tablePlaceMobile .remove >img {
+    width: 14px;
+    position: relative;
+    top: -6px;
+}
+
+#tablePlaceMobileshipping .mobileSummeryProductsPrice{
+ margin-top:35px;
+ font-size: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #212121;
+}
+.summaryMobileQty {
+    font-size:10px;
+}
+.savedata{
+	margin-top: 40px;
+}
+#tablePlaceMobileshipping .pounds, #tablePlaceMobileshipping .separator, #tablePlaceMobileshipping .pence, #tablePlaceMobileshipping .summeryCurremcy{
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212121;
+}
+
+.paymentComp #paymentDetails .order-summary .table>tbody>tr>td {
+ width:25%;
+}
+.padding-xs{
+	padding:0px;
+}
+.paymentComp .payment-step #payment #paymentDetails {
+    padding-left: 0;
+}
+#create-account .btnCheckoutNext {
+    margin-top: -43px;
+	margin-bottom: 0px;
+}
+#create-account .create-user select {
+    font-size: 12px;
+}
+#payment h4.paymenttitle,#payment h4.paymenttitle,#payment #condCheckId{
+	padding-left:0px;
+    text-align:center;    
+    }
+#condCheckId h4{
+	text-align:left;
+}
+.calenderIconHeight {
+     min-height: 70px;
+}
+#create-account .create-user {
+padding-left: 0;
+                padding-right: 0;
+            }
+.cardPayment {
+    margin-left: 0px; 
+}
+#tablePlaceMobileshipping {
+display: table;
+                width: 100%;
+            }
+    #payment .panel {
+margin-left: 0;
+        margin-right: 0;
+    }
+    #payment #condCheckId {
+        padding-left: 0;
+    }
+    #payment h4.paymenttitle {
+padding-left: 0;
+                text-align: center;
+    }
+    #couponform #btnCouponOk {
+        padding: 13px 20px;
+            margin-right: 11px;
+    }
+    #couponform #VoucherCode {
+    width: 56%;
+    }
+ .paymentComp #paymentDetails .order-summary .table>tbody>tr>td {
+
+            padding : 35px 0 35px 0;
+    }
+#payment .payment-method {
+	padding-left: 0;
+    padding-right:0px;
+    }
+  .Checkoutpage .about .about-heading h1 {
+font-size: 18px !important;
+font-family: Gotham-Bold;
+                    margin-bottom:0;
+                }
+.checkout-banner a#bsktDetailsView .expand-details {
+color: #a7a9ac;
+  }
+.checkout-banner a#bsktDetailsView .details {
+color: #a7a9ac;
+  }
+.checkout-banner a#bsktDetailsView {
+color: #a7a9ac;
+            }
+#shipping-address .billingAddressPanes .col-md-4 {
+    padding-right: 15px;
+}
+.checkout-container .checkout-banner .col-md-3 {
+text-align: center;
+        padding-left: 0;
+            }
+    #shipping-address .panel {
+margin-left: 0;
+        margin-right: 0;
+
+    }
+    #shipping-address .shippingAddressPanes {
+    padding-bottom: 7px;
+}
+    #shipping-address .nxt-btn { 
+    margin-top: 45px;
+    }
+    #shipping-address .shippingAddressPanes .col-md-4 {
+padding-right: 15px;
+    }
+    #shipping-address .billingAddressPanes .persAddr, #shipping-address .shippingAddressPanes .persAddr {
+    position: static;
+
+    }
+.persAddr #createAddr {
+font-size: 12px;
+    }
+    .checkout-container .checkout-banner {
+padding-top: 40px;
+        }
+    #shipping-address #shippingDetails {
+padding-left: 0;
+        padding-right: 0;
+    }
+    #shippingDetails .shipping .radio-border {
+    position: relative;
+    }
+     #shippingDetails .shipping .radio-border label {
+        position: absolute;
+    top: 41%;
+    right: 27%;
+
+    }
+.account-details #details-selector .button-black {
+	border: 0px solid black;
+	color: #212121;
+}
+#persDetails .form-group {
+    margin-bottom: 25px;
+}
+.account-details #personalLogOut {
+    margin-left: 0px;
+}
+#myModal-thirdParty h1{
+	font-size:25px;
+}
+#myModal-thirdParty .cancel, #myModal-thirdParty .cancel:hover {
+    margin: 0px;
+    padding: 7px 20px;
+}
+.Checkoutpage .modal-content {
+    padding-bottom: 10%;
+}
+.Checkoutpage .modal-footer .btn+.btn {
+	margin-bottom: 0;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body{
+	padding:15px 0px;
+}
+.error_show{
+	font-size:11px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding:5px;
+	vertical-align: middle;
+}	
+#singleTablePlace .button-orange {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#singleTablePlace .oderIDsHeader{    
+    font-size: 20px;
+}
+
+#orders td p {    
+    margin-top: 35%;
+    margin-bottom: 35%;
+}
+
+#orders .button-orange{
+   margin-bottom: 50px;     
+}
+
+.account_menue{
+  margin-top: 5px;
+} 
+
+#singleTablePlace .numOfOrders{
+    font-size: 14px;
+}
+#singleTablePlace tr td span{
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+#singleTablePlace .productSingleOrderText {
+   font-size: 15px;    	
+}
+.ordertotalText{
+font-size: 15px !important;
+}
+
+#singleTablePlace .productSingleOrderQuant {
+    font-size: 11px;
+}
+
+#singleTablePlace .productSingleOrderQuantNo {
+   font-size: 11px;
+}	
+
+#singleTablePlace .vat {
+    font-size: 10px !important;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.account-details #details-selector .selectpicker {      
+    border: 1px solid #212121;    
+}
+
+.preparing-skin #faq-table .panel-title {
+padding-top: 30px;
+    padding-bottom: 30px;
+        }
+#overlay_FindAddressData #Shipping_AddresssFind_overlay{
+margin-top: 34px;
+        }
+#persDetails .profileDetailAddresses .modal-footer .cancel, #persDetails .profileDetailAddresses .modal-footer .cancel:hover {
+    margin: 0px auto;
+    height: 35px;
+    padding-top: 6px;
+    padding-left: 70px;
+    padding-right: 70px;
+	font-size: 12px;
+}	
+.checkout-steps input, .checkout-steps select, .addressOverlay input, .addressOverlay select{
+	height:30px;
+    }
+.checkout-steps .form-group {
+    margin-bottom: 25px;
+}  
+.checkout-steps .create-account .agreeCheck {
+    margin-top: 15px;
+} 
+.checkout-steps .shipping .form-group label, .checkout-steps .shipping #shipping_ManualAddressData .form-group .padding-left label, .checkout-steps .shipping #billing_ManualAddressData .form-group .padding-left label, .value-tax label, .addressOverlay .form-group label {
+    margin-top: 15px;
+}
+.fixdialcode{
+	width:10%;
+    }
+.fixdialActual {	
+ width: 59%;			
+	}
+#vatForUK .form-group {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.warrentybutton{			
+ margin-top:40px			
+}
+.checkout-steps .form-group label{
+	margin-bottom:7px;
+                }
+.checkout-steps .create-account .agreementTerms,.checkout-steps .checkboxOrange label{
+	margin-top:0px;
+                    }
+.Checkoutpage .about{
+padding-top: 60px;
+    padding-bottom: 60px;
+                        }
+						
+#updateForm .cancel-xs-one, #updateForm .cancel-xs-one:hover {
+	padding-left: 60px;
+ 	padding-right: 65px;
+	margin-left: 0px;
+ 	/*height: 33px;
+	padding-top: 6px;
+ 	padding-bottom: 6px;*/
+} 
+.italy #updateForm .cancel-xs-one, .italy #updateForm .cancel-xs-one:hover {
+	padding-left: 23px !important;
+	padding-right: 23px !important;   
+}
+#persDetails .form-group label {   
+    font-size: 12px;   
+    float: left;
+    text-align: left;
+}
+.selectpicker {
+    font-size: 12px;
+    color: #212121;
+}
+#accountOverview .details-container h2 , #accountOverview .details-container h4 {
+    font-size: 20px;
+}
+
+#persDetails #detailsForm .button-center h2, #persDetails #detailsForm .button-center h4 {
+    font-size: 20px;
+    margin-bottom: 50px;
+}  
+
+#regisNotification p {
+    font-size: 15px !important;
+}
+
+#persDetails .form-group .form-control{
+                font-size: 12px;
+                font-family:Arial, Helvetica, sans-serif;
+}
+
+#persDetails  .error_show, #persDetails .error1, #persDetails .error2, #persDetails .error3, #persDetails .error4, #persDetails .error5 {
+    float: left;
+    font-size: 12px;
+	text-align:left;
+}
+.account-details .addressOverlay #updateForm .error_show, .error1, .error2, .error3, .error4, .error5 {
+    color: #d61031;
+    font-size: 11px;
+    padding-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.acWellImg {
+    margin-top: 10px;
+}
+
+.account-details .addressOverlay #updateForm .form-control{
+    font-size: 12px;
+}
+
+.account-details .addressOverlay #updateForm .testimonial .form-group label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#pers-success{
+    font-size: 14px;
+}
+
+#pers-failure{
+                font-size: 16px;
+                font-family: Gotham-Bold;
+                color:#e4572d;
+}
+
+#persDetails .profileDetailAddresses h4 {
+    font-size: 20px;
+	position: relative;
+    right: 8%;
+}
+.address-panes .addressTitle {
+    font-size: 13px !important;
+}
+.address-panes .titlePara {
+    font-size: 15px !important;
+}
+.address-panes .detailsPara {
+
+    font-size: 13px !important;
+}
+.address-panes .active-address .addressTitle {
+    font-size: 13px !important;
+}
+.address-panes .active-address .titlePara {
+    font-size: 15px !important;
+}
+.address-panes .active-address .detailsPara {
+
+    font-size: 13px !important;
+}
+
+#persDetails .registerDescTitle {
+    font-size: 20px;
+}
+
+#persDetails .registerDescText {
+    font-size: 14px;
+}
+#persDetails #regisNotification .form-group {
+    margin-bottom: 30px;
+}
+.user_orders #orders .details-container>h2, .user_orders #orders .details-container>h4 {
+    font-size: 20px;
+}
+#orders .well{
+    margin-top: 18px;
+}
+#order_status{
+    padding-right:15px;
+    word-break: break-word;
+}
+#warrenty-section>p {
+    font-size: 14px;
+}
+
+#warrentyForm .serialNumberLabel {
+    font-size: 13px;
+    display: block;
+}
+
+#stdWarrenty #warrenty-success p{
+    font-size:13px;
+	text-align: center;
+}
+
+#warrenty-section{
+margin-top: 50px;
+}
+
+#warrenty-section .button-center{
+    text-align: left;
+}
+
+#warrentyForm #serialNo{
+    width:100%
+}
+ #productTable { 
+                display: none; 
+    }
+    #productTableMobile { 
+                display: block; 
+    }
+#tablePlaceMobile tr td, #tablePlaceMobileshipping tr td,#singleTablePlace td{
+                letter-spacing: 0px;
+                                text-transform: uppercase;
+                                font-family: 'Gotham-Bold';
+                                font-size: 14px;
+                }
+
+#singleTablePlace td{
+		padding-top: 40px;
+		padding-bottom: 40px; 
+	}
+                .well .sensor-block p {
+                                padding-bottom: 30px;
+                }
+                .shippingAddressPanes, .billingAddressPanes  {
+                                padding: 0px;
+    }
+                #orders tr td {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                }
+                #orders tr td br:after {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                }
+                #orders .table td {
+                                width: 36%;
+                }
+                #orders tr td span {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 18px;
+                }
+                .vat {
+                                font-size: 10px !important;
+                }
+				.italy .viewBasket .vat {
+						Padding-left:3px;
+				}
+                .account-details #btn-ok{
+                                margin-right: 0px;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                }
+                .checkout-banner{
+                                padding-bottom: 45px;
+                }
+                .checkout-step{
+                                                                                float: none !important;
+                    font-size: 30px!important;
+                    padding: 6px 16px 6px 16px!important;
+                    font-family: Gotham-Bold!important;
+                    display: inline-block;
+                    width: 55px !important;
+					margin-right:0;
+					
+                }              
+     .checkboxOrange label {
+                margin-right: 0;
+
+                }
+.checkboxOrange .agreementTerms {
+    margin-top: 0;
+
+     }
+.checkboxOrange label p{
+    font-size: 13px;
+
+                }
+    .padding-nav {
+                                padding-top: 4%;
+
+      }
+      .padding-checkout {
+		padding-top: 6px;
+        line-height: 1;
+        text-align: left;
+      }
+     header {
+        box-shadow: 0px 3px 5px #C5c3c5;
+     }
+    .checkout-banner .expand-details {
+font-size: 11px;
+   border-bottom: none; 
+                }
+.checkout-banner .expand-details .glyphicon-menu-down,.checkout-banner .expand-details .glyphicon-menu-up {
+margin-left: 10px;
+            }
+    .nxt-btn {
+           text-align: center;
+
+      }
+.nxt-btn a .pull-left {
+    float:none !important;
+    }
+.padding-checkout span {
+	font-family: Gotham-Bold;
+    font-size: 9px;
+    color: #4f4f4f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: table-row;
+    line-height: 1.5;
+}
+.padding-checkout .wrapper {
+	float: right;
+    margin-right: 18px;
+}
+.padding-checkout .secure-copy {
+	display: table-cell;
+    vertical-align: bottom;
+    line-height: 1.3;
+}
+.nxt-btn a.button-orange{
+font-size: 11px;
+    }
+.about h1 {
+color: #009c3b !important;
+    font-size: 23px;
+    }
+#bsktDetails {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    float: none !important;
+    text-align: center;
+}
+.checkout-banner .col-md-9 {
+    padding-left: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.panel-heading .panel-title{
+	font-size: 20px;
+    color: #000000;
+        }
+#create-account .form label, .checkout-steps .form label {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+                    color: #4f4f4f;
+
+                }
+                .create-account .checkboxOrange label>p {
+font-family: Arial, Helvetica, sans-serif;
+		font-size: 11px;
+
+                        }
+.checkout-steps h2.panel-title, .payment-step h2.panel-title {
+
+font-size: 20px;
+            color: #000000;
+    } 
+ #shippingDetails p{
+font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+        color: #212121;
+    }
+#shippingDetails .value-tax {
+font-size: 11px; 
+    padding-left: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px;
+    margin-top: 55px;
+    padding-right: 20px;
+	   margin-bottom:0;
+}
+#shippingDetails .value-tax .col-md-7 {
+padding-left: 0;
+    padding-right: 0;
+}
+#shippingDetails h5{
+font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #8e8e8e;
+    }
+#shippingDetails h4{
+font-family: Gotham-Bold;
+        font-size: 12px;
+        color: #212121;
+    }
+ #shippingDetails p b {
+font-family: Gotham-Bold;
+        text-transform: uppercase;
+		font-size: 12px;
+        color: #212121;
+    }
+
+#shippingDetails .address-select p {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+#shippingDetails .active-address p {
+    font-size: 13px;
+color: #ffffff;
+}
+#shippingDetails .active-address p.titlePara {
+    font-size: 15px;
+color: #ffffff;
+}
+#shippingDetails .active-address p.detailsPara {
+     font-size: 13px;
+color: #ffffff;
+}
+#shippingDetails .address-select p.titlePara {
+font-size: 15px;
+
+    font-family: Gotham-Bold;
+}
+#shippingDetails .address-select p.detailsPara {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+   h3 {
+font-size: 12px;
+        color: #212121;
+        }
+    .Addfind {
+font-size: 12px;
+        }
+.form-group label {
+font-size: 11px;
+        color: #4f4f4f;
+    }
+.value-tax label {
+    font-size: 11px !important;
+    color: #4f4f4f;
+    }
+
+#create-heading {
+font-size: 16px;
+    color: #212121;
+    font-family: Gotham-Bold;
+
+}
+
+#paymentDetails .coupon_voucher h3 ,#paymentDetails .order-summary h3 {
+font-family: Gotham-Bold;
+font-size: 12px;
+        color: #212121;
+    }
+#paymentDetails #couponform p{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: #212121;
+}
+/*Payment end*/
+/*Help FAQ*/
+.relatedContentPanel .apply-help  .experiencePanes p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #818181;
+}
+.relatedContentPanel .apply-help  .experiencePanes #buySupport .link-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #e4572d;
+}
+.relatedContentPanel .apply-help  .experiencePanes #buySupport2 .link-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #e4572d;
+}
+.relatedContentPanel .apply-help  .experiencePanes #buySupport3 .link-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #e4572d;
+}
+.create-account h2, .shipping-address h2, .payment h2{
+		margin-top: 20px;
+		cursor: pointer;
+		font-family: Gotham-Bold;
+	}
+.Checkoutpage .shipping-address h2,{
+	padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+	.panelUserName {
+        
+        font-size: 20px;
+        
+	}
+    .checkout-steps .panel-heading, .payment-step .panel-heading{
+    	padding-left: 15px;
+    }
+	.shipping-address select, .lbl-sa-country, .shipping-address input[type="phone"] {
+    	width: 60%;
+	}
+	.value-tax ,.billing-address{
+    	padding: 20px 10px;
+    }
+    .Secure{
+		height:20px;
+    	display: table-cell;
+    	margin-right: 5px;
+	}
+
+	.details-container {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	 #accountOverview .well>a{
+		margin-top: 0px;
+		margin-left: 25px;
+	}
+	#accountOverview .well, #persDetails .well {
+		min-height: 230px;
+	}
+	#persDetails .well {
+		min-height: 275px !important;
+	}
+	#persDetails .well>p{
+		min-height: 0px;
+	}
+	.sensor-block {
+		margin-top: 30px;
+	}
+	.warrenty-boxes{
+		margin-left: 0px;
+	}
+	.button-center{
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.selectpicker{
+		width: 80%;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		border-color: black;
+		background-color: #F4F2F4;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+	}
+	.acct-logout{
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.account-details {
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+	.account-details h1, .account-details h2, .account-details h4{
+		text-align: center;
+		font-family: Gotham-Bold;
+		font-size: 20px;
+	}
+	#passwordForm {
+		padding-left: 15%;
+		padding-right: 20%;
+	}
+	
+	.check-boxes label{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.check-boxes {
+		padding-top: 30px;
+	}
+	#persDetails #email{
+		width: 80%;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.address-panes{
+		margin-left: 0px;
+	}
+	.email-display {
+		padding: 10px 0px 10px 0px;
+	}
+	.mobileContent{
+		display: block;
+	}
+	#lastOrderTable, #orderTable{
+		display: none;
+	} 
+	#lastOrderTableMobile td, #orderTableMobile td{
+		padding-left: 15px;
+		padding-bottom: 10px;
+		padding-top: 5px;
+	}
+	#lastOrderTableMobile, #orderTableMobile{
+		margin-top: 20px;
+	}
+	#orders .button-orange{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 50px;
+		width:100%;
+	}
+	#orders .well {
+		min-height: 145px;
+		margin-top: 0px;
+	}
+	.checkout-step{
+		float: none !important;
+	    font-size: 30px;
+	    padding: 8px 20px;
+	    font-family: Gotham-Bold;
+	}
+	.checkout-steps .panel-heading, .payment-step .panel-heading{
+    	text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+.create-account>.col-md-12 .panel, .shipping-address>.col-md-12 .panel, .payment>.col-md-12 .panel {
+
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 10px;
+    }
+	.drop_list select{
+		width:100%;
+	}
+	#timeFrame{
+		margin-bottom: 25px;
+	}
+	#persDetails #yearField, #persDetails #dayField, #persDetails #monthField{
+		width: 70px;
+	}
+	#accountOverview, #stdWarrenty, #persDetails, #orders, #singleOrder{
+ border-left: 0px solid #E2E2E2;
+}
+.account-details .account_menue .left-nav-bar {
+   padding: 15px 10px 0px 0px;
+   border-right: 0px solid #E2E2E2;
+}
+.account-details #details-selector .button-black{
+    border: 0px solid black;
+    color:#212121;
+}
+	.padding-td{
+		padding-top: 20px;
+	}
+	.account-details hr {
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+	.ecom-progress-wrap > .ecom-list-inline-progress>li {
+		display: block;
+		text-align: center;
+	}
+	.delivery-status .ecom-status-links li {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.ecom-status-links li:nth-child(1), .ecom-status-links li:nth-child(2){
+		min-height: 95px;
+	}
+	.ecom-pdf ul li {
+		display: block;
+		text-align: center;
+		line-height: 35px;
+	}
+	.ecom-pdf{
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.modal-body input[type="phone"]{
+		width: 100%;
+	}
+
+	 #paymentSection{
+		margin-top:50px;
+	 }
+	.value-tax{
+		margin-top:90px;
+		padding-bottom:30px;
+		margin-bottom:0px;
+	 }
+.padding-xs{
+	padding:0px;
+	}
+	
+#order_status{
+    word-break: break-word;
+}
+#vat_FindAddressData .AddressBtn {
+    margin-top: 40px;
+}
+#editAddr{
+	bottom:6px;
+}
+#removeAddr {
+    bottom: 10px;
+    right: 18px;
+}
+.divInfo .infoDesc{
+	margin-top:40px;
+}
+.checkout-steps h2.panel-title, .payment-step h2.panel-title{
+    margin-bottom: 15px;
+}
+.checkout-steps h2.panel-title .glyphicon-menu-down,.payment-step h2.panel-title .glyphicon-menu-down{
+    margin-top: 12px;
+     width: 100%;
+}
+#Pleaseread {
+    margin-top: 40px;
+}
+#timeFrame select {
+		font-size: 14px;
+	}
+#order_status span{
+    font-size: 13px !important;
+}
+#shippingDetails .shipping .shippingAddressPanes .col-md-4 .address-select {
+	float: right;
+    width: 80%;
+    min-height: 300px;
+}
+#shippingDetails .shipping .billingAddressPanes .col-md-4 .address-select {
+	float: right;
+    width: 80%;
+    min-height: 300px;
+}
+.radio-border {
+	border-top: 2px solid #f4f2f4;
+}
+.radio-border {
+    float: left;
+    width: 20%;
+    min-height: 300px;
+    margin-top: 15px;
+}
+.active-border, .active-address {
+    border-color: #009c3b;
+}
+.active-address #removeAddr .glyphicon-trash:before {
+    color: #ffffff;
+}
+.active-address #editAddr .glyphicon-pencil:before {
+	color: #ffffff;
+}
+.shippingAddressPanes #editAddr, .billingAddressPanes #editAddr {
+   bottom: 30px;
+    }
+.shippingAddressPanes #removeAddr, .billingAddressPanes #removeAddr {
+    bottom: 35px;
+}
+.shipping input[type=radio] {
+    margin-top: 125px;
+}
+.relatedContentPanel .apply-help .experiencePanes a{
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px; 
+                }
+.relatedContentPanel .container{
+    padding-right: 0; 
+    padding-left: 0;
+}
+.relatedContentPanel .container .apply-help {              
+    width: 88.666667%;
+    margin: 0 auto;
+}
+.relatedContentPanel .container .apply-help .col-md-4{
+    margin-left: 0;
+    margin-right: 0;
+     padding-right: 0; 
+    padding-left: 0;
+    overflow: hidden;
+}
+.relatedContentPanel .container .apply-help .col-md-4 .list-inline {
+    margin-left: 0;
+}
+.checkout-container .cardPayment .cnpForm .submitInput .cardSubmitButton{
+
+float: none;
+border-radius: 0px;
+box-shadow: none;  
+float: none !important;
+background-color : #E4572D !important;
+border-color : #E4572D !important;
+font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px;
+    padding: 13px 10px !important;
+    text-transform: uppercase;
+
+            }
+.cardPayment .customLabel {
+font-size: 11px;
+padding-top: 25px;
+    margin-top: 0;
+    }
+.cardPayment .brandSelect .brandSelectBox {
+width: 150px;
+        }
+.cardPayment .expiryMonthLabel {
+padding-top: 25px !important; 
+                }
+.cardPayment form.card {
+	width: 95%;
+    margin-left:10px;
+    }
+.cardPayment .expiryMonthSelect,.cardPayment .expiryYearSelect{
+float: left;
+
+                    }
+.cardPayment .cardHolderLabel {
+padding-top: 25px;
+        }
+.cardPayment #condCheckId {
+padding-bottom: 30px;
+}
+.cardPayment .submitInput {
+    margin-top: 30px;
+        text-align: center;
+        }
+.cardPayment #ccNumber, .cardPayment .cardHolderInputField {
+width: 100% !important;
+}
+.cardPayment #ccCvv {
+    width: 50% !important;
+    }
+
+.cardPayment form.cnpForm input, .cardPayment form.cnpForm select, .cardPayment form.cnpForm textarea {
+    font-size: 13px !important;
+ border: 2px solid #c6c6c6 !important;
+        padding-left: 5px !important;
+    }
+    /*** Payon Mobile End ***/
+/*Pagination*/
+#orderTable,  .orderTablePlaceHolder {
+display: none;
+} 
+#orderTableMobile, .orderTablePlaceMobileHolder {
+display:block;
+}
+.account-details {
+	padding-left: 0px;
+    padding-right: 0px;
+            }
+        #orders .details-container {
+margin-left: 0px;
+            margin-right: 0px;
+        }
+.faqTablePlaceHolder a.jp-previous, .orderTablePlaceMobileHolder a.jp-previous {
+margin-right: 2px;
+        }
+.faqTablePlaceHolder a, .orderTablePlaceMobileHolder a {
+	margin: 0 3px;
+    padding: 0;
+    font-size: 15px;
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    color: #8e8e8e;
+    border: 2px solid #8e8e8e;
+    cursor: pointer; 
+    padding-top: 4px; 
+    text-align: center;
+    margin: 0 2px;
+}
+.faqTablePlaceHolder a.jp-next, .orderTablePlaceMobileHolder a.jp-next {
+	margin-left: 2px;
+}
+.faqTablePlaceHolder, .orderTablePlaceMobileHolder {
+
+    margin: 15px auto;
+    width: 340px; 
+}
+.faqTablePlaceHolder a.jp-current,.orderTablePlaceMobileHolder a.jp-current { 
+border: 2px solid #E4572D;
+    }
+.orderTablePlaceMobileHolder a.jp-current, a.jp-current:hover { 
+	color: #E4572D;
+	//font-weight: bold;
+}
+.faqTablePlaceHolder a.jp-current, a.jp-current:hover {
+color: #E4572D;
+
+}
+.orderTablePlaceMobileHolder a.jp-current, a.jp-current:hover,
+.orderTablePlaceMobileHolder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default; 
+	background: none;
+}
+.orderTablePlaceMobileHolder a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+}
+.faqTablePlaceHolder a.jp-disabled, a.jp-disabled:hover {
+color: #bbb;
+}
+.faqTablePlaceHolder a.jp-current, a.jp-current:hover, 
+.faqTablePlaceHolder a.jp-disabled, a.jp-disabled:hover {
+cursor: default; 
+	background: none;
+        }
+.orderTablePlaceMobileHolder a.jp-current, a.jp-current:hover, 
+.orderTablePlaceMobileHolder a.jp-disabled, a.jp-disabled:hover {
+cursor: default; 
+	background: none;
+        }
+/*Pagination End*/
+.checkout-steps .agree {		
+    margin-top: 15px;		
+}
+#create-account .nxt-btn {
+	margin-top: 100px;
+}
+.account-details .addressOverlay h2, .account-details .addressOverlay h4 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.checkout-libre-logo {
+	height: 38px;
+   	width: auto;
+}
+.Checkoutpage .logo_scetion {
+    height: 72px;
+    padding-top: 28px;
+}
+.faxTableHr{
+	width: 85%;
+    margin-top: 0px;
+	margin-left: 15px;
+	border-top: 1px solid #e2e2e2;
+	overflow:hidden;
+	float:left;
+}
+#datepickerIcon{
+    height: 40px;
+    width: auto;
+    padding: 0;
+    }
+	.checkout-steps .glyphicon-menu-down, .payment-step h2.panel-title .glyphicon-menu-down{
+  margin-right:0 !important;
+}
+.italy.Checkoutpage .createSubmit{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Checkoutpage #myModal-3 .modal-footer .col-md-3, .Checkoutpage #myModal-3 .modal-footer .col-md-7{
+	text-align:center;
+}
+.Checkoutpage #myModal-3 #remove_address{
+	margin-top:30px;
+}
+.Checkoutpage #myModal-3 .cancel{
+    padding: 8px 66px;
+}
+.Checkoutpage .edit-address .checkboxOrange p{
+	padding-top: 4px;
+}
+.Checkoutpage .addrOverlayFooter{
+	margin: 50px 0px 15px 0px;
+}
+.Registration .agreementTerms p{
+	margin-top:4px;
+}
+#condCheckId .checkboxOrange {
+    text-align: left;
+}
+#payment #condCheckId p {
+    display: block;
+}
+#redirectUrl {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+} 
+.checkout-steps .checkboxmargin span{
+	margin-top:10px;
+    }
+}
+
+@media (min-width: 439px) and (max-width: 767px) {
+html:lang(en).account-overview .modal-footer .btn+.btn {
+    margin-bottom: 20px;
+}
+html:lang(it) .account-overview .modal-footer .btn+.btn {
+    margin-bottom: 0!important;
+} 
+.faxTableHr{
+	width: 88%;
+}
+#updateForm .modal-footer .addrOverlayFooter {    
+	margin-left: 25%;
+	margin-right: 25%;
+}
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+html:lang(en) .account-review .modal-footer .btn+.btn {
+    margin-left: 0!important;
+}
+#tablePlaceMobileshipping .pounds, #tablePlaceMobileshipping .separator, #tablePlaceMobileshipping .pence, #tablePlaceMobileshipping .summeryCurremcy{
+    font-size: 13px;
+}
+.faxTableHr{
+	width: 82%;
+}
+.italy #updateForm .modal-footer .col-md-offset-1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#order_status{
+    word-break: break-word;
+    padding-left: 10px;
+    padding-right: 7px; 
+}
+
+#updateForm .modal-footer .col-md-offset-1{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.summaryMobileQty {
+   font-size: 9px;
+}
+#tablePlaceMobileshipping .mobileSummeryProductsPrice{
+font-size: 15px;
+}
+#orderTable,  .orderTablePlaceHolder {
+display: none;
+} 
+#orderTableMobile, .orderTablePlaceMobileHolder {
+display:block;
+}
+    .faqTablePlaceHolder a.jp-previous,.orderTablePlaceMobileHolder a.jp-previous {
+margin-right: 1px;
+        }
+.faqTablePlaceHolder a, .orderTablePlaceMobileHolder a {
+    width: 30px;
+    height: 30px;
+    padding-top: 3px; 
+    margin: 0 1px;
+}
+.faqTablePlaceHolder a.jp-next,.orderTablePlaceMobileHolder a.jp-next {
+	margin-left: 1px;
+}
+.faqTablePlaceHolder, .orderTablePlaceMobileHolder {
+    width: 300px;
+}
+/*Pagination End*/
+.well>p{
+    font-size: 14px;
+}
+.orderprice{
+	font-size: 14px;
+}
+#accountOverview .well>a{
+    margin-left: 12px!important;
+}
+.font-fourteen {
+    font-size: 12px;
+}
+.well .headPara ,.sensor-block  .headPara {
+    font-family: Arial, Helvetica, sans-serif!important;
+    color: white;
+    font-size: 20px!important;
+}
+.button-white, .button-white:hover{
+    padding:10px 15px;
+    font-size: 12px;
+}
+.panelUserName {
+   
+   font-size: 20px;
+   
+} 
+.account-details h1, .account-details h2, .account-details h4 {
+    text-align: center;
+}
+.h4, h4 {
+    font-size: 20px;
+}
+.selectpicker{
+  font-size: 12px;
+  color:#212121;
+}
+.account-details .details-container h4{
+    font-family: Gotham-Bold;
+}
+#orders tr td{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#orders tr td br:after{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+}
+#orders tr td span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.vat {
+   font-size: 10px !important;
+}
+#orders .table td {
+    width: 36%;
+}
+
+#timeFrame select {
+    font-size: 14px;
+}
+    .padding-nav {
+		padding-top: 0;
+        padding-right: 5px;
+        }
+#order_status span{
+    font-size: 13px !important;
+}
+.checkout-banner {
+padding-top: 18px;
+padding-bottom: 43px;
+    }
+#create-account .create-user{
+padding: 0px;
+}
+#create-account .nxt-btn {
+    margin-bottom: 20px;
+        margin-top: 100px;
+}
+  .viewCheckoutBasket  .about-heading {
+        margin-top: 48px;
+        margin-bottom: 45px;
+            }
+ .Checkoutpage .viewCheckoutBasket .about-heading{
+	margin-top:0px;
+    margin-bottom:0px;            
+            }
+        #shippingDetails .active-address p.titlePara {
+            margin-top: 15px;
+        }
+            #shippingDetails .active-address p.detailsPara {
+margin-top: 15px;
+        } 
+		.faq.panel-default>.panel-heading span {
+   padding: 0px;
+}
+.preparing-skin .panel-default .glyphicon {
+    color: #ddd;
+    font-size: 20px;
+    top: 21px;
+}
+.checkout-steps .agree {
+    margin-top: 45px;
+}
+.checkout-steps .checkboxOrange.checkboxmarginnotify {
+    margin-top: 30px;
+    margin-bottom:145px;
+} 
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+html:lang(en) .account-review .modal-footer .btn+.btn {
+    margin-left: 0!important;
+}
+.acWellText2 {
+        padding-top: 5px;
+}
+.checkout-steps .checkboxOrange.checkboxmarginnotify {
+    margin-top: 25px;
+}
+}
+
+@media (min-width: 992px) {    
+    #warrenty-section .div-hr {
+        padding-bottom: 20px;
+    }
+	.linkURL{
+	font-size: 14px;
+	}
+    #stdWarrenty .details-container h2, #stdWarrenty .details-container h4 {
+        margin-bottom: 5px;
+    }
+    .warrentybutton {
+        margin-top: 40px;
+    }
+	#accountOverview .well>a, #accountOverview .well>a:hover {
+		min-height:55px;
+	}
+	.account-details-well{		
+		margin-bottom:0px;
+	}
+	.person {   
+		padding-bottom: 10px;
+	}
+	#accountOverview, #stdWarrenty, #persDetails, #orders{    
+		padding-top: 28px;
+	}
+	
+	#singleOrder{
+		padding-top: 8px;
+	}
+	#accountOverview .details-container>h2{
+	    margin-bottom:14px;
+	}
+
+	#accountOverview .details-container>.topSpacing{
+		margin-top: 15px;
+	}
+	
+	.account-details #personalLogOut { 
+		margin-top: 25px;
+	}
+	.orderTablePlaceHolder, .orderTablePlaceMobileHolder{
+       padding-top: 10px;
+	}
+	
+	.user_orders #orders .details-container>h2{
+		padding-bottom: 10px;
+	}
+
+	#last-order-place {  
+		margin-bottom: 40px;
+	}
+
+	.user_orders #orders .details-container>h4{
+		padding-bottom: 8px;
+	}
+	 
+	#persDetails .address-panes .active-address p{
+		margin-top: 10px;
+	}
+
+	#stdWarrenty .details-container>h2 {
+		margin-top: 20px;
+	}
+	#datepickerIcon{
+    height: 50px;
+    width:auto;
+   }
+
+   .italy .checkout-steps #create-account .checkboxOrange {
+    margin-bottom: 55px;
+	}
+    .payment-method > div:first-child {
+        margin-bottom: 30px;
+    }
+}

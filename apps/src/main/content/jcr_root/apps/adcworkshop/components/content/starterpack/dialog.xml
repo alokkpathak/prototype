@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Text and Button Fields">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <skuId
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Sku ID(Unique product Id)"
+                        maxLength="{Long}10"
+                        name="./skuId"
+                        xtype="textfield"/>
+                    <isBundleProduct
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Tick if the Product is a Bundle Product."
+                        fieldLabel="Is Bundle Product"
+                        name="./isBundleProduct"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Character size is 25"
+                        fieldLabel="Headline"
+                        maxLength="{Long}25"
+                        name="./startertitle"
+                        xtype="textfield"/>
+                    <productaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Product Image alt"
+                        name="./productimagealt"
+                        xtype="textfield"/>
+                    <button
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="CTA"
+                        name="./starterbutton"
+                        xtype="textfield"/>
+                    <zoomaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for ZoomPanel Image alt"
+                        name="./zoomimagealt"
+                        xtype="textfield"/>
+                    <productcount
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        allowDecimals="{Boolean}false"
+                        fieldDescription="Max Product Count is 10"
+                        fieldLabel="Product Count"
+                        maxValue="{Long}10"
+                        name="./productcount"
+                        xtype="numberfield"/>
+                    <maxerrormessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Maximum Quantity Error"
+                        name="./maxerrormessage"
+                        xtype="textfield"/>
+                    <productnotavailable
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Product Not Available Message "
+                        name="./productnotavailablemessage"
+                        xtype="textfield"/>
+                    <redirectionUrltoviewProduct
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="URL to View this Product."
+                        name="./redirectionUrltoviewProduct"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Images">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selectImages
+                        jcr:primaryType="cq:Widget"
+                        baseName="footerdetails1_"
+                        fieldLabel="Images to be added"
+                        name="./selectProductImages"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <desktopImages
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="Desktop Images"
+                                name="imagePathDesktop"
+                                width="300"
+                                xtype="pathfield"/>
+                            <mobileImages
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="Mobile Image"
+                                name="imagePathMobile"
+                                width="300"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </selectImages>
+                    <arrowleftaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for ArrowLeft Image alt"
+                        name="./arrowleftimagealt"
+                        xtype="textfield"/>
+                    <multialtimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Multi Image alt"
+                        name="./multiimagealt"
+                        xtype="textfield"/>
+                    <arrowrightaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Arrowright Image alt"
+                        name="./arrowrightimagealt"
+                        xtype="textfield"/>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Links">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Product Menu"
+                        name="./starterpacklinks"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </links>
+                    <modalaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for modal altimage alt"
+                        name="./modalimagealt"
+                        xtype="textfield"/>
+                </items>
+            </tab3>
+        </items>
+    </items>
+</jcr:root>
+

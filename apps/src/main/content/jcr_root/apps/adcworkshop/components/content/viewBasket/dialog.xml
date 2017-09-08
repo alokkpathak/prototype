@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="View Basket">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <viewBasket
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="View Basket"
+                        width="300"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <couponrequired
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Select checkbox if  coupon is required for this Country on this Page. eg: For UK, Please check and fill all the fields, else uncheck the checkbox."
+                                fieldLabel="Coupon Required on this Page"
+                                name="./couponrequiredonviewbasket"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <headingText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the Title eg: SHOPPING BASKET"
+                                fieldLabel="Heading Text"
+                                name="./headingText"
+                                width="300"
+                                xtype="textfield"/>
+                            <basketQtyDesc
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter description text eg: products in your basket"
+                                fieldLabel="Description "
+                                name="./basketQtyDesc"
+                                width="300"
+                                xtype="textfield"/>
+                            <unitPriceLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Unit Price Label eg: UNIT PRICE"
+                                fieldLabel="Unit Price Label"
+                                name="./unitPriceLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <qtyLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the Quantity Label Eg: QUANTITY"
+                                fieldLabel="Quantity Label"
+                                name="./qtyLabel"
+                                width="300"
+                                xtype="textfield"/>
+                           <viewproductLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the View Product Label Eg: VIEW PRODUCT"
+                                fieldLabel="View Product Label"
+                                name="./viewproductLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <totalPriceLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Total Price Label.eg: TOTAL PRICE"
+                                fieldLabel="Total Price Text"
+                                name="./totalPriceLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <shippingLabelView
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Shipping Label.eg: Shipping"
+                                fieldLabel="Shipping Label"
+                                name="./shippingLabelView"
+                                width="300"
+                                xtype="textfield"/>
+                            <voucherLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Voucher Label eg: VOUCHER"
+                                fieldLabel="Voucher Label Text"
+                                name="./voucherLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <voucherDiscountLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Voucher Discount Label eg: Cart Discount"
+                                fieldLabel="Voucher Discount text"
+                                name="./voucherdiscount"
+                                width="300"
+                                xtype="textfield"/>
+                            <totalLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Total Label text. eg: TOTAL"
+                                fieldLabel="Total Label"
+                                name="./totalLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <removeIcon
+                                jcr:primaryType="cq:Widget"                               
+                                fieldDescription="Enter the remove icon path"
+                                fieldLabel="Remove Icon Path"
+                                name="./removeIcon"
+                                xtype="pathfield"/>
+                            <checkoutButtonLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Checkout Label text. eg: CHECKOUT"
+                                fieldLabel="Checkout Button Label"
+                                name="./checkoutLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <ctaCheckoutGuestLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter checkout link for guest"
+                                fieldLabel="Checkout Guest User Link"
+                                name="./ctaCheckoutGuestLink"
+                                xtype="pathfield"/>
+                            <ctaCheckoutLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter checkout link for loggged in user"
+                                fieldLabel="Checkout Link"
+                                name="./ctaCheckoutLink"
+                                xtype="pathfield"/>
+                            <vouchersuccessmessage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Voucher Success Message eg: Thank You. Your Coupon Code Has Been Saved. You Will Have To Create Your Client Account Or Login While Beginning Checkout To Make It Work."
+                                fieldLabel="Voucher Success Text"
+                                name="./vouchersuccessmessage"
+                                width="300"
+                                xtype="textfield"/>
+                            <vouchererrormessage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Voucher Error Message eg: The coupon you entered is not recognized. Please check and try again."
+                                fieldLabel="Invalid Coupon Message"
+                                name="./voucherinvaliderror"
+                                width="300"
+                                xtype="textfield"/>
+                            <voucherempty
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Voucher Empty Message eg: Please Enter the Coupon Code"
+                                fieldLabel="Voucher Empty Text"
+                                name="./voucherempty"
+                                width="300"
+                                xtype="textfield"/>
+                                <voucherexpired
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Voucher Expired Message eg: The coupon you entered has expired"
+                                fieldLabel="Voucher Expired Text"
+                                name="./voucherexpired"
+                                width="300"
+                                xtype="textfield"/>
+                                <voucheralreadyused
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Voucher Used Message eg: The coupon you entered has already been redeemed"
+                                fieldLabel="Voucher Already used Text"
+                                name="./voucheralreadyused"
+                                width="300"
+                                xtype="textfield"/>
+                                <vouchercannotbeusedforproduct
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Voucher Empty Message eg: The coupon you entered cannot be used for the products in your basket."
+                                fieldLabel="Voucher Cannot be Used Text"
+                                name="./vouchercannotbeusedforproduct"
+                                width="300"
+                                xtype="textfield"/>
+                            <voucherbutton
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Voucher Button Name eg: OK"
+                                fieldLabel="Voucher Button Text"
+                                name="./voucherbutton"
+                                width="300"
+                                xtype="textfield"/>
+                           <vouchertooltip
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Tool Tip for Voucher eg: Please Eneter the Voucher Code"
+                                fieldLabel="Voucher Tool Tip Text"
+                                name="./vouchertooltiptext"
+                                width="300"
+                                xtype="textfield"/>
+                           <vouchertooltipimage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Tool tip Image"
+                                fieldLabel="Tool Tip Image"
+                                name="./vouchertooltipimage"
+                                width="300"
+                                xtype="pathfield"/>
+                            <taxLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Tax Label Eg: Incl Tax"
+                                fieldLabel="Tax Label"
+                                name="./inclusivetaxLabelView"
+                                width="300"
+                                xtype="textfield"/>
+                            <taxexclusiveLabelView
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Tax Label Eg: Exclusive Tax"
+                                fieldLabel="Tax Label"
+                                name="./taxexclusiveLabelView"
+                                width="300"
+                                xtype="textfield"/>
+                             <maxExceededMessage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Message for Max Item Exceeded"
+                                fieldLabel="Max Item Exceeded"
+                                name="./maxExceededMessage"
+                                width="300"
+                                xtype="textfield"/>
+                            <viewBasketLoadingMessage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Message for Loading Icon eg: Updating your basket..."
+                                fieldLabel="Basket Load Icon Message"
+                                name="./viewBasketLoadingMessage"
+                                width="300"
+                                xtype="textfield"/>
+                        </items>
+                    </viewBasket>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="No Products in Basket">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <noproducts
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="No Products in Basket"
+                        width="300"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                           <noproductText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Title eg: Shopping Cart is empty,ou have no items in your shopping cart."
+                                fieldLabel="No Products in Basket Text"
+                                name="./noproductText"
+                                width="300"
+                                xtype="richtext">
+							<rtePlugins jcr:primaryType="nt:unstructured">
+							<table
+								jcr:primaryType="nt:unstructured"
+								features="*"/>
+								<styles
+									jcr:primaryType="nt:unstructured"
+									features="*">
+									<styles jcr:primaryType="cq:WidgetCollection">
+										<style1
+											jcr:primaryType="nt:unstructured"
+											cssName="pad-b18"
+											text="padding-bottom-18px"/>
+										<style2
+											jcr:primaryType="nt:unstructured"
+											cssName="font12"
+											text="font-size-12px"/>
+										<style3
+											jcr:primaryType="nt:unstructured"
+											cssName="note"
+											text="note"/>
+										<style4
+											jcr:primaryType="nt:unstructured"
+											cssName="first"
+											text="first"/>
+										<style5
+											jcr:primaryType="nt:unstructured"
+											cssName="ref"
+											text="ref"/>
+										<style6
+											jcr:primaryType="nt:unstructured"
+											cssName="ref middle"
+											text="ref middle"/>
+									</styles>
+								</styles>
+								<paraformat
+									jcr:primaryType="nt:unstructured"
+									features="*">
+									<formats jcr:primaryType="cq:WidgetCollection">
+										<format1
+											jcr:primaryType="nt:unstructured"
+											description="Heading1"
+											tag="h1"/>
+										<format2
+											jcr:primaryType="nt:unstructured"
+											description="Heading2"
+											tag="h2"/>
+										<format3
+											jcr:primaryType="nt:unstructured"
+											description="Heading3"
+											tag="h3"/>
+										<format4
+											jcr:primaryType="nt:unstructured"
+											description="Heading4"
+											tag="h4"/>
+										<format5
+											jcr:primaryType="nt:unstructured"
+											description="paragraph"
+											tag="p"/>
+										<format6
+											jcr:primaryType="nt:unstructured"
+											description="Heading5"
+											tag="h5"/>
+									</formats>
+								</paraformat>
+								<undo
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<subsuperscript
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<edit
+									jcr:primaryType="nt:unstructured"
+									features="[cut,copy,paste-plaintext]"/>
+								<findreplace
+									jcr:mixinTypes="[rep:AccessControllable]"
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<format
+									jcr:primaryType="nt:unstructured"
+									features="[bold,italic]"/>
+								<spellcheck
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<lists
+									jcr:mixinTypes="[rep:AccessControllable]"
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<justify
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<links
+									jcr:primaryType="nt:unstructured"
+									features="*">
+									<linkDialogConfig
+										jcr:primaryType="nt:unstructured"
+										height="{Long}316">
+										<linkAttributes jcr:primaryType="cq:WidgetCollection">
+											<linkAdvanced
+												jcr:primaryType="cq:Widget"
+												collapsed="{Boolean}true"
+												collapsible="{Boolean}true"
+												inputValue="advanced"
+												name="./linkdialog/cq:adhocLinkTrackingTab"
+												title="Link tracking"
+												xtype="dialogfieldset">
+												<items jcr:primaryType="cq:WidgetCollection">
+													<enable
+														jcr:primaryType="nt:unstructured"
+														attribute="enabletracking"
+														fieldDescription="override analytics framework settings"
+														fieldLabel="Custom link tracking"
+														name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+														xtype="checkbox">
+														<listeners
+															jcr:primaryType="nt:unstructured"
+															check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+													</enable>
+													<events
+														jcr:primaryType="nt:unstructured"
+														attribute="adhocevents"
+														fieldDescription="e.g.: event2, event7"
+														fieldLabel="Include SiteCatalyst events"
+														name="./linkdialog/cq:adhocLinkTrackingEvents"
+														xtype="textfield"/>
+													<evars
+														jcr:primaryType="nt:unstructured"
+														attribute="adhocevars"
+														fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+														fieldLabel="Include SiteCatalyst variables"
+														name="./linkdialog/cq:adhocLinkTrackingEvars"
+														xtype="textfield"/>
+												</items>
+											</linkAdvanced>
+										</linkAttributes>
+									</linkDialogConfig>
+								</links>
+								<misctools
+									jcr:mixinTypes="[rep:AccessControllable]"
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<colorpicker
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+							</rtePlugins>
+							</noproductText>
+                        </items>
+                    </noproducts>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Other Fields on Basket page">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <otherfields
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Other Fields on Basket page"
+                        width="300"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <multifeatures
+                                jcr:primaryType="cq:Widget"
+                                baseName="multifeatures_"
+                                fieldLabel="Configure the Feature Fields"
+                                name="./multifeatures"
+                                xtype="mtmulticompositefield">
+                                <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                                    <image
+                                        jcr:primaryType="cq:Widget"
+                                        allowBlank="{Boolean}false"
+                                        fieldLabel="Panel icon"
+                                        name="featureimage"
+                                        width="{Long}300"
+                                        xtype="pathfield"/>
+									<mobileimage 
+                                        jcr:primaryType="cq:Widget"                                       
+                                        fieldLabel="Panel icon for mobile"
+                                        name="mobilefeatureimage"
+                                        width="{Long}300"
+                                        xtype="pathfield"/>	
+                                    <text
+                                        jcr:primaryType="cq:Widget"
+                                        fieldDescription="Enter the field eg: All payments are secured and encrypted."
+                                        fieldLabel="Website Features"
+                                        name="featureText"
+                                        width="300"
+                                        xtype="richtext"/>
+                                </fieldConfigs>
+                            </multifeatures>
+                        </items>
+                    </otherfields>
+                </items>
+            </tab3>
+        </items>
+    </items>
+</jcr:root>

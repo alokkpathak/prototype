@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:folder">
+    <copyright
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="&amp;copy; {0} adc Site. All rights reserved."
+        sling:message="&amp;copy; {0} adc Site. Tous droits réservés."/>
+    <Sensor_x0020_is_x0020_water-resistant_x0020_in_x0020_up_x0020_to_x0020_1_x0020_meter_x0020__x0028_3_x0020_feet
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Sensor is water-resistant in up to 1 meter (3 feet) of water. Do not immerse longer than 30 minutes."
+        sling:message="Le capteur est imperméable dans en hausse de 1 mètre (3 pieds) d'eau. N'immergez pas plus longtemps que 30 minutes."/>
+</jcr:root>

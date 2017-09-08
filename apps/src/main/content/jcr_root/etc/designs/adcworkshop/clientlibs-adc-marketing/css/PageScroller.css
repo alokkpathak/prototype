@@ -1,0 +1,324 @@
+.pagescroller .about.nav-links{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.pagescroller .nav-links .two-navigation-banner .as-banner{
+	visibility:hidden;
+}
+.pagescroller .about.nav-links h1{
+    margin-bottom: 0px;
+    color: #E4572D;
+    word-wrap: break-word;
+}
+.two-navigation-banner {
+    margin: 0 50px;
+}
+.as-banner  {
+    border-bottom: 1px dashed #c6c6c6;
+    color: #c6c6c6;
+    text-transform: uppercase;
+    margin-top: 15px
+}
+.apply-sensor {
+    border-bottom: 1px dashed #c6c6c6;
+}
+.apply-sensor .as-banner {
+    border-bottom: none;
+}
+.as-banner a, .sub-footer  .apply-sensor a{
+    color: #E4572D;
+    font-size: 14px;
+    font-family: 'Gotham-Medium-Regular';
+    padding-bottom:6px;
+}
+.as-banner a {
+    display: table;
+}
+.as-banner a.left-link {
+    float: left;
+    padding-right: 10px;
+}
+.as-banner a.right-link {
+    float: right;
+    padding-left: 10px;
+}
+.as-banner a.left-link img {
+    padding-right: 20px;
+    margin-top: 0!important;
+}
+.as-banner a.right-link img {
+    padding-left: 20px;
+    margin-top: 0!important;
+}
+.as-banner .nav-link-arrow, .as-banner .nav-link-text {
+    display: table-cell;
+}
+.as-banner .nav-link-arrow {
+    vertical-align: middle;
+}
+.as-banner .nav-link-text {
+    vertical-align: middle;
+}
+.apply-sensor{
+    padding: 25px 0 0 0;
+    margin-bottom: 60px;
+    color: #c6c6c6;
+}
+.apply-sensor>a{
+    color: #c6c6c6;
+    font-family: 'Gotham-Medium-Regular';
+    margin-top: 20px;
+    font-size: 15px;
+    padding-bottom:10px;
+}
+.two-navigation-banner img,.sub-footer .apply-sensor img{
+        padding-bottom: 2px;
+    }
+
+	
+/************************** lg *******************************/
+@media (min-width: 1200px) {
+.sub-footer  .apply-sensor .col-xs-1 img, .as-banner.padding-left img{
+    padding-bottom:2px;
+}
+.two-navigation-banner  .col-xs-offset-2{
+    margin-left:0;
+}
+/*.your-data .apply-sensor {
+    padding-top: 60px;
+}*/
+.your-medical .apply-sensor {
+    padding-top: 40px;
+	 margin-bottom: 50px;
+}
+.discoverit-sensor .apply-sensor{
+    padding-top: 0px;
+}
+.italy.discoverit-sensor .apply-sensor {
+    padding-top: 85px;
+}
+.apply-sensor .col-xs-1{
+    text-align:right;
+}
+.apply-sensor .pull-left .col-xs-1 {
+    text-align: left;
+}
+.apply-sensor .col-xs-9{
+ ``text-align:right;
+}
+.apply-sensor{
+    padding-top:80px;
+}
+.your-data .apply-sensor {
+    margin-bottom: 0px;
+}
+.getting-started .apply-sensor {
+                  margin-bottom: 18px;
+}
+.italy .getting-started .apply-sensor, .italy.your-data .apply-sensor, .italy.getting-started .apply-sensor{
+	margin-bottom:60px;
+}
+.italy .discoverit-sensor .apply-sensor{
+	padding-top:80px;
+}
+.italy.your-medical .apply-sensor {  
+    margin-bottom: 60px;
+	padding-top: 62px;
+}
+}
+/****************** md **************************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+.two-navigation-banner.apply-sensor {
+    margin: 0 10px 60px 10px;
+}
+.discover-your-meter .two-navigation-banner.apply-sensor {
+    padding-top: 80px;
+}
+.as-banner .padding-right{
+	padding-left:0px !important;
+}
+.two-navigation-banner {
+    margin: 0 10px;
+}
+.apply-sensor{
+    padding-top:60px;
+}
+.your-medical .apply-sensor{
+padding-top: 40px;
+        }
+ .your-data .apply-sensor {
+    margin-bottom: 30px;
+}
+.italy.your-data .apply-sensor {
+    margin-bottom: 0px;
+}
+.as-banner{
+	margin-top:0;
+}
+.pagescroller .about.nav-links{
+	padding-top:60px;
+	padding-bottom:60px;
+}
+.getting-started .apply-sensor {
+         margin-bottom: 50px;
+}
+.italy .getting-started .apply-sensor, .italy.getting-started .apply-sensor{
+	margin-bottom:60px;
+}
+.italy .discoverit-sensor .apply-sensor{
+	padding-top:80px;
+}
+
+html:lang(en) .your-kids .apply-sensor{
+margin-bottom:0px;
+}
+html:lang(en) .discover-your-meter .apply-sensor {
+    margin-bottom: 30px;
+}
+.italy.discover-your-meter .two-navigation-banner.apply-sensor {
+    padding-top: 40px;
+}
+.italy.discoverit-sensor .apply-sensor{
+padding-top: 80px;
+}
+
+
+}
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+.two-navigation-banner.apply-sensor {
+    margin: 0 10px 60px 10px;
+}
+.two-navigation-banner {
+    margin: 0 10px;
+}
+.discover-your-meter .two-navigation-banner.apply-sensor {
+    padding-top: 80px;
+    margin-bottom: 0px;
+
+}
+.discoverit-sensor .apply-sensor {
+	padding-top: 100px;
+}
+.apply-sensor .col-xs-9,.apply-sensor .col-xs-1{
+    text-align: right;
+}
+.apply-sensor .col-xs-9.col-md-11{
+    text-align: right;
+    padding-right: 12px;
+}
+.getting-started .apply-sensor {
+                    margin-bottom: 0px;
+}
+.italy.getting-started .apply-sensor{
+	margin-bottom:45px;
+}
+.italy.discover-your-meter .two-navigation-banner.apply-sensor{
+margin-bottom:60px;
+}
+.discover-your-meter .two-navigation-banner.apply-sensor, .your-data .apply-sensor, html:lang(en) .your-kids .apply-sensor{
+padding-top:80px;
+}
+
+html:lang(en) .your-data .apply-sensor, html:lang(en) .your-kids .apply-sensor {
+margin-bottom:0px;
+}
+
+
+}
+
+
+/********************************* XS Portrait ************************/
+
+@media (max-width: 767px) {
+.pagescroller .container-fluid {
+    padding: 0 10px;
+}
+.pagescroller .about.nav-links h1 {
+    margin-bottom: 0px;
+    color: #E4572D;
+    font-size: 20px;
+}
+.pagescroller .about.nav-links{
+    padding-bottom:25px;
+    padding-top:0px;
+}
+.discoverit-sensor .apply-sensor {
+padding-top: 50px;
+}
+.as-banner {
+    border-bottom: none;
+}
+.as-banner a {
+    color: #E4572D;
+    font-size: 11px;
+    font-family: 'Gotham-Medium-Regular';
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+}
+.apply-sensor>a {
+    color: #E4572D;
+    font-size: 12px;
+} 
+.as-banner a.left-link img {
+    padding-right: 6px;
+    margin-top: 0!important;
+}
+.as-banner a.right-link img {
+    padding-left: 6px;
+    margin-top: 0!important;
+}
+.two-navigation-banner .as-banner{
+    margin-top: 0px;
+}
+.two-navigation-banner {
+    margin: 0;
+}
+.two-navigation-banner a {
+    margin-top: 25px;
+    padding-bottom: 0;
+}
+.discover-your-meter .two-navigation-banner.apply-sensor {
+    padding-top: 22px;
+}
+.two-navigation-banner h1.font-orange {     
+margin-top:50px;        
+} 
+.sub-footer a{
+text-align:center;
+}
+.sub-footer .apply-sensor a{
+color: #E4572D;
+    font-size: 12px;
+    font-family: 'Gotham-Medium-Regular';
+    letter-spacing: 1px;
+}
+.apply-sensor {
+    padding: 20px 0 30px 0;
+}
+.italy.getting-started .apply-sensor{
+	margin-bottom:45px;
+}
+.italy.discoverit-sensor .apply-sensor{
+    margin-bottom: 30px;
+} 
+.italy.your-data .apply-sensor, .italy.your-medical .apply-sensor, .italy.getting-started .apply-sensor, 
+.italy.your-kids .apply-sensor,.italy.discover-your-meter .apply-sensor, .italy.discoverit-sensor .apply-sensor {
+margin-bottom:30px;
+}
+
+.italy.discoverit-sensor .apply-sensor{
+    margin-bottom: 45px;
+}
+.your-medical .apply-sensor{
+padding-top:0;
+}
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+.pagescroller .about.nav-links h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+}

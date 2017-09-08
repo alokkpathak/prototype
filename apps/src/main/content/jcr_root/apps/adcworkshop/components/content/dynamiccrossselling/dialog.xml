@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <starterkit_text
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="Starter Kit"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text_for_starterpack
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text for Starter Kit"
+                                name="./textForStarter"
+                                xtype="richtext">
+                                <rtePlugins
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <formats jcr:primaryType="cq:WidgetCollection">
+                                            <h5
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading5"
+                                                tag="h5"/>
+                                            <span
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Span"
+                                                tag="span"/>
+                                        </formats>
+                                    </paraformat>
+								<misctools
+									jcr:mixinTypes="[rep:AccessControllable]"
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<colorpicker
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+                                </rtePlugins>
+                            </text_for_starterpack>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path"
+                                name="./imageForStarter"
+                                xtype="pathfield"/>
+                            <mobileimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path for mobile"
+                                name="./mobileimageForStarter"
+                                xtype="pathfield"/>
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for image alt"
+                                name="./imagealt"
+                                xtype="textfield"/>
+                        </items>
+                    </starterkit_text>
+                    <sensor_text
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}true"
+                        collapsible="{Boolean}true"
+                        title="Sensor"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text_for_sensor
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text for Sensor"
+                                name="./textForSensor"
+                                xtype="richtext">
+                                <rtePlugins
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <formats jcr:primaryType="cq:WidgetCollection">
+                                            <h5
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading5"
+                                                tag="h5"/>
+                                            <span
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Span"
+                                                tag="span"/>
+                                        </formats>
+                                    </paraformat>
+								<misctools
+									jcr:mixinTypes="[rep:AccessControllable]"
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+								<colorpicker
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+                                </rtePlugins>
+                            </text_for_sensor>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path"
+                                name="./imageForSensor"
+                                xtype="pathfield"/>
+                            <mobileimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Path for mobile"
+                                name="./mobileimageForSensor"
+                                xtype="pathfield"/>
+                            <altimage1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for image alt"
+                                name="./imagealt1"
+                                xtype="textfield"/>
+                        </items>
+                    </sensor_text>
+                    <arrowimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Arrow Image Path"
+                        name="./arrowrright"
+                        xtype="pathfield"/>
+                    <arrowmobileimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Arrow Image Path for mobile"
+                        name="./mobilearrowrright"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

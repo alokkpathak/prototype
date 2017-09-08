@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="dialog"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Return Order Fields"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <orderNumberLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for order Number Field"
+                        name="./orderNumberLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <cancellationDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Description for cancellation"
+                        name="./cancellationDescription"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <accountDetailsLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Account details Field"
+                        name="./accountDetailsLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <orderIdLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for order ID of that particular order"
+                        name="./orderIdLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <customerNameLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for customer Name field"
+                        name="./customerNameLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <shippingAddressLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for shipping Address field"
+                        name="./shippingAddressLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <emailAddressLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for email Address Field"
+                        name="./emailAddressLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <productSealBrokenLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Product Seal Broken Field"
+                        name="./productSealBrokenLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+					<asterisktextLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Product Seal Broken Field's asterisk"
+                        name="./asterisktextLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+					<disclaimertext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for disclaimer text"
+                        name="./disclaimertext"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <yesLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Radio Button (Yes)"
+                        name="./yesLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <noLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Radio Button (No)"
+                        name="./noLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <itemInfoLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for item Info Field"
+                        name="./itemInfoLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <itemLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for items dropdown"
+                        name="./itemLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <quantityForReturnLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for quantity For Return Field"
+                        name="./quantityForReturnLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <submitButtonLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for submit Button "
+                        name="./submitButtonLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <reasonLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for reason"
+                        name="./reason"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <commentsLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for comments"
+                        name="./comments"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+					<returnpolicylink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Return policy link"
+                        name="./returnpolicylink"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+					<returnpolicytext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Return policy text"
+                        name="./returnpolicytext"
+                        validateOnBlur="true"
+                        xtype="textfield"/>						
+                    <productSealBrokenNotification
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the notification message to be displayed when product seal is broken"
+                        name="./productSealBrokenNotification"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pad-b18"
+                                        text="padding-bottom-18px"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                    <style7
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="questions"/>
+                                    <style8
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="imageGraph"
+                                        text="imageGraph"/>
+                                </styles>
+                            </styles>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[cut,copy,paste-plaintext]"/>
+                            <findreplace
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold,italic]"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:adhocLinkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <enable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="enabletracking"
+                                                    fieldDescription="override analytics framework settings"
+                                                    fieldLabel="Custom link tracking"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                    xtype="checkbox">
+                                                    <listeners
+                                                        jcr:primaryType="nt:unstructured"
+                                                        check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                </enable>
+                                                <events
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevents"
+                                                    fieldDescription="e.g.: event2, event7"
+                                                    fieldLabel="Include SiteCatalyst events"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                    xtype="textfield"/>
+                                                <evars
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevars"
+                                                    fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                    fieldLabel="Include SiteCatalyst variables"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                    xtype="textfield"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <misctools
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </productSealBrokenNotification>
+                </items>
+            </tab1>
+            <errorMessages
+                jcr:primaryType="cq:Panel"
+                title="Error Messages"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <mandatoryMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mandatory field message"
+                        name="./mandatoryMessage"
+                        xtype="textfield"/>
+                </items>
+            </errorMessages>
+        </items>
+    </items>
+</jcr:root>

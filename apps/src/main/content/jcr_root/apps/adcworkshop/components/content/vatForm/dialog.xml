@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    manageTabs="function(tab,noSwitch)&#xa;{&#xa;var tabs=['country','uk_tab_open','it_tab_open'];&#xa;var index=tabs.indexOf(tab);&#xa;if(index==-1) return;&#xa;for(var i=1;i&lt;tabs.length;i++)&#xa;{&#xa;if(index==i)&#xa;{this.unhideTabStripItem(i);}&#xa;else&#xa;{this.hideTabStripItem(i);&#xa;}&#xa;}&#xa;this.doLayout();&#xa;if(!noSwitch)this.activate(index);}"
+    title="dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <country
+            jcr:primaryType="cq:Panel"
+            title="Country Selection"
+            width="300"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <selectCountry
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Select country"
+                    name="./vatCountry"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <uk_tab_option
+                            jcr:primaryType="nt:unstructured"
+                            text="UK Vat Form"
+                            value="uk_tab_open"/>
+                        <it_tab_option
+                            jcr:primaryType="nt:unstructured"
+                            text="IT Vat Form"
+                            value="it_tab_open"/>
+                    </options>
+                </selectCountry>
+            </items>
+        </country>
+        <uk_tab
+            jcr:primaryType="cq:Widget"
+            title="UK VAT Form"
+            width="300"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <vatDescription
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldDescription="Enter the description for VAT form displayed"
+                    fieldLabel="Description text"
+                    maxLength="300"
+                    name="./vatDesc"
+                    xtype="richtext"/>
+                <checkBoxSelf
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the text for the check box"
+                    fieldLabel="Check Box Self"
+                    name="./checkBoxSelf"
+                    xtype="textfield"/>
+                <checkBoxOthers
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the text for the check box"
+                    fieldLabel="Check Box Others"
+                    name="./checkBoxOthers"
+                    xtype="textfield"/>
+                <firstnameLabel
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter the Label for First Name field"
+                    fieldLabel="First Name Label"
+                    name="./vatFirstName"
+                    xtype="textfield"/>
+                <lastnameLabel
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter the Label for Last Name field"
+                    fieldLabel="Last Name Label"
+                    name="./vatLastName"
+                    xtype="textfield"/>
+                <addressLabel
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Address Line 1 Label"
+                    fieldLabel="Address Label"
+                    name="./vatFormAddress"
+                    xtype="textfield"/>
+                <addressPlaceHolderLabelOne
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the place holder text for address block"
+                    fieldLabel="Address Place Holder Text "
+                    name="./addressPlaceHolder1"
+                    width="300"
+                    xtype="textfield"/>
+                <addressLabel1
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Address Line 2 Label"
+                    fieldLabel="Address Label"
+                    name="./vatFormAddress1"
+                    xtype="textfield"/>
+                <addressPlaceHolderLabelTwo
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the place holder text for address block"
+                    fieldLabel="Address Place Holder Text "
+                    name="./addressPlaceHolder2"
+                    width="300"
+                    xtype="textfield"/>
+                <postalCodeLabel
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter label for postal code field"
+                    fieldLabel="Postal Code"
+                    name="./vatPostalCodeLabel"
+                    xtype="textfield"/>
+                <cityLabel
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter the Label for City Field"
+                    fieldLabel="CityLabel"
+                    name="./vatCityField"
+                    xtype="textfield"/>
+                <dob
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter the Label for DOB Field"
+                    fieldLabel="DOB Label"
+                    name="./vatDOBField"
+                    xtype="textfield"/>
+                <calendarIconDesktop
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter the Image path for calendar icon for desktop"
+                    fieldLabel="Calendar Icon Image path for desktop"
+                    name="./calendarIconImageDesktop"
+                    xtype="pathfield"/>
+                <calendarIconMobile
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter the Image path for calendar icon for mobile"
+                    fieldLabel="Calendar Icon Image path for mobile"
+                    name="./calendarIconImageMobile"
+                    xtype="pathfield"/>
+                <purchaseDisclaimerCheckBox
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the text for the check box"
+                    fieldLabel="Purchase Disclaimer Check Box"
+                    name="./checkBoxPur"
+                    xtype="textfield"/>
+                <diseaseDisclaimerCheckBox
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the text for the check box"
+                    fieldLabel="Disease Disclaimer Check Box"
+                    name="./checkBoxDis"
+                    xtype="textfield"/>
+                <findMyAddressLabel
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldDescription="Enter the label for find my address"
+                    fieldLabel="Find my address label"
+                    maxLength="300"
+                    name="./findMyAddressLabel"
+                    xtype="textfield"/>
+                <enterAddressManuallyLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the label for entering address manually"
+                    fieldLabel="Enter address manually label"
+                    maxLength="300"
+                    name="./enterAddressManuallyLabel"
+                    xtype="textfield"/>
+                <findAddressButton
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the label for find Address Button"
+                    fieldLabel="find Address Button Label"
+                    maxLength="300"
+                    name="./findAddressButton"
+                    xtype="textfield"/>
+                <selectAddressLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the label for select address label"
+                    fieldLabel="Description text"
+                    maxLength="300"
+                    name="./selectAddressLabel"
+                    xtype="textfield"/>
+                <selectAddressOptionsDropDown
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the label to be displayed first in the select Address Options Drop Down"
+                    fieldLabel="select Address Options Drop Down"
+                    maxLength="300"
+                    name="./selectAddressOptionsDropDown"
+                    xtype="textfield"/>
+            </items>
+        </uk_tab>
+        <it_tab
+            jcr:primaryType="cq:Widget"
+            title="IT VAT Form"
+            width="300"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <imagePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the image path"
+                    fieldLabel="Image for the VAT Description"
+                    name="./imagePathVAT"
+                    xtype="pathfield"/>
+                <altimage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter the text for VAT descriptionImage alt"
+                    name="./vatimagealt"
+                    xtype="textfield"/>
+                <vatmulti
+                    jcr:primaryType="cq:Widget"
+                    baseName="vatmulti_"
+                    fieldLabel="Configure the VAT related points"
+                    name="./vatmulti"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <descrption
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the VAT description"
+                            name="vdescription"
+                            width="300"
+                            xtype="textarea"/>
+                        <vatdisplaylink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="VAT Display link"
+                            name="vdescriptionlink"
+                            xtype="textfield"/>
+                        <vatItalyPDFPath
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Enter the path from where the PDF must be downloaded"
+                            fieldLabel="Path for PDF"
+                            name="vatItalyPDFPath"
+                            rootpath="/content/dam/adc/fsl/pdf/it/it"
+                            width="300"
+                            xtype="pathfield"/>
+                    </fieldConfigs>
+                </vatmulti>
+            </items>
+        </it_tab>
+    </items>
+</jcr:root>

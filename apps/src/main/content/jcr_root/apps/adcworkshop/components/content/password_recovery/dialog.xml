@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="password_recovery"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Edit fields">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <greetingText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter your greeting text"
+                        name="./greetingText"
+                        xtype="textfield"/>
+                    <setPasswordText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter your set password text"
+                        name="./setpwdText"
+                        xtype="textfield"/>
+                    <headText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter your heading text"
+                        name="./heading"
+                        xtype="textfield"/>
+                    <passwordField
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter your password field text"
+                        name="./pwd"
+                        xtype="textfield"/>
+					<passwordInfoModaltext
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text to display on Information Overlay"
+                                name="./passwordrecoveryPopup"
+                                xtype="richtext">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <formats jcr:primaryType="cq:WidgetCollection">
+                                            <format1
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading1"
+                                                tag="h1"/>
+                                            <format2
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading2"
+                                                tag="h2"/>
+                                            <format3
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading3"
+                                                tag="h3"/>
+                                            <format4
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading4"
+                                                tag="h4"/>
+                                            <format5
+                                                jcr:primaryType="nt:unstructured"
+                                                description="paragraph"
+                                                tag="p"/>
+                                            <format6
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading5"
+                                                tag="h5"/>
+                                        </formats>
+                                    </paraformat>
+                                    <findreplace
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="[bold,italic]"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <lists
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <justify
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <linkDialogConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            height="{Long}316">
+                                            <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                                <linkAdvanced
+                                                    jcr:primaryType="cq:Widget"
+                                                    collapsed="{Boolean}true"
+                                                    collapsible="{Boolean}true"
+                                                    inputValue="advanced"
+                                                    name="./linkdialog/cq:adhocLinkTrackingTab"
+                                                    title="Link tracking"
+                                                    xtype="dialogfieldset">
+                                                    <items jcr:primaryType="cq:WidgetCollection">
+                                                        <enable
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="enabletracking"
+                                                            fieldDescription="override analytics framework settings"
+                                                            fieldLabel="Custom link tracking"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                            xtype="checkbox">
+                                                            <listeners
+                                                                jcr:primaryType="nt:unstructured"
+                                                                check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                        </enable>
+                                                        <events
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevents"
+                                                            fieldDescription="e.g.: event2, event7"
+                                                            fieldLabel="Include SiteCatalyst events"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                            xtype="textfield"/>
+                                                        <evars
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevars"
+                                                            fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                            fieldLabel="Include SiteCatalyst variables"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                            xtype="textfield"/>
+                                                    </items>
+                                                </linkAdvanced>
+                                            </linkAttributes>
+                                        </linkDialogConfig>
+                                    </links>
+                                    <misctools
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <colorpicker
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                </rtePlugins>
+                    </passwordInfoModaltext>	
+                    <retypePasswordField
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter your re enter password field text"
+                        name="./repwd"
+                        xtype="textfield"/>
+                    <buttonText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter your button text"
+                        name="./button"
+                        xtype="textfield"/>
+                    <buttonLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select your button link"
+                        name="./btnlink"
+                        width="300"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+            <errorMessages
+                jcr:primaryType="cq:Widget"
+                title="Error Messages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <mandatoryField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for field to be mandatory"
+                        fieldLabel="Mandatory Field Text"
+                        name="./is_mandatory"
+                        width="300"
+                        xtype="textfield"/>
+                    <validPwdCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if password is not in the proper format"
+                        fieldLabel="Valid Password Display"
+                        name="./validPasswordCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <passwordMatchCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if passwords entered are not matching"
+                        fieldLabel="Password Not Matching Error"
+                        name="./passwordMatchingCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <invalidOldPassword
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the old password is invalid "
+                        fieldLabel="Invalid Old Password"
+                        name="./invalidOldPassword"
+                        width="300"
+                        xtype="textfield"/>
+                    <invalidPasswordResetToken
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the password reset token is invalid"
+                        fieldLabel="Password Reset Token invalid"
+                        name="./invalidPasswordResetToken"
+                        width="300"
+                        xtype="textfield"/>
+                    <wrongCustomerAccount
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the customer account is wrong"
+                        fieldLabel="Wrong customer account"
+                        name="./wrongCustomerAccount"
+                        width="300"
+                        xtype="textfield"/>
+                    <resetLinkExpired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the reset link is expired"
+                        fieldLabel="Reset link expired"
+                        name="./resetLinkExpired"
+                        width="300"
+                        xtype="textfield"/>
+                    <failedLoadingCustomerId
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the customer ID failed to load"
+                        fieldLabel="Failed to load customer ID"
+                        name="./failedLoadingCustomerId"
+                        width="300"
+                        xtype="textfield"/>
+                    <resetservicesuccess
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the reset is success"
+                        fieldLabel="Reset success"
+                        name="./resetservicesuccess"
+                        width="300"
+                        xtype="textfield"/>
+                    <resetservicefails
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the reset service fails"
+                        fieldLabel="Reset service failed"
+                        name="./resetservicefail"
+                        width="300"
+                        xtype="textfield"/>
+                    <unauthorizedUrl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please Enter the page url when the token is invalid&#xa;"
+                        fieldLabel="Unauthorized page url"
+                        name="./unauthorizedurl"
+                        xtype="pathfield"/>
+                    <successredirectionurl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="URL when account activation is success"
+                        fieldLabel="Account activation success redirection URL"
+                        name="./successURL"
+                        xtype="pathfield"/>
+                </items>
+            </errorMessages>
+        </items>
+    </items>
+</jcr:root>

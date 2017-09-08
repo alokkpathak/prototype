@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pagePath
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="/content/adc/fsl/countries/gb/en/home"
+                        fieldDescription="Select the page path "
+                        fieldLabel="Page Path"
+                        name="./pagePath"
+                        xtype="pathfield"/>
+                    <groups
+                        jcr:primaryType="cq:Widget"
+                        baseName="groups_"
+                        fieldLabel="Configure the Groups"
+                        name="./groups"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <groupNameText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Group Name Text"
+                                name="groupNameText"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <groupNameLabelText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Group Name Label Text"
+                                name="groupNameLabelText"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </groups>
+                    <denyEditPermissionLabelText
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Deny Edit"
+                        fieldLabel="Deny Edit Permission Label Text"
+                        name="./denyEditPermissionLabelText"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <denyDeletePermissionLabelText
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Deny Delete"
+                        fieldLabel="Deny Delete Permission Label Text"
+                        name="./denyDeletePermissionLabelText"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <denyEditDeletePermissionLabelText
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Deny Edit Delete"
+                        fieldLabel="Deny Edit Delete Permission Label Text"
+                        name="./denyEditDeletePermissionLabelText"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <formButtonLabelText
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Submit"
+                        fieldLabel="Form Button Label Text"
+                        name="./formButtonLabelText"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <accessRemovalLabel
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Remove Access"
+                        fieldDescription="Give the label for removing access"
+                        fieldLabel="Access Removal Label"
+                        name="./removeaccess"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

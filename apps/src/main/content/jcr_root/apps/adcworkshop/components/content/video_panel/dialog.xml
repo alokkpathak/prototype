@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Browse"
+    width="800"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <generalTab
+                jcr:primaryType="cq:Widget"
+                title="Video Panel"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <showshare
+                        jcr:primaryType="cq:Widget"                        
+                        fieldDescription="ShowShareIcon by checking the checkbox"
+                        fieldLabel="Show Share Icon"                       
+                        name="./showshareicon"
+                        type="checkbox"
+                        xtype="selection"/>
+					<headline
+                        jcr:primaryType="cq:Widget"
+                        
+                        fieldDescription="Maximum 25 characters"
+                        fieldLabel="Headline"
+                        maxLength="{Long}25"
+                        name="./headline"
+                        xtype="textfield"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        
+                        fieldDescription="Maximum 300 characters"
+                        fieldLabel="Description"
+                        maxLength="{Long}300"
+                        name="./description"
+                        xtype="textarea"/>
+                    <details
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Details"
+                        name="./details"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="cq:Widget"
+								
+                                fieldDescription="Upload only .jpg or .png images of 1MB or less with 230*233px Resolution"
+                                fieldLabel="Image Path"
+                                name="path"
+                                width="300"
+                                xtype="pathfield"/>
+							 <mobilepath
+                                jcr:primaryType="cq:Widget"								
+                                fieldDescription="Upload only .jpg or .png images of 1MB or less with 512*300px Resolution"
+                                fieldLabel="Mobile Image Path"
+                                name="mobilepath"
+                                width="300"
+                                xtype="pathfield"/>	
+                            <pathaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="imagealt"
+                                xtype="textfield"/>
+                            <title
+                                jcr:primaryType="cq:Widget"
+								
+                                fieldLabel="Title"
+                                name="title"
+                                width="300"
+                                xtype="textfield"/>
+                            <icon
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Icon Path"
+                                name="icon"
+                                width="300"
+                                xtype="pathfield"/>
+							 <mobileicon
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Mobile Icon Path"
+                                name="mobileicon"
+                                width="300"
+                                xtype="pathfield"/>	
+                            <iconaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for IconImage alt"
+                                name="iconimagealt"
+                                xtype="textfield"/>
+                            <titleHeader
+                                jcr:primaryType="cq:Widget"
+								
+                                fieldLabel="Title Header"
+                                name="titleHeader"
+                                width="300"
+                                xtype="textfield"/>
+                            <link
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="Link"
+                                name="link"
+                                width="300"
+                                xtype="textfield"/>
+                            <titleFooter
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Title Footer"
+                                name="titleFooter"
+                                width="300"
+                                xtype="textfield"/>
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Description"
+                                name="text"
+                                width="300"
+                                xtype="textarea"/>
+                        </fieldConfigs>
+                    </details>
+					<Sharetext
+                        jcr:primaryType="cq:Widget"                      
+						fieldLabel="Share Text Label"
+                        name="./sharetext"
+                        xtype="textfield"/>
+					<loadMoreBtn
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Load More Button Label"
+                        name="./loadMoreBtn"
+                        xtype="textfield"/>
+                    <accessabilitytab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Field Label for Opens in New Tab"
+                        name="./opensnewtab"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                </items>
+            </generalTab>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog) { var multiField = dialog.findByType('mtmulticompositefield')[0], prefix = multiField.fieldNamePrefix, fieldItems = dialog.findByType('mtmulticompositefielditem'), currentTime = new Date().getTime(), i=1; fieldItems.forEach( function(fieldItem){ var uniqueIdentifierField = fieldItem.find('name',prefix + fieldItem.name + '/' + 'uniqueIdentifier')[0]; if(uniqueIdentifierField.getValue() === '') { uniqueIdentifierField.setValue('' + currentTime + i); } i++; });}"/>
+</jcr:root>

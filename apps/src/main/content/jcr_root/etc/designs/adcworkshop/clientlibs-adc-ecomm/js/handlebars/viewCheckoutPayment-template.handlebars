@@ -1,0 +1,28 @@
+ {{#if .}}
+			{{#each cart}}
+                 {{#each this.product}}
+
+                <tr id="{{this.sku}}Row"><td><img style="width:100px; height:100px" src="{{#pickImgForSku  this.sku  ../../skuImgPath}} {{this}} {{/pickImgForSku}}" alt="{{this.name}}"></td>
+                <td>{{this.name}}</td>
+                <td><span>{{@root.currency}}</span><span><span class="pounds">{{this.number}}</span><span class="separator">{{this.priceSeparator}}</span><span class="pence">{{this.decimal}}</span></span><br><span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span></td>
+               <td colspan="2"><span class="summaryQty">{{@root.quantitylabel}} {{this.qty}}</span></td>
+                <td><span>{{@root.currency}}</span><span><span class="pounds">{{this.row_number}}</span><span class="separator">{{this.priceSeparator}}</span><span class="pence">{{this.row_decimal}}</span></span><br><span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span></td></tr>
+
+				{{/each}}
+				{{#if this.totals.discount.value }}
+                <tr><td colspan="5">{{@root.discountText}}</td><td><span>{{@root.currency}}</span><span ><span class="pounds">{{this.totals.discount.number}}</span><span class="separator">{{this.totals.discount.priceSeparator}}</span><span class="pence">{{this.totals.discount.decimal}}</span></span><br><span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span></td></tr>
+				{{/if}}
+				{{#if this.totals.shipping_incl_tax }}
+                <tr><td colspan="5">{{@root.shippingLabelText}}</td><td><span>{{@root.currency}}</span><span ><span class="pounds">{{this.totals.number}}</span><span class="separator">{{this.totals.priceSeparator}}</span><span class="pence">{{this.totals.decimal}}</span></span><br><span class="vat">{{@root.taxLabelTextpayment}}</span></td></tr>
+				{{/if}}
+                <tr style="border-bottom:none" class="tableHighlight">
+                    <td colspan=4></td><td>{{@root.PaymenttotalText}}</td><td><span>{{@root.currency}}</span><span id="finalTotal"><span class="pounds">{{this.quote.number}}</span><span class="separator">{{this.quote.priceSeparator}}</span><span class="pence">{{this.quote.decimal}}</span></span><br><span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span></td>
+                </tr>
+                <tr class="tableHighlight"></tr>
+            {{/each}}     
+			
+ 		{{else}}
+        	<tr>No Items in Cart</tr>
+        {{/if}}
+		
+		

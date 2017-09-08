@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Product Text"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <backgroundcolor
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldLabel="Background colour"
+                        name="./backgroundcolor"
+                        showHexValue="{Boolean}true"
+                        xtype="colorfield"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Max Length is 25"
+                        fieldLabel="Headline"
+                        maxLength="{Long}25"
+                        name="./ptitle"
+                        xtype="textfield"/>
+                    <desc
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 300"
+                        fieldLabel="Description text "
+                        maxLength="300"
+                        name="./pdesc"
+                        xtype="richtext">
+						<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+					</desc>
+                </items>
+            </tab1>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforeSubmit="function(dialog) {&#xa;var desc = dialog.getField('./pdesc').getValue().trim();&#xa;&#xa;&#xa;&#xa;if(desc.length>300 ){&#xa;     CQ.Ext.Msg.show({title: 'Enter description',  msg: 'Please enter within 300 characters',icon:CQ.Ext.MessageBox.WARNING,buttons: CQ.Ext.Msg.OK} );&#xa;&#x9; return false;&#xa;}&#xa;}"/>
+</jcr:root>

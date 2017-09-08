@@ -1,0 +1,94 @@
+{{#if .}}
+			 {{#each cart}}
+                 {{#each this.product}}
+                 <tr id="{{this.sku}}Row">
+                     <td rowSpan=2 class="img-column"><a href ="{{#pickUrlForSku  this.sku  ../../skuImgPath}} {{this}} {{/pickUrlForSku}}" ><img src="{{#pickImgForSku  this.sku  ../../skuImgPath}} {{this}} {{/pickImgForSku}}" alt="{{this.name}}"></td>
+                     <td class="name-column">{{this.name}}</td>
+                     <td class="remove" id="{{this.sku}}">
+                    	<img src="{{@root.viewBasketRemoveIcon}}" alt="Remove {{this.name}}">
+                     </td>
+                 </tr>
+                 <tr id="{{this.sku}}Row">
+                 	<td>
+                 		<select name="{{this.sku}}" style="min-width:80px;min-height:35px;" class="qtySelect update {{this.sku}}prod-spinner" id="qtySelect" >
+	                 		{{#times this.product.stock_item.allow_max_qty this.qty}}
+	                 			{{#qtyselect this}}
+	                 				<option selected="selected" value="{{{this}}}">{{this}}</option>
+	                 			{{else}}	
+	                 				<option value="{{{this}}}">{{this}}</option>
+	                 			{{/qtyselect}}
+	                 		{{/times}}
+                 		</select>
+                        <span id="prod-spinnerError" class="error_max">
+                         {{#if (if_eq this.exceeded true ) }}
+                                {{@root.maxExceededMsg}}
+                         {{/if}}
+				 		</span>
+                    </td>
+                    <td class="price-column">
+                        <div class="price-wrapper">
+                            <span class="price">{{@root.currency}}<span id="{{this.sku}}TotalEach"><span class="pounds">{{this.row_number}}</span><span class="separator">{{this.priceSeparator}}</span><span class="pence">{{this.row_decimal}}</span></span></span>
+                            <span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="view-product-row">
+                    <td colspan="3">
+                        <a class="view-product" href="{{#pickUrlForSku  this.sku  ../../skuImgPath}} {{this}} {{/pickUrlForSku}}">{{@root.viewProductLabel}}</a>
+                    </td>
+                </tr>
+			 	{{/each}}
+				{{#if this.totals.discount.value }}
+                        <tr class="discount-row-mobile">
+                            <td colspan="2" class="discount-text">{{@root.voucherDiscountText}}</td>
+                            <td class="price-column single-total">
+                                <div class="price-wrapper">
+                                    <span class="price">{{@root.currency}}<span ><span class="pounds">{{this.totals.discount.number}}</span><span class="separator">{{this.totals.discount.priceSeparator}}</span><span class="pence">{{this.totals.discount.decimal}}</span></span></span>
+                                    <span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                    {{/if}}
+					{{#if this.totals.shipping.value }}
+					<tr class="discount-row-mobile">
+                            <td colspan="2" class="discount-text">{{@root.viewBasketShippingLabel}}</td>
+                            <td class="price-column single-total">
+                                <div class="price-wrapper">
+                                    <span class="price">{{@root.currency}}<span ><span class="pounds">{{this.totals.number}}</span><span class="separator">{{this.totals.priceSeparator}}</span><span class="pence">{{this.totals.decimal}}</span></span></span>
+                                    <span class="vat">{{@root.taxLabelTextpayment}}</span>
+                                </div>
+                            </td>
+                        </tr>
+				{{/if}}
+                <tr class="tableHighlight">
+                    <td colspan="2" class="final-total">{{@root.totalText}} :</td>
+                    <td class="price-column">
+                        <div class="price-wrapper total-price">
+                        	<span class="price">{{@root.currency}}<span id="finalTotal"><span class="pounds">{{this.quote.number}}</span><span class="separator">{{this.quote.priceSeparator}}</span><span class="pence">{{this.quote.decimal}}</span></span></span>
+                       		<span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span>
+                        </div>
+                    </td>
+                </tr>
+				<tr class="tableHighlight">
+					<td colspan="3">
+                    <div class="voucher hidden voucher-section" id="voucher-section">
+                    <div>
+						<div class="coupon-loading">
+							<div class="line-pulse"><div></div><div></div><div></div><div></div></div>
+        				</div>
+                         <form class="voucherForm" id="voucherForm">
+                            <input type="text" id="VoucherCode" name="VoucherCode" class="VoucherCode">
+                                <button class="btn btn-lg" id="voucher_btn-ok">{{@root.voucherbuttonText}}</button>
+								<img class="voucher-tooltip-mobile" src="{{@root.voucherTooltipImage}}"  title="{{@root.voucherTooltipText}}" href="#modal_infoModal" data-toggle="modal" data-target="#couponTooltip"  role="dialog">
+                    <span class="col-md-12 col-sm-12 hidden error_show vouchercoupon" id="vouchercoupon">{{@root.voucheremptyText}}</span>
+    				<span class="col-md-12 col-sm-12 hidden error_show error_invalid vouchercouponerror" >{{@root.vouchererrorText}}</span>
+                     </form>
+                    <span class="col-md-12 padding-zero hidden vouchercouponsucess" id="vouchercouponsucess" style="color:green">{{@root.vouchersuccessText}}</span>
+                    </div>
+                    </div></td></tr>
+				{{/each}}
+
+
+        {{else}}
+        	<tr>No Items in Cart</tr>
+        {{/if}}

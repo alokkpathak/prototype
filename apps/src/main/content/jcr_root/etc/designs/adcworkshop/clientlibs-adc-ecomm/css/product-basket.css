@@ -1,0 +1,749 @@
+/***********************************
+    PRODUCT BASKET PAGE
+************************************/
+.product-basket .discount-row .discount-text{
+	height:100px;
+}
+.product-basket .about {
+    padding-top: 40px;
+
+    margin-bottom: 30px;
+    background-color: #F4F2F4;
+}
+.product-basket .about h1 {
+    margin-bottom: 20px;
+}
+.product-basket .margin-about {
+    font-size: 18px;
+    font-family: 'Gotham-Book-Regular';
+}
+.product-basket #productCount, .product-basket .bold-text {
+    font-family: 'Gotham-Bold';
+}
+.product-basket .basket-table-desktop {
+    padding-left: 65px;
+    padding-right: 65px;
+    display: none;
+}
+.product-basket .basket-count-label {
+	display: none;
+}
+.vouchercouponsucess{
+	color: green;
+}
+.product-basket .basket-table-desktop .heading {
+	background-color: #e1e1e1;
+    padding: 20px 50px 18px 10px;
+    font-family: 'Gotham-Medium-Regular' !important;
+    font-size: 13px !important;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 0!important;
+    text-align: right;
+    width: 17%;
+}
+.product-basket .basketIcon {
+    margin: 25px 20px -30px 65px;
+    padding: 0 90px 0 60px;
+}
+.product-basket .basketIcon .icon-list {
+    float: left;
+    width: 65%;
+    color:black;
+    font-family:Gotham-Book-Regular;
+}
+.product-basket .basketIcon .checkout-btn-div {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.product-basket .basketIcon .icon-list div {
+    display: table-row;
+}
+.product-basket .basketIcon .icon-list img {
+    display: table-cell;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.product-basket .basketIcon .icon-list p {
+    color: #212121;
+    font-family: 'Gotham-Book-Regular';
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+.product-basket .basketIcon .checkout-btn-div .btn {
+    margin-top: -5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.product-basket .rte .about {
+
+    margin-bottom: 18px;
+
+    background-color: #ffffff;
+}
+.product-basket .rte .about h1 ,.product-basket .rte .about h2{
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+.product-basket .rte .about p {
+    font-size: 18px;
+    color: #212121;
+    text-align: center;
+}
+.product-basket .rte .about p a {
+    font-family: 'Gotham-Book-Regular';
+    font-size: 18px;
+    text-decoration: underline;
+}
+.product-basket .faqs {
+    padding: 0 12%;
+}
+.product-basket #faq-place h2 {
+    font-size: 46px;
+    letter-spacing: 10px;
+    margin: 10px 0 52px 0;
+}
+.product-basket .preparing-skin th, .preparing-skin td {
+    padding: 0!important;
+}
+.product-basket .panel {
+    margin: 0;
+	box-shadow: none;
+}
+.product-basket .faq .panel-title {
+    padding: 56px 0;
+    font-size: 20px;
+}
+.product-basket .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    padding: 0 0 44px 0;
+}
+.product-basket .see-all-faqs {
+    border-top: 1px solid #dddddd;
+    padding: 54px 0 56px 0;
+}
+.product-basket .see-all-faqs a {
+    font-family: 'Gotham-Medium-Regular';
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+.product-basket .preparing-skin .panel-default .glyphicon {
+    top: 60px;
+}
+.product-basket.italy #productTable .final-total {
+    font-size: 20px;
+    letter-spacing: 0;
+}
+.product-basket #productTable .voucher-tooltip-desktop {
+    margin-left: 25px;
+    margin-top: -3px;
+}
+.product-basket #productTable .discount-row td {
+    height: 100px;
+}
+.product-basket #productTable .discount-row .discount-text {
+    font-family: 'Gotham-Medium-Regular';
+    font-size: 16px;
+    padding-left: 60px;
+}
+.product-basket .basket-loading {
+    display: none;
+}
+.product-basket .basket-loading p {
+    font-family: 'Gotham-Bold'!important;
+    color: #222;
+}
+html:lang(en) .product-basket #cartError h1 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Gotham-Book-Regular;
+    padding-top: 50px;
+    color: #212121;
+    margin-top:0;
+}
+.product-basket.italy #cartError h1{
+font-size:30px;
+}
+
+@media (min-width: 1200px) {
+    .product-basket.italy #productTable th {
+        text-align: center;
+        padding-left: 45px;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 768px) {   
+    
+    .product-basket #productTable {
+        display: block;
+        width: 100%;
+    }
+    .product-basket #productTableMobile {
+        display: none;
+    }
+    .product-basket #productTable {
+        color: #4f4f4f;
+    }
+    .product-basket #productTable td {
+        height: 235px;
+    }
+    .product-basket #productTable tr {
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .product-basket #productTable th {
+        border-bottom: none;
+    }
+    .product-basket #productTable .img-column {
+        width: 19%;
+        text-align: center
+    }
+    .product-basket #productTable .img-column img {
+        width: auto;
+        height: 180px;
+    }
+    .product-basket #productTable .img-column .view-product {
+        font-family: 'Gotham-Bold';
+        font-size: 12px;
+        text-decoration: underline;
+        letter-spacing: 0;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .product-basket #productTable .product-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    .product-basket #productTable .price-column .price-wrapper {
+        float: right;
+        margin-right: 30px;
+    }
+    .product-basket #productTable .price-column .price {
+        font-family: 'Gotham-Book-Regular';
+        font-size: 33px;
+        display: block;
+        letter-spacing: 0;
+    }
+    .product-basket #productTable .price-column .price .pence {
+        font-size: 21px;
+    }
+    .product-basket #productTable .price-column .vat {
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 14px;
+        letter-spacing: 0;
+        color: #4f4f4f;
+        display: block;
+        margin-top: -5px;
+    }
+    .product-basket #productTable .input-group {
+        float: right;
+        margin-right: 30px;
+    }
+    .product-basket #productTable .input-group .prodSpinner {
+        font-family: 'Gotham-Bold';
+        font-size: 26px;
+		border-right: 0;
+    }
+    .product-basket #productTable .price-column.single-total .price {
+        font-weight: bold;
+    }
+    .product-basket #productTable .remove {
+        width: 5%;
+    }
+    .product-basket #productTable .remove img {
+        margin-right: 8px;
+    }
+    .product-basket #productTable tr.tableHighlight td {
+        height: 85px;
+    }
+    .product-basket #productTable .final-total {
+        font-family: 'Gotham-Bold';
+        font-size: 26px;
+        text-align: center
+    }
+    .product-basket #productTable .voucher-section {
+        margin-left: 58px;
+    }
+    .product-basket #productTable .voucher-text {
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 16px;
+        letter-spacing: 1px;
+        position: relative;
+        top: -12px;
+    }
+    .product-basket #productTable .voucher-section form {
+        padding-bottom: 0;
+    }
+    .product-basket #productTable .voucher-section form .input-wrapper {
+        float: left;
+        width: 100%;
+    }
+    .product-basket #productTable .VoucherCode {
+        border: 2px solid #ccc;
+        height: 46px;
+        width: 266px;
+        margin-right: 4px;
+    }
+    .product-basket #productTable #voucher_btn-ok {
+        height: 46px;
+        margin: 0;
+        position: relative;
+        top: -1px;
+        padding: 0 36px;
+    }
+    .product-basket #productTable .voucher-section .vouchercouponsucess {
+        color: green;
+        font-family: 'Gotham-Book-Regular';
+        font-size: 14px;
+        text-transform: none;
+        letter-spacing: 0;
+        line-height: 1.3;
+        display: block;
+        max-width: 360px;
+    }
+    .product-basket #productTable .voucher-section .error_show {
+        text-transform: none;
+        font-size: 14px;
+        letter-spacing: 0;
+        width: 300px;
+        line-height: 1.3;
+        margin-top: 5px;
+        display: block;
+    } 
+	.product-basket .breadcrumb {
+		/*margin-top: 50px;*/
+	}
+}
+
+@media (max-width: 767px) {
+    
+    .product-basket #productTable {
+        display: none;
+    }
+    .product-basket #productTableMobile {
+        display: block;
+    }
+    .product-basket .basket-table-mobile {
+        padding: 0 15px;
+    	display: none;
+    } 
+    .product-basket #tablePlaceMobile {
+        display: table;
+        width: 100%;
+        color: #4f4f4f;
+    }
+    .product-basket #tablePlaceMobile tr {
+        border-bottom: none;
+    }
+    .product-basket #tablePlaceMobile .img-column {
+        padding-top: 45px;
+        width: 32%;
+    }
+    .product-basket #tablePlaceMobile .img-column img {
+        width: auto;
+        height: 70px;
+    }
+    .product-basket #tablePlaceMobile .name-column {
+        padding-top: 45px;
+        font-family: 'Gotham-Bold';
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    .product-basket #tablePlaceMobile .mb-remove {
+        width: 22px;
+        height: auto;
+        position: relative;
+        top: -12px;
+        right: 8px;
+    }
+    .product-basket #tablePlaceMobile .input-group.bootstrap-touchspin {
+        height: 30px;
+        position: relative;
+        top: -10px;
+        margin-left: 0;
+    }
+    .product-basket #tablePlaceMobile .price-wrapper {
+        position: relative;
+        top: -10px;
+    }
+    .product-basket #tablePlaceMobile .price-column .price {
+        display: block;
+        font-size: 20px;
+        font-family: 'Gotham-Medium-Regular' !important;
+    }
+    .product-basket #tablePlaceMobile .price-column .price span {
+        font-family: 'Gotham-Medium-Regular' !important;
+    }
+	.product-basket #tablePlaceMobile .price-column .price span.pence {
+		font-size: 14px;
+	}
+    .product-basket #tablePlaceMobile .price-column .vat {
+        display: block;
+        font-size: 10px;
+        color: #4f4f4f;
+        position: relative;
+        top: -5px;
+        letter-spacing: 0;
+        font-family: 'Gotham-Medium-Regular' !important;
+    }
+    .product-basket #tablePlaceMobile .view-product-row {
+        border-bottom: none;
+    }
+    .product-basket #tablePlaceMobile .view-product-row td {
+        text-align: center;
+    }
+    .product-basket #tablePlaceMobile .view-product {
+        font-family: 'Gotham-Bold';
+        font-size: 12px;
+        text-decoration: underline;
+        position: relative;
+        top: -10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .product-basket #tablePlaceMobile .price-wrapper.total-price {
+        top: 0;
+        padding-top: 15px;
+    }
+    .product-basket #tablePlaceMobile .final-total {
+        font-family: 'Gotham-Bold';
+        font-size: 14px;
+        padding-left: 15px;
+        padding-top: 18px;
+    }
+    .product-basket #tablePlaceMobile .voucher-section {
+        padding: 10px 10px 20px 10px;
+    }
+    .product-basket #tablePlaceMobile .VoucherCode {
+        border: 0;
+        display: table-cell;
+        width: 50%;
+        margin-right: 10px;
+        font-family: Gotham-Book-Regular;
+        font-size: 12px;
+        padding-left: 25px;
+    }
+.italy .product-basket #tablePlaceMobile .VoucherCode {
+		height:36px;
+        }
+    .product-basket #tablePlaceMobile #voucher_btn-ok {
+        display: table-cell;
+        width: 92px;
+        border: 1px solid #E4572D;
+        height: 49px;
+        margin: 0;
+    }
+    .product-basket #tablePlaceMobile form {
+        padding-bottom: 0;
+    }
+    .product-basket #tablePlaceMobile .voucher-tooltip-mobile {
+        width: 20px;
+        margin-left: 10px;
+    }
+    .product-basket #tablePlaceMobile .error_show {
+        display: block;
+        text-transform: none;
+        line-height: 1.3;
+        margin-top: 8px;
+    }
+    .product-basket #tablePlaceMobile .vouchercouponsucess {
+        display: block;
+        text-transform: none;
+        line-height: 1.3;
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    .product-basket .basketIcon {
+        margin: 26px 30px 0 30px;
+        padding: 0;
+    }
+    .product-basket .basketIcon .icon-list {
+        width: 100%;
+    }
+    .product-basket .basketIcon .checkout-btn-div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .product-basket .basketIcon .icon-list img {
+        padding-right: 20px;
+        padding-bottom: 25px;
+        width: 65px;
+        height: auto;
+    }
+    .product-basket .basketIcon .icon-list p {
+        font-size: 14px;
+    }
+    .product-basket .basketIcon .checkout-btn-div .btn {
+        padding: 12px 30px;
+        font-size: 11px;
+    }
+    .product-basket .rte .about {
+        padding-top: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 16px;
+    }
+    .product-basket .rte .about h1 , .product-basket .rte .about h2{
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+    }
+    .product-basket .rte .about p {
+        font-size: 14px;
+    }
+    .product-basket .rte .about p a {
+        font-size: 14px;
+    }
+    .product-basket .faqs {
+        padding: 0 15px;
+    }
+    .product-basket #faq-place h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 10px 0 22px 0;
+    }
+    .product-basket .preparing-skin p {
+        font-family: 'Gotham-Book-Regular';
+        font-size: 13px;
+        padding-top: 0;
+    }
+    .product-basket .faq .panel-title {
+        padding: 22px 0;
+        font-size: 15px;
+        border-top: 0;
+    }
+    .product-basket .preparing-skin .panel-default .col-xs-10 {
+        padding: 0;
+    }
+    .product-basket .panel-default>.panel-heading+.panel-collapse>.panel-body {
+        padding: 0 0 14px 0;
+    }
+    .product-basket .see-all-faqs {
+        border-top: 1px solid #dddddd;
+        padding: 54px 0 56px 0;
+    }
+    .product-basket .see-all-faqs a {
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        letter-spacing: 1px;
+    }
+    .product-basket .faq .heading-row {
+        display: table;
+        border-top: 1px solid #dddddd;
+    }
+    .product-basket .faq .heading-cell, .product-basket .faq .arrow-cell {
+        display: table-cell;
+        float: none;
+        vertical-align: middle;
+    }
+    .product-basket .preparing-skin .panel-default .glyphicon {
+        position: static;
+        padding: 0;
+        top: 0;
+        float: none!important;
+    }
+    .product-basket .see-all-faqs {
+        border-top: 1px solid #dddddd;
+        padding: 26px 0 50px 0;
+        text-align: center;
+    }
+    .product-basket .see-all-faqs a {
+        font-size: 12px;
+        float: none!important;
+    }
+    .product-basket #tablePlaceMobile .discount-row-mobile td {
+        padding: 20px 0;
+    }
+    .product-basket #tablePlaceMobile .discount-row-mobile .discount-text {
+        font-family: 'Gotham-Bold';
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-left: 18px;
+    }
+	table#productTableMobile .qtySelect {
+		min-width: 70px; 
+		min-height: 35px;
+	} 
+        .product-basket .about {
+        font-size: 20px;
+    }
+    .product-basket .margin-about {
+        font-size: 14px;
+    }
+    .product-basket #productCount, .product-basket .bold-text {
+        font-family: 'Gotham-Bold' !important;
+        font-size: 14px;
+    }
+    .product-basket .about {
+        /*padding-top: 45px;*/
+        padding-bottom: 38px;
+        margin-bottom: 0px;
+    }
+    .product-basket .about h1 {
+        margin-bottom: 20px;
+    }
+	.product-basket .rte .about h1, .product-basket .rte .about h2{
+	    font-size: 20px;
+        letter-spacing: 2px;
+		color: #009c3b;
+    }
+    .product-basket #tablePlaceMobile .prodSpinner {
+        display: block;
+        padding: 0;
+        height: 28px;
+        border: 0;
+        font-family: Gotham-Bold;
+    }
+    .product-basket #tablePlaceMobile .bootstrap-touchspin .input-group-btn-vertical {
+        border: 0;
+    }
+    .product-basket #tablePlaceMobile .bootstrap-touchspin .input-group-btn-vertical > .btn {
+        padding: 6px 10px;
+    }
+    .product-basket #tablePlaceMobile .bootstrap-touchspin .input-group-btn-vertical i {
+        font-size: 12px !important;
+    }
+    .product-basket #tablePlaceMobile i.glyphicon-chevron-up {
+        top: -1px !important;
+    }
+    .product-basket #tablePlaceMobile i.glyphicon-chevron-down {
+        top: 2px !important;
+    }
+    .product-basket.italy #tablePlaceMobile #voucher_btn-ok {
+        width: 100px;
+        padding: 7px 4px;
+		  height: 50px;
+    }
+	table#productTableMobile .qtySelect {
+		min-width: 70px; 
+		min-height: 35px;
+	}
+	html[lang="en"] .product-basket #cartError h1 {
+    font-size: 14px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .product-basket.italy #productTable .final-total {
+        font-size: 15px;
+    }
+    .product-basket.italy #productTable th {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    .product-basket #productTable .voucher-section {
+        margin-left: 30px;
+    }
+    .product-basket #productTable .discount-row .discount-text {
+        padding-left: 38px;
+    }
+	html[lang="en"] .product-basket #cartError h1 {
+    font-size: 18px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .product-basket .basket-table-desktop {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .product-basket #productTable th {
+        padding-right: 10px;
+        text-align: center;
+    }
+    .product-basket #productTable td {
+        height: 210px;
+    }    
+    .product-basket #productTable .img-column img {
+        height: 120px;
+    }
+    .product-basket #productTable .input-group {
+        margin-right: 10px;
+    }
+    .product-basket #productTable .price-column .price-wrapper {
+        margin-right: 10px;
+    }
+    .product-basket #productTable .remove img {
+        margin-right: 4px;
+    }
+    .product-basket #productTable .discount-row .discount-text {
+        
+    }
+    .product-basket #productTable .voucher-section {
+        margin-left: 12px;
+    }
+    .product-basket #productTable .product-name {
+        font-size: 22px;
+    }
+    .product-basket #productTable .price-column .price {
+        font-size: 30px;
+    }
+    .product-basket #productTable .input-group .prodSpinner {
+        font-family: 'Gotham-Bold';
+        font-size: 22px;
+    }
+    .product-basket #productTable .final-total {
+        font-size: 22px;
+    }
+    .product-basket .basketIcon .icon-list {
+        width: 60%;
+    }
+    .product-basket .basketIcon .checkout-btn-div {
+        width: 40%;
+    }
+    .product-basket .basketIcon {
+        margin: 60px 65px 0 65px;
+        padding: 0 50px 0 20px;   
+    }
+    .product-basket .faqs {
+        padding: 0 5%;
+    }
+    .product-basket.italy #productTable .final-total {
+        font-size: 13px;
+    }
+    .product-basket #productTable #voucher_btn-ok {
+        padding: 0 6px;
+        font-size: 12px;
+    }
+    .product-basket #productTable .discount-row .discount-text {
+        padding-left: 20px;
+    }
+    .product-basket .about {
+        padding-top: 90px;
+        padding-bottom: 74px;
+    }
+    .product-basket .about h1 {
+        margin-bottom: 25px;
+        font-size: 40px;
+    }
+    .product-basket .margin-about {
+        font-size: 28px;
+    }
+	html[lang="en"] .product-basket #cartError h1 {
+    font-size: 18px;
+}
+    
+}
+
+@media (max-width: 365px) {
+    .product-basket.italy #tablePlaceMobile .VoucherCode {
+        width: 49%;
+    }
+	.product-basket.italy #tablePlaceMobile #voucher_btn-ok {
+   		width: 90px;
+    }
+    .product-basket.italy #tablePlaceMobile .voucher-tooltip-mobile {
+        margin-left: 5px;
+    }
+}

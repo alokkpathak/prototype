@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Sign In and Sign Up">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <signIn
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Sign In Block"
+                        width="300"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <headingText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the heading text for sign in block"
+                                fieldLabel="Heading Text"
+                                name="./headingTextSignIn"
+                                width="300"
+                                xtype="textfield"/>
+                            <emailAdressLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the email address label for sign in block"
+                                fieldLabel="Email Address label "
+                                name="./emailLabelSignIn"
+                                width="300"
+                                xtype="textfield"/>
+							<emailPlaceHolderLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the place holder text for email address for sign in block"
+                                fieldLabel="Email Address Place Holder Text "
+                                name="./emailPlaceHolder"
+                                width="300"
+                                xtype="textfield"/>
+                            <passwordLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Password Label for sign in block"
+                                fieldLabel="Password Label"
+                                name="./passwordLabelSignIn"
+                                width="300"
+                                xtype="textfield"/>
+							<passwordPlaceHolderLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the place holder text for password for sign in block"
+                                fieldLabel="Password Place Holder Text "
+                                name="./passwordPlaceHolder"
+                                width="300"
+                                xtype="textfield"/>
+                            <signInButton
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the text for sign In Button"
+                                fieldLabel="sign In Button text"
+                                name="./signInButtonText"
+                                width="300"
+                                xtype="textfield"/>
+                            <forgotPasswordText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the forgot Password text for sign in block"
+                                fieldLabel="Forgot Password Text"
+                                name="./forgotPassword"
+                                width="300"
+                                xtype="textfield"/>
+                            <validEmailCheck
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the message to be displayed if valid email is not entered"
+                                fieldLabel="Invalid Email Text"
+                                name="./validEmailCheck"
+                                width="300"
+                                xtype="textfield"/>
+                            <validPasswordCheck
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the message to be displayed if valid password is not entered"
+                                fieldLabel="Invalid Password Text"
+                                name="./validPasswordCheck"
+                                width="300"
+                                xtype="textfield"/>                           
+                            <signInLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Login Page URL"
+                                name="./signInLink"
+                                xtype="pathfield"/>
+                            <ctaCheckoutLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter checkout link for loggged in user"
+                                fieldLabel="Checkout Link for logged in User"
+                                name="./ctaCheckoutLink"
+                                xtype="pathfield"/>
+                            <viewBasketLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter view basket link for invalid cart"
+                                fieldLabel="View Baket Link for invalid basket"
+                                name="./viewBaketLink"
+                                xtype="pathfield"/>
+                            <fieldMandatoryMessage
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Enter the message to be displayed for mandatory fields"
+                                fieldLabel="Mandatory Text"
+                                name="./login_error_mandatory"
+                                width="300"
+                                xtype="textfield"/>
+                            <invalidLoginMessage
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Invalid Login message"
+                                fieldLabel="Enter the invalid login message"
+                                name="./invalidLoginMessage"
+                                width="300"
+                                xtype="textfield"/>
+							<invalidLoginMessagemodal
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Invalid Login message to display modal"
+                                fieldLabel="Enter the invalid login message Extension to display modal"
+                                name="./invalidLoginTextModal"
+                                width="300"
+                                xtype="textfield"/>	
+							<activationPendingMessage
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="activation pending message"
+                                fieldLabel="Enter activation pending message"
+                                name="./activationPendingMessage"
+                                width="300"
+                                xtype="textfield"/>
+							<accountConfimationMessage
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="account confimation message"
+                                fieldLabel="Enter account confimation message"
+                                name="./accountConfimationMessage"
+                                width="300"
+                                xtype="textfield"/>
+                           	<signinLoadingMessage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Message for Loading Icon eg: Working on Sign in..."
+                                fieldLabel="Sign in Load Icon Message"
+                                name="./signinLoadingMessage"
+                                width="300"
+                                xtype="textfield"/>
+							<mandatoryFieldText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter text for mandatory field label"
+                                name="./mandatoryFieldText"
+                                xtype="textfield"/>
+						</items>
+                    </signIn>
+                    <signUp
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Sign Up Block"
+                        width="300"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <headingText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the heading text for sign Up block"
+                                fieldLabel="Heading Text Sign Up"
+                                name="./headingTextSignUp"
+                                width="300"
+                                xtype="textfield"/>
+                            <continueButton
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the text for continue Button"
+                                fieldLabel="Continue Button text"
+                                name="./continueButtonText"
+                                width="300"
+                                xtype="textfield"/>
+                            <signUpDesc
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the description for Sign up"
+                                name="./signUpDesc"
+                                xtype="textarea"/>
+                            <registrationPageLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the URL to redirect to the registration page"
+                                name="./registrationPageLink"
+                                xtype="pathfield"/>
+                            <ctaCheckoutGuestLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter checkout link for New Customer"
+                                fieldLabel="Checkout Link for New Customer"
+                                name="./ctaCheckoutGuestLink"
+                                xtype="pathfield"/>
+                        </items>
+                    </signUp>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

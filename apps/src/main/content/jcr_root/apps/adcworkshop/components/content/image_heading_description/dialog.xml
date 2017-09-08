@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <heading
+                jcr:primaryType="cq:Panel"
+                title="Enter the heading">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter The Heading"
+                        name="./title"
+                        xtype="textfield"/>
+                </items>
+            </heading>
+            <leftside
+                jcr:primaryType="cq:Panel"
+                title="Enter The Left Side Values  ">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <leftmulti
+                        jcr:primaryType="cq:Widget"
+                        autoWidth="{Boolean}true"
+                        baseName="leftmulti_"
+                        fieldLabel="Configure the multifields"
+                        name="./leftmulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the title to display"
+                                name="lefttitlename"
+                                xtype="textfield"/>
+                            <desc1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the product description"
+                                name="lefttitledescription"
+                                xtype="textarea"/>
+                            <image1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Select the product image"
+                                name="leftimagename"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </leftmulti>
+                    <leftaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for leftImage alt"
+                        name="./leftimagealt"
+                        xtype="textfield"/>
+                </items>
+            </leftside>
+            <rightside
+                jcr:primaryType="cq:Panel"
+                title="Enter The Right Side Values  ">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <rightmulti
+                        jcr:primaryType="cq:Widget"
+                        autoWidth="{Boolean}true"
+                        baseName="rightmulti_"
+                        fieldLabel="Configure the multifields"
+                        name="./rightmulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the title to display"
+                                name="righttitlename"
+                                xtype="textfield"/>
+                            <desc
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the product description"
+                                name="righttitledescription"
+                                xtype="textarea"/>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Select the product image"
+                                name="rightimagename"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </rightmulti>
+                    <rightaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Right Image alt"
+                        name="./rightimagealt"
+                        xtype="textfield"/>
+                </items>
+            </rightside>
+        </items>
+    </items>
+</jcr:root>

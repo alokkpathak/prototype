@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Sticky Footer"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Sticky Footer Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headlinetext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldLabel="Headline"
+                        maxLength="{Long}40"
+                        name="./headlinetext"
+                        xtype="textfield"/>
+                    <checkboxtext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CheckBox Label"
+                        name="./checkboxDesc"
+                        xtype="richtext">
+						<rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+									<h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+									<h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-about"
+                                        text="Heading"/>
+                                    <orange-bigfont
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="margin-abtout-icons"
+                                        text="marginabouticon"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit jcr:primaryType="nt:unstructured"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+					</checkboxtext>
+                    <emailaddress
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Maximum of 50 Characters"
+                        fieldLabel="Sign-up field"
+                        maxLength="{Long}50"
+                        name="./emailAddress"
+                        xtype="textfield"/>
+					<placeHolderText
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Maximum of 50 Characters"
+                        fieldLabel="Place holder text field"
+                        maxLength="{Long}50"
+                        name="./placeHolderText"
+                        xtype="textfield"/>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Maximum of 18 Characters"
+                        fieldLabel="Validation Button"
+                        maxLength="{Long}18"
+                        name="./buttonText"
+                        xtype="textfield"/>
+					<timeOutSeconds
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter time(in milliseconds) the sticky footer must be on the screen Ex.(Number of days * 86400000)"
+                        fieldLabel="Sticky footer timer"
+                        name="./timeOutSeconds"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <errorMessages
+                jcr:primaryType="cq:Widget"
+                title="Error Messages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <invalidEmail
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the subscription fails"
+                        fieldLabel="Subscription failed text"
+                        name="./subscriptionfailed"
+                        width="300"
+                        xtype="textfield"/>
+                    <semailexists
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the Email already exists"
+                        fieldLabel="Email already exists text"
+                        name="./semailexists"
+                        width="300"
+                        xtype="textfield"/>
+                    <subscriptionsuccess
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Subscription success message"
+                        name="./subscriptionsuccess"
+                        xtype="textfield"/>
+					<invalidEmailFormat
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the email entered is not in a valid format"
+                        fieldLabel="Email not valid message"
+                        name="./invalidEmailFormat"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </errorMessages>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Product Text"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <backgroundcolor
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Choice of yellow or blue"
+                        fieldLabel="Background colour"
+                        name="./backgroundcolor"
+                        showHexValue="{Boolean}true"
+                        xtype="colorfield"/>
+                    <backgroundimage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="•&#x9;Max file Size is 3MB &#xa;•&#x9;File formats: JPG or PNG&#xa;•&#x9;Background image recommended dimensions: 800 x 558&#xa;"
+                        fieldLabel="Background image"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./pbackgroundimage"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+					<backgroundimageMobile
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="•&#x9;Max file Size is 3MB &#xa;•&#x9;File formats: JPG or PNG&#xa;•&#x9;Background image recommended dimensions: 640 x 600&#xa;"
+                        fieldLabel="Background image Mobile"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./pbackgroundimageMobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>	
+                    <cssCompClass
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the css Class to be applied"
+                        name="./cssCompClass"
+                        xtype="textfield"/>
+                    <backgroundaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./pbackgroundimagealt"
+                        xtype="textfield"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 250"
+                        fieldLabel="Headline"
+                        maxLength="{Long}250"
+                        name="./ptitle"
+                        xtype="textfield"/>
+                    <desc
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 300"
+                        fieldLabel="Description text"
+                        maxLength="{Long}300"
+                        name="./pdesc"
+                        xtype="richtext">
+						<rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pad-b18"
+                                        text="padding-bottom-18px"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[cut,copy,paste-plaintext]"/>
+                            <findreplace
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold,italic]"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:adhocLinkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <enable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="enabletracking"
+                                                    fieldDescription="override analytics framework settings"
+                                                    fieldLabel="Custom link tracking"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                    xtype="checkbox">
+                                                    <listeners
+                                                        jcr:primaryType="nt:unstructured"
+                                                        check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                </enable>
+                                                <events
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevents"
+                                                    fieldDescription="e.g.: event2, event7"
+                                                    fieldLabel="Include SiteCatalyst events"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                    xtype="textfield"/>
+                                                <evars
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevars"
+                                                    fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                    fieldLabel="Include SiteCatalyst variables"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                    xtype="textfield"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <misctools
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+						</rtePlugins>	
+					</desc>
+                    <buttonOption
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Include share button"
+                        name="./valueSelected"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <buttonText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Button Text"
+                        name="./button"
+                        xtype="textfield"/>
+                    <typeOfButton
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Action on button Click"
+                        name="./typeOfButton"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Open as a modal?"
+                                value="modal"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="Redirect to a page?"
+                                value="button"/>
+                            <option3
+                                jcr:primaryType="nt:unstructured"
+                                text="Button Not needed"
+                                value="noButton"/>
+                        </options>
+                    </typeOfButton>
+                    <oneMoreButtonText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Download button Text:"
+                        name="./oneMoreButton"
+                        xtype="textfield"/>
+                    <oneMoreButtonLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Download button Link"
+                        name="./oneMoreButtonLink"
+                        xtype="pathfield"/>
+					<newTab
+                        jcr:primaryType="cq:Widget"
+                        default="no"
+                        fieldLabel="Open button link in new tab?"
+                        layout="hbox"
+                        name="./newTab"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                        <optionsConfig
+                            jcr:primaryType="nt:unstructured"
+                            width="60"/>
+                    </newTab>
+                    <shareimagepath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Share Image"
+                        name="./shareimagepath"
+                        xtype="pathfield"/>
+					<shareimageMobile
+                        jcr:primaryType="cq:Widget"                        
+                        fieldLabel="Share image Mobile"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./shareimageMobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>	
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

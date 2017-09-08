@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+          jcr:primaryType="cq:Dialog"
+          height="400"
+          stateful="false"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <basic
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/foundation/components/page/tab_basic.infinity.json"
+                        xtype="cqinclude"/>
+                <advanced
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/foundation/components/page/tab_advanced.infinity.json"
+                        xtype="cqinclude"/>
+               <fsl
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/adcworkshop/components/page/contentPage/tabs/tab_fsl.infinity.json"
+                        xtype="cqinclude"/> 
+                               
+                <cloudservices                        
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/foundation/components/page/tab_cloudservices.infinity.json"
+                        xtype="cqinclude">
+                   
+                </cloudservices>
+                <image                        
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/foundation/components/page/tab_image.infinity.json"
+                        xtype="cqinclude">
+                   
+                </image>                
+                <blueprint                        
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/foundation/components/page/tab_blueprint.infinity.json"
+                        xtype="cqinclude">
+                    
+                </blueprint>
+                <livecopy                        
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/foundation/components/page/tab_livecopy.infinity.json"
+                        xtype="cqinclude">
+                   <!--  <rep:policy jcr:primaryType="rep:ACL">
+                        <deny
+                                jcr:primaryType="rep:DenyACE"
+                                rep:principalName="everyone"
+                                rep:privileges="{Name}[jcr:read]"/>
+                    </rep:policy> -->
+                </livecopy>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

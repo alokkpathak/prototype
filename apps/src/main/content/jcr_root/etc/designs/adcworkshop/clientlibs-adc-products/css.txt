@@ -1,0 +1,5 @@
+#base=css
+mag.css
+mag-default.css
+product-panel.css 
+related-products.css

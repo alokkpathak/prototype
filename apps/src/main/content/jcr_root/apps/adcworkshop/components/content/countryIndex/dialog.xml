@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    manageTabs="function(tab,noSwitch)&#xa;{&#xa;var tabs=['columns','europe_country','other_country','unlist_country'];&#xa;var index=tabs.indexOf(tab);&#xa;if(index==-1) return;&#xa;for(var i=1;i&lt;tabs.length;i++)&#xa;{&#xa;if(index==i)&#xa;{this.unhideTabStripItem(i);}&#xa;else&#xa;{this.hideTabStripItem(i);&#xa;}&#xa;}&#xa;this.doLayout();&#xa;if(!noSwitch)this.activate(index);}"
+    title="dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <columnNumber
+            jcr:primaryType="cq:Widget"
+            title="Options"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <assets
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Select the specific countries"
+                    name="./assets"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <europeCountries
+                            jcr:primaryType="nt:unstructured"
+                            text="Europe Countries"
+                            value="europe_country"/>
+                        <otherCountries
+                            jcr:primaryType="nt:unstructured"
+                            text="Other Countries"
+                            value="other_country"/>
+                        <unlistedCountries
+                            jcr:primaryType="nt:unstructured"
+                            text="Unlisted Countries"
+                            value="unlist_country"/>
+                    </options>
+                </assets>
+            </items>
+        </columnNumber>
+        <europeCountries
+            jcr:primaryType="cq:Widget"
+            title="Europe Countries"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <europeCountryText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Europe Country Text"
+                    name="./etext"
+                    xtype="textfield"/>
+                <multi
+                    jcr:primaryType="cq:Widget"
+                    baseName="cmulti_"
+                    fieldLabel="Configure the europe country multifields"
+                    name="./cmulti"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <text
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Europe CountryName"
+                            name="ecountryname"
+                            width="{Long}300"
+                            xtype="textfield"/>
+                        <imagepath
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Upload only .jpg or .png images of 1MB or less with 68*40px Resolution"
+                            fieldLabel="Europe Country Image"
+                            name="eimagepath"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+						 <imagepathMobile
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Upload only .jpg or .png images of 1MB or less with 68*40px Resolution"
+                            fieldLabel="Europe Country Image For Mobile"
+                            name="eimagepathMobile"
+                            width="{Long}300"
+                            xtype="pathfield"/>	
+                        <ecountryLocale
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Country Locale"
+                            name="ecountryLocale"
+                            width="{Long}300"
+                            xtype="textfield"/>
+                    </fieldConfigs>
+                </multi>
+            </items>
+        </europeCountries>
+        <otherCountries
+            jcr:primaryType="cq:Widget"
+            id="column_three"
+            title="Other Countries"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(3); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <otherCountryText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="OtherCountry Text"
+                    name="./otext"
+                    xtype="textfield"/>
+                <omulti
+                    jcr:primaryType="cq:Widget"
+                    baseName="omulti_"
+                    fieldLabel="Configure the OtherCountry multifields"
+                    name="./omulti"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <text1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="OtherCountryName"
+                            name="ocountryname"
+                            width="{Long}300"
+                            xtype="textfield"/>
+                        <imagepath1
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Upload only .jpg or .png images of 1MB or less with 68*40px Resolution"
+                            fieldLabel="Other Country Image"
+                            name="oimagepath"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+						<imagepath1Mobile
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Upload only .jpg or .png images of 1MB or less with 68*40px Resolution"
+                            fieldLabel="Other Country Image for mobile"
+                            name="oimagepathMobile"
+                            width="{Long}300"
+                            xtype="pathfield"/>	
+                        <ocountryLocale
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Country Locale"
+                            name="ocountryLocale"
+                            width="{Long}300"
+                            xtype="textfield"/>
+                    </fieldConfigs>
+                </omulti>
+                <insite
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="InternationalSite"
+                    name="./other"
+                    xtype="textfield"/>
+            </items>
+        </otherCountries>
+        <unListedCountries
+            jcr:primaryType="cq:Widget"
+            title="UnListed Countries"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(3); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <Text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="UnListed Country Text"
+                    name="./untext"
+                    xtype="textfield"/>
+                <pathtext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Path Text "
+                    name="./pathtext"
+                    xtype="textfield"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Path Link"
+                    name="./pathLink"
+                    xtype="pathfield"/>
+            </items>
+        </unListedCountries>
+    </items>
+</jcr:root>

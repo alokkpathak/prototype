@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Product Text"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <backgroundimage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="•&#x9;Max file Size is 1MB &#xa;•&#x9;File formats: JPG or PNG&#xa;•&#x9;Background image recommended dimensions: 1380x800&#xa;"
+                        fieldLabel="Background image"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./pbackgroundimage"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+					<backgroundimageMobile
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="•&#x9;Max file Size is 3MB &#xa;•&#x9;File formats: JPG or PNG&#xa;•&#x9;Background image recommended dimensions: 640x640&#xa;"
+                        fieldLabel="Background image Mobile"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./pbackgroundimageMobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+					<backgroundcolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the hexadecimal value of background color"
+                        fieldLabel="Background colour"
+                        name="./backgroundColor"
+                        showHexValue="{Boolean}true"
+                        xtype="colorfield"/>						
+                    <cssCompClass
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the css Class to be applied"
+                        name="./cssCompClass"
+                        xtype="textfield"/>
+                    <backgroundaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./backgroundimagealt"
+                        xtype="textfield"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 25"
+                        fieldLabel="Headline"                        
+                        name="./ptitle"
+                        xtype="textfield"/>
+                    <desc
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 300"
+                        fieldLabel="Description text"
+                        maxLength="{Long}300"
+                        name="./pdesc"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<subsuperscript
+								jcr:primaryType="nt:unstructured"
+								features="*"/>
+							<misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+								<paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+							
+                        </rtePlugins>
+                    </desc>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

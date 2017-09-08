@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Payment Type"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Payment Cards">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Card Title eg: Payment Cards"
+                        fieldLabel="Card Title"
+                        name="./cctitle"
+                        xtype="textfield"/>
+                    <normalmulti
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new image"
+                        fieldLabel="Configure the Payment Cards"
+                        name="./ccmulti"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </normalmulti>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Paypal">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Card Title eg: Pay with PayPal"
+                        fieldLabel="Card Title"
+                        name="./otmthdtitle"
+                        showHexValue="{Boolean}true"
+                        xtype="textfield"/>
+                    <paypalbuttonimage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Select Paypal Image from the Assests with Resolution 153x67px"
+                        fieldLabel="Select Paypal Image"
+                        name="./paypalimage"
+                        xtype="pathfield"/>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Extra Fields on the Payment Page">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <panelttitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Payment Title eg: Payment"
+                        fieldLabel="Payment Heading"
+                        name="./paymentnextTitle"
+                        xtype="textfield"/>
+                    <paymenttitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Payment Title eg: Choose your payment method"
+                        fieldLabel="Payment Title"
+                        name="./paymenttitle"
+                        xtype="textfield"/>
+                        <changepaymenttitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Choose Payment Link name eg: Change Payment Method"
+                        fieldLabel="Change Payment Title"
+                        name="./changepaymenttitle"
+                        xtype="textfield"/>
+                        <brandlabeltext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Brand label name eg: Type"
+                        fieldLabel="Card selection Brand Label"
+                        name="./brandlabeltext"
+                        xtype="textfield"/>
+						<ExpiryMonthlabeltext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the ExpiryMonthlabel name"
+                        fieldLabel="ExpiryMonth field Label"
+                        name="./expirylabeltext"
+                        xtype="textfield"/>
+                        <cvvInfoText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the CVV tool tip"
+                        fieldLabel="CVV Tool tip Description"
+                        name="./cvvInfoText"
+                        xtype="textarea"/>
+                    <reviewconditionslabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Payment Title eg: Review your order and agree the terms and conditions*"
+                        fieldLabel="Review Conditions Label"
+                        name="./reviewconditionslabel"
+                        xtype="textfield"/>
+                    <conditionslabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Payment Title eg: I have read and understood the sale terms and conditions, and acknowledge my right to "
+                        fieldLabel="Conditions"
+                        name="./conditionslabel"
+                        xtype="textfield"/>
+                    <cancelmyorderlink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Path to cancel the order"
+                        name="./cancelmyorder"
+                        xtype="pathfield"/>
+                    <cancelmyordertext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the text for cancel my order"
+                        fieldLabel="Cancel Order text"
+                        name="./cancelmyordertext"
+                        xtype="textfield"/>
+                    <notcheckederror
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the text to check the CheckBox eg: Please Accept terms and Conditions before selecting Payment type."
+                        fieldLabel="Accept terms and Conditions Message"
+                        name="./notcheckederror"
+                        xtype="textfield"/>
+                    <zeropricebutton
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the text for Zero Price Button eg: Place Order."
+                        fieldLabel="Zero Price Button text"
+                        name="./zeropricebutton"
+                        xtype="textfield"/>
+                    <termsConditionstext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for terms&amp;conditions to be made as a link"
+                        name="./termsConditions"
+                        xtype="textfield"/>
+                    <conditionsLabelline2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Conditions label line 2"
+                        name="./conditionsLabelLine2"
+                        xtype="textfield"/>
+                </items>
+            </tab3>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Column1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headingRichtext
+                        jcr:primaryType="cq:Widget"
+						allowBlank="{Boolean}false"
+                        fieldLabel="Enter the FAQ Heading"
+                        name="./headingrtext"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pad-b18"
+                                        text="padding-bottom-18px"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <format1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <format2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <format3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <format4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <format5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                    <format6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading5"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[cut,copy,paste-plaintext]"/>
+                            <findreplace
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold,italic]"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:adhocLinkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <enable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="enabletracking"
+                                                    fieldDescription="override analytics framework settings"
+                                                    fieldLabel="Custom link tracking"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                    xtype="checkbox">
+                                                    <listeners
+                                                        jcr:primaryType="nt:unstructured"
+                                                        check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                </enable>
+                                                <events
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevents"
+                                                    fieldDescription="e.g.: event2, event7"
+                                                    fieldLabel="Include SiteCatalyst events"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                    xtype="textfield"/>
+                                                <evars
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="adhocevars"
+                                                    fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                    fieldLabel="Include SiteCatalyst variables"
+                                                    name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                    xtype="textfield"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <misctools
+                                jcr:mixinTypes="[rep:AccessControllable]"
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </headingRichtext>
+                    <faqlistcolumn1
+                        jcr:primaryType="cq:Widget"
+                        baseName="faqcolumn1_"
+                        fieldLabel="Categories of FAQ 1st  Column"
+                        name="./faqcolumn1"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <categoryName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Name"
+                                name="categoryname"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <categoryPropertyName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Property Name"
+                                name="categorypropertyname"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <pagePath
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Page Path"
+                                name="storagepath"
+                                width="{Long}300"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </faqlistcolumn1>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Column2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <faqlistcolumn2
+                        jcr:primaryType="cq:Widget"
+                        baseName="faqcolumn2_"
+                        fieldLabel="Categories of FAQ 2nd  Column"
+                        name="./faqcolumn2"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <categoryName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Name"
+                                name="categoryname1"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <categoryPropertyName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Property Name"
+                                name="categorypropertyname1"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <pagePath
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Page Path"
+                                name="storagepath1"
+                                width="{Long}300"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </faqlistcolumn2>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Column3">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <faqlistcolumn3
+                        jcr:primaryType="cq:Widget"
+                        baseName="faqcolumn3_"
+                        fieldLabel="Categories of FAQ 3rd  Column"
+                        name="./faqcolumn3"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <categoryName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Name"
+                                name="categoryname2"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <categoryPropertyName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Property Name"
+                                name="categorypropertyname2"
+                                width="{Long}300"
+                                xtype="textfield"/>
+                            <pagePath
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Faq Category Page Path"
+                                name="storagepath2"
+                                width="{Long}300"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </faqlistcolumn3>
+                </items>
+            </tab3>
+            <tab4
+                jcr:primaryType="cq:Panel"
+                title="column4">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <nodatamsg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Nodata Text"
+                        name="./nodata"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <moredata
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Moredata Text Label"
+                        name="./moredata"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <lessdata
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Less data Text Label"
+                        name="./lessdata"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <defaultcategoryprop
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Category Property  Label"
+                        name="./dprop"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <defaultcategorypage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Category PagePath Label"
+                        name="./dpage"
+                        width="{Long}300"
+                        xtype="pathfield"/>
+					<top
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Top Text field Label"
+                        name="./toptext"
+                        width="{Long}300"
+                        xtype="textfield"/>
+					<tenquestions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Ten Questions Field Label"
+                        name="./tenquestion"
+                        width="{Long}300"
+                        xtype="textfield"/>	
+                    <questions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Questions Text field Label"
+                        name="./questionstext"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <accessibilitytab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Field Label Accessibility text"
+                        name="./accesstext"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                </items>
+            </tab4>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,45 @@
+.sitemapbottom li a {
+    color: #8e8e8e;
+    text-decoration: none;
+    font-family: Gotham-Book-Regular;
+}   
+.sitemapbottom .col-md-8 {      
+    padding-bottom: 50px;       
+    padding-left: 10px;     
+}       
+.andAlso{       
+    padding-top: 90px;      
+    padding-bottom: 10px;       
+    color: #212121;     
+    font-weight: bold;      
+    font-size: 22px;        
+    font-family: Gotham-Bold;       
+    letter-spacing: 2px;        
+}
+.listStyle {        
+    color: #8e8e8e;     
+}      
+ul.listStyle li:first-child{        
+    padding-bottom: 10px;       
+} 
+/* .sitemap_extralinks>section>div>div>div:nth-child(3){
+        padding-right: 0px;
+} */
+
+@media (min-width: 1200px) {
+/*.sitemap_extralinks>section>div>div>div:nth-child(3) ul.listStyle{
+        padding-left: 0px !important;
+}*/
+.sitemapbottom .col-md-8{
+   padding-bottom: 55px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.sitemap_extralinks>section>div>div>div:nth-child(3) ul.listStyle{
+        padding-left: 0px !important;
+}
+.sitemapbottom .col-md-8{
+   padding-bottom: 55px;
+}
+}

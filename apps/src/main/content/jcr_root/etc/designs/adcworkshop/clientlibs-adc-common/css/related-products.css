@@ -1,0 +1,113 @@
+.relatedProducts h2{
+    font-size:42px;
+}
+.relatedProducts h3{
+    font-size:32px;
+    margin-bottom: 0px;
+}
+.related-products h2, .related-products h3{
+    letter-spacing: 5px;
+     font-weight:bold;
+     text-transform: uppercase; 
+}
+.related-products button{                                     
+   font-size: 14px;
+   font-weight: bold;
+   letter-spacing: 2px;                        
+}                              
+.related-products{
+    padding-top:150px;
+}
+.related-products h3{
+    color:#0096B4;
+    letter-spacing: 2px;
+}
+.related-products{
+    padding-top:150px;
+}
+#prodRelOne,#prodRelTwo{
+    margin-top:10px;
+}
+/************************** lg *******************************/
+@media (min-width: 1200px) {
+    .relatedProducts h3 {
+		margin-top: 30px;
+		margin-bottom: 0px;
+		min-height: 65px;
+	}
+    .related-products h2 {
+        margin-bottom: 35px;
+        margin-top: 0px;
+    }
+    .related-products img{
+        height:210px;
+    }
+}
+/*********************** End of lg *******************************/
+/*********************** md **************************************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .related-products img{
+        height:150px;
+    }
+    .related-products h2{
+        margin-top:0px;
+    }
+	.relatedProducts h3 {
+		margin-top: 30px;
+		margin-bottom: 0px;
+		min-height: 65px;
+	}
+}
+/*********************** End of md *******************************/
+/*********************** sm **************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .related-products{
+        padding-top:50px;
+        }
+    .related-products .img-responsive {
+        display: block;
+    }   
+    #prodRelOne{
+        margin-bottom:50px;
+    }
+	.related-products h2{
+		margin-top: 0px;
+	}
+}
+/*********************** End of sm ******************************/
+
+/**************************** XS Portrait ************************/
+
+@media (max-width: 767px) {
+    .relatedProducts h3 {
+        font-size: 20px;
+    }
+    .relatedProducts h2 {
+        font-size: 20px;
+    }
+    #prodRelOne{
+        margin-bottom: 30px;
+    }
+    #prodRelOne, #prodRelTwo {
+        margin-top: 20px;
+    }
+	.related-products h2{
+		margin-top: 0px;
+	}
+	.productPage .banner-painless{
+		padding-bottom: 0px !important;
+	}
+	.productPage .related-products {
+		padding-top: 50px;
+		padding-bottom: 0px;
+	}
+}
+/************************* End of XS Portrait *********************/
+/********* min-width:320px **********************/
+@media (min-width: 320px) {
+    .related-products img {
+        margin: 17px auto;
+    }
+}
+/********* end of min-width:320px **********************/

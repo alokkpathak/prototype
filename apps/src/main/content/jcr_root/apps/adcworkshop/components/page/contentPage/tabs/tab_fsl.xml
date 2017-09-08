@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="FSL - Custom Properties">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <fsl
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pageType
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Category Page Type"
+                    name="./templateType"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <checkoutPage
+                            jcr:primaryType="nt:unstructured"
+                            text="Checkout Template"
+                            value="checkoutTemplate"/>
+                        <leftRailPage
+                            jcr:primaryType="nt:unstructured"
+                            text="Left Rail Template"
+                            value="leftRailTemplate"/>
+                        <profilePage
+                            jcr:primaryType="nt:unstructured"
+                            text="Profile Page template"
+                            value="profilePageTemplate"/>
+                    </options>
+                </pageType>
+            </items>
+        </fsl>
+        <hideInFooter
+            jcr:primaryType="cq:Widget"
+            defaultValue="No"
+            fieldLabel="Click to show in footer sitemap"
+            name="./showInFooter"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <Yes
+                    jcr:primaryType="cq:Widget"
+                    text="Yes"
+                    value="yes"/>
+                <No
+                    jcr:primaryType="cq:Widget"
+                    text="No"
+                    value="no"/>
+            </options>
+        </hideInFooter>
+		
+		  <excludeCanonicalTag
+            jcr:primaryType="cq:Widget"
+            defaultValue="No"
+            fieldLabel="Exclude canonical tag for this page? "
+            name="./excludeCanonicalTag"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <Yes
+                    jcr:primaryType="cq:Widget"
+                    text="Yes"
+                    value="yes"/>
+                <No
+                    jcr:primaryType="cq:Widget"
+                    text="No"
+                    value="no"/>
+            </options>
+        </excludeCanonicalTag>
+        
+        <hide_productComponent
+           jcr:primaryType="cq:Widget"
+           fieldLabel="Hide productComponent"
+           name="./hideProduct"
+           type="checkbox"
+           xtype="selection"/>
+        <hideProductStickyHeaderComponent
+           jcr:primaryType="cq:Widget"
+           fieldLabel="Hide productStickyHeaderComponent"
+           name="./hideProductStickyHeaderComponent"
+           type="checkbox"
+           xtype="selection"/>
+	   <enable_pintrest
+           jcr:primaryType="cq:Widget"
+           fieldLabel="Enable scripts for social sharing"
+           name="./enablePintrest"
+           type="checkbox"
+           xtype="selection"/>
+        <cssPageClass
+           jcr:primaryType="cq:Widget"
+           fieldLabel="CSS Class to be applied at the page:"
+           name="./cssPageClass"
+           xtype="textfield"/>
+		   <orderhistoryanimationtext
+           jcr:primaryType="cq:Widget"
+           fieldLabel="Animation text for updating Order history in account overview page"
+           name="./orderhistoryanimationtext"
+           xtype="textfield"/>
+        <thumbnailImagePath
+           jcr:primaryType="cq:Widget"
+           fieldLabel="Page thumbnail image path for sharing:"
+		   fieldDescription="Upload only .jpg or .png images of 1MB or less with 1200x630 px Resolution"
+           name="./thumbnailImagePath"
+           xtype="pathfield"/>
+           
+        <sitemap jcr:primaryType="cq:Widget" collapsed="true"
+                 collapsible="true" title="XML Sitemap Properties" xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <domain
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Domain"
+                        name="./meta/sitemap/domain"
+                        xtype="textfield"
+                        fieldDescription="Used for website root only."/>
+                <changeFreq
+                        jcr:primaryType="cq:Widget"
+                        defaultValue=""
+                        fieldLabel="Change Frequency"
+                        name="./changefreq"                        
+                        type="select"
+                        xtype="selection"
+                        fieldDescription="Optional." >
+                        <options jcr:primaryType="cq:WidgetCollection">
+			                <blank
+			                    jcr:primaryType="cq:Widget"
+			                    text=" -- "
+			                    value=""/>
+			                <Never
+			                    jcr:primaryType="cq:Widget"
+			                    text="Never"
+			                    value="NEVER"/>
+			                <Hourly
+			                    jcr:primaryType="cq:Widget"
+			                    text="Hourly"
+			                    value="HOURLY"/>
+			                <Daily
+			                    jcr:primaryType="cq:Widget"
+			                    text="Daily"
+			                    value="DAILY"/>
+			                <Weekly
+			                    jcr:primaryType="cq:Widget"
+			                    text="Weekly"
+			                    value="WEEKLY"/>
+			                <Monthly
+			                    jcr:primaryType="cq:Widget"
+			                    text="Monthly"
+			                    value="MONTHLY"/>
+			                <Yearly
+			                    jcr:primaryType="cq:Widget"
+			                    text="Yearly"
+			                    value="YEARLY"/>
+			                <Always
+			                    jcr:primaryType="cq:Widget"
+			                    text="Always"
+			                    value="ALWAYS"/>    
+			           </options> 
+			    </changeFreq>
+                <priority
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Priority"
+                        name="./priority"
+                        xtype="numberfield"
+                        minValue="0.0"
+                        maxValue="1.0"
+                        fieldDescription="A number between 0.0 and 1.0. Optional." />
+            </items>
+        </sitemap>
+		   <contentClientLibCSS
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Choose the CSS category for the page"
+            name="./contentClientLibCss"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <marketing
+                    jcr:primaryType="nt:unstructured"
+                    text="Marketing CSS"
+                    value="apps.adc.workshop.marketing"/>
+                <ecommerce
+                    jcr:primaryType="nt:unstructured"
+                    text="Ecommerce CSS"
+                    value="apps.adc.workshop.ecomm"/>
+            </options>
+        </contentClientLibCSS>
+        <contentClientLibJS
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Choose the JS category for the page "
+            name="./contentClientLibJs"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <common
+                    jcr:primaryType="nt:unstructured"
+                    text="Common JS"
+                    value="apps.adc.workshop.commonlibs"/>
+                <ecommerce
+                    jcr:primaryType="nt:unstructured"
+                    text="Ecommerce JS"
+                    value="apps.adc.workshop.ecomm"/>
+                <ecommerceUkIt
+                    jcr:primaryType="nt:unstructured"
+                    text="Ecommerce JS - UK/IT"
+                    value="apps.adc.workshop.ecomm.uk.it"/>
+                <ecommerceFr
+                    jcr:primaryType="nt:unstructured"
+                    text="Ecommerce JS - FR"
+                    value="apps.adc.workshop.ecomm.fr"/>
+                <ecommerceRu
+                    jcr:primaryType="nt:unstructured"
+                    text="Ecommerce JS - RU"
+                    value="apps.adc.workshop.ecomm.ru"/>
+				<ecommerceLu
+                    jcr:primaryType="nt:unstructured"
+                    text="Ecommerce JS - LU"
+                    value="apps.adc.workshop.ecomm.lu"/>
+            </options>
+        </contentClientLibJS>
+    </items>
+</jcr:root>

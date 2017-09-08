@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Options"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <backgroundColor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Hexadecimal values only"
+                    fieldLabel="Background Color"
+                    name="./backColor"
+                    showHexValue="{Boolean}true"
+                    xtype="colorfield"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Max 50 characters"
+                    fieldLabel="Title"
+                    maxLength="{Long}50"
+                    name="./title"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Max 300 characters"
+                    fieldLabel="Descriptrion"
+                    maxLength="{Long}300"
+                    name="./description"
+                    xtype="textarea"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link"
+                    name="./link"
+                    xtype="textarea"/>
+                <buttonText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Button Text"
+                    name="./buttonText"
+                    xtype="textfield"/>
+            </items>
+        </list>
+    </items>
+</jcr:root>

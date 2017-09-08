@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <searchResultsConfig
+                jcr:primaryType="cq:Panel"
+                title="Search Results Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <gsaURL
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="/gsa-search/SearchServlet"
+                        fieldDescription="Enter the URL to the search proxy servlet"
+                        fieldLabel="GSA Proxy URL"
+                        name="./gsaURL"
+                        xtype="textfield"/>
+                    <searchCol
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the collection parameter"
+                        fieldLabel="Search Collection"
+                        name="./searchCol"
+                        xtype="textfield"/>
+                    <searchTitle
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Search"
+                        fieldDescription="Enter search heading"
+                        fieldLabel="Search heading"
+                        name="./searchTitle"
+                        xtype="textfield"/>
+                    <results
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Results"
+                        fieldDescription="Enter text for &quot;Results&quot;"
+                        fieldLabel="Results"
+                        name="./results"
+                        xtype="textfield"/>
+                    <ofAbout
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="of about"
+                        fieldDescription="Enter text for &quot;of about&quot;"
+                        fieldLabel="of about"
+                        name="./ofAbout"
+                        xtype="textfield"/>
+                    <for
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="for"
+                        fieldDescription="Enter text for &quot;for&quot;"
+                        fieldLabel="for"
+                        name="./for"
+                        xtype="textfield"/>
+                    <searchTook
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Search took"
+                        fieldDescription="Enter text for &quot;Search took&quot;"
+                        fieldLabel="Search took"
+                        name="./searchTook"
+                        xtype="textfield"/>
+                    <seconds
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="seconds"
+                        fieldDescription="Enter text for &quot;seconds&quot;"
+                        fieldLabel="Seconds"
+                        name="./seconds"
+                        xtype="textfield"/>
+                </items>
+            </searchResultsConfig>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,67 @@
+.disclaimer {
+	background-color: #FFFFFF;
+	padding-top: 20px;
+}
+
+.disclaimer h3 {
+	font-family: Gotham-Bold;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.disclaimer p {
+	color: black;
+	font-family: 'Gotham-Book-Regular';
+	font-size: 14px;
+}
+
+.disclaimerTitle {
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-family: 'Gotham-Book-Regular';
+	letter-spacing: 2px;
+	display: inline-block;
+}
+
+.disclaimer .btn {
+	margin-bottom: 10px;
+}
+
+#blockpageModal, #monoccoBlockpageModal{
+    background-color: white;
+}
+
+#blockpageModal .modal-content, #monoccoBlockpageModal .modal-content{
+    box-shadow: none;
+    border: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) { 
+.turkey .btn-margin-right{
+	letter-spacing:1px;
+}
+.turkey .cookie-btn,.turkey .cookie-btn:hover{
+	font-size:11px;
+    margin-right:-20px;            
+}
+}
+
+@media ( max-width : 767px) {
+	.disclaimer .btn {
+		width: 100%;
+		white-space: normal;
+		line-height: 125%;
+		margin-bottom: 10px !important;
+	}
+    #disclaimerModal .modal-body {
+        overflow-y: scroll;
+    }
+}
+
+@media ( min-width : 410px) and (max-width: 767px) {
+	.disclaimer .btn {
+		width: 100%;
+		white-space: normal;
+		line-height: 125%;
+	}
+}

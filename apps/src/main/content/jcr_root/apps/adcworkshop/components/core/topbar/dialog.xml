@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <topbar
+                jcr:primaryType="cq:Panel"
+                title="Topbar">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <bgColor
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Backgroung Color"
+                        name="./topBarBgColor"
+                        showHexValue="{Boolean}true"
+                        xtype="colorfield"/>
+                    <leftLabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="• Maximum Character count : 60"
+                        fieldLabel="Enter dynamic text"
+                        maxLength="60"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <middleLabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="• Maximum Character count : 30"
+                        fieldLabel="Enter confirmation text"
+                        maxLength="30"
+                        name="./title2"
+                        xtype="textfield"/>
+                    
+                    <rightLabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="• Maximum Character count : 30"
+                        fieldLabel="Enter change country text"
+                        maxLength="30"
+                        name="./title3"
+                        xtype="textfield"/>
+                    <displayChangeCountry
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Display Change Country link?  "
+						value="true"
+						defaultValue="true"
+                        name="./displayChangeCountry"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </topbar>
+        </items>
+    </items>
+</jcr:root>

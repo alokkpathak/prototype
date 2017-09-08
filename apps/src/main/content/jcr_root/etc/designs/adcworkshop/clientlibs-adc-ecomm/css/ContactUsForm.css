@@ -1,0 +1,209 @@
+.contactUs .contact-form{
+    margin-bottom: 30px ;
+  margin-top: 30px ;
+}
+.contact-form .form-group .form-control {
+    border-radius: 0px;
+	font-family: Gotham-Book-Regular;
+}
+.contact-form .form-group label {
+    font-weight: normal;
+    font-family: Gotham-Medium-Regular;
+    font-size: 16px;
+    color:#4f4f4f;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.contact-form .login-container .reg-btn {
+    margin-top: 50px;
+}
+.form-group select{
+	width: 25%;
+}
+.contact-form select,.contact-form input,.contact-form textarea{   
+	   border: 2px solid #c6C6C6;
+}
+.contactUs .contact-form .form-group label{
+    padding-left:0px;
+    margin-right: 0px; 
+    padding-top: 14px;
+}
+.contact-form .form-group{
+    margin-bottom: 48px;
+        }
+.contact-form .checkboxOrange label>p{
+    width:auto;
+    font-size:16px;
+        }
+.contact-form .form-group .form-control{
+    border-radius: 0px;
+    margin-bottom: 5px;
+	font-family: Gotham-Book-Regular;
+}
+.contact-horizontal select{
+    width:25%;
+}
+#contact_question{
+    width:100%;
+}
+.contactUs .about {
+	padding-top: 55px;
+    padding-bottom: 48px;       
+}
+.contact-form  input,.contact-form  select{
+    height:50px;
+    padding-left:30px;
+}
+#contactcheckboxerrorspan{
+    position:absolute;
+    top:50px;
+}
+.contactGlobalError .col-xs-1 img{
+	float:right;
+    margin-right: 5px;                
+}
+.contact_us_page .form-group .col-md-offset-3 input{
+	border:none;
+}
+.ContactError{
+	color:#d61031;
+    padding-top:15px;                
+}
+
+
+@media (min-width: 1200px) {
+#contact .checkboxOrange label{
+    left:210px;
+    padding-top:0px;
+}
+#contactcheckboxerrorspan{
+	left:20px;
+}
+.contactGlobalError .col-xs-1 img{
+	margin-top:-5px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+#contactcheckboxerrorspan{
+    top:90px;
+	left:20px;
+}
+.contactUs .contact-form .form-group label{
+	padding-right:0px;
+}
+#contact .checkboxOrange label{
+    left:28.5%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.contactUs .contact-form .form-group label{
+    margin-left:12.5%;
+    text-align:left;
+    width:auto;        
+}
+ .contactUs .contact-form .form-group .col-md-offset-3 {
+	text-align:center;
+}
+.contactUs .contact-form .form-group .col-md-offset-3 input{
+    margin-left:0px; 
+}                                                
+#contact .checkboxOrange label{
+    left:0px;
+    padding-top: 0px;
+}
+.contactUs .contact-form .form-group select,.contactUs .contact-form .form-group input,.contactUs .contact-form .form-group textarea,
+.contactUs .error_show{
+    margin-left:15%;
+}
+#contactcheckboxerrorspan {
+    margin-left:0%;
+    top:100px; 
+    left:12.5%;
+}
+.contactUs .contact-form .form-group label{
+    font-size:28px;
+}
+.contact-form .button-orange, .contact-form .button-orange:hover{
+    padding:25px 35px;
+    font-size:21px;
+}
+.contact-form .form-group label{
+    font-size:22px;
+}
+.contact-form input,.contact-form select{
+    height:70px;
+    padding-left:40px;
+}
+.contact-form .form-group{
+    margin-bottom:55px;
+}
+.contact-form{
+    margin-bottom:0px;
+    margin-top:70px;    
+    }
+.contact-form .checkboxOrange label>p{
+    font-size:22px;
+}
+.contactUs .about {
+    padding-top:100px;
+    padding-bottom:90px;        
+}
+.contactUs .contact-form .form-group label{
+	padding-top:0px;
+}
+}
+
+@media (max-width: 767px) {
+.contactUs .about {
+    padding-top:50px;
+    padding-bottom:45px;        
+}
+.contactUs .contact-form .form-group .col-md-offset-3 {
+	text-align:center;
+}        
+#contact .checkboxOrange label{
+    left:0px;
+    padding-top:0px;
+}
+#contactcheckboxerrorspan{
+    top:50px;
+	left:15px;
+}
+.contact-form .form-group label,.required-field p{
+    font-size:11px;
+    margin-bottom: 5px;
+}
+.contactUs #contact_submit{
+	padding-left:30px;
+} 
+.contact-form input,.contact-form select{
+    height:40px;
+    padding-left:20px;
+    font-size:12px;
+}
+.contact-form .form-group{
+    margin-bottom:18px;
+}
+.contactUs .contact-form .form-group label{
+    padding-left:15px;
+    text-align:left;
+    width:auto;        
+}
+.contact-form .button-orange, .contact-form .button-orange:hover{
+    padding:12px 17px;
+    font-size:11px;
+}
+.contact-form,.contactUs .contact-form{
+    margin-bottom:0px;
+    margin-top:20px;    
+}
+.contactUs .contact-form .form-group label{
+	padding-top:0px;
+}
+}
+@media (min-width: 620px) and (max-width: 767px) {
+.contactUs .chkYesReceive p{
+	margin-top:4px;
+}
+} 

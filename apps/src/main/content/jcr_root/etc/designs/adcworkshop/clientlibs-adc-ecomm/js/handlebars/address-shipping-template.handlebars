@@ -1,0 +1,35 @@
+ {{#address}}
+    <div class="col-lg-4 col-md-4">
+ 				{{#firstDef @index type}}
+         			<div id="{{{entity_id}}}" class="well address-select active-address">
+         		{{else}}
+         			<div id="{{{entity_id}}}" class="well address-select">
+                {{/firstDef}}
+     <p>{{customer_address_label}}</p>
+     <p class="titlePara">{{prefix}} {{firstname}} {{lastname}}</p>
+     <p class="detailsPara"> 
+         {{#street}}
+          {{this}}<br>
+          {{/street}}
+          {{city}}, {{postcode}}</p>
+          <a href="#myModal-2" data-toggle="modal" role="dialog" id="editAddr" class="editAddrFlow col-md-9 text-right padding-right {{{type}}}"><span class=" topSpacing glyphicon glyphicon-pencil"></span></a>
+          {{#defaultCheckPers is_default_billing is_default_shipping type}}
+          {{else}}
+          <a href="#myModal-3" data-toggle="modal" role="dialog" id="removeAddr" class="col-md-3"><span class="glyphicon glyphicon glyphicon-trash"></span></a>
+          {{/defaultCheckPers}}
+</div>
+{{#firstDef @index type}}
+	<div class="radio-border active-border" id="{{{entity_id}}}">
+		<label class="text-center"><input type="radio" value="{{{entity_id}}}" name="{{{type}}}" checked></label>
+	</div>
+{{else}}
+	<div class="radio-border" id="{{{entity_id}}}">
+		<label class="text-center"><input type="radio" value="{{{entity_id}}}" name="{{{type}}}"></label>
+	</div>
+{{/firstDef}}
+<div style="clear:both"></div>
+</div>
+{{/address}}
+<div class="col-lg-12 col-xs-12 text-right button-center links persAddr" id="add-address">
+    <a class="link-underline {{{type}}}" href="#myModal-2" id="createAddr" data-toggle="modal" role="dialog"><u>{{{addresslabel .}}}</u></a>
+</div>

@@ -1,0 +1,33 @@
+.resource-data {
+     margin-top: 105px;
+    margin-bottom: 80px;
+}
+.resource-data h2{
+    font-size:24px;
+   padding-top: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.resource-data h2{
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+}
+.resource-data {
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+}
+
+@media (max-width: 767px) {
+.resource-data{
+    margin-bottom: 0px;
+    margin-top: 45px;
+}
+.resource-data h2{
+	font-size:12px;
+	padding-top: 15px;
+    padding-bottom: 30px;
+}
+}

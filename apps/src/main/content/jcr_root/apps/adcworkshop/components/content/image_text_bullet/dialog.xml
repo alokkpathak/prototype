@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="image_text_bullet"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <imageOption
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Include Image :"
+                        name="./valueSelected1"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <titleimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image block"
+						fieldDescription="Upload only .jpg or .png images of 1MB or less with 420x483px Resolution"
+                        name="./imagename1"
+                        xtype="pathfield"/>
+                    <titleimageMobile
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="imagePath Label for Mobile"
+						fieldDescription="Upload only .jpg or .png images of 1MB or less with 514x439px Resolution"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./imagename1Mobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>
+                    <mobiledesc
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sub-text for mobile"
+                        name="./richtext2"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="text-center"
+                                        text="Text-center"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+							<colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+							<subsuperscript
+								jcr:primaryType="nt:unstructured"
+								features="*"/>
+                        </rtePlugins>
+                    </mobiledesc>
+                    <desc
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Sub-text"
+                        name="./richtext1"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <style1
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="text-center"
+                                        text="Text-center"/>
+                                    <style2
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="font12"
+                                        text="font-size-12px"/>
+                                    <style3
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="note"
+                                        text="note"/>
+                                    <style4
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="first"
+                                        text="first"/>
+                                    <style5
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref"
+                                        text="ref"/>
+                                    <style6
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="ref middle"
+                                        text="ref middle"/>
+                                </styles>
+                            </styles>
+							<subsuperscript
+								jcr:primaryType="nt:unstructured"
+								features="*"/>
+                        </rtePlugins>
+                    </desc>
+                    <leftmulti
+                        jcr:primaryType="cq:Widget"
+                        autoWidth="{Boolean}true"
+                        baseName="leftmulti_"
+                        fieldLabel="Configure the right multifields"
+                        name="./leftmulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title1
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Text Description"
+                                name="lefttitlename"
+                                xtype="textarea"/>
+                            <image1
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Select the image"
+                                name="leftimagename"
+                                xtype="pathfield"/>
+                            <altimage1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="leftimagealt"
+                                xtype="textfield"/>
+                            <image1Mobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="imagePath Label for Mobile"
+                                mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                                name="leftimagenameMobile"
+                                sizeLimit="{Long}1"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </leftmulti>
+                    <typeOfButton
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Action on button Click"
+                        name="./typeOfButton"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Open as a modal?"
+                                value="modal"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="Redirect to a page?"
+                                value="button"/>
+                            <option3
+                                jcr:primaryType="nt:unstructured"
+                                text="Button Not needed"
+                                value="noButton"/>
+                        </options>
+                    </typeOfButton>
+                    <buttonText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Button Text"
+                        name="./button"
+                        xtype="textfield"/>
+                    <newTabRedirect
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Open in new tab? (If button redirects to a page)"
+                        name="./newtabcheck"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="true"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="false"/>
+                        </options>
+                    </newTabRedirect>
+                    <buttonLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select your button link for redirection"
+                        name="./link"
+                        width="300"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

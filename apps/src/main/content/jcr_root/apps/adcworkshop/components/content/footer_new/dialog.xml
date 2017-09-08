@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <parentPath
+                jcr:primaryType="cq:Panel"
+                title="Parent Path"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sourcePath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Source Path"
+                        name="./sourcePath"
+                        xtype="pathfield"/>
+                    <myAccountLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="My Account Overview Path:"
+                        name="./myAccountLink"
+                        xtype="pathfield"/>
+                    <signinink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sign in Path:"
+                        name="./signinpath"
+                        xtype="pathfield"/>
+                </items>
+            </parentPath>
+            <footerLinks_row1
+                jcr:primaryType="cq:Widget"
+                title="Footer Links for Row1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <quickLinksBelowRow1
+                        jcr:primaryType="cq:Widget"
+                        baseName="footerdetails1_"
+                        name="./quickLinksBelowRow1"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <linkTitle
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="Title"
+                                maxLength="{Decimal}40"
+                                name="linkTitle"
+                                width="300"
+                                xtype="textfield"/>
+                            <linkPath
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="Link"
+                                name="linkPath"
+                                width="300"
+                                xtype="pathfield"/>
+							<newTabRedirect
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open in new tab?"
+                                name="newtabcheck"
+                                type="radio"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <option1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="true"/>
+                                    <option2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="false"/>
+                                </options>
+                            </newTabRedirect>
+							<displayableLink1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Is this link displayable in footer for the selected country?"
+                                name="displayableLink1"
+                                type="radio"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <option1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="true"/>
+                                    <option2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="false"/>
+                                </options>
+                            </displayableLink1>
+                        </fieldConfigs>
+                    </quickLinksBelowRow1>
+                </items>
+            </footerLinks_row1>            
+            <geo_logo_social
+                jcr:primaryType="cq:Panel"
+                title="Geo-Restriction, Logo and Social"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <socialLinks
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Social Media Links"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <dispalySocialLinks
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Do you want Social Links to be displayed?"
+                                name="./displaySocialLinks"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <option1
+                                        jcr:primaryType="cq:Widget"
+                                        text="Yes"
+                                        value="Yes"/>
+                                    <option2
+                                        jcr:primaryType="cq:Widget"
+                                        text="No"
+                                        value="No"/>
+                                </options>
+                            </dispalySocialLinks>
+                            <fbImagePathDesktop
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 40 x 40 px Resolution"
+                                fieldLabel="Image Path for facebook logo for desktop"
+                                name="./facebookImagePath"
+                                xtype="pathfield"/>
+							<fbImagePathMobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 80 x 80 px Resolution"
+                                fieldLabel="Image Path for facebook logo for mobile"
+                                name="./facebookImagePathMobile"
+                                xtype="pathfield"/>
+                            <fbImageLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the redirection Link for facebook logo"
+                                fieldLabel="Link for facebook logo"
+                                maxLength="{Decimal}60"
+                                name="./facebookLink"
+                                xtype="textfield"/>
+                            <fbaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for fbImage alt"
+                                name="./fbimagealt"
+                                xtype="textfield"/>
+                            <twitterImagePathDesktop
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 40 x 40 px Resolution"
+                                fieldLabel="Image Path for twitter logo for desktop"
+                                name="./twitterImagePath"
+                                xtype="pathfield"/>
+							<twitterImagePathMobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 80 x 80 px Resolution"
+                                fieldLabel="Image Path for twitter logo for mobile"
+                                name="./twitterImagePathMobile"
+                                xtype="pathfield"/>
+                            <twitterImageLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the redirection Link for twitter logo"
+                                fieldLabel="Link for twitter logo"
+                                name="./twitterLink"
+                                xtype="textfield"/>
+                            <twitteraltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for  twitterImage alt"
+                                name="./twitterimagealt"
+                                xtype="textfield"/>
+							<youtubeImagePathDesktop
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 40 x 40 px Resolution"
+                                fieldLabel="Image Path for youtube logo for desktop"
+                                name="./youtubeImagePath"
+                                xtype="pathfield"/>
+							<youtubeImagePathMobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 80 x 80 px Resolution"
+                                fieldLabel="Image Path for youtube logo for mobile"
+                                name="./youtubeImagePathMobile"
+                                xtype="pathfield"/>
+                            <youtubeImageLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the redirection Link for youtube logo"
+                                fieldLabel="Link for youtube logo"
+                                maxLength="{Decimal}60"
+                                name="./youtubeLink"
+                                xtype="textfield"/>
+                            <youtubealtimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for youtube alt"
+                                name="./youtubeimagealt"
+                                xtype="textfield"/>
+                            <followUsText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Follow Us Text"
+                                maxLength="{Decimal}15"
+                                name="./followText"
+                                xtype="textfield"/>
+                        </items>
+                    </socialLinks>
+                    <vorwerkLogo
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Logo"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <logoPathDesktop
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 100 x 25 px Resolution"
+                                fieldLabel="Image Path Vorwerk Logo for desktop"
+                                name="./logoPath"
+                                xtype="pathfield"/>
+							<logoPathMobile
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 100 x 25 px Resolution"
+                                fieldLabel="Image Path Vorwerk Logo for mobile"
+                                name="./logoPathMobile"
+                                xtype="pathfield"/>
+                            <logoaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for logoImage alt"
+                                name="./logoimagealt"
+                                xtype="textfield"/>
+                            <logoLink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Link Vorwerk logo"
+                                name="./logoLink"
+                                suffix=".html"
+                                xtype="pathfield"/>
+                        </items>
+                    </vorwerkLogo>
+                    <geoRestrictionBlock
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Geo-Restriction Block"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <presentCountryText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Present Country Text"
+                                maxLength="{Decimal}60"
+                                name="./presentCountry"
+                                xtype="textfield"/>
+                            <changeCountryText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Change Country Text"
+                                maxLength="{Decimal}25"
+                                name="./changeCountry"
+                                xtype="textfield"/>
+							<displayChangeCountry
+								jcr:primaryType="cq:Widget"
+								fieldLabel="Display Change Country link?  "
+								value="true"
+								defaultValue="true"
+								name="./displayChangeCountry"
+								type="checkbox"
+								xtype="selection"/>
+                        </items>
+                    </geoRestrictionBlock>
+					<footerTextOnlyForIT
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="footer Text (Disclaimer, Copyrights)"
+                        xtype="dialogfieldset">
+						<items jcr:primaryType="cq:WidgetCollection">
+						<footerSectionITone
+							jcr:primaryType="cq:Widget"
+							fieldLabel="Enter the text to display for footer section"
+							name="./footerSectionITone"
+							xtype="textfield"/>
+						<footerSectionITtwo
+							jcr:primaryType="cq:Widget"
+							fieldLabel="Enter the text to display for footer section"
+							name="./footerSectionITtwo"
+							xtype="textfield"/>
+						<footerSectionITthree
+							jcr:primaryType="cq:Widget"
+							fieldLabel="Enter the text to display for footer section"
+							name="./footerSectionITthree"
+							xtype="textfield"/>
+						</items>
+					</footerTextOnlyForIT>
+                    <buttonImagePathDesktop
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the path for the button image for desktop"
+                        fieldLabel="Button Image"
+                        name="./buttonImagePath"
+                        xtype="pathfield"/>
+					<buttonImagePathMobile
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the path for the button image for mobile"
+                        fieldLabel="Button Image"
+                        name="./buttonImagePathMobile"
+                        xtype="pathfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>					
+                </items>
+            </geo_logo_social>
+        </items>
+    </items>
+</jcr:root>

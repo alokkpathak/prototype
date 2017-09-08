@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/adcworkshop"/>
+	<filter root="/apps/gsa"/>
+	<filter root="/apps/sling"/>
+   <!--  <filter root="/content/fsl"/> -->
+    <filter root="/etc/designs/adcworkshop"/>
+    <filter root="/etc/workflow/models/adc-content-workflow"/>
+    <filter root="/etc/workflow/scripts/adc-workshop"/>
+    <!-- <filter root="/content/dam/adcWorkshop"/> -->
+</workspaceFilter>

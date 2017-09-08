@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Coupon"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Coupon Fields">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <couponrequired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select checkbox if  coupon is required for this Country on this Page. eg: For UK, Please check and fill all the fields, else uncheck the checkbox and do not fill any fields."
+                        fieldLabel="Coupon Required on this Page"
+                        name="./couponrequired"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <couponTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Coupon Title eg: COUPON OR VOUCHER"
+                        fieldLabel="Coupon Heading"
+                        name="./couponTitle"
+                        xtype="textfield"/>
+                    <couponDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Coupon Description eg: If you have a coupon or a voucher, enter it and validate to re-calculate your total"
+                        fieldLabel="Coupon Description"
+                        name="./coupondesc"
+                        xtype="textfield"/>
+                    <buttonlabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Button Label eg: OK"
+                        fieldLabel="Button Label"
+                        name="./okbuttonlabel"
+                        xtype="textfield"/>
+                    <couponemptymessage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Expire Error Message eg: Please enter the Coupon code"
+                        fieldLabel="Empty Error Message"
+                        name="./emptyerrormsg"
+                        xtype="textfield"/>
+                    <couponsuccess
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Title eg: Thank you. Your coupon code has been saved.&#xa;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;You will have to create your client account or login while beginning checkout to make it work."
+                        fieldLabel="Coupon Success Message"
+                        name="./couponsuccess"
+                        xtype="textarea"/>
+                    <invalidexpireerror
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Title eg: The coupon you entered is not recognized. Please check and try again."
+                        fieldLabel="Invalid Coupon Message"
+                        name="./voucherinvaliderror"
+                        xtype="textarea"/>
+                <voucherexpired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Voucher Expired Message eg: The coupon you entered has expired"
+                        fieldLabel="Voucher Expired Text"
+                        name="./voucherexpired"
+                        width="300"
+                        xtype="textfield"/>
+                <voucheralreadyused
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Voucher Used Message eg: The coupon you entered has already been redeemed"
+                        fieldLabel="Voucher Already used Text"
+                        name="./voucheralreadyused"
+                        width="300"
+                        xtype="textfield"/>
+                <vouchercannotbeusedforproduct
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Voucher Empty Message eg: The coupon you entered cannot be used for the products in your basket."
+                        fieldLabel="Voucher Cannot be Used Text"
+                        name="./vouchercannotbeusedforproduct"
+                        width="300"
+                        xtype="textfield"/>
+                    <tooltipimage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Coupon tooltip Image"
+                        fieldLabel="Coupon tooltip Image"
+                        name="./tooltipimage"
+                        xtype="pathfield"/>                    
+                    <tooltip
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Coupon tooltip"
+                        fieldLabel="Coupon tooltip"
+                        name="./tooltip"
+                        xtype="textfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

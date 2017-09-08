@@ -1,0 +1,641 @@
+.readmore,.readmore:hover{
+    color:white;
+    margin-bottom:0px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 120px;
+    top: 40%;
+    font-size:14px;        
+    text-decoration: none;
+    font-family: 'Gotham-Medium-Regular';
+}
+.img-read{
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 10px;
+    width:30px;
+}
+.padding-disc{
+    padding-left: 10px;
+    font-family: 'Gotham-Medium-Regular';
+    text-transform: uppercase;  
+    font-size:14px;
+}
+.text-on-image{
+    text-transform: uppercase;
+    position: absolute;
+    left: 120px;
+    top: 45px;
+    width:70%;
+    color: white;
+    font-size: 32px;
+    font-family: 'Gotham-Bold';
+    letter-spacing: 5px;
+}
+.textBottom  h3{
+    text-transform: uppercase;
+    position: absolute;
+    left: 54px;
+    bottom: 60px;
+    width:70%;
+    color: white;
+    font-size: 32px;
+    font-family: 'Gotham-Bold';
+    letter-spacing: 5px;
+}
+.colorbox-1 .text-on-image{
+    left:40px;
+    width:90%;
+}
+.colorbox-0{
+    height: 400px;
+    width: 420px;
+}
+.colorbox{
+    height: 300px;
+    width: 420px;
+}
+.colorbox-1{            
+    height: 400px;
+    width:600px;
+}
+.colorbox > p,.colorbox-0 p{
+    margin: 10px 40px 30px ;
+    text-align: left;
+    color:#83630C;
+}
+.name{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Gotham-Medium-Regular';           
+}
+.colorbox .name{
+    margin-bottom:4px;
+}
+.text-on-image-1{
+    position:absolute;
+    top: 114px;
+    left: 40px;
+    right: 40px;
+    width:90%;
+    color:white;
+    word-break: keep-all;
+    margin-top: 15px;
+}
+.btn-popup{
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.two-navigation-banner img, .sub-footer .apply-sensor img{
+    padding-bottom: 2px;
+}
+.colorbox-0 a,.colorbox a{      
+    float:left;     
+    padding-left:40px;  
+    padding-top: 40px;      
+    text-transform: uppercase;      
+}
+.colorbox a {
+    padding-top: 20px;
+}
+.discover1{
+    color:#83630C;
+    padding-left: 10px;
+    font-family: 'Gotham-Medium-Regular';
+    font-size:14px;
+}
+.round-img{
+    margin-top: 20px;
+}
+.btn-link:focus, .btn-link:hover{
+    text-decoration: none;
+    color:#E4572D;
+}
+.modal-header{              
+    padding-top:10px;               
+}   
+.mob-popup{
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-top: 10px;
+    color:#E4572D;
+    text-transform: uppercase;
+    font-family: Gotham-Medium-Regular;
+    font-size: 21px;
+}
+.gridBlock{     
+    padding-top:30px;       
+}
+.name{
+    padding-bottom:30px;
+}  
+.Homepage .modal-header h4{
+	padding-top: 20px;
+    padding-bottom: 0px;
+}
+.Homepage .modal-header  {
+	padding-bottom: 0px;
+}
+.colorbox-1 .btn {
+    padding-left: 0;
+}
+.colorbox-1 h3{
+	padding:50px 10px 20px 40px;
+    color:#ffffff; 
+    font-size: 32px;
+    font-family: 'Gotham-Bold';
+    letter-spacing: 5px;
+    text-transform: uppercase;    
+    }
+.colorbox-1 p{
+	color:#ffffff; 
+    padding-right:10px;
+    padding-left:40px;        
+        }
+.colorbox-1 .btn{
+	padding-top:30px;
+}
+.italy .bg-watermark{
+    background:none;
+	text-align: left;
+}
+.italy .round-img {
+    display:none;
+}
+.italy .padding-disc,.italy .colorbox-1 p{
+    color: #83630C;
+}
+
+/************************** lg *******************************/
+@media (min-width: 1200px) {
+.bg-watermark .img-thumbnail{
+    padding:1px;
+}
+.colorbox-0 a {
+    position: absolute;
+    top: 80%;
+    left: 0px;
+    padding-top: 0px;
+} 
+.col-sm-7 .readmore {
+    top: 80%;
+}    
+.textBottom .readmore,.textBottom .readmore:hover{
+	    top: 92% ;
+    	left:60px;
+}
+.mob-twocol-collage .readmore,.mob-twocol-collage .readmore:hover {
+		       left:120px;            
+                }        
+.bg-watermark{
+    background: url('/content/dam/adc/fsl/images/global/en/desktopImages/watermark.png') no-repeat 30px 120px;
+}
+.bg-watermark p{
+    padding-bottom:2px;
+}
+.name{
+    padding-bottom:20px;
+    margin-top:10px;
+}
+.textBottom .img-responsive{
+    display:block !important;
+    }
+.img-calque2{
+    padding-left:15px;
+    height:600px;
+    width: 615px;
+}
+.img-calque1,.img-calque-1{
+    margin-right:-15px;
+}
+.colorbox {    
+    float: right;
+    margin-right: -30px;
+}
+.colorbox-1 {
+    margin-left: 15px;
+}
+.mob-twocol-collage.textBottom h3 {
+	left: 120px;
+}
+.colorbox p, .colorbox-0 p {
+    margin: 0 40px;
+}
+.image-collage sup {
+    top: -.5em;
+}
+}
+/****************** md **************************************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.name {
+    padding-bottom: 3px;
+}
+.bg-watermark{
+    background: url('/content/dam/adc/fsl/images/global/en/desktopImages/watermark.png') no-repeat 30px 115px;
+}
+.colorbox-0 {
+    height: 377.4px;
+    width: 404px;
+}
+.textBottom  h3{
+    left: 40px;
+    width:90%;
+}
+.colorbox a{
+    padding-top:10px;
+}
+.colorbox {
+    height: 277px;
+}
+.text-on-image{
+        font-size: 25px;
+        width:88%;
+}
+.colorbox-1 {
+    height: 385px;
+    width: 565.5px;
+}   
+.text-on-image,.readmore, .readmore:hover{
+    left:40px;
+}
+.colorbox p, .colorbox-0 p {
+    margin: 0 20px;
+}
+.image-collage sup {
+    top: -.5em;
+}
+.text-on-image sup {
+    top: -.1em;
+}
+.img-calque2{
+	height: 566.4px;
+}
+.textBottom .readmore,.textBottom .readmore:hover{
+	    top: 92% !important;
+}
+.col-sm-7 .readmore{
+	top: 80%;
+}
+.colorbox-0 a{
+	position:absolute;
+    top:79%; 
+    left:0px; 
+    padding-top: 0px;
+}
+.italy .colorbox-1 h3{
+    padding: 20px 10px 10px 40px;
+}
+}
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+.name {
+    padding-bottom: 7px;
+    margin-top: 5px;
+}
+.Homepage .modal-header h4{
+	padding-top:0px;
+}
+.textBottom .readmore,.textBottom .readmore:hover{
+	    top: 92% !important;
+}
+.col-sm-7 .readmore{
+	top: 80%;
+}
+.colorbox-0 a{
+	position:absolute;
+    top:77%; 
+    left:0px; 
+    padding-top:0px;
+}
+.colorbox-1 .btn{
+	padding-top:15px;
+}    
+.colorbox-1 h3 {
+    padding: 10px 10px 10px 20px;
+	letter-spacing: 0px;
+}  
+.colorbox-1 p {
+	padding-left:20px;
+}
+.img-calque-1{
+    height:298px;
+}
+.img-calque2{
+	height: 437.5px;
+}
+.text-on-image-1 {   
+    top:105px
+} 
+.textBottom .img-responsive{
+    display:block !important;
+}
+.colorbox-0 {
+    height: 291.7px;
+    width: 312px;
+}
+.colorbox {
+    height: 214px;
+    width: 313px;
+}
+.colorbox-0 a, .colorbox a{
+    padding-left: 20px;
+    padding-top: 10px;
+	padding-right:0px;
+}
+.colorbox-1 .text-on-image{
+    width:88%;
+}
+.round-img {
+    margin-top: 10px;
+    width:60px;
+}   
+.colorbox-1 {
+    height: 298px;
+    width: 437px;
+}   
+.bg-watermark {
+    background: url(/content/dam/adc/fsl/images/global/en/mobileImages/watermark.png) no-repeat 20px 85px;
+}
+.textBottom  h3 , .readmore, .readmore:hover{
+    left:20px;
+}
+.text-on-image{
+    top:20px;
+    left:20px;
+    letter-spacing: 0px;
+}
+.colorbox p, .colorbox-0 p {
+    margin: 0 10px 0 20px;
+    text-align: left;
+}
+.image-collage sup {
+    top: -.5em;
+}
+.textBottom  h3{
+	bottom:50px;
+    letter-spacing: 0px;
+    width: 90%;    
+}
+.modal-footer h4 {
+	padding-top:20px;
+    }
+.italy .discover1{
+    Padding-left:5px;
+}
+.italy .colorbox p,.italy .colorbox-0 p,.colorbox-1 p{
+    font-size:16px;
+}
+.italy .colorbox-1 p{
+    padding-left: 10px;
+    padding-right: 3px;        
+ }
+.italy .colorbox-1 h3{
+    font-size:28px;
+    padding:10px; 
+    padding-right:0px;                 
+}
+}
+
+/********************************* XS Portrait ************************/
+
+@media (max-width: 767px) {
+.bg-watermark{
+    background: url('/content/dam/adc/fsl/images/global/en/mobileImages/watermark.png') no-repeat 10px 78px;
+}
+.Homepage .modal-header h4{
+	padding-top: 0px;
+}    
+.italy .colorbox p, .italy .colorbox-0 p {
+    margin: 0 7px;
+    text-align: left;
+} 
+.bg-watermark p{
+    font-size:12px;
+}
+.colorbox-1 .btn{
+	padding-top:15px;
+} 
+.colorbox-1 h3 {
+    padding: 10px 10px 10px 20px;
+	letter-spacing: 0px;
+    font-size:15px;
+}  
+.colorbox-1 p {
+	padding-left:20px;
+    font-size:12px;
+}
+.text-on-image{
+    left: 20px;  
+    top:20px;   
+    font-size:15px;
+    letter-spacing: 1px;    
+}
+.readmore, .readmore:hover{
+    left:18px;
+    font-size:11px;
+}
+.discover1,.padding-disc{
+    font-size: 11px;
+    letter-spacing: 0;
+}
+.colorbox-1 h3, .colorbox-1 p{
+    position:relative;
+}
+.colorbox-1 p {
+    padding-bottom: 20px;
+}
+.text-on-image-1{
+    top:0px;
+    width: 86%;
+    margin-top: 45px;
+    font-size:12px;
+    letter-spacing: 1px; 
+}  
+.colorbox-1 .text-on-image{
+    width: 85%;
+}
+.round-img {
+    width:50px;
+    }
+.colorbox > p, .colorbox-0 p {
+    margin: 0px;
+    text-align: center;
+
+}
+.colorbox-0 a, .colorbox a{
+    padding-left: 0px;
+    padding-top:15px;
+}
+.gridBlock .textBottom .img-responsive {
+    display: block;
+    width:100%;  
+    object-fit: cover;
+}
+.textBottom  h3{
+    left: 20px;
+    bottom:50px;
+    width: 84%;
+    font-size:15px;
+    letter-spacing: 1px; 
+}
+.img-calque,.bothdesktopmobile img{
+	width:100%;
+}
+.colorbox-0{
+    width:50%;
+    margin-left: 0px;  
+    height:auto;
+    max-height: 275px;
+    min-height: 225px;
+}
+.bg-watermark .img-thumbnail{
+    padding:0px;
+}
+.colorbox {
+    max-height: 275px;
+    width: auto;
+}
+.mob-twocol-collage,.img-calque-1{
+	max-height: 275px;
+    min-height: 225px;
+    }
+.mob-twocol-collage .img-calque1{
+        width: 100%;
+    	max-height: 275px;
+        object-fit: cover;
+}
+.colorbox-1{
+    height: auto;
+    width: 100%;
+}
+.colorbox-0 a, .colorbox a, .readmore, .readmore:hover {
+    top: auto;
+    bottom: 20px;
+    position: absolute;
+    left: 20px;
+    margin-bottom: 0;
+    padding-bottom:0px;
+}
+.gridBlock{
+    margin:0px 15px;
+}
+.name{
+    font-size:13px;
+    padding-bottom:0px;
+}
+.text-on-image img{
+	width:18px;
+}
+.colorbox-1 .text-on-image, .colorbox-1 .text-on-image-1, .colorbox-1 .padding-disc {
+	left: 20px;
+}
+.img-read{
+	width:24px;
+    }
+.colorbox-1 .btn {
+    padding-left: 0;
+}
+.colorbox .btn img, .colorbox-0 .btn img, .colorbox-1 .btn img{
+	width: 13px;
+}
+.colorbox p, .colorbox-0 p {
+    margin: 0 10px;
+}
+.image-collage sup {
+    top: -3px;
+}
+.img-read {
+    width: 18px;
+    padding-top:0px;
+    padding-right:5px;
+}
+.mob-popup{
+	font-size:12px;
+    letter-spacing: 2px;
+}
+.modal-footer h4 {
+	padding-top:10px;
+    }
+}
+@media (max-width: 400px) {
+.italy .img-read{
+	width: 15px;
+    padding-right: 2px;
+    }
+.italy .colorbox-0 a,.italy .colorbox a,.italy .readmore,.italy .readmore:hover{
+    left: 3px;
+}
+.italy .discover1,.italy .padding-disc{
+	padding-left:1px;
+}
+.italy .name{
+    margin-top:10px;
+}
+.italy .colorbox-0 a,.italy .colorbox a{
+    bottom:5px;
+}
+.italy .colorbox,.italy .img-calque-1 {
+    max-height: 225px;
+}
+}
+@media (min-width: 320px) and (max-width: 374px) {
+.colorbox-0 a, .colorbox a{
+    padding-left:0px;
+}
+.discover1{
+    font-size:10px;
+    padding-left:0px;                
+}
+.bg-watermark {
+    background: url('/content/dam/adc/fsl/images/global/en/mobileImages/watermark.png') no-repeat 10px 63px;
+}
+.colorbox-1 .text-on-image,.text-on-image-1{
+    left:20px;
+}
+.name{
+    margin-top:10px;
+    margin-bottom:7px;    
+    }
+.colorbox-0 a,.colorbox a,.readmore, .readmore:hover{
+    bottom: 15px;
+    left: 20px;
+}
+.italy .colorbox-0 a,.italy .colorbox a,.italy .readmore,.italy .readmore:hover{
+    left: 0px;
+	padding-right: 0px;
+}
+.bottom-text h3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.gridBlock{
+    margin:0px 5px;
+}
+.colorbox-0 .btn img, .colorbox .btn img {
+	margin-right: 1px;
+    margin-left: 5px;
+}
+.colorbox-1 .padding-disc,.readmore, .readmore:hover {
+	font-size: 10px;
+}
+.mob-twocol-collage, .img-calque-1,.colorbox{
+	max-height:225px;
+}
+.img-read{
+	width: 15px;
+    padding-right: 2px;
+    }
+.padding-disc {
+    padding-left: 1px;
+}
+.italy .bg-watermark p {
+    font-size: 11px;
+}
+}

@@ -1,0 +1,250 @@
+.as-list li{        
+    margin-top:10px;        
+}
+.as-list{
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+.as-list h2, .preparing-skin h3,.as-list h1,.as-list h3{
+    color:#0385A6;  
+    text-transform: uppercase;  
+    letter-spacing:5px;
+    font-family:Gotham-Bold;
+}
+.as-list .col-md-3{
+    margin-left:5%;
+}
+.as-list .col-md-8{
+    padding-left: 25px;
+    padding-right: 30px;
+}
+.as-list p,.preparing-skin p, .preparing-skin td{
+    color:#8E8E8E;
+    font-family:Gotham-Book-Regular;
+    font-size:16px;
+}
+.as-list h2,.as-list h3{
+    margin-top:0;
+    font-size:42px;
+}
+.as-list a{
+    margin-top: 37px;
+}
+.as-list .media .media-body p{
+    margin-bottom:0px;
+}
+
+.as-list h1{margin-bottom:50px;}
+
+.as-list .media-left{
+    padding-top:20px;
+}
+.img-choosing-site{
+    width:auto;
+}
+.ellipse-as{
+    height:14px;
+}
+.choosing-mobile-desc{
+       margin-left: 35px;
+    margin-right: 40px;
+}
+.choosing-mobile-desc h2{
+    font-family: Gotham-Bold;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #333;     
+    line-height: 1.4;  
+}
+.choosing-mobile-desc p{
+    text-transform: uppercase;  
+    line-height: 1.5;
+    font-family: Gotham-Medium-Regular;
+    color: #c6c6c6;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 12px;
+    padding-bottom: 25px;
+}
+
+/************************** lg *******************************/
+@media (min-width: 1200px) {
+	.as-list a{
+        margin-top: 112px;
+    }
+	.discoverit-sensor .as-list a {
+	    margin-top: 148px;
+	}
+	.discoverit-sensor .italy .as-list a{
+	    margin-top:112px;
+	}
+	.italy .as-list a {
+	    margin-top: 124px;
+	}
+	.your-medical .as-list h2 {
+	    margin-bottom: 30px;
+	    margin-top: 0px;
+		    font-size:32px;
+	}   
+	.your-medical .as-list {
+	    padding-top: 95px;
+	    padding-bottom: 0px;
+	}
+	 .as-list p{
+		line-height:26px;
+	}
+	.your-medical .as-list h2 {
+	  font-size:32px;
+		margin-bottom: 35px;
+	}
+}
+/************************end of lg ****************************/
+
+/****************** md **************************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.listcude {
+	    padding-top: 26px;
+	}
+	 .as-list p{
+		line-height:26px;
+	}
+	.your-medical .as-list h2 {
+	  font-size:32px;
+		margin-bottom: 35px;
+	}
+	.your-medical .as-list{
+		padding-bottom: 0;
+    }
+
+}
+/****************** end of md ******************************/
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+	.image_text_bullet .col-md-5 ,.image_text_bullet .col-md-7{
+		text-align:center;
+	}	
+    .as-list h2,.as-list h3{
+    	padding-top:40px;
+    }
+    .as-list h1, .as-list h2 {
+	    margin-top: 0px;
+	    margin-bottom: 30px;
+	}
+	.as-list .media-left{
+	    margin-bottom: -20px;
+	    margin-top: 25px;
+	    padding-top: 25px;
+	    padding-right: 15px;
+	}
+	.ellipse-as {
+	    height: 30px;
+	}
+	.as-list p {
+	    font-size: 28px;
+	}
+	.as-list h2 ,.as-list h3{
+	 padding-top: 70px;
+    padding-bottom: 20px;
+	}
+	.as-list {
+	    padding-top: 80px;
+	}
+	.as-list .media-left {
+	    display: block;
+	    margin-bottom: -20px;
+	    margin-top: 25px;
+	}
+	.discoverit-sensor .as-list .media .media-body p{
+		padding-top:42px;
+	}
+	.your-medical .listcude {   
+	    display: table-cell;
+	} 
+	.your-medical .as-list {
+    padding-top: 0;
+}
+.discover-your-meter .textimage .media-text{
+    margin-top: 50px;
+}
+}
+/****************************** end of sm ************************/
+
+/********************************* XS Portrait ********************/
+@media (max-width: 767px) {
+	 .as-list{
+        text-align:center;
+        padding-top:0px;
+    }
+    .as-list h2,.as-list h3{    
+        margin-top: 40px;
+	    margin-bottom: 20px;
+	    font-size: 16px;
+    }
+    .as-list h1, .as-list h2{
+        font-size:18px;
+        margin-top: 35px;
+        margin-bottom: 17px;
+    }
+    .as-list .media-left{
+       display: block;
+       margin-bottom: 10px;
+    	margin-top: 0px;
+		padding-bottom: 0px;
+    	padding-top: 20px;
+    	padding-right:0;
+    }
+    .as-list .col-md-3 img{
+        width:100%;
+    }
+    .as-list .col-md-3{
+        margin-left:0px;
+    }
+    .as-list p{
+	    font-size:14px;
+	}
+	.as-list .medialist p{
+	    font-size:12px;
+	    padding-top: 7px;
+	    margin-bottom: 0px;
+	}
+	.as-list .medialist{
+	    margin-top:15px;
+	}
+	.as-list p, .preparing-skin p, .preparing-skin td {
+	    font-size: 14px;
+	}
+	.as-list .media .media-body p{
+    	font-size: 12px;
+	}
+	.choosing-mobile-desc h2 {
+	    font-size: 20px;
+	    color: #212121;
+	}
+	.choosing-mobile-desc p {
+	    font-size: 14px;
+	     padding-bottom: 0;
+	    margin-bottom: 0;
+	}
+	.ellipse-as {
+	    height: 18px;
+	}
+	.choosing-mobile-desc img{
+		padding-top:25px;
+	}
+	 .discoverit-sensor .as-list .col-md-5 img{
+		padding-top:30px;
+		margin: 0 auto;
+    }
+    .your-medical img.imgSwap.ellipse-as {
+	    padding-right: 10px;
+	}
+	.listcude{
+	    padding-top: 30px !important;
+	}
+	.listcude{
+        display: table-cell !important;
+        padding-top: 5px !important;
+    }  
+}
+/**************************** End of XS Portrait ********************/

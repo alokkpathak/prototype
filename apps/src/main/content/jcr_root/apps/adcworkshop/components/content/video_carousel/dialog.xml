@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','mp4','ogg'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <videocarousel
+            jcr:primaryType="cq:Widget"
+            id="videocarousel"
+            title="Video Carousel"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <multi
+                    jcr:primaryType="cq:Widget"
+                    baseName="vmulti_"
+                    fieldLabel="Configure the Vidoe Carousel multifields"
+                    name="./vmulti"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <text
+                            jcr:primaryType="cq:Widget"
+							allowBlank="{Boolean}false"
+                            fieldLabel="Title"
+                            name="videotext"
+                            xtype="richtext">
+                            <rtePlugins jcr:primaryType="nt:unstructured">
+                                <table
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <styles
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <styles jcr:primaryType="cq:WidgetCollection">
+                                        <style1
+                                            jcr:primaryType="nt:unstructured"
+                                            cssName="text-white"
+                                            text="White Color"/>
+                                        <style2
+                                            jcr:primaryType="nt:unstructured"
+                                            cssName="media-heading text-white"
+                                            text="Heading"/>
+                                    </styles>
+                                </styles>
+                                <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <formats jcr:primaryType="cq:WidgetCollection">
+                                        <format1
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading1"
+                                            tag="h1"/>
+                                        <format2
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading2"
+                                            tag="h2"/>
+                                        <format3
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading3"
+                                            tag="h3"/>
+                                        <format4
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading4"
+                                            tag="h4"/>
+                                        <format5
+                                            jcr:primaryType="nt:unstructured"
+                                            description="paragraph"
+                                            tag="p"/>
+                                        <format6
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading5"
+                                            tag="h5"/>
+                                    </formats>
+                                </paraformat>
+                                <undo
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <subsuperscript
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <edit
+                                    jcr:primaryType="nt:unstructured"
+                                    features="[cut,copy,paste-plaintext]"/>
+                                <findreplace
+                                    jcr:mixinTypes="[rep:AccessControllable]"
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <format
+                                    jcr:primaryType="nt:unstructured"
+                                    features="[bold,italic]"/>
+                                <spellcheck
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <lists
+                                    jcr:mixinTypes="[rep:AccessControllable]"
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <justify
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <links
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <linkDialogConfig
+                                        jcr:primaryType="nt:unstructured"
+                                        height="{Long}316">
+                                        <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                            <linkAdvanced
+                                                jcr:primaryType="cq:Widget"
+                                                collapsed="{Boolean}true"
+                                                collapsible="{Boolean}true"
+                                                inputValue="advanced"
+                                                name="./linkdialog/cq:adhocLinkTrackingTab"
+                                                title="Link tracking"
+                                                xtype="dialogfieldset">
+                                                <items jcr:primaryType="cq:WidgetCollection">
+                                                    <enable
+                                                        jcr:primaryType="nt:unstructured"
+                                                        attribute="enabletracking"
+                                                        fieldDescription="override analytics framework settings"
+                                                        fieldLabel="Custom link tracking"
+                                                        name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                        xtype="checkbox">
+                                                        <listeners
+                                                            jcr:primaryType="nt:unstructured"
+                                                            check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                    </enable>
+                                                    <events
+                                                        jcr:primaryType="nt:unstructured"
+                                                        attribute="adhocevents"
+                                                        fieldDescription="e.g.: event2, event7"
+                                                        fieldLabel="Include SiteCatalyst events"
+                                                        name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                        xtype="textfield"/>
+                                                    <evars
+                                                        jcr:primaryType="nt:unstructured"
+                                                        attribute="adhocevars"
+                                                        fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                        fieldLabel="Include SiteCatalyst variables"
+                                                        name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                        xtype="textfield"/>
+                                                </items>
+                                            </linkAdvanced>
+                                        </linkAttributes>
+                                    </linkDialogConfig>
+                                </links>
+                                <misctools
+                                    jcr:mixinTypes="[rep:AccessControllable]"
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <colorpicker
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            </rtePlugins>
+                        </text>
+						<shareIconDesktop
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Image path for share icon (Desktop)"
+                            name="shareIconPathDesktop"
+                            xtype="pathfield"/>
+						<shareIconMobile
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Image path for share icon(Mobile)"
+                            name="shareIconPathMobile"
+                            xtype="pathfield"/>
+                        <video
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Panel Video"
+                            name="videoname"
+                            width="{Long}300"
+                            xtype="textarea"/>
+                    </fieldConfigs>
+                </multi>
+                <bgcolor
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Background color"
+                    name="./vbgcolor"
+                    showHexValue="{Boolean}true"
+                    xtype="colorfield"/>
+                <carouselinterval
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Carousel Time Interval"
+                    name="./vcarouseltime"
+                    xtype="textfield"/>
+            </items>
+        </videocarousel>
+        <share
+            jcr:primaryType="cq:Panel"
+            title="Share">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <facebook
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}true"
+                    collapsible="{Boolean}true"
+                    title="Facebook"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <fbimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image Path"
+                            name="./fbimage"
+                            xtype="pathfield"/>
+						<mobilefbimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Mobile Image Path"
+                            name="./fbimageMobile"
+                            xtype="pathfield"/>	
+						<fbaltimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the text for Image alt"
+                            name="./fbimagealt"
+                            xtype="textfield"/>	
+                        <fbcheck
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Include Button"
+                            name="./fbcheck"
+                            type="checkbox"
+                            xtype="selection"/>
+                    </items>
+                </facebook>
+                <twitter
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}true"
+                    collapsible="{Boolean}true"
+                    title="Twitter"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <twitterimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image Path"
+                            name="./twitterimage"
+                            xtype="pathfield"/>
+						<mobiletwitterimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Mobile Image Path"
+                            name="./twitterimageMobile"
+                            xtype="pathfield"/>	
+						<twitteraltimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the text for Image alt"
+                            name="./twitterimagealt"
+                            xtype="textfield"/>	
+                        <twittercheck
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Include  Button"
+                            name="./twittercheck"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <twittertext
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Tweet Text"
+                            name="./twittertext"
+                            xtype="textarea"/>
+                    </items>
+                </twitter>
+                <pinterest
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}true"
+                    collapsible="{Boolean}true"
+                    title="Pinterest"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <pinimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image Path"
+                            name="./pinimage"
+                            xtype="pathfield"/>
+						<mobilepinimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image Path"
+                            name="./pinimageMobile"
+                            xtype="pathfield"/>	
+						<pinaltimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the text for Image alt"
+                            name="./pinimagealt"
+                            xtype="textfield"/>	
+                        <pincheck
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Include Button"
+                            name="./pincheck"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <pinlink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Pinterest Link"
+                            name="./pinlink"
+                            xtype="textarea"/>
+                    </items>
+                </pinterest>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}true"
+                    collapsible="{Boolean}true"
+                    title="E-mail"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <emailimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image Path"
+                            name="./emailimage"
+                            xtype="pathfield"/>
+						<mobileemailimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image Path"
+                            name="./emailimageMobile" 
+                            xtype="pathfield"/>	
+						<emailaltimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the text for Image alt"
+                            name="./emailimagealt"
+                            xtype="textfield"/>	
+                        <emailcheck
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Include button"
+                            name="./emailcheck"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <emailtext
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Body Text"
+                            name="./emailtext"
+                            xtype="textarea"/>
+                    </items>
+                </email>
+                <opensvideonewtab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Field Label for Opens in New Tab"
+                        name="./opensvideonewtab"
+                        width="{Long}300"
+                        xtype="textfield"/>
+            </items>
+        </share>
+    </items>
+</jcr:root>

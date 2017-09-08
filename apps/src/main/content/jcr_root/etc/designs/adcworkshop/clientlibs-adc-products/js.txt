@@ -1,0 +1,10 @@
+#base=js
+jquery.bridget.js
+jQuery-Mousewheel.js
+PreventGhostClick.js
+mag.js
+mag-jquery.js
+mag-control.js
+
+#base=js
+product.js

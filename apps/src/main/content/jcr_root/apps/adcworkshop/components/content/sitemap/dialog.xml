@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Orders Links"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="Tab1"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <multilinks
+                    jcr:primaryType="cq:Widget"
+                    baseName="col1_"
+                    fieldLabel="Column 1"
+                    name="./multi1"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <linkTitle
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldLabel="Title1"
+                            name="title1"
+                            width="300"
+                            xtype="textfield"/>
+                        <linkPath
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldLabel="Link1"
+                            name="link1"
+                            width="300"
+                            xtype="pathfield"/>
+                        <size
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldLabel="size"
+                            name="size"
+                            type="select"
+                            width="300"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <h3
+                                    jcr:primaryType="nt:unstructured"
+                                    text="H3"
+                                    value="h3"/>
+                                <h4
+                                    jcr:primaryType="nt:unstructured"
+                                    text="H4"
+                                    value="h4"/>
+                            </options>
+                        </size>
+                        <showChildPages
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="List the child pages under this link?"
+                            name="showChildPages1"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Yes"
+                                    value="yes"/>
+                                <no
+                                    jcr:primaryType="nt:unstructured"
+                                    text="No"
+                                    value="no"/>
+                            </options>
+                        </showChildPages>
+                    </fieldConfigs>
+                </multilinks>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Widget"
+            title="Tab2"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <multilinks
+                    jcr:primaryType="cq:Widget"
+                    baseName="col2_"
+                    fieldLabel="Column 2"
+                    name="./multi2"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <linkTitle
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldLabel="Title2"
+                            name="title2"
+                            width="300"
+                            xtype="textfield"/>
+                        <linkPath
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldLabel="Link2"
+                            name="link2"
+                            width="300"
+                            xtype="pathfield"/>
+                        <showChildPages
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="List the child pages under this link?"
+                            name="showChildPages2"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Yes"
+                                    value="yes"/>
+                                <no
+                                    jcr:primaryType="nt:unstructured"
+                                    text="No"
+                                    value="no"/>
+                            </options>
+                        </showChildPages>
+                    </fieldConfigs>
+                </multilinks>
+            </items>
+        </tab2>
+        <tab3
+            jcr:primaryType="cq:Widget"
+            title="Tab3"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <multilinks
+                    jcr:primaryType="cq:Widget"
+                    baseName="col3_"
+                    fieldLabel="Column 3"
+                    name="./multi3"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <linkTitle
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldLabel="Title3"
+                            name="title3"
+                            width="300"
+                            xtype="textfield"/>
+                        <linkPath
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldLabel="Link3"
+                            name="link3"
+                            width="300"
+                            xtype="pathfield"/>
+                        <showChildPages
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="List the child pages under this link?"
+                            name="showChildPages3"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Yes"
+                                    value="yes"/>
+                                <no
+                                    jcr:primaryType="nt:unstructured"
+                                    text="No"
+                                    value="no"/>
+                            </options>
+                        </showChildPages>
+                    </fieldConfigs>
+                </multilinks>
+            </items>
+        </tab3>
+    </items>
+</jcr:root>

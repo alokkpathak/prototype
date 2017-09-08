@@ -1,0 +1,4 @@
+#base=js
+colorpicker.js
+MtMultiCompositeField.js
+MultiCompositeFieldTouchUI.js

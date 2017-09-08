@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="View Checkout Basket">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <viewCheckoutBasket
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="View Checkout Basket"
+                        width="300"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <ordersummary
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Order Summary text"
+                                fieldLabel="Order Summary Label"
+                                name="./ordersummarylabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <headingText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Title. eg:YOUR FREESTYLE LIBRA ORDER / ORDER SUMMARY"
+                                fieldLabel="Heading Text"
+                                name="./headingText"
+                                width="300"
+                                xtype="textfield"/>
+                            <ctaBackLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Label for Back Link eg: BACK TO BASKET"
+                                fieldLabel="CTA Back Label "
+                                name="./ctaBackLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <ctaBackLink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter link to Previous page"
+                                fieldLabel="CTA Back Link"
+                                name="./ctaBackLink"
+                                xtype="pathfield"/>
+                            <seebasketLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter text label eg: SEE BASKET DETAILS"
+                                fieldLabel="Enter See Basket Label"
+                                name="./seeBasketLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <totalPriceLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Total Price Label"
+                                fieldLabel="Total Price Label"
+                                name="./totalPriceLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <discountLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Coupon Discount text"
+                                fieldLabel="Coupon Discount Label"
+                                name="./discountLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <shippinglabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Shipping text"
+                                fieldLabel="Shipping Charges Label"
+                                name="./shippingLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <taxLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Tax Label Eg: Incl Tax"
+                                fieldLabel="Tax Label"
+                                name="./inclusivetaxLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <taxexclusiveLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Tax Label Eg: Exclusive Tax"
+                                fieldLabel="Tax Label"
+                                name="./taxexclusiveLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <quantityLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the Quantity Label Eg: Qty :"
+                                fieldLabel="Quantity Label"
+                                name="./quantityLabel"
+                                width="300"
+                                xtype="textfield"/>
+                            <basketViewType
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Category Page Type"
+                                name="./basketViewType"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <viewBasketOnCheckout
+                                        jcr:primaryType="nt:unstructured"
+                                        text="View Basket on Checkout"
+                                        value="viewBasketOnCheckout"/>
+                                    <viewBasket
+                                        jcr:primaryType="nt:unstructured"
+                                        text="View Basket"
+                                        value="viewBasket"/>
+                                    <viewBasketWithShippingCost
+                                        jcr:primaryType="nt:unstructured"
+                                        text="View Basket With Shipping"
+                                        value="viewBasketWithShippingCost"/>
+                                </options>
+                            </basketViewType>
+                        </items>
+                    </viewCheckoutBasket>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

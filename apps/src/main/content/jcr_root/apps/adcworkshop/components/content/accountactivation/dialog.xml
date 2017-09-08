@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <errorMessages
+                jcr:primaryType="cq:Panel"
+                title="errorMessages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <failedCustomerID
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the cstomer ID failed to load"
+                        fieldLabel="Customer ID failed to load"
+                        name="./failedCustomerID"/>
+                    <wrongCustomerAccount
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the customer ID specified is wrong"
+                        fieldLabel="Customer ID wrong"
+                        name="./wrongCustomerAccount"/>
+                    <badRequest
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the request is a bad request"
+                        fieldLabel="Bad request"
+                        name="./badrequest"/>
+                    <ajaxfailed
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when theaccount activation service fails"
+                        fieldLabel="Service failed"
+                        name="./ajaxfailed"
+                        width="300"
+                        xtype="textfield"/>
+                    <ajaxsuccess
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when theaccount activation succeeds"
+                        fieldLabel="Activation success"
+                        name="./activatesuccess"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </errorMessages>
+            <redirection
+                jcr:primaryType="cq:Panel"
+                title="Redirection">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <successredirectionurl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="URL when account activation is success"
+                        fieldLabel="Account activation success redirection URL"
+                        name="./successURL"
+                        xtype="pathfield"/>
+                    <unauthorizedurl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Page to be redirected when user is unauthorized "
+                        fieldLabel="Unauthorized redirection URL"
+                        name="./unauthorizedurl"
+                        xtype="pathfield"/>
+                    <signinregister
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Registration/Sign-in page"
+                        name="./signinregisterurl"
+                        xtype="pathfield"/>
+                </items>
+            </redirection>
+        </items>
+    </items>
+</jcr:root>

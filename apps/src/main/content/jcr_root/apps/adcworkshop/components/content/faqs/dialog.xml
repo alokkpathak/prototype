@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="FAQs dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <faqPanel
+                jcr:primaryType="cq:Panel"
+                title="FAQs dialog">
+                <items jcr:primaryType="cq:WidgetCollection">
+					<topquestions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Top Questions"
+                        name="./topquestions"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <ecommercePropertyName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Ecommerce Property Name"
+                        name="./ecommercepropertyname"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <ecommercePagePath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Ecommerce Page Path"
+                        name="./ecommercepagepath"
+                        width="{Long}300"
+                        xtype="pathfield"/>
+                    <allFaqsText
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter all faqs text"
+                        name="./allfaqstext"/>
+                    <allFaqsLink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter all faqs Link"
+                        name="./allfaqslink"
+                        xtype="pathfield"/>
+                </items>
+            </faqPanel>
+            <tab4
+                jcr:primaryType="cq:Panel"
+                title="nodataTab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <nodatamsg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Nodata Text"
+                        name="./ecommercenodata"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <moredata
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Moredata Text Label"
+                        name="./moredata"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <lessdata
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Less data Text Label"
+                        name="./lessdata"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                </items>
+            </tab4>
+        </items>
+    </items>
+</jcr:root>

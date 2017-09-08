@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <firsttab
+            jcr:primaryType="cq:Widget"
+            id="tab1"
+            title="Order Details Component"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <historyTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="History Title"
+                    name="./historytitle"
+                    xtype="textfield"/>
+                <historyDescription
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="History Description"
+                    name="./historyDescription"
+                    xtype="textarea"/>
+                <duration_multifield
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new Duration"
+                    fieldLabel="Duration Panel"
+                    name="./duration"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        xtype="textfield"/>
+                </duration_multifield>
+            </items>
+        </firsttab>
+    </items>
+</jcr:root>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2016-07-29T09:21:35.355-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Dialog"
+    title="Get The APP"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        cq:lastReplicated="{Date}2016-07-29T09:21:53.657-04:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 150"
+                        fieldLabel="Headline"
+                        maxLength="{Long}150"
+                        name="./ptitle"
+                        xtype="textfield"/>
+                    <desc
+                        cq:lastReplicated="{Date}2016-07-29T09:21:52.238-04:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Max Length is 300"
+                        fieldLabel="Sub-text"
+                        maxLength="{Long}300"
+                        name="./pdesc"
+                        xtype="textarea"/>
+                    <rightmulti
+                        cq:lastReplicated="{Date}2016-07-29T09:21:50.794-04:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="cq:Widget"
+                        autoWidth="{Boolean}true"
+                        baseName="rightmulti_"
+                        fieldLabel="Configure the right multifields"
+                        name="./rightmulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter the text to display"
+                                name="righttitlename"
+                                xtype="textfield"/>
+                            <desc
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter the Description"
+                                name="righttitledescription"
+                                xtype="textarea"/>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Select the image to be displayed"
+                                name="rightimagename"
+                                xtype="pathfield"/>
+							<imageMobile
+								jcr:primaryType="cq:Widget"
+								allowBlank="{Boolean}false"
+								fieldLabel="image path for mobile "
+								mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+								name="rightimagenameMobile"
+								xtype="pathfield"/>	
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="rightimagealt"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </rightmulti>
+                    <titleimage
+                        cq:lastReplicated="{Date}2016-07-29T09:21:49.347-04:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+						fieldDescription="Upload only .jpg or .png images of 1MB or less with 277x558PX Resolution"
+                        fieldLabel="Image block"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./imagename1"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+					<titleimageMobile
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"  
+						fieldDescription="Upload only .jpg or .png images of 1MB or less with 306x565PX Resolution"		
+                        fieldLabel="imagePath Label for Mobile"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./imagename1Mobile"
+                        xtype="pathfield"/>	
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>
+					<typeOfLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Action on button Click"
+                        name="./typeOfLink"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Normal Button Link"
+                                value="normalLink"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="Google Play Image Link"
+                                value="googlePlayLink"/>
+                        </options>
+                    </typeOfLink>
+                    <buttonname
+                        cq:lastReplicated="{Date}2016-07-29T09:21:44.787-04:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter the Button Text"
+                        name="./richtext1"
+                        xtype="textfield"/>
+                    <newTab
+                        jcr:primaryType="cq:Widget"
+                        default="no"
+                        fieldLabel="Open button link in new tab?"
+                        layout="hbox"
+                        name="./newTab"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                        <optionsConfig
+                            jcr:primaryType="nt:unstructured"
+                            width="60"/>
+                    </newTab>
+                    <buttonlink
+                        cq:lastReplicated="{Date}2016-07-29T09:21:46.423-04:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Button Link"
+                        name="./buttonlink"
+                        xtype="textfield"/>
+					<googlePlayImageLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Google Play Image Redirection Link"
+                        name="./googlePlayRedirectionLink"
+                        xtype="pathfield"/>
+                    <googlePlayImagePath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Google Play Image Path"
+                        name="./googlePlayImageLink"
+                        xtype="pathfield"/>
+                    <comments
+                        cq:lastReplicated="{Date}2016-07-29T09:21:47.875-04:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Comments"
+                        name="./comment"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Account Overview">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <welcometext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Welcome Message"
+                        name="./welcometext"
+                        xtype="textfield"/>
+                    <orderDescription
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Order Description"
+                        name="./orderdesc"
+                        xtype="textarea"/>
+                    <orderTitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Order Title"
+                        name="./ordertitle"
+                        xtype="textfield"/>
+                    <registerDescription
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Register Description"
+                        name="./registerdesc"
+                        xtype="textarea"/>
+                    <registerTitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Register Title"
+                        name="./registertitle"
+                        xtype="textfield"/>
+                    <checkoutDescription
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Checkout Description"
+                        name="./checkoutdesc"
+                        xtype="textarea"/>
+                    <checkoutTitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Checkout Title"
+                        name="./checkouttitle"
+                        xtype="textfield"/>
+                    <packText
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter text"
+                        name="./packtext"
+                        xtype="textfield"/>
+                    <findButton
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Button Text"
+                        name="./findbuttontext"
+                        xtype="textfield"/>
+                    <findLink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Enter Button Link"
+                        name="./findlink"
+                        xtype="pathfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,56 @@
+.your-kids .your-icons h4 {
+    font-size: 20px;
+    font-family: Gotham-Medium-Regular;
+}
+.your-icons{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.your-icons p{
+    padding: 0px 35px;
+}
+.icons_panel img{
+    padding-bottom: 30px;
+}
+.iconBlock{
+	margin-bottom: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.your-icons>.col-xs-12>.col-xs-6:nth-child(3){
+    clear:both;
+}
+}
+
+@media (max-width: 767px) {
+.icons_panel img {
+    padding-bottom: 5px;
+    height: 70px;
+}
+.your-kids .your-icons h4{ 
+    min-height: 30px;
+    font-size: 16px;
+    font-family: Gotham-Medium-Regular;
+}
+.your-icons p{
+    padding: 0px;
+    margin-bottom: 40px;
+}
+.your-icons>.col-xs-12>.col-xs-6:nth-child(3){
+    clear:both;
+}
+.your-icons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.iconBlock{
+	margin-bottom: 50px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+.your-icons h4 {
+    font-size: 12px;
+    font-family: Gotham-Medium-Regular;
+}
+}

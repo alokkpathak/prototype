@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="600"
+    title="Personal Details"
+    width="700"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <errorMessages
+                jcr:primaryType="cq:Widget"
+                title="Error Messages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <mandatoryField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for field to be mandatory"
+                        fieldLabel="Mandatory Field Text"
+                        name="./is_mandatory"
+                        width="300"
+                        xtype="textfield"/>
+                    <emailValidCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if email entered is not valid"
+                        fieldLabel="Email Not Valid Error"
+                        name="./emailErrorCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <emailMatchCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if emails entered are not matching"
+                        fieldLabel="Emails Not Matching Error"
+                        name="./emailMatchingCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <validPwdCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if password is not in the proper format"
+                        fieldLabel="Valid Password Display"
+                        name="./validPasswordCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <passwordMatchCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if passwords entered are not matching"
+                        fieldLabel="Password Not Matching Error"
+                        name="./passwordMatchingCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <invalidCharacter
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if invalid character is put in the field"
+                        fieldLabel="Invalid Character Error"
+                        name="./invalidCharacterError"
+                        width="300"
+                        xtype="textfield"/>
+                    <noOfDaysCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if date is invalid"
+                        fieldLabel="Invalid Date Error"
+                        name="./noOfDaysCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <noOfMonthsCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if invalid months is mentioned"
+                        fieldLabel="Invalid Month Error"
+                        name="./noOfMonthsCheck"
+                        width="300"
+                        xtype="textfield"/>
+					<invalidYearCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if invalid Year is mentioned"
+                        fieldLabel="Invalid Year Error"
+                        name="./invalidYearMessage"
+                        width="300"
+                        xtype="textfield"/>
+					<futureDateCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if date entered is after the present date"
+                        fieldLabel="Invalid Date Error (Future Date)"
+                        name="./invalidFutureDateMessage"
+                        width="300"
+                        xtype="textfield"/>
+                    <termsAgreeCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if terms and conditions are not agreed"
+                        fieldLabel="Agree Terms and Conditions Error"
+                        name="./termsAgreeCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <selectValidOption
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if valid title is not selected"
+                        fieldLabel="Invalid Title Error"
+                        name="./selectValidOption"
+                        width="300"
+                        xtype="textfield"/>
+                    <validPostCodeCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if valid postal code is not given"
+                        fieldLabel="Invalid Postal Code Error"
+                        name="./validPostCodeCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <onlyNumbers
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for only numeric fields"
+                        fieldLabel="Enter the message to be displayed for numeric fields"
+                        name="./onlyNumbersMessage"
+                        width="300"
+                        xtype="textfield"/>
+                    <clientTaxCodeMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the error message for Invalid Client Fiscal Code"
+                        fieldLabel="Enter the error message for Invalid Client Fiscal Code"
+                        name="./clientTaxCodeMessage"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </errorMessages>
+            <linkforredirection
+                jcr:primaryType="cq:Widget"
+                title="Link for redirection">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <redirectionurl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the link to Redirect eg: /adc/fsl/countries/gb/en/checkout-thankyou"
+                        fieldLabel="Redirection URL"
+                        name="./thankYouUrl"
+                        width="300"
+                        xtype="pathfield"/>
+                    <transactiontimeout
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the link for Transaction timeout Page"
+                        fieldLabel="Transaction time out URL"
+                        name="./transactiontimeoutUrl"
+                        width="300"
+                        xtype="pathfield"/>
+                </items>
+            </linkforredirection>
+        </items>
+    </items>
+</jcr:root>

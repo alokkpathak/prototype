@@ -1,0 +1,5 @@
+#base=js
+checkoutController.js
+addressController.js
+onloadforcheckout.js
+thankyou.js

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="image_title_des"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Enter The Required Fileds">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Headline"
+                        name="./ptitle"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </title>
+                    <leftmulti
+                        jcr:primaryType="cq:Widget"
+                        autoWidth="{Boolean}true"
+                        baseName="leftmulti_"
+                        fieldLabel="Configure the left multifields"
+                        name="./leftmulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title1
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter the Title"
+                                name="lefttitlename1"
+                                xtype="textfield"/>
+                            <des1
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter the Description"
+                                name="leftdesname1"
+                                xtype="textarea"/>
+                            <image1
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 420x483px Resolution"
+                                fieldLabel="Select the image"
+                                name="leftimagename1"
+                                xtype="pathfield"/>
+							<image1Mobile
+								jcr:primaryType="cq:Widget"
+								allowBlank="{Boolean}false"		
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 420x483px Resolution"	
+								fieldLabel="Image path for Mobile"
+								mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+								name="leftimagename1Mobile"
+								sizeLimit="{Long}1"
+								xtype="pathfield"/>	
+                            <altimage1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="leftimagealt1"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </leftmulti>
+                    <rightmulti
+                        jcr:primaryType="cq:Widget"
+                        autoWidth="{Boolean}true"
+                        baseName="rightmulti_"
+                        fieldLabel="Configure the right multifields"
+                        name="./rightmulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title2
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter The Title"
+                                name="righttitlename2"
+                                xtype="textfield"/>
+                            <des2
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Enter the Description"
+                                name="rightdesname2"
+                                xtype="textarea"/>
+                            <image2
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Select the image"
+                                name="rightimagename2"
+                                xtype="pathfield"/>
+							<image2Mobile
+								jcr:primaryType="cq:Widget"
+								allowBlank="{Boolean}false"								
+								fieldLabel="imagePath Label for Mobile"
+								mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+								name="rightimagename2Mobile"
+								sizeLimit="{Long}1"
+								xtype="pathfield"/>	
+                            <altimage2
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="rightimagealt2"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </rightmulti>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Text and Image Component"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <sharebutton
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Share button"
+            name="./sharebuttonname"
+            xtype="textfield"/>
+        <image
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            fieldDescription="•&#x9;Max file size: 3MB&#xa;•&#x9;File formats: JPG or PNG"
+            fieldLabel="Background-image"
+            mimeTypes="image/*.jpg"
+            name="./productimagename"
+            xtype="pathfield"/>
+		<backgroundimageMobile
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            fieldDescription="•&#x9;Max file Size is 3MB &#xa;•&#x9;File formats: JPG or PNG&#xa;•&#x9;Background image recommended dimensions: 400x300&#xa;"
+            fieldLabel="Background image Mobile"
+            mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+            name="./productimagenameMobile"
+            sizeLimit="{Long}1"
+            xtype="pathfield"/>				
+        <altimage
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Enter the text for product Image alt"
+            name="./prodimagealt"
+            xtype="textfield"/>
+        <shareimagepath
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Share Image"
+            name="./shareimagepath"
+            xtype="pathfield"/>
+		<shareimageMobile
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+			fieldLabel="Share image Mobile"
+            mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+			name="./shareimageMobile"
+            sizeLimit="{Long}1"
+            xtype="pathfield"/>		
+    </items>
+</jcr:root>

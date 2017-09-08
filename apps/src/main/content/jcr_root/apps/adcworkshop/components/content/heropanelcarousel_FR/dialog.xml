@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Hero Panel"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Carousel Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <carouselDetails
+                        jcr:primaryType="cq:Widget"
+                        baseName="carouseldetails_"
+                        fieldLabel="Enter the Carousel Details"
+                        name="./carouseldetails"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <Image
+                                jcr:primaryType="cq:Widget"
+                                autoWidth="{Boolean}true"
+                                fieldLabel="Enter Image Path"
+                                name="carouselimage"
+                                xtype="pathfield"/>
+                            <topHeadline
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Title"
+                                name="topheadline"
+                                xtype="textfield"/>
+                            <subHeadline
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Subhead"
+                                name="subheadline"
+                                xtype="textfield"/>
+                            <headlineFirstPart
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Claim line 1"
+                                name="headlinefirstpart"
+                                xtype="textfield"/>
+                            <headlineSecondPart
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Claim line 2"
+                                name="headlinesecondpart"
+                                xtype="textfield"/>
+                            <headlineThirdPart
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Claim line 3"
+                                name="headlinethirdpart"
+                                xtype="textfield"/>
+                            <infoIconAltText
+                            	jcr:primaryType="cq:Widget"
+                                fieldLabel="Alt Text for Info Icon"
+                                name="altTextForInfoIcon"
+                                xtype="textfield" />
+                            <headlineFourthPart
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Claim line 4"
+                                name="headlinefourthpart"
+                                xtype="textfield"/>
+                            <descriptionOne
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text"
+                                name="descriptionone"
+                                xtype="richtext"/>
+                            <firstButtonText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Button 1"
+                                name="firstbuttontext"
+                                xtype="textfield"/>
+                            <firstButtonLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Button 1 Path"
+                                name="firstbuttonlink"
+                                xtype="pathfield"/>
+                            <secondButtonText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Button 2"
+                                name="secondbuttontext"
+                                xtype="textfield"/>
+                            <secondButtonLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Button 2 Path"
+                                name="secondbuttonlink"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </carouselDetails>
+                    <redirectLink
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter URL of the page to renew order"
+                        fieldLabel="renew Order URL"
+                        name="./renewOrderUrl"
+                        xtype="pathfield"/>
+                    <firstButtonLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Guest Checkout URL"
+                        name="./guestCheckoutUrl"
+                        xtype="pathfield"/>
+                    <firstButtonLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Checkout URL"
+                        name="./checkoutUrl"
+                        xtype="pathfield"/>
+                    <carouselInfoImg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the path for the carousel info image"
+                        name="./carouselInfoImg"
+                        xtype="pathfield"/>
+                    <arrowSliderLeftImg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the path for the left arrow slider image"
+                        name="./arrowSliderLeftImg"
+                        xtype="pathfield"/>
+                    <arrowSliderRightImg
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the path for the right arrow slider image"
+                        name="./arrowSliderRightImg"
+                        xtype="pathfield"/>
+                    <carouselPrevious
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Alt text for data slide previous"
+                        name="./carouselPrevious"
+                        xtype="textfield"/>
+                    <carouselNext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Alt text for data slide next"
+                        name="./carouselNext"
+                        xtype="textfield"/>
+                    <errorPageUrl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter URL error page"
+                        fieldLabel="Generic Error URL"
+                        name="./errorPageUrl"
+                        xtype="pathfield"/>
+                     <signInPageUrl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Sign in Page URL"
+                        fieldLabel="Sign in Page Url"
+                        name="./signInPageUrl"
+                        width="300"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

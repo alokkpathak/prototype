@@ -1,0 +1,87 @@
+{{#if .}}
+			
+			{{#each cart}}
+                 {{#each this.product}}
+                    <tr id="{{this.sku}}Row"> 
+                     <td class="img-column">
+                         <a href ="{{#pickUrlForSku  this.sku  ../../skuImgPath}} {{this}} {{/pickUrlForSku}}" >
+                         	<img src="{{#pickImgForSku  this.sku  ../../skuImgPath}} {{this}} {{/pickImgForSku}}" alt="{{this.name}}">
+                         </a>
+                         <a class="view-product" href="{{#pickUrlForSku  this.sku  ../../skuImgPath}} {{this}} {{/pickUrlForSku}}">{{@root.viewProductLabel}}</a>
+                     </td>
+                     <td class="product-name">{{this.name}}</td>
+                     <td class="price-column">
+                         <div class="price-wrapper">
+                         	<span class="price">{{@root.currency}}<span id="{{this.sku}}Price"><span class="pounds">{{this.number}}</span><span class="separator">{{this.priceSeparator}}</span><span class="pence">{{this.decimal}}</span></span></span>
+                         	<span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span>
+                         </div>
+                     </td>
+                     <td><input min="1" name="{{this.sku}}" max="{{this.product.stock_item.allow_max_qty}}" step="1" value="{{this.qty}}" class="prodSpinner update {{this.sku}}prod-spinner" id="{{this.sku}}prod-spinner" /><span id="prod-spinnerError" class="error_max">
+					 {{#if (if_eq this.exceeded true ) }}
+						{{@root.maxExceededMsg}}
+					 {{/if}}
+					 </span><div class="spinner-loading" style="display: none;" ><p></p><div class="line-pulse"><div></div><div></div><div></div><div></div></div></div></td>
+                     <td class="price-column single-total">
+                         <div class="price-wrapper">
+                         	<span class="price">{{@root.currency}}<span id="{{this.sku}}TotalEach"><span class="pounds">{{this.row_number}}</span><span class="separator">{{this.priceSeparator}}</span><span class="pence">{{this.row_decimal}}</span></span></span>
+                         	<span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span>
+                         </div>
+                     </td>
+                     <td class="remove" id="{{this.sku}}"><img src="{{@root.viewBasketRemoveIcon}}" alt="{{this.name}}"></td></tr>
+                   {{/each}}
+				   {{#if this.totals.discount.value }}
+						<tr class="discount-row">
+                            <td colspan="4" class="discount-text">{{@root.voucherDiscountText}}</td>
+                            <td class="price-column single-total">
+                                <div class="price-wrapper">
+                                    <span class="price">{{@root.currency}}<span ><span class="pounds">{{this.totals.discount.number}}</span><span class="separator">{{this.totals.discount.priceSeparator}}</span><span class="pence">{{this.totals.discount.decimal}}</span></span></span>
+                                    <span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span>
+                                </div>
+                            </td>
+                        </tr>
+					{{/if}}
+					{{#if this.totals.shipping.value}}  
+					<tr class="discount-row">
+                            <td colspan="4" class="discount-text">{{@root.viewBasketShippingLabel}}</td>
+                            <td class="price-column single-total">
+                                <div class="price-wrapper">
+                                    <span class="price">{{@root.currency}}<span ><span class="pounds">{{this.totals.number}}</span><span class="separator">{{this.totals.priceSeparator}}</span><span class="pence">{{this.totals.decimal}}</span></span></span>
+                                    <span class="vat">{{@root.taxLabelTextpayment}}</span>
+                                </div>
+                            </td>
+                        </tr>
+				{{/if}}
+                    <tr class="tableHighlight"><td colspan="3">
+                    <div class="voucher hidden voucher-section" id="voucher-section"><div class="voucher-text">{{@root.voucherText}}
+                        <img class="voucher-tooltip-desktop" src="{{@root.voucherTooltipImage}}"  title="{{@root.voucherTooltipText}}" href="#modal_infoModal" data-toggle="modal" data-target="#couponTooltip"  role="dialog">    
+                    </div>
+                    <div>
+						<div class="coupon-loading">
+                            <div class="line-pulse"><div></div><div></div><div></div><div></div></div>
+                        </div>
+                        <form class="voucherForm" id="voucherForm">
+                            <div class="input-wrapper">
+                            	<input type="text" id="VoucherCode" name="VoucherCode" class="VoucherCode">
+                                <input class="btn btn-lg" id="voucher_btn-ok" type="submit" value="{{@root.voucherbuttonText}}">
+                            </div>
+                        	<span class="col-md-12 col-sm-12 hidden error_show vouchercoupon" id="vouchercoupon">{{@root.voucheremptyText}}</span>
+                        	<span class="col-md-12 col-sm-12 hidden error_show error_invalid vouchercouponerror" id="vouchercouponerror" >{{@root.vouchererrorText}}</span>
+                     	</form>
+                        <span class="col-md-12 padding-zero hidden vouchercouponsucess" id="vouchercouponsucess">{{@root.vouchersuccessText}}</span>
+                    </div>
+                    </div></td>
+                    <td class="final-total">{{@root.totalText}} :</td>
+                    <td class="price-column single-total">
+                        <div class="price-wrapper">
+                        	<span class="price">{{@root.currency}}<span id="finalTotal"><span class="pounds">{{this.quote.number}}</span><span class="separator">{{this.quote.priceSeparator}}</span><span class="pence">{{this.quote.decimal}}</span></span></span>
+                        	<span class="vat">{{vatFormCheck @root.customer_is_diabetic}}</span>
+                        </div>
+                    </td>
+                    <td></td>
+                 </tr>
+            {{/each}}
+
+        {{else}}
+        	<tr>No Items in Cart</tr>
+			
+        {{/if}}

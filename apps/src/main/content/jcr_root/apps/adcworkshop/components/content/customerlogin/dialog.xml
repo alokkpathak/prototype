@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <errorMessages
+                jcr:primaryType="cq:Panel"
+                title="errorMessages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <tokeninvalid
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the token is invalid"
+                        fieldLabel="Token is invalid"
+                        name="./tokeninvalid"/>
+                    <ajaxfailed
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the customer login fails"
+                        fieldLabel="Service failed"
+                        name="./customerloginfailed"
+                        width="300"
+                        xtype="textfield"/>
+                    <ajaxsuccess
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the customer login is success"
+                        fieldLabel="customer login success"
+                        name="./customerloginsuccess"
+                        width="300"
+                        xtype="textfield"/>
+                    <failedCustomerID
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the customer ID failed loading"
+                        fieldLabel="CustomerID Failed loading"
+                        name="./failedCustomerID"/>
+                    <wrongCustomerAccount
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when the customer account specified is wrong"
+                        fieldLabel="Wrong Customer Account"
+                        name="./wrongCustomerAccount"/>
+                    <badrequest
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when there is bad request"
+                        fieldLabel="Bad request"
+                        name="./badrequest"/>
+                </items>
+            </errorMessages>
+            <redirection
+                jcr:primaryType="cq:Panel"
+                title="Redirection">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <unauthorizedurl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Page to be redirected when user is unauthorized"
+                        fieldLabel="Unauthorized redirection URL"
+                        name="./unauthorizedurl"
+                        xtype="pathfield"/>
+                    <successredirectionurl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="URL when customer login is success"
+                        fieldLabel="customer login success redirection URL"
+                        name="./successURL"
+                        xtype="pathfield"/>
+                </items>
+            </redirection>
+        </items>
+    </items>
+</jcr:root>

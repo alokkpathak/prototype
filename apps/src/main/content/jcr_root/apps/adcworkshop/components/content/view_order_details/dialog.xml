@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Order Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+					<textForLoading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Text to be displayed while orders are loading"
+                        name="./textForLoading"
+                        xtype="textfield"/>
+					<productstext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for Products"
+                        name="./productstextname"
+                        xtype="textfield"/>
+                    <baskettext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Text"
+                        name="./baskettextname"
+                        xtype="textfield"/>
+                    <reorderButtonName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Re-order Button Name"
+                        name="./reorderbuttonname"
+                        xtype="textfield"/>
+                   <bannertext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Banner text required under order summary?"
+                        itemId="bannertext"
+                        name="./bannertext1"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                type="yes"
+                                value="Yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                type="no"
+                                value="No"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;bannertext&quot;).getValue();&#xa; &#xa; var banner=panel.getComponent(&quot;oldcustomerTextid&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; banner.show();&#xa; &#xa; }&#xa; else{&#xa; banner.hide();&#xa; }&#xa;} &#xa;"
+                            selectionchanged="function(comp,object,value) {&#xa;var panel = comp.findParentByType(&quot;panel&quot;);&#xa; var selection=panel.getComponent(&quot;bannertext&quot;).getValue();&#xa; &#xa; var banner=panel.getComponent(&quot;oldcustomerTextid&quot;);&#xa; &#xa;&#xa; if(selection=='Yes')&#xa; {&#xa; banner.show();&#xa; &#xa; }&#xa; else{&#xa; banner.hide();&#xa; }&#xa;} &#xa;"/>
+                    </bannertext>
+                    <oldcustomerText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Text for Old Customers"
+                        name="./oldcustomerstext"
+                        itemId="oldcustomerTextid"
+                        xtype="textfield"/>
+                    <ctaBackLink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter link to View Basket page"
+                        fieldLabel="CTA Back Link"
+                        name="./viewBasketLink"
+                        xtype="pathfield"/>
+                    <returnSuccessNotification
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the text for notification to be displayed when return is requested"
+                        fieldLabel="Return Success Message"
+                        name="./returnSuccessNotification"
+                        xtype="richtext">
+						 <rtePlugins jcr:primaryType="nt:unstructured">
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <styles
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <styles jcr:primaryType="cq:WidgetCollection">
+                                <style1
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="pad-b18"
+                                    text="padding-bottom-18px"/>
+                                <style2
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="font12"
+                                    text="font-size-12px"/>
+                                <style3
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="note"
+                                    text="note"/>
+                                <style4
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="first"
+                                    text="first"/>
+                                <style5
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="ref"
+                                    text="ref"/>
+                                <style6
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="ref middle"
+                                    text="ref middle"/>
+								<style7
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="linkURL"
+                                    text="Return PDF download link"/>
+                            </styles>
+                        </styles>
+                        <paraformat
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <formats jcr:primaryType="cq:WidgetCollection">
+                                <format1
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading1"
+                                    tag="h1"/>
+                                <format2
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading2"
+                                    tag="h2"/>
+                                <format3
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading3"
+                                    tag="h3"/>
+                                <format4
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading4"
+                                    tag="h4"/>
+                                <format5
+                                    jcr:primaryType="nt:unstructured"
+                                    description="paragraph"
+                                    tag="p"/>
+                                <format6
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading5"
+                                    tag="h5"/>
+                            </formats>
+                        </paraformat>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="[cut,copy,paste-plaintext]"/>
+                        <findreplace
+                            jcr:mixinTypes="[rep:AccessControllable]"
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <format
+                            jcr:primaryType="nt:unstructured"
+                            features="[bold,italic]"/>
+                        <spellcheck
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <lists
+                            jcr:mixinTypes="[rep:AccessControllable]"
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <justify
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <linkDialogConfig
+                                jcr:primaryType="nt:unstructured"
+                                height="{Long}316">
+                                <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                    <linkAdvanced
+                                        jcr:primaryType="cq:Widget"
+                                        collapsed="{Boolean}true"
+                                        collapsible="{Boolean}true"
+                                        inputValue="advanced"
+                                        name="./linkdialog/cq:adhocLinkTrackingTab"
+                                        title="Link tracking"
+                                        xtype="dialogfieldset">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <enable
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="enabletracking"
+                                                fieldDescription="override analytics framework settings"
+                                                fieldLabel="Custom link tracking"
+                                                name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                xtype="checkbox">
+                                                <listeners
+                                                    jcr:primaryType="nt:unstructured"
+                                                    check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                            </enable>
+                                            <events
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="adhocevents"
+                                                fieldDescription="e.g.: event2, event7"
+                                                fieldLabel="Include SiteCatalyst events"
+                                                name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                xtype="textfield"/>
+                                            <evars
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="adhocevars"
+                                                fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                fieldLabel="Include SiteCatalyst variables"
+                                                name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                xtype="textfield"/>
+                                        </items>
+                                    </linkAdvanced>
+                                </linkAttributes>
+                            </linkDialogConfig>
+                        </links>
+                        <misctools
+                            jcr:mixinTypes="[rep:AccessControllable]"
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <colorpicker
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                
+						
+						
+						</returnSuccessNotification>
+                    <vatLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for including VAT tax"
+                        name="./inclVatText"
+                        xtype="textfield"/>
+                    <statusLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for Status label"
+                        name="./statusLabel"
+                        xtype="textfield"/>
+                    <invoiceLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for invoice label"
+                        name="./invoiceLabel"
+                        xtype="textfield"/>
+                    <returnLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for return label"
+                        name="./returnLabel"
+                        xtype="textfield"/>
+                    <shippmentLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for shipment label"
+                        name="./shipmentLabel"
+                        xtype="textfield"/>
+                    <refundLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for refund label"
+                        name="./refundLabel"
+                        xtype="textfield"/>
+                    <altimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Image alt"
+                        name="./imagealt"
+                        xtype="textfield"/>
+                    <returnPdfLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for return PDF label"
+                        name="./returnPdfLabel"
+                        xtype="textfield"/>
+                    <unauthorizedUrl
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Unauthorized Access Url"
+                        name="./unauthAccessUrl"
+                        xtype="pathfield"/>
+					<orderDetail_qty
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for order quantity"
+                        name="./orderDetail_qty"
+                        xtype="textfield"/>
+                    <orderDetail_total
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for total"
+                        name="./orderDetail_total"
+                        xtype="textfield"/>
+                    <orderDetail_order
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for order"
+                        name="./orderDetail_order"
+                        xtype="textfield"/>	
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

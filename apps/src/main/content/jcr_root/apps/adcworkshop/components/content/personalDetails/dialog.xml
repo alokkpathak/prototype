@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="600"
+    title="Personal Details"
+    width="700"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <heading
+                jcr:primaryType="cq:Panel"
+                title="Edit your title here">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <acckountsDetails
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter your Account Details"
+                        name="./acckountsDetails"
+                        xtype="textfield"/>
+                    <notification
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter your header text"
+                        name="./notificationTit"
+                        xtype="textfield"/>
+                    <notificationAccepts
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter your header text"
+                        name="./notificationDes"
+                        xtype="textarea"/>
+                </items>
+            </heading>
+            <personalDetailsForm
+                jcr:primaryType="cq:Panel"
+                title="Edit your Form here">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <formDetails
+                        jcr:primaryType="cq:Widget"
+                        title="Form Details"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter you title field"
+                                name="./ftitle"
+                                xtype="textfield"/>
+							<defaultoptionselect
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter default Select Value eg: Select"
+                                fieldLabel="Default Prefix Value"
+                                name="./defaultoptionselectpersonal"
+                                xtype="textfield"/>
+                            <titleSelection
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter your options here"
+                                name="./option"
+                                xtype="multifield"/>
+                            <firstName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter you first name field"
+                                name="./fname"
+                                xtype="textfield"/>
+                            <lastName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter you last name field"
+                                name="./lname"
+                                xtype="textfield"/>
+                            <email
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter your email field"
+                                name="./email"
+                                xtype="textfield"/>
+                            <confirmEmail
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter your confirm email field"
+                                name="./cnfemail"
+                                xtype="textfield"/>
+                            <displayMobNum
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Should mobile number field be displayed?"
+                                name="./displayMobNum"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <option1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="Yes"/>
+                                    <option2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="No"/>
+                                </options>
+                            </displayMobNum>
+                            <phoneNumber
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the Phone Number Field Title"
+                                name="./phonenumber"
+                                xtype="textfield"/>
+                            <chagepassword
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter you change password"
+                                name="./chagepass"
+                                xtype="textfield"/>
+                            <password
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter your password field"
+                                name="./password"
+                                xtype="textfield"/>
+							<passwordInfoModaltext
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text to display on Information Overlay"
+                                name="./personalpasswordPopup"
+                                xtype="richtext">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <formats jcr:primaryType="cq:WidgetCollection">
+                                            <format1
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading1"
+                                                tag="h1"/>
+                                            <format2
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading2"
+                                                tag="h2"/>
+                                            <format3
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading3"
+                                                tag="h3"/>
+                                            <format4
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading4"
+                                                tag="h4"/>
+                                            <format5
+                                                jcr:primaryType="nt:unstructured"
+                                                description="paragraph"
+                                                tag="p"/>
+                                            <format6
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading5"
+                                                tag="h5"/>
+                                        </formats>
+                                    </paraformat>
+                                    <findreplace
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="[bold,italic]"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <lists
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <justify
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <linkDialogConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            height="{Long}316">
+                                            <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                                <linkAdvanced
+                                                    jcr:primaryType="cq:Widget"
+                                                    collapsed="{Boolean}true"
+                                                    collapsible="{Boolean}true"
+                                                    inputValue="advanced"
+                                                    name="./linkdialog/cq:adhocLinkTrackingTab"
+                                                    title="Link tracking"
+                                                    xtype="dialogfieldset">
+                                                    <items jcr:primaryType="cq:WidgetCollection">
+                                                        <enable
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="enabletracking"
+                                                            fieldDescription="override analytics framework settings"
+                                                            fieldLabel="Custom link tracking"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                            xtype="checkbox">
+                                                            <listeners
+                                                                jcr:primaryType="nt:unstructured"
+                                                                check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                        </enable>
+                                                        <events
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevents"
+                                                            fieldDescription="e.g.: event2, event7"
+                                                            fieldLabel="Include SiteCatalyst events"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                            xtype="textfield"/>
+                                                        <evars
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevars"
+                                                            fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                            fieldLabel="Include SiteCatalyst variables"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                            xtype="textfield"/>
+                                                    </items>
+                                                </linkAdvanced>
+                                            </linkAttributes>
+                                        </linkDialogConfig>
+                                    </links>
+                                    <misctools
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <colorpicker
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                </rtePlugins>
+                            </passwordInfoModaltext>	
+                            <confirmPassword
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter your  confirm password field"
+                                name="./confirmpass"
+                                xtype="textfield"/>
+                            <buttonText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter your button text"
+                                name="./button"
+                                xtype="textfield"/>
+							<emailAlert
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Label for email alert checkbox"
+                                name="./emailAlert"
+                                xtype="textfield"/>
+							<postmailAlert
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Label for postal mail alert checkbox"
+                                name="./postmailAlert"
+                                xtype="textfield"/>
+							<telephoneAlert
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Label for telephone alert checkbox"
+                                name="./telephoneAlert"
+                                xtype="textfield"/>
+							<SMSAlert
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Label for SMS alert checkbox"
+                                name="./SMSAlert"
+                                xtype="textfield"/>
+                            <passwordInfotooltip
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the message for tooltip"
+                                name="./passwordInfoTooltip"
+                                xtype="textfield"/>
+							<passwordInfoTooltipImage
+								jcr:primaryType="cq:Widget"
+								fieldLabel="Password info Tooltip Image path:"
+								name="./passwordInfoTooltipImage"
+								width="300"
+								xtype="pathfield"/>
+							<passwordInfoTooltipHoverImage
+								jcr:primaryType="cq:Widget"
+								fieldLabel="Password info Tooltip Hover Image path:"
+								name="./passwordInfoTooltipHoverImage"
+								width="300"
+								xtype="pathfield"/>
+                            <passwordInfoaltImage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the alternative text"
+                                name="./passwordInfoimagealt"
+                                xtype="textfield"/>
+							<notificationUpdates
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the notification and updates field label title"
+                                name="./notificationupdates"
+                                xtype="textfield"/>
+                            <notificationDescp
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the notification and updates checkbox text field label title"
+                                name="./notificationdescp"
+                                xtype="textfield"/>
+                        </items>
+                    </formDetails>
+                </items>
+            </personalDetailsForm>
+            <errorMessages
+                jcr:primaryType="cq:Widget"
+                title="Error Messages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <mandatoryField
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed for field to be mandatory"
+                        fieldLabel="Mandatory Field Text"
+                        name="./is_mandatory"
+                        width="300"
+                        xtype="textfield"/>
+                    <emailValidCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if email entered is not valid"
+                        fieldLabel="Email Not Valid Error"
+                        name="./emailErrorCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <emailMatchCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if emails entered are not matching"
+                        fieldLabel="Emails Not Matching Error"
+                        name="./emailMatchingCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <validPwdCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if password is not in the proper format"
+                        fieldLabel="Valid Password Display"
+                        name="./validPasswordCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <passwordMatchCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if passwords entered are not matching"
+                        fieldLabel="Password Not Matching Error"
+                        name="./passwordMatchingCheck"
+                        width="300"
+                        xtype="textfield"/>
+                    <invalidCharacter
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed if invalid character is put in the field"
+                        fieldLabel="Invalid Character Error"
+                        name="./invalidCharacterError"
+                        width="300"
+                        xtype="textfield"/>
+						
+                    <validTitleCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when valid title is not selected"
+                        fieldLabel="Valid Title Error Message"
+                        name="./selectValidOption"
+                        width="300"
+                        xtype="textfield"/>
+					<updatesuccessMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when account is updated successfully."
+                        fieldLabel="Update success message"
+                        name="./personalupdatesuccess"
+                        width="300"
+                        xtype="textfield"/>
+					<updatefailureMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the message to be displayed when account update fail."
+                        fieldLabel="Update failure message"
+                        name="./personalupdatefailure"
+                        width="300"
+                        xtype="textfield"/>
+                <phoneNumberLengthCheck
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Phone Number Invalid Length Message"
+                        name="./phoneNumberLengthCheck"
+                        xtype="textfield"/>
+                </items>
+            </errorMessages>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="checkout_footer"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Edit footer">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <privacyPolicyText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Privacy policy link text"
+                        name="./policytext"
+                        xtype="textfield"/>
+                    <privacyPolicyLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Privacy policy Link "
+                        name="./linkpolicy"
+                        xtype="pathfield"/>
+                    <terms_x0026_condtionText_sale
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Terms &amp; condition for sale text"
+                        name="./textsale"
+                        xtype="textfield"/>
+                    <terms_x0026_condtionLink_sale
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Terms &amp; condition for sale Link"
+                        name="./linksale"
+                        xtype="pathfield"/>
+                    <terms_x0026_condtionText_use
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Terms &amp; condition for use link text"
+                        name="./textuse"
+                        xtype="textfield"/>
+                    <terms_x0026_condtionLink_use
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Terms &amp; condition for use Link "
+                        name="./linkuse"
+                        xtype="pathfield"/>
+                    <contactText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="contact link text"
+                        name="./contacttext"
+                        xtype="textfield"/>
+                    <contactLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact Link "
+                        name="./linkcontact"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

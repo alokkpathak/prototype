@@ -1,0 +1,189 @@
+.section.getsoftware{
+margin-top:90px;
+}
+.getSoftware p{
+    color:#ffffff;
+    font-family: Gotham-Book-Regular;
+}
+.getSoftware h2{
+    color:white;
+    font-size:46px;
+}
+.getSoftware {
+    padding-bottom: 88px;
+}
+.getSoftware h5{
+     font-family: Gotham-Medium-Regular;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+.getSoftware .media{
+    padding-top: 42px;
+}
+.getSoftware .media:first-child{
+    padding-top:0;
+}
+.getSoftware .media-body{
+	vertical-align:middle;
+}
+.getSoftware.media-body>p:first-child{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 22px;
+}
+.getSoftware h2{
+    font-size:46px;
+        color:white;
+}
+.gs-row3 h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 148px;
+    font-family: Gotham-Bold;
+    font-size: 46px;
+}
+.gs-btn,.gs-btn:hover{
+     border:2px solid #003b4a;
+    color: #003b4a; 
+    background: transparent;
+    font-family: Gotham-Medium-Regular;
+}
+.gs-row3 .gs-subheading{
+    margin-bottom: 60px;
+    margin-top: 40px;
+    font-family:Gotham-Book-Regular;
+    font-size:18px;
+}
+.getAppimg {
+    margin-top:52px;
+ }
+
+/************************** lg *******************************/
+
+@media (min-width: 1200px) {
+.getSoftware  .margin-bottom{
+    margin-left: -46px;
+}
+.getSoftware .margin-bottom p img{
+    padding-right:25px;
+    padding-bottom: 15px;
+}
+.gs-btn{
+    margin-right: 0px;
+}
+.hidden-sm .col-md-12 .getAppimg{
+    float: right;
+    margin-right: 120px;
+    display: inline !important;
+    padding-left: 0px;
+}
+}
+
+/****************** md **************************************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.getSoftware .margin-bottom p img{
+    padding-right:15px;
+}
+}
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+.getSoftware h5 {
+    padding-top: 30px;
+    font-size: 32px;
+}
+.getSoftware .margin-bottom {
+    margin-bottom: 60px;
+  }
+ .getSoftware, .getapp {
+    padding-bottom: 5px;
+}
+.getAppimg{
+        margin-left: 0%;
+		margin-top:20px;
+}
+.getSoftware .gs-btn {
+    margin-bottom: 70px;
+	font-size:24px;
+}
+.getSoftware .margin-bottom p img{
+    padding-right:25px;
+}
+.getSoftware .margin-bottom{
+        margin-left: 0%;
+}
+.gs-row3 .gs-subheading{
+        margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 28px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.gs-row3 h2 {
+    margin-top: 95px;
+    font-size:40px;
+}
+}
+
+/********************************* XS Portrait ************************/
+
+@media (max-width: 767px) {
+.getSoftware h5{
+    font-size: 12px;
+}
+.gs-row3 h2{
+     letter-spacing: 4px;
+    font-size: 20px;
+    margin-top:45px;
+}
+.getSoftware .media-left{
+    padding-right:0;
+} 
+.section.getsoftware{
+	margin-top:40px;
+}
+.getSoftware .media{
+    padding-top: 0;
+    margin-top: 0;
+}
+.getSoftware .btn-info{
+    margin-bottom: 30px;
+}
+.getSoftware .visible-xs img {
+    width: 70px;
+}
+.getSoftware .visible-xs{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.getSoftware {
+    padding-bottom: 0px;
+}
+.getSoftware p {
+    color: #ffffff;
+    font-family: 'Gotham-Book-Regular';
+    font-size: 14px;
+}
+.getsoftware img{
+    padding-bottom: 20px;
+    padding-bottom: 18px;
+    padding-top: 25px;
+    margin-top:0;
+}
+.gs-row3 .gs-subheading {
+    margin-bottom: 20px;
+    margin-top: 16px;
+	font-size:14px;
+}
+.gs-btn {
+    margin-right: 0px;
+    margin-top:0px;
+	font-size:12px;
+}
+.getAppimg{
+	margin-top:0;
+}
+}

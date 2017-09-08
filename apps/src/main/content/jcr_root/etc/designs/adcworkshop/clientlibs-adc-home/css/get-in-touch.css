@@ -1,0 +1,172 @@
+.getinTouchWrapper .bg-orange p{
+	margin-bottom:0px;
+}
+.getinTouchWrapper h1{
+	margin-top:40px;
+	margin-bottom:30px;
+}
+.getinTouchWrapper p{
+	margin-bottom:40px;
+}
+.getinTouchWrapper .bg-orange .footer-text h5, .getinTouchWrapper .bg-orange .footer-text p{
+	color:#914326;
+	margin-bottom: 0px;
+}
+.getinTouchWrapper .bg-orange .footer-text{
+	position: relative;
+	top: 25px;
+	padding: 0 35px;
+	font-family: 'Gotham-Medium-Regular';
+	font-size: 12px;
+	color:#7b311b;
+}
+.getinTouchWrapper .bg-orange h3,.getinTouchWrapper .bg-orange h5{
+	color:white;
+	font-family: 'Gotham-Medium-Regular';
+}
+.getinTouchWrapper {
+	margin-bottom: 100px;
+	margin-top: 30px;
+}
+.getinTouchWrapper .bg-orange .btn {
+	border:2px solid white !important;
+	margin-top: 30px;
+	padding-left: 24px;
+	padding-right: 24px;
+	font-family: Gotham-Book-Regular;
+}
+#relatedPhone a{
+    color:#ffffff;
+}
+#relatedPhone{
+    color: white;
+    margin-top: 42px;
+    min-height:0px;
+}
+#relatedPhone{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block !important;        
+}
+#relatedPhoneButton{
+	display:none;
+        }
+@media (min-width: 1200px) {
+.getinTouchWrapper .bg-orange h3, .getinTouchWrapper .bg-orange h5{
+	min-height:25px;
+}
+.getinTouchWrapper .bg-orange h4,.getinTouchWrapper .bg-orange p{
+	min-height:85px;
+}
+
+.italy .getinTouchWrapper .bg-orange h4{
+     display: none;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.getinTouchWrapper .bg-orange .footer-text{
+		padding:0 20px;
+	}
+    .getinTouchWrapper .bg-orange h3, .getinTouchWrapper .bg-orange h5{
+	min-height:78px;
+}
+.getinTouchWrapper .bg-orange h4,.getinTouchWrapper .bg-orange p{
+	min-height: 104px;
+    font-size: 15px;
+}  
+.getinTouchWrapper .bg-orange h3, .getinTouchWrapper .bg-orange h5{
+    margin-bottom: 15px;
+}
+.bg-img {
+    padding-top: 45px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.getinTouchWrapper .bg-orange .btn{
+		font-size:24px;
+	}
+	.getinTouchWrapper .bg-orange .btn{
+        margin-bottom:50px;
+    }
+    .getinTouchWrapper .bg-orange .footer-text{
+            padding: 15px 35px;
+            top:0px;
+    }
+	.getinTouchWrapper .bg-orange{
+        margin-left: 0;
+    }
+	.getinTouchWrapper>.col-md-11{
+        margin-left:25px;
+        margin-right:25px;
+    }   
+    .getinTouchWrapper .col-md-5:first-child{
+        margin-bottom:20px;
+    }
+	.getinTouchWrapper{
+		margin-bottom:100px;
+	}
+}
+
+@media (max-width: 767px) {
+	.getinTouchWrapper .bg-orange h3 ,.getinTouchWrapper .bg-orange h5{
+		font-size: 18px;
+	}
+        #relatedPhone a{
+    color:#ffffff !important;
+ }
+#relatedPhone{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block !important;        
+}
+#relatedPhoneButton{
+	display:none;
+        }
+	.getinTouchWrapper .bg-orange p{
+		font-size:13px;
+	}
+	.getinTouchWrapper .bg-orange .footer-text{
+		font-size:7px;
+	}
+	.getinTouchWrapper>.col-md-11{
+        margin-left:25px;
+        margin-right:25px;
+    }   
+    .getinTouchWrapper .col-md-5:first-child{
+        margin-bottom:20px;
+    }
+    .getinTouchWrapper .bg-orange .btn{
+        padding-left: 10px; 
+        padding-right: 10px;
+        margin-top: 15px;
+        margin-bottom:15px;
+    }
+	.getinTouchWrapper .bg-orange .footer-text{
+		padding:0 10px;
+		position:static;            
+		margin-bottom: 15px;
+	}
+	.getinTouchWrapper>.col-md-11{
+        margin-left:25px;
+        margin-right:25px;
+    }   
+    .getinTouchWrapper .col-md-5:first-child{
+        margin-bottom:20px;
+    }
+    .getinTouchWrapper .bg-orange .btn{
+        padding-left: 10px; 
+        padding-right: 10px;
+        margin-top: 15px;
+        margin-bottom:15px;
+    }
+	.getinTouchWrapper{
+		margin-bottom:25px;
+		margin-top:25px;
+	}
+	.getinTouchWrapper .touchBlocks {
+		height:auto !important;
+		min-height:0px;
+	}
+}

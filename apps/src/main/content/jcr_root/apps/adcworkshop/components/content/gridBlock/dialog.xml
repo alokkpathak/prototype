@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:primaryType="cq:Dialog"
+    title="Grid Block(Group1)"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <groupConfig
+                jcr:primaryType="cq:Panel"
+                title="Group configurations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <needGroup2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Need grid block 2?"
+                        itemId="needGroup2"
+                        name="./needGroup2"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field){return hideandshowGroup2Tab(field);}"
+                            selectionchanged="function(field){return hideandshowGroup2Tab(field);}"/>
+                    </needGroup2>
+                </items>
+            </groupConfig>
+            <row1
+                jcr:primaryType="cq:Panel"
+                id="row_1"
+                itemId="row_1"
+                title="Row1 Configuration (Group1)">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <photoBlock1
+                        jcr:primaryType="cq:Widget"
+                        title="Photo Block"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <headlineText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Headline Text"
+                                name="./headlineText1"
+                                xtype="textfield"/>
+                            <infotext
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text to display on Information Overlay"
+                                name="./infotext"
+                                xtype="richtext">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <formats jcr:primaryType="cq:WidgetCollection">
+                                            <format1
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading1"
+                                                tag="h1"/>
+                                            <format2
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading2"
+                                                tag="h2"/>
+                                            <format3
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading3"
+                                                tag="h3"/>
+                                            <format4
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading4"
+                                                tag="h4"/>
+                                            <format5
+                                                jcr:primaryType="nt:unstructured"
+                                                description="paragraph"
+                                                tag="p"/>
+                                            <format6
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Heading5"
+                                                tag="h5"/>
+                                        </formats>
+                                    </paraformat>
+                                    <findreplace
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="[bold,italic]"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <lists
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <justify
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <linkDialogConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            height="{Long}316">
+                                            <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                                <linkAdvanced
+                                                    jcr:primaryType="cq:Widget"
+                                                    collapsed="{Boolean}true"
+                                                    collapsible="{Boolean}true"
+                                                    inputValue="advanced"
+                                                    name="./linkdialog/cq:adhocLinkTrackingTab"
+                                                    title="Link tracking"
+                                                    xtype="dialogfieldset">
+                                                    <items jcr:primaryType="cq:WidgetCollection">
+                                                        <enable
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="enabletracking"
+                                                            fieldDescription="override analytics framework settings"
+                                                            fieldLabel="Custom link tracking"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                            xtype="checkbox">
+                                                            <listeners
+                                                                jcr:primaryType="nt:unstructured"
+                                                                check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                        </enable>
+                                                        <events
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevents"
+                                                            fieldDescription="e.g.: event2, event7"
+                                                            fieldLabel="Include SiteCatalyst events"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                            xtype="textfield"/>
+                                                        <evars
+                                                            jcr:primaryType="nt:unstructured"
+                                                            attribute="adhocevars"
+                                                            fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                            fieldLabel="Include SiteCatalyst variables"
+                                                            name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                            xtype="textfield"/>
+                                                    </items>
+                                                </linkAdvanced>
+                                            </linkAttributes>
+                                        </linkDialogConfig>
+                                    </links>
+                                    <misctools
+                                        jcr:mixinTypes="[rep:AccessControllable]"
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <colorpicker
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                </rtePlugins>
+                            </infotext>
+                            <infoimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Info Icon path"
+                                name="./infoicon"
+                                xtype="pathfield"/>
+                            <infoaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt for info icon"
+                                name="./infoimagealt"
+                                xtype="textfield"/>
+                            <image
+                                jcr:primaryType="cq:Widget"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 600 x 400 px Resolution"
+                                fieldLabel="Background Image for Photo Block for desktop"
+                                name="./bckgdImagePhotoBlock1"
+                                xtype="pathfield"/>
+                            <imageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Background Image for Photo Block for mobile"
+                                name="./bckgdImagePhotoBlock1_mobile"
+                                xtype="pathfield"/>
+                            <ctaText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="CTA Link Text"
+                                name="./ctaLinkText1"
+                                xtype="textfield"/>
+                            <ctaLink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="CTA link"
+                                name="./ctaLink1"
+                                xtype="textfield"/>
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="./imagealt"
+                                xtype="textfield"/>
+                            <readaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for ReadImage alt"
+                                name="./readimagealt"
+                                xtype="textfield"/>
+                            <arrowDesktop
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for desktop"
+                                name="./photoArrowDesktop1"
+                                xtype="pathfield"/>
+                            <arrowMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for mobile"
+                                name="./photoArrowMobile1"
+                                xtype="pathfield"/>
+                        </items>
+                    </photoBlock1>
+                    <colourBlock1
+                        jcr:primaryType="cq:Widget"
+                        title="Colour Block"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <blockType
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Colour Block Type"
+                                name="./blockType"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <article
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Article"
+                                        value="article"/>
+                                    <testimonial
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Testimonial"
+                                        value="testimonial"/>
+                                </options>
+                            </blockType>
+                            <thumbImage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;Max file size: 500Ko&#xa;•&#x9;File formats: JPG or PNG&#xa; with 90 x 90 px Resolution"
+                                fieldLabel="Thumbnail Image for Color Block for desktop"
+                                name="./thumbnailImage1"
+                                xtype="pathfield"/>
+                            <thumbImageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;Max file size: 500Ko&#xa;•&#x9;File formats: JPG or PNG&#xa; with 90 x 90 px Resolution"
+                                fieldLabel="Thumbnail Image for Color Block for mobile"
+                                name="./thumbnailImage1_mobile"
+                                xtype="pathfield"/>
+                            <thumbaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for ThumbImage alt"
+                                name="./thumbimagealt"
+                                xtype="textfield"/>
+                            <headline
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Headline"
+                                name="./headline1"
+                                xtype="textfield"/>
+                            <bodyText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Body Text"
+                                name="./bodyText1"
+                                xtype="textarea"/>
+                            <bgcolour
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Background Colour"
+                                name="./bgcolour1"
+                                showHexValue="{Boolean}true"
+                                xtype="colorfield"/>
+                            <typeOfLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Action on button Click"
+                                name="./typeOfLinkRow1"
+                                type="radio"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <pdfLink
+                                        jcr:primaryType="cq:Widget"
+                                        text="Link"
+                                        value="pdfLinkrow1"/>
+                                    <normalLink
+                                        jcr:primaryType="cq:Widget"
+                                        text="Modal"
+                                        value="testimonialrow1"/>
+                                </options>
+                            </typeOfLink>
+                            <ctaText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="CTA Link Text"
+                                name="./ctaLinkText2"
+                                xtype="textfield"/>
+                            <ctaLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="CTA Link 2"
+                                name="./ctaLinkpdfrow1"
+                                xtype="textfield"/>
+                            <discoveraltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for DiscoverImage alt"
+                                name="./discoverimagealt"
+                                xtype="textfield"/>
+                            <arrowDesktop
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for desktop"
+                                name="./colorArrowDesktop1"
+                                xtype="pathfield"/>
+                            <arrowMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for mobile"
+                                name="./colorArrowMobile1"
+                                xtype="pathfield"/>
+                        </items>
+                    </colourBlock1>
+                </items>
+            </row1>
+            <row2
+                jcr:primaryType="cq:Panel"
+                id="row_2"
+                itemId="row_2"
+                title="Row2 Configuration (Group1)">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <stackedBlock
+                        jcr:primaryType="cq:Widget"
+                        title="Stacked Block (Photo Block,Testimonial)"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <photoBlock
+                                jcr:primaryType="cq:Widget"
+                                title="Photo Block "
+                                xtype="dialogfieldset">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <headlineText
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Headline Text"
+                                        name="./stackedHeadline1"
+                                        xtype="textfield"/>
+                                    <image
+                                        jcr:primaryType="cq:Widget"
+										fieldDescription="Upload only .jpg or .png images with 420 x 300 px Resolution"
+                                        fieldLabel="Background Image for Photo Block for desktop"
+                                        name="./stackedPhotoBlock1"
+                                        xtype="pathfield"/>
+                                    <imageMobile
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Background Image for Photo Block for mobile"
+                                        name="./stackedPhotoBlock1_mobile"
+                                        title="Background Image for Photo Block"
+                                        xtype="pathfield"/>
+                                    <stackedaltimage
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Enter the text for StackedImage alt"
+                                        name="./stackedimagealt"
+                                        xtype="textfield"/>
+                                    <ctaText
+                                        jcr:primaryType="cq:Widget"
+                                        fieldDescription="This is a mandatory field"
+                                        fieldLabel="CTA Link Text"
+                                        name="./stackedCtaLinkText1"
+                                        xtype="textfield"/>
+                                    <ctaLink
+                                        jcr:primaryType="cq:Widget"
+                                        fieldDescription="This is a mandatory field"
+                                        fieldLabel="CTA link"
+                                        name="./stackedCtaLink1"
+                                        xtype="textfield"/>
+                                    <arrowDesktop
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Choose the arrow image for desktop"
+                                        name="./stackPhotoArrowDesktop1"
+                                        xtype="pathfield"/>
+                                    <arrowMobile
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Choose the arrow image for mobile"
+                                        name="./stackPhotoArrowMobile1"
+                                        xtype="pathfield"/>
+                                </items>
+                            </photoBlock>
+                            <colourBlock
+                                jcr:primaryType="cq:Widget"
+                                title="Colour Block"
+                                xtype="dialogfieldset">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <blockType
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Colour Block Type"
+                                        name="./stackedBlockType"
+                                        type="select"
+                                        xtype="selection">
+                                        <options jcr:primaryType="cq:WidgetCollection">
+                                            <article
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Article"
+                                                value="article"/>
+                                            <testimonial
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Testimonial"
+                                                value="testimonial"/>
+                                        </options>
+                                    </blockType>
+                                    <thumbImage
+                                        jcr:primaryType="cq:Widget"
+                                        fieldDescription="•&#x9;Max file size: 500Ko&#xa;•&#x9;File formats: JPG or PNG&#xa; with 90 x 90 px Resolution"
+                                        fieldLabel="Thumbnail Image for Color Block for desktop"
+                                        name="./stackedthumbnailImage"
+                                        title="Thumbnail Image for Color Block"
+                                        xtype="pathfield"/>
+                                    <thumbImageMobile
+                                        jcr:primaryType="cq:Widget"
+                                        fieldDescription="•&#x9;Max file size: 500Ko&#xa;•&#x9;File formats: JPG or PNG&#xa; with 90 x 90 px Resolution"
+                                        fieldLabel="Thumbnail Image for Color Block for mobile"
+                                        name="./stackedthumbnailImage_mobile"
+                                        title="Thumbnail Image for Color Block"
+                                        xtype="pathfield"/>
+                                    <stackedthumbaltimage
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Enter the text for StackedthumbImage alt"
+                                        name="./stackedthumbimagealt"
+                                        xtype="textfield"/>
+                                    <headline
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Headline"
+                                        name="./stackedHeadline"
+                                        xtype="textfield"/>
+                                    <bodyText
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Body Text"
+                                        name="./stackedBodyText"
+                                        xtype="textarea"/>
+                                    <bgcolour
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Background Colour"
+                                        name="./stackedBgcolour"
+                                        showHexValue="{Boolean}true"
+                                        xtype="colorfield"/>
+                                    <typeOfLink
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Action on button Click"
+                                        name="./typeOfLinkrow2"
+                                        type="radio"
+                                        xtype="selection">
+                                        <options jcr:primaryType="cq:WidgetCollection">
+                                            <pdfLink
+                                                jcr:primaryType="cq:Widget"
+                                                text="Link"
+                                                value="pdfLinkrow2"/>
+                                            <normalLink
+                                                jcr:primaryType="cq:Widget"
+                                                text="Modal"
+                                                value="testimonialrow2"/>
+                                        </options>
+                                    </typeOfLink>
+                                    <ctaText
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="CTA Link Text"
+                                        name="./stackedCtaLinkText2"
+                                        xtype="textfield"/>
+                                    <ctaLink
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="CTA Link 2"
+                                        name="./ctaLinkpdfrow2"
+                                        xtype="textfield"/>
+                                    <arrowDesktop
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Choose the arrow image for desktop"
+                                        name="./stackColorArrowDesktop1"
+                                        xtype="pathfield"/>
+                                    <arrowMobile
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Choose the arrow image for mobile"
+                                        name="./stackColorArrowMobile1"
+                                        xtype="pathfield"/>
+                                </items>
+                            </colourBlock>
+                        </items>
+                    </stackedBlock>
+                    <hero
+                        jcr:primaryType="cq:Widget"
+                        title="Hero Block "
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <headlineText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Headline Text"
+                                name="./heroHeadlineText"
+                                xtype="textarea"/>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;File formats: JPG or PNG&#xa; with 600 x 600 px Resolution"
+                                fieldLabel="Background Image for Hero Block for desktop"
+                                name="./bckgdImageHeroBlock"
+                                title="Background Image for Hero Block"
+                                xtype="pathfield"/>
+                            <imageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;File formats: JPG or PNG&#xa;"
+                                fieldLabel="Background Image for Hero Block for mobile"
+                                name="./bckgdImageHeroBlock_mobile"
+                                xtype="pathfield"/>
+                            <heroaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for hero Image alt"
+                                name="./heroimagealt"
+                                xtype="textfield"/>
+                            <ctaText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="CTA Link Text"
+                                name="./heroCtaLinkText1"
+                                xtype="textfield"/>
+                            <ctaLink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="CTA link"
+                                name="./heroCtaLink1"
+                                xtype="textfield"/>
+                            <arrowDesktop
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for desktop"
+                                name="./heroArrowDesktop1"
+                                xtype="pathfield"/>
+                            <arrowMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for mobile"
+                                name="./heroArrowMobile1"
+                                xtype="pathfield"/>
+                        </items>
+                    </hero>
+                </items>
+            </row2>
+            <row3
+                jcr:primaryType="cq:Panel"
+                id="row_3"
+                itemId="row_3"
+                title="Row3 Configuration (Group2)">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <photoBlock
+                        jcr:primaryType="cq:Widget"
+                        title="Photo Block"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <headlineText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="Headline Text"
+                                name="./headlineText"
+                                xtype="textfield"/>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Upload only .jpg or .png images with 420 x 400 px Resolution"
+                                fieldLabel="Background Image for Photo Block for desktop"
+                                name="./bckgdImagePhotoBlock3"
+                                title="Background Image for Photo Block"
+                                xtype="pathfield"/>
+                            <imageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="Background Image for Photo Block for mobile"
+                                name="./bckgdImagePhotoBlock3_mobile"
+                                xtype="pathfield"/>
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Block3Image alt"
+                                name="./block3imagealt"
+                                xtype="textfield"/>
+                            <ctaText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="CTA Link Text"
+                                name="./ctaLinkText3"
+                                xtype="textfield"/>
+                            <ctaLink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="This is a mandatory field"
+                                fieldLabel="CTA link"
+                                name="./ctaLink3"
+                                xtype="textfield"/>
+                            <arrowDesktop
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for desktop"
+                                name="./photoArrowDesktop3"
+                                xtype="pathfield"/>
+                            <arrowMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for mobile"
+                                name="./photoArrowMobile3"
+                                xtype="pathfield"/>
+                        </items>
+                    </photoBlock>
+                    <colourBlock
+                        jcr:primaryType="cq:Widget"
+                        title="Colour Block"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <blockType
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Colour Block Type"
+                                name="./blockType"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <article
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Article"
+                                        value="article"/>
+                                    <testimonial
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Testimonial"
+                                        value="testimonial"/>
+                                </options>
+                            </blockType>
+                            <thumbImage
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;Max file size: 500Ko&#xa;•&#x9;File formats: JPG or PNG&#xa;"
+                                fieldLabel="Thumbnail Image for Color Block for desktop"
+                                name="./thumbnailImage3"
+                                title="Thumbnail Image for Color Block"
+                                xtype="pathfield"/>
+                            <thumbImageMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="•&#x9;Max file size: 500Ko&#xa;•&#x9;File formats: JPG or PNG&#xa;"
+                                fieldLabel="Thumbnail Image for Color Block for mobile"
+                                name="./thumbnailImage3_mobile"
+                                xtype="pathfield"/>
+                            <headline
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Headline"
+                                name="./headline3"
+                                xtype="textfield"/>
+                            <bodyText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Body Text"
+                                name="./bodyText3"
+                                xtype="textarea"/>
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="./imagealt3"
+                                xtype="textfield"/>
+                            <bgcolour
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Background Colour"
+                                name="./bgcolour3"
+                                showHexValue="{Boolean}true"
+                                xtype="colorfield"/>
+                            <typeOfLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Action on button Click"
+                                name="./typeOfLinkrow3"
+                                type="radio"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <pdfLink
+                                        jcr:primaryType="cq:Widget"
+                                        text="Link"
+                                        value="pdfLinkrow3"/>
+                                    <normalLink
+                                        jcr:primaryType="cq:Widget"
+                                        text="Modal"
+                                        value="testimonialrow3"/>
+                                </options>
+                            </typeOfLink>
+                            <ctaText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="CTA Link Text"
+                                name="./ctaLinkText4"
+                                xtype="textfield"/>
+                            <ctaLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="CTA Link 2"
+                                name="./ctaLinkpdfrow3"
+                                xtype="textfield"/>
+                            <arrowDesktop
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for desktop"
+                                name="./colorArrowDesktop3"
+                                xtype="pathfield"/>
+                            <arrowMobile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Choose the arrow image for mobile "
+                                name="./colorArrowMobile3"
+                                xtype="pathfield"/>
+                        </items>
+                    </colourBlock>
+                </items>
+            </row3>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,206 @@
+.contact-form{
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+.contact-form .form-group .form-control {
+    border-radius: 0px;
+	font-family: Gotham-Book-Regular;
+}
+.contact-form .form-group label {
+    font-weight: normal;
+    font-family: Gotham-Medium-Regular;
+    font-size: 16px;
+    color:#4f4f4f;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.contact-form select,.contact-form input,.contact-form textarea{   
+	   border: 2px solid #c6C6C6;
+}
+.userRegistrationsection .form-group img{
+	    cursor: pointer;
+        }
+.Registration .about {
+  padding-top: 55px;
+    padding-bottom: 50px;       
+}
+.Registration .about h1{
+    margin-bottom:20px;
+}
+.contact-form .form-group{
+    margin-bottom: 48px;
+        }
+.contact-form .checkboxOrange label>p{
+    width:auto;
+    font-size:16px;
+        }
+.contact-form .form-group .form-control{
+    border-radius: 0px;
+    margin-bottom: 5px;
+	font-family: Gotham-Book-Regular;
+}
+.contact-horizontal select{
+    width:25%;
+}
+.form-group select{
+	width: 25%;
+}
+.contact-form  input,.contact-form  select{
+    height:50px;
+    padding-left:30px;
+}
+.Registration .agreeCheck{
+	margin-top: 0px;	
+}
+.Registration .checkboxOrange{
+        margin-bottom: 20px;
+        }
+.italy.Registration #registration .checkboxOrange {
+    margin-bottom: 25px;
+}
+
+#Registration_submit {
+    margin-top:30px;
+        }
+#registrationSuccess{
+    font-size: 14px;
+    color:blue;
+}
+.RegistraionCheckbox{
+	margin-top:-50px;
+    margin-bottom: 0px!important;    
+    }
+.NoRegistraionCheckbox{
+	margin-top:-30px;
+    margin-bottom: 0px !important;
+}
+
+@media (min-width: 1200px) {
+.Registration .checkboxOrange{
+        margin-bottom: 0px;   
+}
+.Registration .checkboxOrange label>p{
+    width:650px;
+}
+.Registration .formWrapper .checkboxOrange label>p{
+	width:auto;
+}  
+.Registration .formWrapper .checkboxOrange{
+	margin-bottom:30px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.NoRegistraionCheckbox {
+    margin-bottom: 10px !important;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.NoRegistraionCheckbox {
+    margin-top: -30px;
+    margin-bottom: 0px !important;
+}
+.italy.Registration #registration .checkboxOrange {
+    margin-bottom: 60px;
+}    
+.contact-form .button-orange, .contact-form .button-orange:hover{
+    padding:25px 35px;
+    font-size:21px;
+}
+#registration label{
+    margin-right: 0px;
+}
+.contact-form .form-group label{
+    font-size:22px;
+}
+.contact-form input,.contact-form select{
+    height:70px;
+    padding-left:40px;
+}
+.contact-form .form-group{
+    margin-bottom:55px;
+}
+.contact-form{
+    margin-bottom:0px;
+    margin-top:70px;    
+}
+.contact-form .checkboxOrange label>p{
+    font-size:22px;
+}
+.Registration .about,.contactUs .about {
+    padding-top:100px;
+    padding-bottom:90px;        
+        }
+.Registration .about h1{
+    margin-bottom:50px;
+    font-size:46px;
+                }
+.Registration .about p{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+}
+
+@media (max-width: 767px) {
+#Registration_submit {
+    margin-top: 10px;
+}
+.RegistraionCheckbox {
+    margin-top: -10px;
+    margin-bottom: -10px !important;
+}
+.NoRegistraionCheckbox {
+    margin-top: -10px;
+}
+.Registration .about{
+    padding-top:50px;
+    padding-bottom:45px;        
+}
+.Registration .about h1{
+    margin-bottom:25px;
+    font-size:23px;
+}
+.contact-form .form-group label,.required-field p{
+    font-size:11px;
+    margin-bottom: 5px;
+}
+.contact-form input,.contact-form select{
+    height:40px;
+    padding-left:20px;
+    font-size:12px;
+}
+.contact-form .form-group{
+    margin-bottom:18px;
+}
+.contact-form .button-orange, .contact-form .button-orange:hover{
+    padding:12px 17px;
+    font-size:11px;
+}
+.contact-form{
+    margin-bottom:0px;
+    margin-top:20px;    
+}
+#registration label{
+    margin-right: 0px;
+}
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+.italy.Registration #registration .checkboxOrange {
+		margin-bottom: 35px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+.italy.Registration #registration .checkboxOrange {
+    margin-bottom: 50px;
+}
+#Registration_submit {
+    margin-top: 35px;
+}            
+.NoRegistraionCheckbox {
+    margin-bottom: 10px !important;
+}
+}

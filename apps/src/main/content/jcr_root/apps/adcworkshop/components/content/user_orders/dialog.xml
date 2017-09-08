@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="orderDetails"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <commonConfigs
+                jcr:primaryType="cq:Panel"
+                title="Common Configurations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <vatLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for including VAT tax"
+                        name="./inclVatText"
+                        xtype="textfield"/>
+                    <vatexclusiveLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for excluding VAT tax"
+                        name="./vatexclusiveText"
+                        xtype="textfield"/>
+                    <noOrderText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text to be displayed when no orders are found"
+                        name="./noOrdersText"
+                        xtype="textfield"/>
+                    <statusLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for status label"
+                        name="./statusLabel"
+                        xtype="textfield"/>
+					<orderStatusLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter text for order status label"
+                        name="./orderStatusLabel"
+                        xtype="textfield"/>
+                    <estimatedDeliveryLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for estimated delivery label"
+                        name="./estimatedDeliveryLabel"
+                        xtype="textfield"/>
+                </items>
+            </commonConfigs>
+            <currentOrder
+                jcr:primaryType="cq:Panel"
+                title="Current Order Configurations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the title"
+                        name="./currentOrderTitle"
+                        xtype="textfield"/>
+                    <buttonName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the button text for viewing order details"
+                        name="./currentOrderButtonText"
+                        xtype="textfield"/>
+                    <invoiceLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for invoice label"
+                        name="./invoiceLabel"
+                        xtype="textfield"/>
+                    <returnLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for return label"
+                        name="./returnLabel"
+                        xtype="textfield"/>
+                    <shippmentLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for shipment label"
+                        name="./shipmentLabel"
+                        xtype="textfield"/>
+                    <refundLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for refund label"
+                        name="./refundLabel"
+                        xtype="textfield"/>
+                    <returnPdfLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label for return PDF label"
+                        name="./returnPdfLabel"
+                        xtype="textfield"/>
+                </items>
+            </currentOrder>
+            <orderHistory
+                jcr:primaryType="cq:Panel"
+                title="Order History Configurations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <orderHistoryTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the order history title"
+                        name="./orderHistoryTitle"
+                        xtype="textfield"/>
+                    <orderHistorydesc
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the title"
+                        name="./orderHistoryDesc"
+                        xtype="textfield"/>
+					<productName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Field Label for Product"
+                        name="./productname"
+                        xtype="textfield"/>	
+                    <noOfOrders
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="10"
+                        fieldLabel="Enter the max no. of orders to be shown on each page"
+                        name="./noOfOrders"
+                        xtype="textfield"/>
+                    <eachOrderButtonName
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the button text for viewing each order details"
+                        name="./OrderHistoryButtonText"
+                        xtype="textfield"/>
+                    <orderHistoryDuration
+                        jcr:primaryType="cq:Widget"
+                        baseName="orderHistoryDuration_"
+                        fieldDescription="Click the '+' to add a new duration"
+                        name="./orderHistoryDurationDropdownValues"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <durationText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="DurationText"
+                                name="durationText"
+                                xtype="textfield"/>
+                            <durationInMonths
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="Duration in months"
+                                name="durationInMonths"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </orderHistoryDuration>
+                </items>
+            </orderHistory>
+        </items>
+    </items>
+</jcr:root>

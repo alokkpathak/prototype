@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/default"
+        cq:lastModified="{Date}2016-07-19T11:25:31.195+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="ADC Content Workflow"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <process
+                jcr:created="{Date}2016-04-23T19:14:53.425+05:30"
+                jcr:createdBy="admin"
+                jcr:description="Initiate ADC Workflow"
+                jcr:lastModified="{Date}2016-04-23T19:17:02.786+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Initiate ADC Workflow"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.adc.workshop.wf.process.InitiateReview"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <or
+                jcr:created="{Date}2016-04-23T19:17:26.616+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-04-23T19:18:54.757+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                orSplit="true"
+                scriptPath1="/etc/workflow/scripts/adc-workshop/checkIsAuthor.ecma"
+                scriptPath2="/etc/workflow/scripts/adc-workshop/checkIsManager.ecma">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <dynamic_participant
+                        jcr:created="{Date}2016-04-23T20:20:08.030+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="Send to Manager for Review"
+                        jcr:lastModified="{Date}2016-04-23T20:23:23.502+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Manager Review"
+                        sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            DYNAMIC_PARTICIPANT="com.adc.workshop.wf.participant.ADCParticipantChooser"
+                            PROCESS_ARGS="adc-manager"/>
+                    </dynamic_participant>
+                    <or
+                        jcr:created="{Date}2016-04-23T20:25:35.113+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2016-04-23T20:25:35.113+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/workflow/components/model/or"
+                        branches="2"
+                        orSplit="true">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <noopprocess
+                                jcr:created="{Date}2016-04-23T20:31:04.207+05:30"
+                                jcr:createdBy="admin"
+                                jcr:description="Resource not Approved"
+                                jcr:lastModified="{Date}2016-04-23T20:31:48.633+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Reject Resource"
+                                sling:resourceType="cq/workflow/components/workflow/noopprocess"
+                                PROCESS="/etc/workflow/scripts/noop.ecma"
+                                PROCESS_AUTO_ADVANCE="true">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="/etc/workflow/scripts/noop.ecma"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </noopprocess>
+                            <initiatorparticipant
+                                jcr:created="{Date}2016-04-23T20:29:28.267+05:30"
+                                jcr:createdBy="admin"
+                                jcr:description="Page not approved by Manager"
+                                jcr:lastModified="{Date}2016-04-23T20:30:35.698+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Rejected by Manager"
+                                sling:resourceType="cq/workflow/components/workflow/initiatorparticipantchooser"
+                                DYNAMIC_PARTICIPANT="/etc/workflow/scripts/initiator-participant-chooser.ecma"
+                                PROCESS_AUTO_ADVANCE="true">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    DYNAMIC_PARTICIPANT="/etc/workflow/scripts/initiator-participant-chooser.ecma"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </initiatorparticipant>
+                        </_x0031_>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <noopprocess
+                                jcr:created="{Date}2016-04-23T20:27:01.522+05:30"
+                                jcr:createdBy="admin"
+                                jcr:description="Activate Resource"
+                                jcr:lastModified="{Date}2016-04-23T20:27:49.757+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Approve Resource"
+                                sling:resourceType="cq/workflow/components/workflow/noopprocess"
+                                PROCESS="/etc/workflow/scripts/noop.ecma"
+                                PROCESS_AUTO_ADVANCE="true">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="/etc/workflow/scripts/noop.ecma"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </noopprocess>
+                            <activateresourceproc
+                                jcr:created="{Date}2016-07-18T19:34:44.425+05:30"
+                                jcr:createdBy="adcmanager1"
+                                jcr:description="A process to activate a page or asset"
+                                jcr:lastModified="{Date}2016-07-18T19:34:53.998+05:30"
+                                jcr:lastModifiedBy="adcmanager1"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Activate Page/Asset"
+                                sling:resourceType="wcm/workflow/components/workflow/activateresourceprocess"
+                                PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                                PROCESS_AUTO_ADVANCE="true">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </activateresourceproc>
+                            <process
+                                jcr:created="{Date}2016-07-18T17:54:50.876+05:30"
+                                jcr:createdBy="admin"
+                                jcr:description="Activate along with Assets"
+                                jcr:lastModified="{Date}2016-07-19T11:25:24.937+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Activate Resource"
+                                sling:resourceType="cq/workflow/components/model/process">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.adc.workshop.wf.process.ADCActivateReferencedAssets"
+                                    PROCESS_ARGS="/content/dam/adc/"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </process>
+                        </_x0032_>
+                    </or>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2016-04-23T20:53:48.271+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="Proceeds to Activation of Resource"
+                        jcr:lastModified="{Date}2016-04-23T20:54:17.029+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Manager Activation"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess"
+                        PROCESS="/etc/workflow/scripts/noop.ecma"
+                        PROCESS_AUTO_ADVANCE="true">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/etc/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <activateresourceproc
+                        jcr:created="{Date}2016-07-18T19:35:03.587+05:30"
+                        jcr:createdBy="adcmanager1"
+                        jcr:description="A process to activate a page or asset"
+                        jcr:lastModified="{Date}2016-07-18T19:35:03.587+05:30"
+                        jcr:lastModifiedBy="adcmanager1"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Activate Page/Asset"
+                        sling:resourceType="wcm/workflow/components/workflow/activateresourceprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </activateresourceproc>
+                    <process
+                        jcr:created="{Date}2016-07-18T17:53:05.525+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="Activates page along with assets"
+                        jcr:lastModified="{Date}2016-07-19T11:25:31.168+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Activate Resource"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adc.workshop.wf.process.ADCActivateReferencedAssets"
+                            PROCESS_ARGS="/content/dam/adc/"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                </_x0032_>
+            </or>
+        </flow>
+        <model/>
+    </jcr:content>
+</jcr:root>

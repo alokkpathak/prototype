@@ -1,0 +1,185 @@
+.textimage .btn-margin{
+    margin-bottom:0px;
+}
+.text-left.mob-gstext{
+    padding-right:7%;
+}
+.mob-gstext p{
+        font-family: 'Gotham-Book-Regular' !important;
+        color:#8e8e8e ;
+}
+.media-text h2,.media-text h3{
+    color:#0385a6;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+    font-size:32px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/************************** lg *******************************/
+
+@media (min-width: 1200px) {
+.media-text .img-responsive{
+    display: inline !important;
+}
+.textimage .media-text{
+	padding-top: 58px;
+    margin: 0 auto;
+    width: 1115px;
+}
+.textimage .media-text h3{
+                margin-bottom:40px;
+}
+.textimage .btn-margin{
+    margin-top:35px;
+}
+.textimage .media-text-right{
+	width:580px;
+    padding:0;
+}
+.textimage .media-image-left{
+	width:391px;
+}
+.textimage .media-image-right{
+    width:328px;
+}
+.italy .textimage .media-image-right {
+    width: 274px;
+}
+.italy .gs-row5 .apply-help {
+    margin-bottom: 50px;
+} 
+.textimage .media-text-left{
+    width:589px;
+}
+.italy .textimage .media-text-left{
+    width:592px;
+}
+.summary-products .textimage .media-text, .italy .textimage .media-text{
+    padding-top:62px;
+}
+.summary-products .textimage .media-text h3, .italy .textimage .media-text h3{
+    margin-bottom: 36px;
+}
+.summary-products .textimage .btn-margin, .italy .textimage .btn-margin {
+    margin-top: 33px;
+}
+}
+/****************** md **************************************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.textimage .media-text{
+	padding-top: 58px;
+}
+.textimage .media-text h3{
+        margin-bottom:40px;
+}
+.textimage .btn-margin{
+    margin-top:35px;
+}
+.italy .textimage .media-image-right {
+    width: 274px;
+}
+.italy .gs-row5 .apply-help {
+    margin-bottom: 50px;
+} 
+.textimage .media-text-right{
+	width:580px;
+    padding:0;
+}
+.textimage .media-image-left{
+	width:391px;
+}
+.textimage .media-image-right{
+    width:328px;
+}
+.textimage .media-text-left{
+    width:589px;
+}
+.italy .textimage .media-text-left{
+    width:592px;
+}
+.summary-products .textimage .media-text, .italy .textimage .media-text{
+    padding-top:62px;
+}
+.summary-products .textimage .media-text h3, .italy .textimage .media-text h3{
+    margin-bottom: 36px;
+}
+.summary-products .textimage .btn-margin, .italy .textimage .btn-margin {
+    margin-top: 33px;
+}
+}
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+.textimage .media-text {
+    margin-top: 90px;
+    padding-top: 0px;       
+    padding-bottom: 0px;
+}
+.textimage .media-text h2,.textimage .media-text h3 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.textimage .media-text .col-md-5 img{
+    margin-top:40px;
+}
+.textimage .media-text .btn-info{
+	margin-top: 40px;
+	margin-bottom:5px;
+    font-size:24px;
+    padding: 14px 24px;
+}
+.text-left.mob-gstext {
+    padding-left: 0;
+    padding-right: 0;
+}
+.mob-gstext{
+    text-align:center;
+}
+.textimage .media-text h2,.textimage .media-text h3 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.mob-gstext p {
+    font-size: 24px;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center !important;
+}
+.summary-products .textimage .media-text, .italy .textimage .media-text{
+    padding-top:60px;
+}
+.summary-products .textimage .media-text h3, .italy .textimage .media-text h3{
+    margin-bottom: 36px;
+}
+.summary-products .textimage .btn-margin, .italy .textimage .btn-margin {
+    margin-top: 33px;
+}
+}
+
+
+/********************************* XS Portrait ************************/
+
+@media (max-width: 767px) {
+.textimage .media-text{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+.textimage .btn-margin {
+    margin-top: 10px;
+}
+.mob-gstext {
+   text-align: center;
+    padding-top: 0px;
+    padding-left:7%;
+    padding-right:7%;
+}
+.mob-gstext p{
+    font-family: 'Gotham-Book-Regular' !important;
+    color:#8e8e8e;
+    font-size: 14px;
+    text-align:center !important;
+}
+}

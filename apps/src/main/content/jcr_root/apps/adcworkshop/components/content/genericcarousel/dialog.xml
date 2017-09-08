@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','mp4','ogg'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Type"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <carouseltypeselector
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Select Carousel Type"
+                    itemId="carouseltypeselector_id"
+                    name="./carouseltypeselector"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <productcarousel
+                            jcr:primaryType="nt:unstructured"
+                            text="Product Carousel"
+                            value="productcarousel"/>
+                        <helpcarousel
+                            jcr:primaryType="nt:unstructured"
+                            text="Help Carosuel"
+                            value="helpcarousel"/>
+                    </options>
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field){return hideandshowCarouselTabs(field);}"
+                        selectionchanged="function(field){return hideandshowCarouselTabs(field);}"/>
+                </carouseltypeselector>
+            </items>
+        </list>
+        <productcarousel
+            jcr:primaryType="cq:Widget"
+            id="productcarousel"
+            title="Product Carousel"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <multi
+                    jcr:primaryType="cq:Widget"
+                    baseName="pmulti_"
+                    fieldLabel="Configure the Product Carousel multifields"
+                    name="./pmulti"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <text
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Maximum of 35 Characters"
+                            fieldLabel="Title"
+                            maxLength="35"
+                            name="slidingtextname"
+                            xtype="textfield"/>
+                        <desc
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Maximum of 1000 Characters"
+                            fieldLabel="Text"
+                            maxLength="1000"
+                            name="slidingtextdescription"
+                            xtype="textarea"/>
+                        <product
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Maximum of 35 Characters"
+                            fieldLabel="Panel Title"
+                            maxLength="35"
+                            name="productname"
+                            xtype="textfield"/>
+                        <productdescription
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Maximum of 500 Characters"
+                            fieldLabel="Panel Description"
+                            maxLength="500"
+                            name="productdescription"
+                            xtype="textarea"/>
+                        <buttontext
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Maximum of 18 Characters"
+                            fieldLabel="Panel Button"
+                            maxLength="50"
+                            name="buttonname"
+                            xtype="textfield"/>
+                        <buttonlink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Panel Button Link"
+                            name="buttonlinkname"
+                            xtype="textfield"/>
+                        <image
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Upload only .jpg or .png images with 242 x 182 px Resolution"
+                            fieldLabel="Panel image (Product) for desktop"
+                            name="imagename"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+                        <imageMobile
+                            jcr:primaryType="cq:Widget"
+							fieldDescription="Upload only .jpg or .png images with 242 x 182 px Resolution"
+                            fieldLabel="Panel image (Product) for mobile"
+                            name="imagenameMobile"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+                        <altimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the text for Panel image (Product) alt"
+                            name="panelimagealt"
+                            xtype="textfield"/>
+                        <panelbuttoncolor
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Panel Button color"
+                            name="panelbuttoncolor"
+                            showHexValue="{Boolean}true"
+                            width="{Long}300"
+                            xtype="colorfield"/>
+                    </fieldConfigs>
+                </multi>
+                <bgcolor
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Background color"
+                    name="./bgcolor"
+                    showHexValue="{Boolean}true"
+                    xtype="colorfield"/>
+                <leftarrowimage
+                    jcr:primaryType="cq:Widget"
+					fieldDescription="Upload only .jpg or .png images with 20 x 39 px Resolution"
+                    fieldLabel="Left Arrow Image"
+                    name="./leftarrowimage"
+                    showHexValue="{Boolean}true"
+                    xtype="pathfield"/>
+                <rightarrowimage
+                    jcr:primaryType="cq:Widget"
+					fieldDescription="Upload only .jpg or .png images with 20 x 39 px Resolution"
+                    fieldLabel="Right Arrow Image"
+                    name="./rightarrowimage"
+                    showHexValue="{Boolean}true"
+                    xtype="pathfield"/>
+                <carouselinterval
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Carousel Time Interval"
+                    name="./carouseltime"
+                    xtype="textfield"/>
+                <arrowleftaltimage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter the text for leftarrowImage alt"
+                    name="./leftarrowimagealt"
+                    xtype="textfield"/>
+                <arrowrightaltimage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Enter the text for RightarrowImage alt"
+                    name="./rightarrowimagealt"
+                    xtype="textfield"/>
+            </items>
+        </productcarousel>
+        <helpcarousel
+            jcr:primaryType="cq:Widget"
+            id="helpcarousel"
+            title="Help Carousel"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <hmulti
+                    jcr:primaryType="cq:Widget"
+                    baseName="hmulti_"
+                    fieldLabel="Configure the Help Carousel multifields"
+                    name="./hmulti"
+                    xtype="mtmulticompositefield">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <helptext
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Headline"
+                            name="helptext"
+                            width="{Long}300"
+                            xtype="richtext">
+                            <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <formats jcr:primaryType="cq:WidgetCollection">
+                                        <h1
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading1"
+                                            tag="h1"/>
+                                        <h2
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading2"
+                                            tag="h2"/>
+                                        <h3
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading3"
+                                            tag="h3"/>
+                                        <h4
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading4"
+                                            tag="h4"/>
+                                        <p
+                                            jcr:primaryType="nt:unstructured"
+                                            description="paragraph"
+                                            tag="p"/>
+                                    </formats>
+                                </paraformat>
+                                <styles
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <styles jcr:primaryType="cq:WidgetCollection">
+                                        <orange
+                                            jcr:primaryType="nt:unstructured"
+                                            cssName="text-orange"
+                                            text="orange"/>
+                                    </styles>
+                                </styles>
+                                <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+								<subsuperscript
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+                            </rtePlugins>
+                        </helptext>
+                        <helpdesc
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Text"
+                            name="helpdesc"
+                            width="{Long}300"
+                            xtype="richtext">
+							<rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <formats jcr:primaryType="cq:WidgetCollection">
+                                        <h1
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading1"
+                                            tag="h1"/>
+                                        <h2
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading2"
+                                            tag="h2"/>
+                                        <h3
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading3"
+                                            tag="h3"/>
+                                        <h4
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Heading4"
+                                            tag="h4"/>
+                                        <p
+                                            jcr:primaryType="nt:unstructured"
+                                            description="paragraph"
+                                            tag="p"/>
+                                    </formats>
+                                </paraformat>
+                                <styles
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                    <styles jcr:primaryType="cq:WidgetCollection">
+                                        <orange
+                                            jcr:primaryType="nt:unstructured"
+                                            cssName="text-orange"
+                                            text="orange"/>
+                                    </styles>
+                                </styles>
+                                <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+								<subsuperscript
+									jcr:primaryType="nt:unstructured"
+									features="*"/>
+                            </rtePlugins>
+							</helpdesc>
+                        <buttontext
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldDescription="Maximum of 50 Characters"
+                            fieldLabel="Button"
+                            maxLength="{Long}50"
+                            name="hbuttonname"
+                            xtype="textfield"/>
+                        <buttonDescription
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Add text for user readability"
+                            fieldLabel="Button Description text"
+                            name="buttonDescription"
+                            xtype="textfield"/>
+                        <buttonlink
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Button Link"
+                            name="hbuttonlinkname"
+                            xtype="textfield"/>
+                        <mainimage
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+							fieldDescription="Upload only .jpg or .png images of 1MB or less with 1380 x 760 px Resolution"
+                            fieldLabel="Background image for desktop"
+                            name="helpmainimage"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+                        <mainimageMobile
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+							fieldDescription="Upload only .jpg or .png images of 1MB or less with 640 x 720 px Resolution"
+                            fieldLabel="Background image for mobile"
+                            name="helpmainimageMobile"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+                        <mainaltimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the text for BackgroundImage alt"
+                            name="mainimagealt"
+                            xtype="textfield"/>
+                        <leftimageDesktop
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Panel icon for desktop"
+                            name="helpleftimageDesktop"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+                        <leftimageMobile
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Panel icon for mobile"
+                            name="helpleftimageMobile"
+                            width="{Long}300"
+                            xtype="pathfield"/>
+                        <altimage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the text for PanelImage alt"
+                            name="himagealt"
+                            xtype="textfield"/>
+                        <dotcolorselector
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Select Dot Color"
+                            name="dotselector"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <blackcolor
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Black Color"
+                                    value="black"/>
+                                <whitecolor
+                                    jcr:primaryType="nt:unstructured"
+                                    text="white color"
+                                    value="white"/>
+                            </options>
+                        </dotcolorselector>
+                    </fieldConfigs>
+                </hmulti>
+            </items>
+        </helpcarousel>
+    </items>
+</jcr:root>

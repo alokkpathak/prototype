@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <textimage
+                jcr:primaryType="cq:Panel"
+                title="Text_Image">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <textimagemulti
+                        jcr:primaryType="cq:Widget"
+                        baseName="textimagemulti_"
+                        fieldLabel="Configure the Text Image"
+                        name="./textimagemulti"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <simpletext
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text"
+                                name="simpletext"
+                                xtype="textfield"/>
+                            <textarea
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter Description"
+                                name="textarea"
+                                xtype="textarea"/>
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the Image Path"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 132x132px Resolution"
+                                name="image"
+                                xtype="pathfield"/>
+							<imageMobile
+								jcr:primaryType="cq:Widget"
+								allowBlank="{Boolean}false"								
+								fieldLabel="Enter the Image Path for Mobile"
+								fieldDescription="Upload only .jpg or .png images of 1MB or less with 130x130px Resolution"
+								mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+								name="imageMobile"
+								sizeLimit="{Long}1"
+								xtype="pathfield"/>	
+                            <altimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="imagealt"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </textimagemulti>
+                </items>
+            </textimage>
+        </items>
+    </items>
+</jcr:root>

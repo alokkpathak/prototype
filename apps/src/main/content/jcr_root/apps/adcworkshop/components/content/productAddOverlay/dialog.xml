@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Product Add Overlay">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <productOverlay
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Product Overlay"
+                        width="300"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <productOverlayTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the heading text for the Product overlay"
+                                fieldLabel="Title Text "
+                                name="./productOverlayTitle"
+                                width="300"
+                                xtype="textfield"/>
+                                <quantityLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the Quantity Label eg: Quantity:"
+                                fieldLabel="Quantity Label"
+                                name="./quantitylabel"
+                                width="300"
+                                xtype="textfield"/>
+                                <vatLabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter VAT Label eg: INCL.VAT"
+                                fieldLabel="Vat Label"
+                                name="./vatlabelText"
+                                width="300"
+                                xtype="textfield"/>
+                            <productaltimage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the text for Image alt"
+                                name="./productimagealt"
+                                xtype="textfield"/>
+                            <backToShopButtonText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Back to Shop button Text"
+                                fieldLabel="Back To Shop Button Label "
+                                name="./backToShopButtonText"
+                                width="300"
+                                xtype="textfield"/>
+                            <backToShopCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the link to continue Shopping"
+                                fieldLabel="Back to Shop Link "
+                                name="./backToShopCTA"
+                                width="300"
+                                xtype="pathfield"/>
+                            <viewBasketButtonText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the view basket button text"
+                                fieldLabel="View Basket Button Label "
+                                name="./viewBasketButtonText"
+                                width="300"
+                                xtype="textfield"/>
+                            <viewBasketCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the forgot Password text for sign in block"
+                                fieldLabel="View Basket Link "
+                                name="./viewBasketCTA"
+                                width="300"
+                                xtype="pathfield"/>
+                        </items>
+                    </productOverlay>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

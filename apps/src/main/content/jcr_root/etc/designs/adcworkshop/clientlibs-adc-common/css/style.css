@@ -1,0 +1,6225 @@
+.text-orange{
+    color:#009c3b!important;
+    }
+
+body{
+    font-family: Gotham;
+    font-weight: normal;
+    font-size: 16px;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.Thankyoupage .footer-desc-text a,.Homepage .touchBlocks a {
+     color: #FFFFFF;
+}
+.modal-header .close.disabled {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65!important;
+	pointer-events: none;
+}
+.Luxemberg .postalActual {
+    width: 90% !important;
+    -moz-appearance: textfield !important;
+}
+.Luxemberg .postalPrefix {
+    width: 10%;
+    padding-left: 0;
+    padding-right: 10px;
+    border: none!important;
+    box-shadow: none!important;
+    background-color: transparent !important;
+    text-align: right;
+    font-family: Gotham-Bold;
+}
+.Luxemberg .fixdialcode{
+	display: none;
+}
+.secondPhoneNumberLabel {
+	padding-left: 0px;
+} 
+.pageSpinner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background-color: #fff;
+    opacity: 0.5;
+}
+.page-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 85px;
+    height: 25px;
+}
+.resend-email {
+	text-align: center;
+    cursor:pointer;
+}
+.resend-email.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+    opacity: 0.6;
+}
+.disclaimerDetails, .coupon-loading {
+	display: none;
+} 
+.CookiePolicyDesktop {
+    display: table;
+    width: 100%;
+}
+.CookiePolicyMobile {
+    display: none;
+}
+.CookiePolicyDesktop p, .CookiePolicyMobile p {
+    word-break: break-all;
+}
+
+#skip a{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+}
+.create-mand{
+	padding: 15px 0px 15px 0px;
+}
+.customer-info{
+    padding-top: 20px;
+}
+.twoColumn{
+	background-color: #E4572D !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+}
+.spinner-loading{
+	float: right;
+	margin-right: 30px;
+}
+.forgot-pswd-loading {
+    display: none;
+    text-align: center;
+}
+.your-kids .painless p {
+    font-size: 15px;	
+	}
+#orderTablePlace,#lastOrderTable {
+    font-family: Gotham-Medium-Regular;
+}  
+.voucher-text img,.form-group img,#warrentyForm img,.formWrapper .checkboxOrange label,.countryClickHandler img {
+	cursor: pointer;
+} 
+.account-overview .side-menu ul li span{
+    outline: none;
+    border: none;
+}
+#editAddr,#removeAddr{
+    outline: none;
+    border: none;
+}
+div#vatForUK h4 {
+    padding-left: 15px;
+}
+.contactGlobalError p{
+	margin: -2px 0px 0px 0px !important;
+}
+#skip a:focus { 
+position:static; 
+width:auto; 
+height:auto; 
+}
+#createAccountLink{
+white-space:normal;
+}
+#cartError p{
+    padding-top:50px;
+    color:#212121;
+}
+.your-medical h2{
+	font-size: 36px;
+} 
+.modal-body h2 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.scrollFix{
+   overflow: hidden!important;
+   position: fixed!important;
+    } 	
+.phoneInfo{
+	margin-top: 10px;	
+}
+.navigatepage{
+	cursor: pointer;
+}
+.greeting-recovery-container{
+	width: 50.8%;
+	margin-top: 93px;
+}
+#forgot_password_form .forget-modal-footer{
+ padding-top: 10px;
+ padding-bottom: 62px;   
+}
+.Registration #email{
+	margin-bottom: 5px!important;
+}
+.Registration  #before-submit .error_show{
+	padding-bottom: 3px!important;
+}
+
+html:lang(it) #after-submit p:first-child, html:lang(it) #after-submitcon p:first-child{
+ padding-bottom: 28px;
+}
+
+html:lang(it) #after-resend-submit, html:lang(it) #after-resend-submitcon{
+ margin-bottom: 0;
+}
+
+html:lang(it) #forgot_password_form .forget-modal-footer{
+ padding-top: 18px;
+ padding-bottom: 62px;  
+}
+
+html:lang(it) .email-form-group,html:lang(it) .it-form-control{
+margin-bottom: 6px!important;
+}
+
+.returnClose, .returnClose:hover{
+padding: 7px 18px;
+font-size: 14px;
+background-color: #E4572D!important;
+color: #fff!important;
+}
+.getting-started .about h1{
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+.spaceErrorText{
+padding-bottom: 10px;
+}
+
+.pwdMobileAlign{
+float: left;
+}
+a.home-site-link {
+    cursor: pointer;
+}
+.disc-italy img {
+    margin-bottom: 27px;
+}
+.disc-italy a.home-site-link.btn.btn-lg.btnAccept {
+    margin-top: -10px;
+}
+.disc-italy a.btn.btn-lg.btn-margin-right {
+    margin-top: 5px;
+}
+.errorpf{
+	color: #d61031;
+	font-size: 14px;
+	padding-left: 0;
+	font-family: Gotham-Medium-Regular;
+} 	
+.returnInfoWrap{
+padding-right: 0;
+}
+.returnOrderBody{
+padding-top: 30px;
+}
+.returnOrderFooter{
+padding-bottom: 0!important;
+} 
+.forget-modal-title{
+padding-top: 17px;
+}
+.geo-disc *:focus {
+    outline: none;
+} 
+.maintenance .about {
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+.productPage .related-products {
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
+.productPage .customRichtext .about,.productPage .about {
+    padding-top: 50px;
+}
+.emaillabel{
+font-family: Gotham-Medium-Regular!important;
+color: #6f6f6f!important;
+}
+.recoverTitle{
+padding-top: 71px;
+padding-bottom: 30px;
+text-align: center;
+letter-spacing: 5px;
+padding-left: 60px;
+padding-right: 60px;
+line-height: 120%;
+    }
+.abouterrorcontent{
+padding-top: 100px;
+padding-bottom: 100px;        
+    }
+.recoverPwd{
+border: none;
+height: 50px;
+}   
+.reset-confirm-pwd{
+  padding-top: 21px;
+}
+.confirm-wrap{
+padding-top: 35px;
+padding-bottom: 85px;            
+}
+.colorred{
+    color:red;
+    }
+.reset-recovery-container{
+    width: 50.8%;
+    background-color: #F4F2F4;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding-left: 110px;
+    padding-right: 110px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fixdialcode{
+    width: 15%;
+    padding-left: 0;
+    padding-right: 10px;
+    border: none!important;
+    box-shadow: none!important;
+    background-color: transparent !important;
+    text-align: right;
+    font-family: Gotham-Bold;
+} 
+.fixdialActual{
+        width: 47% !important;
+        -moz-appearance: textfield !important;
+}
+#shipping_phone,#billing_phone{
+    -moz-appearance: textfield !important;
+width: 47% !important;
+}
+.hdcontentMinHeight h3{
+	margin-top:0px;
+}
+.email-form-group{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.forgotpassword_popup .email-form-group {
+    overflow: hidden;
+}
+#after-submit, #after-submitcon{
+    padding-left: 15px;
+    padding-right: 15px     
+    }   
+#resend,#resend:hover,#resendconsent,#resendconsent:hover {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 38px;
+    display: block;
+    color: #212121;
+    text-decoration: underline;
+    font-size: 18px;
+    font-family: Gotham-Bold;
+    margin-bottom: 22px;
+}
+#after-resend-submit{
+    margin-bottom: 23px;
+}
+.retrieve-password .about{
+   padding-top: 61px;
+}
+.retrieve-password  .about h1{
+   margin-bottom: 63px;
+} 
+.cancel, .cancel:hover{
+    font-family: Gotam-Book-Regular;
+}
+.modal-header{
+padding-top: 0!important;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+#productCount,#prod-quantity{
+    font-family: 'Gotham-Medium-Regular';
+}
+h1,h2,h3,h4,h5{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.prod-spinnerError {
+    padding-top: 140px;
+}
+.about h3{
+font-size:32px;
+        text-transform: uppercase;
+        margin-top: 0px;
+    margin-bottom: 20px;
+}
+.about h4{
+font-size:22px;
+        font-family:Gotham-Medium;
+        margin-top: 0px;
+    margin-bottom: 75px;
+ margin-top: 40px;
+}
+.errorfour .about{
+    padding-top:50px;
+    padding-bottom:50px;        
+        }
+.about h4 span{
+        font-family:Gotham-Medium;
+}
+a#getSoftware {
+    margin-top: 45px;
+}
+.italy .prod-two-column h2, .italy .prod-two-column h3{
+    font-size: 26px;
+}
+.apply-help .bottom-text {
+    min-height: 250px;
+}
+.productPage .gs-row5 .apply-help{
+    margin-bottom:0px;
+    margin-top: -10px
+}
+.apply-help .bottom-text p {
+    padding-top: 5px;
+}
+.prod-two-column #btnProductShare {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.input-group.bootstrap-touchspin{
+    z-index: 999;
+}
+.productAddOverlay{
+    z-index: 9999;
+}
+.productPage .apply-help .bottom-text {
+    height: auto;
+    min-height: 0px;
+}
+.prod-spec-table th{
+    font-family: Gotham-medium;
+    font-size: 14px;
+    color: #000;
+padding-top:22px;
+padding-bottom:22px;
+}
+.prod-spec-table td{
+    font-family: Gotham-Book;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+#prod-quantity{
+        color: #4f4f4f;
+    font-family: 'Gotham-bold';
+    font-size: 20px;
+}
+.apply-help .bottom-text p {
+    padding-top: 0px;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+p,input,select{
+    font-family:Gotham-Book-Regular;
+    color: #8E8E8E;
+}
+
+.bg-watermark p{
+    color:#83630C;
+    }
+.h4,.h2,.h5{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.panelUserName{
+    font-family:Gotham-Bold !important;
+    font-size: 16px;
+    color: #212121;
+    text-transform: uppercase;
+}
+.btn, .btn-lg,label, a {
+    font-family:Gotham-Light-Regular;
+}
+
+span{
+    font-family: Gotham-Book-Regular;
+}
+h1 span, h2 span, h3 span {
+      font-family:Arial, Helvetica, sans-serif;
+} 
+.agreementTerms{        
+    margin-top: 15px;       
+}       
+      
+.checkboxOrange label>p{        
+    line-height: 120%;
+}
+.touchBlocks{
+    min-height: 320px;
+}
+.touchBlocks h3 span,.touchBlocks h5 span{
+    font-family: 'Gotham-Medium-Regular' !important;
+    font-size:22px;
+}
+.touchBlocks h4 span{
+    font-family: 'Gotham-Book-Regular' !important;
+    font-size:20px;
+}
+.helpPanes h4{
+    min-height: 100px;
+}
+.experiencePanes h4{
+    min-height: 170px;
+}
+.padding-top-zero{
+padding-top:0px !important;
+}
+.remove{        
+text-align:right;                        
+   }
+.margin-right{
+        margin-right: 20px !important;
+    }
+.close,.close:focus, .close:hover{
+            opacity: 1 !important;
+            font-weight: normal !important;
+            text-shadow: none !important;
+    }
+.vat {
+        font-size : 10px;
+        font-family: Gotham-Light-Regular;
+        color: #8E8E8E;
+      }
+.imageGraph{
+
+width:100%;
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+input[type=search]::-ms-clear {
+    display: none;
+}
+.checkboxOrange label{
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+#shippingDetails .checkboxOrange label{
+    left:16px;
+}
+#discoverStortyLinkBtn .btn{
+    color: #003b4a;
+    border-radius: 0;
+   font-family: 'Gotham-Medium-Regular';
+}
+.payment .checkboxOrange label{
+    left:4px;
+}
+.checkboxOrange input[type=checkbox] {
+   width:1px;
+   opacity: 0;
+}
+.checkboxOrange input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+.checkboxOrange label>p{
+    padding-left: 30px;
+    color: #8E8E8E !important;
+    font-size: 13px;
+    margin-top: 0px;
+    font-family: Gotham-Book-Regular;
+    width:750px;
+    font-weight: normal;
+    text-transform: none;
+  }
+.formWrapper .checkboxOrange label>p,#persDetails .checkboxOrange label>p,.payment .checkboxOrange label>p,.softwareBlock .checkboxOrange label>p{
+    width:auto;
+    }
+.formWrapper .checkboxOrange label>p{
+	margin-top: -8px;
+}	
+label {
+ display: inline-block;
+ font-size: 13px; margin-right:10px; line-height:18px;
+}
+.checkboxOrange label:before {
+ content: "";
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ vertical-align:middle;
+ position: absolute;
+ background-color: #ffffff;  
+ color: #ffffff;
+ text-align: center;
+ border-radius: 1px;
+ border: 1px solid #8e8e8e;
+}
+input[type=checkbox]:checked + label:before {
+ content: "\2713";
+ background-color: #E4572D;
+ font-size: 15px;
+ color:#ffffff !important;   
+ border: none;
+}
+.hidden{
+    display:none;
+}
+/*Styles for scroll bar for popin page*/
+.heropanelinfo .modal-body{
+	margin-right: 5px;
+	max-height:250px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.heropanelinfo .modal-body::-webkit-scrollbar-track,#myModal-account .modal-body::-webkit-scrollbar-track,#legalinfoModal .modal-body::-webkit-scrollbar-track,.downloadnowOverlay .modal-body::-webkit-scrollbar-track,#myModal-country .modal-body::-webkit-scrollbar-track{	
+	border-radius: 10px;
+	background-color: rgb(246,245,246);
+}
+
+.heropanelinfo .modal-body::-webkit-scrollbar,#myModal-account .modal-body::-webkit-scrollbar,#legalinfoModal .modal-body::-webkit-scrollbar,.downloadnowOverlay .modal-body::-webkit-scrollbar,#myModal-country .modal-body::-webkit-scrollbar{
+	width: 8px;
+	background-color: rgb(246,245,246);
+}
+
+.heropanelinfo .modal-body::-webkit-scrollbar-thumb,#myModal-account .modal-body::-webkit-scrollbar-thumb,#legalinfoModal .modal-body::-webkit-scrollbar-thumb,.downloadnowOverlay .modal-body::-webkit-scrollbar-thumb,#myModal-country .modal-body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+	background-color: #ef6f3e;
+
+}
+#myModal-account .modal-body,#legalinfoModal .modal-body,.downloadnowOverlay .modal-body{
+	margin-right: 5px;
+	max-height:400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/*end Styles for scroll bar for popin page*/
+
+/* ==========================================================================
+                           sticky header product page
+========================================================================== */
+.sticky_header {
+    min-height: 130px;
+    z-index: 999;
+    max-width: 1380px;
+}
+.productTitle {
+    font-size: 25px;
+    font-family: Gotham-Bold;
+    padding-top: 50px;
+    padding-left: 85px;
+    text-transform: uppercase;
+}
+.priceBlock {
+    padding-top: 35px;
+	padding-left:55px;
+}
+.priceBlock h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+span.productPrice {
+    font-family: gotham-medium-regular;
+    font-size: 40px;
+}
+.inclVat {
+    font-size: 16px;
+}
+.productPriceDec {
+    font-size: 25px;
+    font-family: gotham-medium-regular;
+    margin-left: -5px;
+}
+.productStickyButton {
+    padding: 42px 100px 0px 0px;
+}
+.sticky_error{
+	padding-top: 0px !important;
+    padding-left: 85px !important;
+	padding-bottom: 10px !important;
+    color: #E4572D !important;
+}
+.login-wrap .login-container .activationPending{
+    color: #d61031;
+    font-size: 14px;
+    padding-left: 0;
+    font-family: Gotham-Medium-Regular;
+	margin-top: 12px;
+    font-weight: normal;             
+}
+.loginpage .email-form-group .error_show {
+    margin-bottom: -3px !important;
+}
+.italy.loginpage .email-form-group .error_show {
+    margin-bottom: -3px !important;
+    margin-top: -3px !important;
+}
+.italy.retrieve-password .recoverTitle {
+    padding-left: 40px;
+    padding-right: 40px;
+} 
+.account-details .side-menu ul > li>a>span{
+    font-family:Gotham-Medium-Regular;
+} 
+.account-details .menu ul > li>span, .account-details .side-menu ul > li>a>span.active {
+    font-size: 13px;
+    font-family:Gotham-Bold;
+}
+.account-details .side-menu li a{
+    float: right;
+    color: #4f4f4f;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-family: 'Gotham-Medium-Regular';
+}
+.right-inner-addon {
+    position: relative;
+    font-family:Gotham-Light-Regular;
+    padding: 10px 0px ;
+}
+.img-font{
+    font-size:130px;
+}
+.head-form{
+    border-radius: 0px;
+}
+.right-inner-addon img {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+.padding-left{
+    padding-left: 0px;
+}
+.padding-right{
+    padding-right: 0px;
+}
+.sharefuction img {
+    padding: 10px;
+    width: 50px;
+}
+#sharefuction{
+    position:absolute;
+    top:50px;
+    right:2%;
+    width:75px;
+    background-color:#a1a1a1;
+    }
+#btnProductShare{
+	min-width:70px;
+}
+.shareVideoTut {
+    position: absolute;
+    top: 46px;
+    right: -15px;
+    background-color: #E4572D;
+    z-index: 99;
+    width: 70px;
+}
+.shareVideoTut img{
+    padding: 10px;
+    width: 50px;
+}
+a.btnVideoshareTutStyle, a.btnVideoshareTutStyle:hover, a.btnVideoshareTutStyle:focus{
+    z-index: 999;
+    background-color: #E4572D;
+	width:70px;
+}
+
+#shareCarousel .sharePopup{
+    width: 70px;
+    background-color: #E4572D;
+}   
+
+#shareCarousel .sharePopupDesktop {
+    width: 70px;
+    background-color: #E4572D;
+    margin-left: 0!important;
+    left: -3px;
+    top: -30px;
+}    
+
+.morelink, .morelink:hover, .morelink:focus {
+    border-color: #8E8E8E;
+    color: #8E8E8E;
+    background: transparent;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+.moreSection .btn:focus {
+     outline: 2px solid #8E8E8E;
+    border-color: #8E8E8E;
+}               
+#infoModal .modal-header{               
+    border-bottom:0;                
+    padding:0;              
+}               
+#infoModal .modal-body{             
+    text-align:center;              
+}               
+#infoModal .modal-dialog{               
+    width: 500px;               
+}               
+#infoModal .close{              
+    padding: 5px 15px;              
+    font-size: 30px;                
+    background-color:#E4572D;               
+    color: #fff;                
+}               
+#infoModal .modal-header h4{        
+    padding-top: 50px;  
+    text-align:center;
+    font-size:32px;
+}
+.padding-nav{
+    padding-top: 6%;
+}
+.prod-panel{
+    border:5px solid #c3c3c3;
+    }
+
+.morecontent {
+    display: none;
+}
+.more span{
+    font-family: Gotham-Book-Regular;
+}
+/* ==========================================================================
+                        banner area section
+========================================================================== */
+        
+
+        .item .banner-new .btn,.carousel-desc .btn,.media-body .btn,.gs-btn,.disclaimer .btn,.prod-row-desc .btn,.item .btn,.login-container .form-group .login-btn .btn,
+        #express,#btn-ok,.cancel,.cancel:hover,#btnCouponOk,.AddressBtn,.AddressBtn:hover,.AddressBtn:focus,.seebtn,.seebtn:hover,#voucher_btn-ok{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border:2px solid #009c3b;
+            color:#009c3b;
+            background: none;
+            border-radius: 0px;
+            margin-right: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding:14px 16px;
+            font-size: 14px;
+            font-family: Gotham-Medium-Regular;     
+            font-weight: normal;
+} 
+.item .banner-new .btn{
+	margin-top:15px;
+} 
+.item .banner-new .btn:hover{     
+    font-size: 14px;        
+    font-family: Gotham-Medium-Regular;     
+    font-weight: normal;
+    border-color:#e4572d;            
+}
+.productPage .banner-new .banner-desc>h1 {
+	text-transform: none;
+}
+.prod-row-desc .btn{
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+#btnCouponOk{
+    padding-top: 14px;
+    padding-bottom:14px;
+    margin: 0px 15px 4px;
+}
+.AddressBtn,.AddressBtn:hover, .AddressBtn:focus{
+    margin-top: 33px;
+    margin-bottom: 0px;
+    padding-top:14px;
+    padding-bottom:14px;
+    color:#E4572D;
+    }
+.seebtn,.seebtn:hover,.prod-row-desc .btn{
+    margin-right: 0px;
+}
+.cancel,.cancel:hover{
+    margin: 0px;
+}
+.img-infos{
+    margin-top:0px;
+}
+/* ==========================================================================
+about section
+========================================================================== */   
+.graph{    
+    margin-bottom: 50px;
+}
+.about .inside .color-head{
+    color: #0385a6;
+}
+.about h2,.abouterror h1,.about .about-heading h4,.Homepage .about h4,.discover-your-meter .about h3 {
+    color: #E4572D;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    letter-spacing: 5px;
+    font-size:42px;  
+	font-family: 'Gotham-Bold';	
+}
+.abouterror{
+    padding-top:50px;
+    padding-bottom:20px;        
+        }
+.abouterror img{
+    padding-bottom:30px;
+            }
+.about h2 span{     
+    font-family: Arial, Helvetica, sans-serif !important;      
+}
+.about{
+   padding-top: 15px;
+}
+#receiveNewsletter{     
+    padding-bottom:50px;        
+}
+#receiveNewsletter::after, #receiveNewsletter::before{
+    content:"";
+    display:block;
+    clear:both;
+}
+.about h1{
+    font-weight: 700;
+    color: #009c3b;
+    margin-bottom: 35px;
+    margin-top: 0px;
+    letter-spacing: 3px;
+    font-size:40px;
+    text-transform: uppercase;
+}
+.softwareBlock .checkboxOrange{
+    text-align: left;
+}
+.about-heading >.success{
+    margin-top:80px;
+    margin-bottom: 20px;
+}
+
+.for-padding{
+    padding:6px 25px;
+    background-color:#E6E6E6;
+}
+.about input[type='email']{
+    width: 100% !important;
+    font-family:Gotham-Medium-Regular;
+    color:#8e8e8e; 
+    font-size: 15px;    
+}
+label[for='chkEmail']{
+    color: #8E8E8E;
+    font-size: 13px;
+    font-family: Gotham-Medium-Regular;
+}  
+#lblSuccessMsg{
+    color: green;
+    margin-top: 20px;
+    clear:both;
+}  
+
+
+.about .inside h1{
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    color:black;
+}
+/* ==========================================================================
+                        section taken from Ecom flow
+========================================================================== */
+.faq-links .active{
+    color: #E4572D !important;
+}
+
+/* ==========================================================================
+                        carousel section
+========================================================================== */
+.border-left{
+    border-left: 3px solid black;
+   }
+
+.carousel-rect>li{
+    width:11px;
+    border: none;
+    background:#0B173B;
+    height: 4px;        
+    margin: 1px;
+}
+.carousel-rect>.active{
+    width:11px;
+    height: 4px;
+    margin: 1px;
+    background:#ffffff;
+}
+.gs-row5 .apply-help h4{
+    color:#3c3c3c !important;
+}
+#myModal-account .modal-header h4{
+    text-align:center;
+}
+.media-body .btn,.media-body .btn:hover{
+    color:white;
+    background-color:#E4572D;           
+}
+/* ==========================================================================
+                         about get in touch section
+========================================================================== */
+        .bg-orange{         
+            height:330px;
+            margin-left: 20px;
+        }
+        .bg-img{
+            padding-top: 60px;
+            padding-bottom:30px;
+        }
+        .bg-orange h3,.bg-orange h5{
+            margin-top:0px;
+            margin-bottom:50px;
+        }
+        .phoneIcon{
+            border-radius: 74px;
+            width: 15%;
+            height: 60px;
+            color:#E4572D;
+            margin-top: 30px;
+
+        } 
+        .btn-sharp{ 
+             border-radius:0;
+        }
+
+/* ==========================================================================
+                        cookiebarcomponents
+========================================================================== */
+.cookie_directive_container{
+    display: none;
+}
+#cookie_accept{
+    padding-top: 20px;
+    font-size: 14px;
+}
+.cookie-btn, .cookie-btn:hover{
+    background-color:#FFC11B;
+    border-color: #555;
+    border-radius: 0px;
+    font-family: Gotham-Medium-Regular;     
+    font-size: 14px;        
+    font-weight: normal;
+}
+/* ==========================================================================
+                        Pagination components
+========================================================================== */
+.paging-nav a {
+            padding: 6px 16px;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 1.42857143;
+            color: #8E8E8E;
+            background-color: transparent;
+            border: 1px solid #8E8E8E;
+        }
+        .selected-page{
+            color: #E4572D !important;
+            border: 1px solid  #E4572D !important;
+        }
+        .paging-nav{
+            margin-top: 40px;
+        }
+        #lastOrderTable .paging-nav{
+            display: none;
+        }
+/* ==========================================================================
+                        Footer components
+========================================================================== */
+
+#lblEmailError2,#lblEmailError2>p,#lblEmailError3,#lblEmailError p{
+    font-weight: normal;
+    float: left;
+    color: #d61031;
+    margin: 5px 0px 0px 15px;
+    font-size: 14px;
+    font-family: Gotham-Medium-Regular;
+}
+#lblEmailError,#lblCheckboxError{
+    font-weight: normal;
+    color: #d61031;
+    font-size: 14px;
+    font-family: Gotham-Medium-Regular;
+    padding-left: 0;
+    padding-right:0px;
+    margin: 0;
+    width: 100%;    
+}
+.sub-container #lblCheckboxError{
+	padding-left:25px;
+    }
+.removeSpace{
+padding-left: 0;    
+}
+#lblEmailError2,#lblEmailError3{
+    margin: 15px;
+    font-size: 14px;
+    
+}
+.about-heading .margin-about{
+    color:#212121;
+        }
+.hdcontentMinHeight{
+    min-height:285px;
+}       
+
+.traffic_table .table{
+    margin-top:50px;
+} 
+#chkEmail{
+                margin: 0;
+                width: 22px;
+                height: 22px;   
+                vertical-align: middle;
+                margin-right: 10px;
+}
+.divChk{    
+    text-align: left;
+    font-family:Gotham-Medium-Regular;
+    margin-bottom:30px;
+}
+.thankyouWrapper,.thankyouWrappererror{
+                color: #8E8E8E;
+                margin-top:15px;
+}
+.thankyou>.subscribesuccess>.newletterforfooter>.padding-zero>div>div>.sub-container>.padding-left>div>form>#lblEmailError{
+    float: left !important;
+    text-align: left !important;
+    margin-left: 14px !important;
+
+}
+.thankyou>.subscribesuccess>.newletterforfooter>.padding-zero>div>div>.sub-container{
+    height: auto !important;
+        display: inline-block !important;
+}
+.thankyou>.subscribesuccess>.newletterforfooter>.padding-zero>div>div>.sub-container .divChk p{
+    margin-top: -28px !important;
+}
+.privacy_policy>section>div>table>tbody>tr>th:nth-child(2){
+    width : 20% !important;
+}
+
+.aboutus-text table table tr td,.aboutus-text table table tr th{
+    border: 1px solid #d9d9d9 !important;
+    border-collapse: collapse !important;
+       padding: 5px 10px !important;
+}
+
+.privacy_policy>section>div>table>tbody>tr>th, .privacy_policy>section>div>table>tbody>tr>td{
+                padding: 5px 10px !important;
+    vertical-align: top !important;
+}
+
+
+/* ==========================================================================
+                         GETTING STARTED PAGE
+========================================================================== */
+
+.header-below h1{
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+.media-text{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+/*.discover-your-meter .media-text{
+    padding-bottom: 60px;
+}*/
+.video_carousel{
+    padding-bottom:90px;        
+        }
+.discover-your-meter .video_carousel{
+    margin-top: 80px;  
+    padding-bottom: 0px; 	
+}
+.media-text h2,.media-text h3{
+    color:#0385a6;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+    font-size:32px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.margin-bottom{
+    margin-bottom:60px;
+    }
+.media-body p{
+            color:#ffffff;
+            font-family: 'Gotham-Book-Regular';
+            font-size:18px;
+            padding-top:20px;
+        }
+.media-left{        
+            padding-top: 6px;       
+            padding-right: 25px;        
+        }   
+        
+.padding-top{
+    padding-top: 5px;
+}
+.btn-margin{
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.gs-btn{
+    margin-right: 0px;
+    font-size: 14px;        
+    margin-top: 30px;
+}
+
+
+    /* ==========================================================================
+                        Help Tutorials page
+========================================================================== */
+
+.apply-help{
+    padding: 10px 0px 0px;
+
+}
+.v-padding-top{
+    padding-top: 40px;
+}
+.gs-row5 li h5{
+    font-size: 14px;
+    color: #666666;         
+}
+.bottom-text{
+    height: 265px;
+}
+.type2{
+    background: transparent;
+}
+.bottom-text h4{
+    padding-top: 25px;
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-size:32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color:#212121;
+}
+.bottom-text h4{
+    color:gray;
+}
+.bottom-text p{
+     width: 90%;
+    margin: auto;
+    color: #6e6e6e;
+    padding-top: 30px;
+    font-size: 16px;
+}
+.text-padding{
+    padding-top: 5px !important;
+}
+.bottom-text>a{
+    position: absolute;
+    top: 220px;
+    left: 50px; 
+}
+.link-txt{
+    color: #009c3b!important;
+    font-family: 'Gotham-Medium-Regular';
+    padding-left: 10px;
+    font-size:14px;
+    word-break:break-word;
+    text-transform: uppercase;
+    }
+.pInstruction{
+    color:gray !important;
+}
+.pSubInstruction{
+    padding-top: 17px;                                      
+    color:gray;
+    font-size: 10px !important;
+}
+.modal-content iframe{
+        margin:auto;
+        display: block;
+    }
+.modal-header h4,.modal-footer h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    word-wrap:break-word;
+    padding-top:40px;
+}
+.word-title{
+    margin-right: 135px;
+}
+.tutorial .col-sm-3:nth-child(5){
+    clear:both;
+}
+/* ==========================================================================
+                        contact page
+========================================================================== */
+.form-btn,.form-btn:hover{
+    background:#E4572D;
+    color:#ffffff; 
+    margin-top: 20px;   
+    border-radius: 0px;
+    padding-left:30px;
+    padding-right:30px;
+    font-family: Gotham-Medium-Regular;
+    font-size:14px;
+}
+.form-btn-margin{
+    margin-bottom: 60px;
+}
+.form-group label {
+    font-weight: normal;
+    font-family: Gotham-Medium-Regular;
+    font-size: 16px;  
+    color: #4f4f4f;
+    margin-bottom: 4px;
+}
+.contactUs .about h1{
+    margin-bottom:20px;
+        }
+.form-group .form-control{
+    border-radius: 0px;
+    margin-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.error,.error1,.error2,.error3,.error4,.error5{
+    display: none;
+    font-size: 14px;
+    padding-left: 0px;
+}       
+
+.error_show,.error1,.error2,.error3,.error4,.error5,.error_max{
+    color: #d61031;
+    font-size: 14px;
+    padding-left: 0px;
+    font-family: Gotham-Medium-Regular;
+}
+input.invalid, textarea.invalid{
+  border: 2px solid #d61031;    
+}
+input.valid, textarea.valid{
+    border: 1px solid #ccc;
+}
+
+/* ==========================================================================
+                          ACCOUNT PAGE
+========================================================================== */
+.form-horizontal .control-label {
+    padding-top: 12px;
+    margin-bottom: 0;
+    text-align: right;
+    color: #4f4f4f;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: Gotham-Book-Regular;
+    padding-bottom: 10px;
+}
+#login_email,#login_pwd{
+border: none;
+height: 30px;
+}
+
+#login_submit{
+padding-top: 15px;
+}
+.contact-form .login-container .reg-btn {
+    margin-top: 35px;
+}
+.login-container,.sub-container {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 100px;
+    height: 430px;
+    padding-right: 60px;
+    padding-left: 60px;
+ 
+}
+.login-container{
+	margin-bottom: 35px;
+}
+.noteforgetpwd{
+    font-family: Gotham-Book-Regular;
+    color: #8E8E8E;
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+.emaillabel{
+    padding-top: 30px;
+    font-size: 16px;
+    color: #4f4f4f;
+    font-family: Gotham-Book-Regular;
+    padding-bottom: 15px;
+}
+
+.modal-header{
+padding-top: 10px;
+}
+
+
+.modal-footer{
+ padding-bottom: 70px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    letter-spacing: 2px!important;
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+    
+#email{
+height: 50px;
+}
+#forgetPwdReset, #forgetPwdReset:hover{
+    color: #4f4f4f;
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: Gotham-Book-Regular;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#userRegiPwdReset, #userRegiPwdReset:hover{
+    color: #4f4f4f;
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: Gotham-Book-Regular;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.aResetPassword{
+    color: #d61031 !important;
+    padding-left: 0px !important;
+    font-family: Gotham-Medium-Regular !important;
+    opacity: 1 !important;
+    }
+.userResetPassword{
+    color: #E4572D !important;   
+    }
+.sub-container{
+    height: 700px;
+}
+.login-container h2,.sub-container h2,.login-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 29px;
+    color: #212121;
+    line-height: 120%;
+    margin-top: 30px;
+}
+.sub-container h2,.sub-container p,.sub-container form{
+    color: white;
+    padding-top: 20px;
+}
+.sub-container button,.sub-container button:hover,.sub-container button:focus{
+    border: 1px solid white !important;
+}
+.sub-container label{
+    color: white !important;
+    font-family: Gotham-Light-Regular;
+}
+.sub-container .input-lg {
+    padding: 10px 23px
+    }
+.login-container p{
+    color: #4f4f4f;
+    padding-top: 10px;
+    padding-right: 0px;
+    font-size: 18px;
+}
+.login-container label{
+    text-transform: uppercase;
+    font-family:Gotham-light-Regular;
+    color:black;
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-weight: bold;
+
+}
+.forgot,.forgot:hover {
+    font-family:Gotham-Light-Regular;
+    color: black;
+    font-size: 15px;
+}
+#forgot_password_form .modal-body {
+margin-top:20px;
+} 
+.login-container .reg-btn{
+    margin-top: 45px;
+    
+}
+.login-btn>.btn{
+            margin-right: 10px !important;
+            letter-spacing: 0px !important;
+            margin-left: 60px;
+        }
+.contact-form h1{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.form-group>.col-sm-5>.text-orange{
+    margin-left: 25px;
+    font-size:13px;
+}
+#after-submit,#after-resend-submit, #after-submitcon,#after-resend-submitcon{
+    display: none;
+    padding-top:20px;
+}
+#before-submit,#before-submitcon{
+    padding: 20px 60px 10px;
+}
+
+.modal-header .close{
+    padding: 5px 15px;
+    font-size: 30px;
+    background-color:#000000;
+    color: #fff;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-footer{
+    border-top: none;
+    text-align: center;
+}
+/* ==========================================================================
+                         BreadCrumb
+========================================================================== */
+.breadcrumb{
+    background-color: transparent;
+}
+.btn-breadcrumb a{
+    font-family: 'Gotham-Medium-Regular';
+}
+ .btn-breadcrumb .btn:not(:last-child):after {
+                  content: " ";
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  border-top: 25px solid transparent;
+                  border-bottom: 25px solid transparent;
+                  border-left: 10px solid white;
+                  position: absolute;
+                  top: 50%;
+                  margin-top: -25px;
+                  left: 100%;
+                  z-index: 3;
+                }
+.btn-breadcrumb .btn:not(:last-child):before {
+                  content: " ";
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  border-top: 25px solid transparent;
+                  border-bottom: 25px solid transparent;
+                  border-left: 10px solid rgb(173, 173, 173);
+                  position: absolute;
+                  top: 50%;
+                  margin-top: -25px;
+                  margin-left: 1px;
+                  left: 100%;
+                  z-index: 3;
+                }
+
+                /** The Spacing **/
+.btn-breadcrumb .btn {
+                  padding:18px 12px 18px 35px;
+                  background-color: transparent;
+                  border: none;
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  font-family:Gotham-Medium-Regular;
+                  color: #3c3c3c;
+                }
+                .btn-breadcrumb .btn:first-child {
+                  padding:18px 6px 18px 35px;
+                }
+                .btn-breadcrumb .btn:last-child {
+                  padding:18px 18px 18px 35px;
+                   color: #05658e;
+                }
+                .btn-breadcrumb .btn.btn-default:not(:last-child):after {
+                  border-left: 15px solid #F4F2F4;
+                }
+                .btn-breadcrumb .btn.btn-default:not(:last-child):before {
+                  border-left: 15px solid #ccc;
+                }
+                .btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+                  border-left: 15px solid #F4F2F4;
+                }
+                .btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+                  border-left: 15px solid #adadad;
+                }
+                .parent-breadcrumb{
+                    margin-top: 23px;
+                    margin-left: 48px;
+                }
+                .abt-breadcrumb{
+                                margin-bottom:-42px;
+                }
+                .outer {
+                    background-color:#F4F2F4;
+                    width:90px; 
+                    height:90px;
+                    position:relative;
+                    border-radius: 50%;
+                }
+                .inner-blue1 {
+                    background-color:#0096B4;
+                    top: 21%; left:21%; 
+                    width:58%; 
+                    height:58%; 
+                    position: relative;
+                    border:2px solid #fff;
+                    border-radius: 50%;
+                }              
+                .inner-blue2 {
+                     background-color: #0096B4;
+                     top: 8%;
+                    left: 8%;
+                    width: 85%;
+                    height: 85%;
+                    position: relative;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                }              
+                .inner-white {
+                background-color: #FFF;
+                top: 37%;
+                left: 37%;
+                width: 25%;
+                height: 25%;
+                position: relative;
+                border-radius: 50%;
+                }
+
+/* ==========================================================================
+                         PRODUCT PAGE
+========================================================================== */
+/*Product starter pack*/
+        
+        .Product-Text, .c19{
+            padding-left:0;
+            padding-right:0;    
+        }
+        .font-uppercase{
+            text-transform: uppercase;
+        } 
+        .modal-body h4{
+            text-transform: uppercase;
+            padding-bottom: 15px;
+        }
+              
+  .Product-Text h2, .prod-two-column h2,.prod-two-column h3, .painless h2, .painless h3{
+             letter-spacing: 5px;
+             font-weight:bold;
+             text-transform: uppercase;
+        }
+        .prod-two-column h2, .prod-two-column h3{
+            font-size: 28px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #btnAddtobasket{                                     
+           font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;                        
+        }                              
+
+        /*Spinner*/
+        input[type=number] {
+            height: 45px;
+            line-height: 30px;
+            padding: 0 5px 0 20px;
+            border: 2px solid #E4E4E4;
+        }
+        input[type=number]::-webkit-inner-spin-button { 
+            -webkit-appearance: none;
+         -moz-appearance: none;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -moz-appearance: none;
+            margin: 0;
+        }
+        input[type=number]::-webkit-inner-spin-button{          
+            opacity:1;
+            cursor:pointer;
+            display:block;
+            width:8px;
+            color: #333;
+            text-align:center;
+            position:relative;
+        }
+        @-moz-document url-prefix() {
+            input[type=number] {
+                -moz-appearance: none;
+                /*background: url('/content/dam/adc/fsl/images/global/en/spinner-arrow.png') no-repeat 50% 50%;*/
+                height: 40px;
+                padding-left: 15px;
+                position: relative;
+                right: 4px;
+                width: 80px;
+                cursor:pointer;
+            }
+        }
+        input[type=number]::-webkit-inner-spin-button { 
+           /* background: url('/content/dam/adc/fsl/images/global/en/spinner-arrow.png') no-repeat 50% 50%;*/
+            height: 40px;
+            padding-left: 15px;
+            position: relative;
+            right: 4px;
+        }        
+        .product_text .about{
+            padding-top:0px;
+        }
+             
+        /*How It Works*/
+        
+        /*savings and discrete section - image on left*/
+        .bg-amber{
+            background-color:#E4572D;
+        }
+        .prod-two-column p{
+            margin-left: 9%;
+            margin-right: 8%;
+            padding-top: 22px;
+            line-height: 1.6em;
+            color:#fff;
+            font-family: Gotham-Book-Regular;
+        }
+        
+        .prod-row-desc{
+            padding-top: 8%;   
+            color:#fff;
+            display: none;
+        }   
+        .banner-painless{
+            position:absolute;
+             width: 30%;
+            margin-left: 5%;
+            top: 0%;
+        }
+        .service h2{
+            color:#E4572D;
+         }       
+        .pInstruction{
+            padding: 0 17%;
+            color: #8E8E8E;
+    font-size: 14px;
+    font-family: Gotham-Medium-Regular;
+
+        }
+        .pSubInstruction{
+            padding: 0px;           
+            color: #8E8E8E;
+            font-size: 10px;
+            margin: 0;
+        }
+        .margin-top{
+            margin-top: 4px;
+        }
+        .service p.desc{
+            padding: 15px 20%;
+        }
+    
+.breadcrumb{
+    margin-top:-9px;
+        margin-bottom:-3px;
+    } 
+
+.active-menu{
+    box-shadow: inset 0px -3px 0px #009c3b;
+    padding-bottom: 10px;
+}
+/******** spinner************/
+.bootstrap-touchspin-up, .bootstrap-touchspin-down{
+        border: none;
+        color:#8E8E8E;
+       
+}
+.input-group.bootstrap-touchspin{
+height: 45px;
+    width: 85px;
+    border: 1px solid #ccc;
+}
+.bootstrap-touchspin .input-group-btn-vertical i {
+        left: 2px !important;
+     font-size:15px !important;
+    }
+
+.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{
+    margin-top:0 !important;
+}
+i.glyphicon-chevron-down{
+top:5px !important;
+}
+i.glyphicon-chevron-up{
+    top:0 !important;
+}
+.input-group-btn-vertical{
+        border: solid 1px #ccc;
+    border-left: 0;
+}
+.bootstrap-touchspin .input-group-btn-vertical i:hover{
+    color:#ccc;
+}
+.bootstrap-touchspin-up:hover, .bootstrap-touchspin-down:hover{
+        background-color: transparent !important;
+}
+.spinnerError{
+width:108px;
+}
+/************end of spinner*************/
+
+/*********************************
+    Applying the sensor
+***********************************/
+.preparing-skin td{
+   font-size:16px;
+    color:#4f4f4f;
+}
+.preparing-skin td {
+     font-family:Gotham-Book-Regular;
+}
+.preparing-skin tr td:first-child{
+               /* font-family:Gotham-Medium-Regular;*/
+    vertical-align: middle;
+}
+.table_for_sensor{
+    padding-top:10px;
+}
+.img-applying-sensor{
+    height:515px;
+}
+.prep-desc{ 
+    margin:20px 28% 30px 28%;
+}
+.preparing-skin .col-md-9{
+    margin-left:12%;
+}
+.preparing-skin p.prep-desc{
+    margin-top:20px;
+}
+/*.preparing-skin th,.preparing-skin td{
+    padding:20px !important;
+}*/
+#faq-table td{
+    padding :0px !important;
+}
+.preparing-skin td{
+/*  padding :20px !important;*/
+    font-family:Gotham-Book-Regular;
+    text-align:left;    
+}
+
+.preparing-skin td[rowspan]{
+        vertical-align:middle;
+}
+.preparing-skin th{
+    font-family: Gotham-Medium-Regular;
+    font-size:16px;
+    color:#000;
+
+}
+.preparing-skin .panel-default{
+    border:0;   
+        -webkit-box-shadow: none;
+    margin-bottom:0;
+	box-shadow : none;
+}
+.preparing-skin .panel-title{
+    border-top: 1px solid #ddd;
+        padding-top: 30px;
+    padding-bottom: 0;
+
+}
+.preparing-skin .panel-default>.panel-heading{
+    background-color: transparent; 
+    border-color: transparent;
+        padding-top: 30px;
+        border:0;
+}
+.preparing-skin .panel-default>.panel-heading span{
+    cursor: pointer;
+}
+.preparing-skin .pnl-title{
+    font-family: Gotham-Medium-Regular;    
+    letter-spacing: 2px;
+}
+.preparing-skin .pnl-title.active{
+    color: #E4572D;
+}
+.preparing-skin .panel-default .glyphicon{
+    color: #212121;
+    font-size: 20px;
+}
+.preparing-skin .col-md-9{
+    margin-left:5%;
+}
+/* ==========================================================================
+                          COUNTRY PAGE
+========================================================================== */
+.country-selection .flag-name{
+    font-size: 18px;
+    text-align: center;
+    font-family:Gotham-Light-Regular;
+    padding-left: 20px;
+    
+}
+.list-group-item{
+    border:none;
+    padding-bottom: 30px;
+}
+.carousel-inner h2{     
+    font-size: 32px;        
+}
+/* ==========================================================================
+                        using your meter
+========================================================================== */   
+.uym table tbody tr td,.uym table thead tr th{
+    padding: 20px;
+}
+.btn-padding,.btn-padding:hover{
+    padding-left: 38px;
+    padding-right: 38px;
+}
+.uym-padding{
+    padding:10px;
+    margin-top: 10px;
+}
+
+/* your data page Carousel*/
+
+.expCarousel{
+    margin-top: 100px;
+}
+
+
+#shareCarousel .carousel-control.right,#shareCarousel .carousel-control.left {
+    background-image: none;
+    margin-top: 10%;
+}
+#shareCarousel .col-xs-12.col-sm-12.col-md-8.iframevideo {
+       margin-bottom: 93px;
+}
+#shareCarousel .carousel-indicators li{
+    background:#AC181A;
+}
+#shareCarousel .carousel-indicators li.active{
+    background:#fff;
+}
+.resource-padding{
+    padding-right: 20px;
+}
+.resource-top{
+    padding-top: 180px;
+}
+/*faq page*/
+.faq-list li {
+    padding: 5px;
+}
+.faq-list li a {
+    color: #8E8E8E;
+    font-family: Gotham-Light-Regular;
+    font-size: 15px;
+    cursor: pointer;
+}
+.faq-list li a:hover{
+    text-decoration: none;
+}
+.table-bordered {
+     color: #8E8E8E; 
+}
+.preparing-skin .faq>.panel-heading{
+    padding: 0px;
+}
+.faq .panel-title{
+    padding-bottom:20px; 
+}
+.preparing-skin h1{
+    padding: 30px 0px;
+}
+.paginate{
+    margin-top: 50px;
+}
+.pagination>li>a, .pagination>li>a:hover{
+  padding: 6px 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 1.42857143;
+  color: #8E8E8E;
+  background-color: transparent;
+  border: 1px solid #8E8E8E;
+  
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.pagination>li>.ellip,.pagination>li>.ellip:hover{
+    border:none;
+    background-color: transparent;
+}
+/*aboutus */
+.aboutus-text{
+    margin-bottom: 100px;
+}
+.aboutus-text h2,.aboutus-text h1{
+    margin-bottom: 30px;
+    color:#0385A6;
+    font-size:46px;
+}
+.aboutus-text table {
+    font-family:Gotham-Book-Regular;
+    font-size:18px;
+    color: #8E8E8E;
+    margin-bottom: 15px !important;
+}
+.margin-about,.aboutus-text h4, .privacy_policy .aboutus-text h2, .privacy_policy .aboutus-text h3{
+    margin:20px 0px;
+    font-family: 'Gotham-Bold';
+    color: #0385A6;
+    font-size:32px;
+}
+.aboutus-text h4, .privacy_policy .aboutus-text h2, .privacy_policy .aboutus-text h3{
+    font-size:24px;
+    }
+.margin-abtout-icons{
+    margin:15px 0px;
+}
+.aboutus-text h5{
+    margin: 50px 0px 30px 0px;
+    font-family: 'Gotham-Bold';
+
+}
+.aboutus-text a,.aboutus-text a:hover{
+    color:#E4572D;
+    text-decoration: none;
+    font-size:18px;
+    font-family: Gotham-Book-Regular;
+}
+.aboutus-text .col-md-8>img{
+    margin-bottom:30px;
+}
+.aboutus-text ul li,.aboutus-text ol li {
+            display: block;
+            color: #8E8E8E;
+            font-family: Gotham-Book-Regular;
+            font-size: 18px;
+        }
+.aboutus-text ul li:before  {
+            /*Using a Bootstrap glyphicon as the bullet point*/
+            content: "\e080";
+            font-family: 'Glyphicons Halflings';
+            font-size: 12px;
+            float: left;
+            margin-top: 4px;
+            margin-left: -17px;
+            color:#E4572D;
+        }
+.terms-cond-h2{     
+    text-decoration: underline;     
+    font-size:18px;     
+}           
+.terms-cond-h3{     
+    font-size:16px;     
+}       
+.incorect-prices{       
+    padding-left:0;     
+}
+.highlight{
+            color:rgb(179, 0, 179);
+        }
+.aboutus-text ol li{
+    font-family: 'Gotham-Bold';
+        font-size: 15px;
+}
+.hdcontent h2,.hdcontent h3,.hdconten p {
+    color: #FFFFFF;
+    margin-bottom:30px;
+    }
+.expcarousel-rect>li,.expcarousel-rect>.active{
+    width:15px;
+        }
+
+    /*********Medical Visit ******/     
+#prepareHeader{     
+    margin-left: 70px;      
+    margin-right: 110px;        
+}
+/**************Add FAQ*********************/
+.spDeleteFaq{
+    top: 25px;
+    position: relative;
+}
+.question{
+    margin-bottom:20px;
+}
+#btnDelete{
+    margin-top: 160px;
+}
+/*Error page - 404 not found*/
+.errorPageText p{
+        margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+/*defect Id 327*/
+#shareCarousel .carousel-indicators li{
+    background:#AC181A;
+}
+#shareCarousel .carousel-indicators li.active{
+    background:#fff;
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+input[type=search]::-ms-clear {
+    display: none;
+}
+.spVoucherMsg{
+    text-transform: none;
+}
+.showVoucherMsg{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.footer-desc-text-mob{ 
+ line-height: 1.9em;
+    color: #8E8E8E;
+    font-size: 10px;
+     text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.footer-desc-text{
+text-align: justify;
+}
+.delete-global-message, .address-global-message{
+    text-align:center;
+}
+.about h3{      
+font-size:32px;     
+        text-transform: uppercase;      
+        margin-top: 0px;        
+    margin-bottom: 20px;        
+}       
+/** Discover It- Data For Greater Insight **/       
+.about h4{      
+font-size:22px;     
+        font-family:Gotham-Medium-Regular;      
+        margin-top: 0px;        
+    margin-bottom: 70px;        
+margin-top: 40px;       
+}       
+    .about h4 span{     
+        font-family:Gotham-Medium-Regular;      
+}       
+.prod-spec-table th{        
+font-family: Gotham-medium-Regular;     
+    font-size: 14px;        
+    color: #000;        
+padding-top:22px;       
+padding-bottom:22px;        
+}       
+.prod-spec-table td{        
+    font-family: Gotham-Book-Regular;       
+    font-size: 16px;        
+    color: #4f4f4f;     
+}       
+.softwareBlock .inside p{       
+color:#4f4f4f;      
+}       
+.softwareBlock .inside label[for="chkSoftware"]{        
+    padding-top: 60px;      
+    padding-bottom: 42px;       
+    font-family: Gotham-Book-Regular;       
+}       
+#macbutton, #pcbutton{      
+font-family:Gotham-Medium-Regular;      
+font-size:14px;     
+padding-left: 32px;     
+    padding-right: 32px;        
+}       
+#macbutton{                   
+padding-left: 25px;                          
+ padding-right: 25px;
+}       
+.softwareBlock p.text-orange{
+font-size:14px;
+font-family:Gotham-Medium-Regular !important;
+        padding-top: 30px;
+   padding-bottom: 30PX;
+    margin: 0;
+}
+.softwareBlock .checkboxOrange label{
+left: 42px;
+    top:0;
+}
+
+.softwareBlock .checkboxOrange{
+margin-top:40px;
+}
+.traffic_table .prod-spec-table th:first-child{  width: 256px;    padding-left: 30px;}      
+.traffic_table .prod-spec-table th:nth-child(2){  width: 245px;    text-align: center;}     
+.traffic_table .prod-spec-table th:nth-child(3){  width: 520px;  padding-left:75px;}        
+.traffic_table .prod-spec-table tr td:nth-child(2){  text-align:center;}        
+.traffic_table .prod-spec-table tr td:nth-child(3){  padding-left:42px;}        
+.traffic_table .prod-spec-table tr td:first-child{  padding-left:32px;}     
+.traffic_table .prod-spec-table img{        
+    padding-right: 20px;        
+}
+.traffic_table .prod-spec-table td{ vertical-align:middle !important;}
+.prod-row-desc h2{
+    margin-top:0px;
+}
+.prod-row-desc .btn-info{margin-top:42px;}
+
+.experiencePanes h4{
+    padding-left: 10px;    
+    padding-right: 10px;
+}
+
+.softwareBlock .inside p, .customRichtext p{
+    font-family:Gotham-Book-Regular;
+}
+.painless h2, .painless h3{
+    font-size: 36px;
+        padding-bottom: 15px;
+}
+.painless p{
+    font-size: 18px;
+    font-family: Gotham-Book-Regular;
+    color: #212121;
+    padding-top: 5px;
+}
+.softwareBlock p.text-orange{
+    font-size:14px;
+    font-family:Gotham-Medium-Regular !important;
+    padding-top: 30px;
+    padding-bottom: 30PX;
+    margin: 0;
+} 
+.customRichtext p{
+        color:#4f4f4f;
+    }
+.softwareBlock .about{
+    padding-top:50px;
+}   
+.productPage .prod-row-desc h2{
+               font-size:36px;
+}
+.productPage .prod-row-desc p,.prod-row-desc li{
+               font-size:18px;
+                font-family:Gotham-Book-Regular;
+}
+.painless .banner-painless p, .helpPanes p{
+                color:#8e8e8e;
+}
+
+.painless .banner-painless p:first-child{
+                font-family:Gotham-Book-Regular;
+}
+
+.painless p i{
+    /* Italics font removed. Issue no WD-1167. Italics is given in RTE */
+    font-size:16px;
+    padding-top: 75px;
+}
+
+.helpPanes p
+{
+                font-family:Gotham-Book-Regular;
+                font-size:17px;
+
+}
+.sub-footer a{
+text-transform:uppercase
+}
+
+
+.textupper{
+    text-transform: uppercase;
+    }
+.gs-row5 .apply-help{
+                padding-left:50px;
+        padding-right:50px;
+        margin-bottom: 75px;
+}
+.expCarousel .carousel-control.right, .expCarousel .carousel-control.left {
+        width:4%;
+    }
+.expCarousel .carousel-inner h2, .expCarousel .carousel-inner h3{
+    font-size:36px;
+        }
+.expCarousel .carousel-indicators{
+    bottom:44px;
+    }
+.onefivepadding{
+    padding-bottom:80px;
+    padding-top:20px;
+    }
+.onefivepadding span{
+    font-family: Gotham-Book-Italic !important;
+        font-size:14px !important;
+    }
+.carousel-desc a{
+    font-family: 'Gotham-Book-Regular';    
+        }
+.bg-watermark .img-thumbnail{
+    padding:0px;
+        }
+.prod-row-desc>.btn{
+    border-color: #003b4a;
+    color: #003b4a;
+}
+#shareCarousel .carousel-desc>.btn{
+    border-color: #960014 !important;
+    color: #960014 !important;  
+}
+.expCarousel .carousel-inner h2, .expCarousel .carousel-inner h3{
+                font-size:32px;
+        }
+.discoverit-sensor .about h3 {
+letter-spacing: 5px;
+}       
+.discoverit-sensor .customRichtext p{
+color:#8e8e8e;
+}
+.sensor-panel .panel-title{
+font-family:Gotham-Medium-Regular;
+} 
+.discover-it .about h3{
+letter-spacing:5px;
+}
+
+.carouselShareVideoDiv{
+     margin-top: -192px;
+    right: 29px;
+}
+.productOverlay #prod-title,.productOverlay #prod-price, .productOverlay #prod-priceDec{
+    font-family: Arial, Helvetica, sans-serif;
+     color:#004d6f; 
+     text-transform: uppercase;
+                }
+ .productOverlay #prod-price{
+            font-size: 34px;
+        }
+.productOverlay .padding-nav p {
+    color:#4f4f4f;
+        }
+.productOverlay .vat{
+    font-size:12px !important;
+     font-family: 'Gotham-Medium-Regular';    
+            color:#4f4f4f;
+        }
+.prodetail-buy .productOverlay  .button-orange, .prodetail-buy  .productOverlay  .button-orange:hover, .prodetail-buy .productOverlay  .button-orange:focus{
+    min-width:0%;
+}
+.help-tutorials .about p{
+color:#212121;
+}
+.productOverlay .modal-body h2 {
+        font-size: 22px;
+       color: #212121;
+    /*padding-bottom: 25px;*/
+    text-align:left;
+    }
+.productOverlay .h3{
+    margin-bottom:0px;
+    }
+.productOverlay .modal-footer{
+    padding-bottom:0px;
+    padding-top:25px;
+            }
+.productOverlay .modal-body .col-md-4 img{
+    padding-top:30px;
+    padding-bottom:30px;
+        }
+.dynamicCross h5{
+    padding-top:40px;
+    padding-bottom:10px;  
+    font-size:18px;    
+    }
+.productOverlay .padding-nav{
+    padding-top:6%;
+    padding-bottom:10%;
+    }
+.productOverlay .margin-top{
+    margin-top:5px;
+    display:none;
+        }
+.tutorial .modal-content{
+padding-left:18px;
+}
+.productOverlay .modal-body{
+    padding-left:60px;
+    padding-right:60px;
+	padding-top: 0px;
+        }
+.productOverlay .modal-body .col-md-12{
+            border-bottom: 1px solid #E4E4E4;
+                border-top: 1px solid #E4E4E4;
+        }
+.dynamicCross .col-md-3 img{
+    padding-top:40px;
+        }
+.tutorial .modal-body{
+    padding-top: 0;
+}
+.tutorial .modal-footer,.tutorial .modal-header{
+padding-bottom:0;
+}
+#btnVideoshareTut:focus{
+    border: 1px solid #E4572D;
+}
+.help-tutorials .rte .about p{
+    color: #212121;
+}
+.disableBtn{
+   background-color: #8e8e8e !important;
+}
+.modal-dialog {
+    width:55%;
+    }
+.loginpage .about{
+    padding-top:100px;
+    padding-bottom:100px;        
+        }
+ .loginpage .accountPage{
+    padding-top:30px;
+ }
+.loginpage .about h1{
+    margin-bottom:0px;
+	color:#009c3b;
+}
+.discoverit-sensor #collapse_0 table thead tr th:nth-child(1) {
+    width: 24%;
+}
+.discoverit-sensor #collapse_0 table thead tr th:nth-child(2) {
+    width: 38%;
+}
+.discoverit-sensor #collapse_1 table thead tr th:nth-child(1) {
+    width: 23%;
+}
+.discoverit-sensor #collapse_1 table thead tr th:nth-child(2) {
+    width: 30%;
+}
+
+#receiveNewsletter #txtEmail{
+    background-color: #f4f2f4;
+    border-color: #f4f2f4;
+}
+.prsnDetailGridImg, .prsnDetailGrid-content{
+        display:table-cell;
+    vertical-align:middle;
+
+    }
+.prsnDetailGrid-content{text-align:left;padding-left:0px;}
+.prsnDetailGridImg{padding-left:15px;}
+
+.country-selection h3{
+                font-family:Gotham-Medium-Regular;
+    text-transform: uppercase;
+margin-bottom: 40px;
+}
+.country-selection{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+#basket-details td {
+    font-family: 'Gotham-Book-Regular';
+}
+.padding-zero{
+    padding: 0px;
+    }
+.button-orange,.button-orange:hover,.button-orange:focus{
+    background-color:#009C3B;
+    background-image: none;
+    color:#ffffff;
+    border-radius:10px; 
+    font-family: 'Gotham-Medium-Regular';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 14px 24px;
+    font-size: 14px;
+    border-color:transparent !important;
+}
+a:focus,.btn-link:active{
+    border-color: transparent;
+    }
+.invoice-xs{
+margin-top: 100px;
+}
+/* code for alert messges  */
+div#commonoverlaytext>h1 {
+    margin-bottom: 30px !important;
+}
+.sp-product-yellow{
+    color:#83630c;
+    text-align:center;
+    padding-top: 0 !important;
+}
+.sp-product-yellow h2{
+    color:#83630c;
+    margin-top: 0px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.sp-product-yellow p{ 
+    font-size:18px;
+    color:white;
+}
+.sp-product-yellow p i{
+    font-size: 16px;
+    font-family: Gotham-Book-Italic;
+}
+#btnProductShare{
+    position: absolute;
+    top: 0;
+    right: 2%;
+	}
+.prodSpinner{
+    height:45px;
+    width:63px;
+    text-align:center;
+}
+select{
+    min-width: 200px;
+}
+.faqCategories .about-heading .faq-links .faq-list li a {
+    font-size: 18px;
+    color: #212121;
+    font-family: Gotham-Medium-Regular;
+	white-space: nowrap;
+}
+.faqCategories .about-heading p {
+    font-family: Gotham-Book-Regular;
+    font-size: 18px;
+    color: #212121;
+}
+.faqCategories #topquestions {
+    font-family: Gotham-Bold;
+    font-size: 46px;
+    color: #212121;
+}
+.faqCategories #faq-place h2 {
+    margin-top:0px;
+    padding:90px 0px 30px 10px;
+    margin-bottom: 0px;
+    border-top: 1px solid #E2E2E2;
+}
+.faqCategories #faq-place h2 a{
+	text-decoration:none;
+        }
+.faqCategories .preparing-skin .panel-title{
+	border:none;
+        }
+.relatedContentPanel .apply-help  .experiencePanes  .link-txt {
+    font-family: Gotham-Medium-Regular;
+    font-size: 14px;
+}
+.faqCategories  .about{
+	padding-bottom:120px;
+}
+#faq-place  .paging-nav {
+	text-align: center;
+}
+.preparing-skin #faq-table {
+   /*  margin-bottom: 10px; */
+  } 
+#faq-table .panel-title {
+	font-size: 18px;
+}
+#faq-table p.more {
+	color: #4f4f4f;
+}
+#faq-table .panel-heading .glyphicon{
+position: absolute;
+    top: 40%;
+}
+#faq-place #faq-table .panel {
+margin-bottom: 0;
+}
+#faq-place #faq-table .panel-body {
+padding-top: 0;
+    padding-bottom: 30px;
+}
+#faq-place #faq-table .panel-body p {
+margin-top:0;
+}
+.preparing-skin #faq-table .panel-title {
+	padding-top: 54px;
+    padding-bottom: 54px;
+	padding-left: 0px;
+        }
+#faq-table .panel-heading .glyphicon{
+position: static;
+}
+#faq-table .panel-heading .col-md-1{
+	padding-top: 54px;
+    padding-bottom: 54px;
+}
+.modal-dialog label{
+    letter-spacing: 0px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family:Gotham-Light-Regular;
+}
+.modal-content{
+    padding-bottom: 1%!important;
+}
+.apply-help h4 span{
+	font-family:Gotham-Bold;
+ }
+ #before-submit p,#after-submit p,  #before-submitcon p,#after-submitcon p{
+	color:#212121;
+}
+.btn-popup{
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.required-field p{
+font-size:14px;
+}
+.contact_us_success .about{
+	padding-top:10px;     
+	padding-bottom: 90px;   
+} 
+table#faq-table tr:last-child td h2,table#faq-table tr:nth-child(10) td h2,table#faq-table tr:nth-child(20) td h2,table#faq-table tr:nth-child(30) td h2,table#faq-table tr:nth-child(40) td h2,table#faq-table tr:nth-child(50) td h2,table#faq-table tr:nth-child(60) td h2,table#faq-table tr:nth-child(70) td h2,table#faq-table tr:nth-child(80) td h2,table#faq-table tr:nth-child(90) td h2,table#faq-table tr:nth-child(100) td h2,table#faq-table tr:nth-child(110) td h2,table#faq-table tr:nth-child(120) td h2,table#faq-table tr:nth-child(130) td h2,table#faq-table tr:nth-child(140) td h2,table#faq-table tr:nth-child(150) td h2,table#faq-table tr:nth-child(160) td h2,table#faq-table tr:nth-child(170) td h2{
+/* border-bottom:1px solid #ddd; */
+}
+.contact-thankyou .about{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.contact_us_success .form-btn{
+    margin-bottom:80px;
+}
+.table_for_sensor .sensor-panel{
+	border-top: 1px solid #E2E2E2;
+        }
+.sensor-panel .panel-title {
+	border:none !important;
+    padding-left:15px;
+}
+#myModal-download . modal-footer{
+       padding-bottom: 0px;
+}
+.item .btn{
+     border-color: black;
+     color: black; 
+     background: transparent;
+     font-family: 'Gotham-Medium-Regular';
+}
+.getting-started .about h4{
+                margin-bottom: 0;
+}
+.expCarousel #sharefuction_1 img{
+padding:10px;
+}
+.Homepage .customRichtext .about{
+    padding-top:0px;
+    padding-bottom:60px;            
+}
+html:lang(it) .disclaimer .btn-margin-right {
+    padding-left: 55px;
+    padding-right: 55px;
+}  
+html:lang(en) .getting-started .rte .about p{
+margin-top:40px;
+}
+.thankyouWrappererror h3,.thankyouWrapper h3{
+	font-size:20px;
+}
+.btn-link:focus, .btn-link:hover,a:focus {
+    text-decoration: none;
+    border:none;
+}
+.Thankyoupage .apply-help .bottom-text h5 span {
+      padding-left: 1px;
+}
+
+/* classes for brightcove videos */
+.brightcove-video {
+	display: block;
+    position: relative;
+    max-width: 100%;
+}
+.brightcove-video .video-wrapper {
+    padding-top: 56.25%;
+}
+.brightcove-video .video-js {
+	width: 100%; 
+    height: 100%; 
+    position: absolute; 
+	top: 0px; 
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+.brightcove-video .vjs-big-play-button {
+	top: 0px; 
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+    margin: auto;
+}
+.duplicateemail {
+	padding-left:13px;
+}
+.duplicateemail span p{
+	color:#d61031;
+    }
+.getting-started .prod-two-column p{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#myModal-country .modal-body {
+    height: 450px;
+    overflow-y: auto;
+}
+
+.sensor-panel .panel-heading {
+	display:none;
+}
+.table_for_sensor .sensor-panel {
+    border-top: none !important;
+}
+.sensor-panel .collapse {
+	display: block;
+}
+.italy .sensor-panel .panel-heading {
+	display:block;
+}
+.italy .table_for_sensor .sensor-panel {
+    border-top: 1px solid #E2E2E2 !important;
+}
+.italy .sensor-panel .collapse {
+    display: none;
+}
+.italy .sensor-panel .collapse.in {
+    display: block;
+}
+.summary-block{
+    cursor:pointer;
+}
+#overlay_FindAddressData label {
+    margin-right: 0px;
+} 
+.Luxemberg #agreeCheckbox {
+    position: relative;
+}
+.Luxemberg #chkAcceptTerms {
+    position: absolute;
+}
+.checkout-steps .create-account #chkAcceptTerms {
+    position:static !important;
+}
+.Luxemberg #before-submitcon .checkboxOrange {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.Luxemberg #before-submitcon .checkboxOrange label>p{
+    padding-left: 30px;
+    color: #8E8E8E !important;
+    font-size: 16px;
+    margin-top: 0px;
+    font-family: Gotham-Book-Regular;
+    width: 77%;
+    font-weight: normal;
+    text-transform: none;
+    word-break: break-all;
+}
+
+.Luxemberg #dataAcceptConsent {
+    position: absolute;
+}
+
+.Luxemberg .checkboxOrange label {
+    position: relative;
+}
+
+/******************************
+responsive area
+********************************/
+
+/************************** lg *******************************/
+
+@media (min-width: 1200px) {
+	
+.loginpage .error_show{
+    display: inherit;
+    padding-bottom: 0;
+    line-height: 1.1;
+}
+.copyRight {
+    font-size: 35px;
+    position: relative;
+    top: 7px;
+}
+.loginpage .about {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}  
+.your-kids .col-eq-height .prod-row-desc h3 {
+    font-size: 28px;
+}
+.your-kids .painless .banner-painless h3{
+  font-size: 28px;
+}
+.italy.your-kids .customRichtext {
+  padding-top: 55px;
+    padding-bottom: 0;
+}
+.italy.your-kids .customRichtext h2{
+    margin-bottom: 0;
+}
+.discover-summary .summary .grid-summary a {
+	top: 25%;
+}
+.summary-products .textimage .media-text-right, .summary-products .textimage .media-text-left{
+	margin-left: 51px;
+}
+.italy .textimage .media-text-right, .italy .textimage .media-text-left{
+	margin-left: 51px;
+}  
+.summary-products .bottom-text>a{
+	position:absolute;top:321px !important
+}
+.summary-products .bottom-text.experiencePanes h4{
+	padding-top:59px
+}
+.summary-products .apply-help h4{
+	min-height:142px
+}	
+#homeoverlaytext>h1 {
+	margin-bottom: 30px;
+}
+.invoice-xs{
+margin-top:0px;
+}
+.sticky_header{
+	min-height:135px;
+}
+.faqCategories .about-heading p,.faqCategories .about h1 {
+	padding-left:25px;
+    padding-right:30px;        
+}
+.faqCategories .about h1 {
+	letter-spacing:2px;
+}
+.italy .faq-links{
+    padding-left:32px;
+}
+html:lang(it) .getting-started .rte>section>.about {
+     padding-bottom: 0;
+}
+.italy #before-submit .error_show {
+	margin-top: -1px !important;
+}
+.myModal-download .graph{
+	margin-bottom:0px;
+    margin-top:30px;
+}
+#shareCarousel .sharePopup{
+    margin-left:14%;
+} 
+.italyPanelText{
+    font-size: 45px;
+}
+.maintenance .col-md-offset-2>p{
+	padding-bottom:50px;
+} 
+.privacy_policy .col-md-offset-2>h1{
+		margin-top:-10px
+} 
+#receiveNewsletter h4{
+	margin-bottom:45px;
+}
+#receiveNewsletter #txtEmail{
+	height:48px;    
+}
+#receiveNewsletter .btn-validate-email{
+	margin-left:10px;
+    }
+#receiveNewsletter .form-group{
+	margin-left:-12px;
+}
+#receiveNewsletter .footer-desc-text{
+	margin-top:30px;
+}
+.Homepage .bg-orange{
+	margin-left:31px;
+}
+.terms-use .aboutus-text ul li, .terms-sale .aboutus-text ul li {
+	font-size: 16px !important;
+}
+.modal-footer .btn+.btn {
+margin-bottom: 0;
+margin-left: 30px;
+} 
+.productOverlay .modal-footer .button-orange{
+    margin-bottom:30px;
+ }
+.carousel-desc p{
+    text-align:justify;
+    }
+.preparing-skin th,.preparing-skin td{
+    padding:20px !important;
+}
+  .pull-lg-right{
+        float:right;
+    }
+
+input[type='email']{
+    text-align:left;
+    }
+#receiveNewsletter{
+    padding-bottom:80px;
+}
+.apply-help h4 {
+    min-height: 100px;
+}
+    .customRichtext p span{
+        font-size:18px;
+    }
+	.carousel-control.right, .carousel-control.left {
+        margin-top:24%;
+    }
+ .customRichtext .about{
+    padding-top:80px;
+}    
+    .discover-your-meter .customRichtext .about {
+        padding-top: 50px;
+    }
+.img-responsive{
+        display: inline;
+    }
+.customRichtext .btn{
+        margin-top:30px;
+        }
+.col-eq-height{
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;
+    }
+
+    .col-eq-height-wrapper{
+        overflow: hidden;
+    }
+.sub-container .input-lg {
+    width:93%;
+    }
+.active-menu{
+    box-shadow: inset 0px -3px 0px #009c3b;
+    padding-bottom: 10px;
+}
+.hdcontent{
+    padding-left:45px;
+    }
+.sub-container .divChk{
+     margin-bottom:0px;
+
+}
+.media-text .img-responsive{
+    display: inline !important;
+}
+.softwareBlock .checkboxOrange label>p {
+    font-size:17px;
+    padding-left: 32px;
+}
+.product_text_Image_nobgc .painless .banner-painless {
+    top:0%;
+         }
+.your-data .about {
+    padding-top: 95px;
+}
+.your-data .about h4{
+    margin-bottom: 0px;
+	    padding-top:15px;
+padding-bottom: 50px;
+
+}
+.your-data .about .container-fluid img{
+      margin-top: 28px;
+}
+.your-data  .traffic_table .table{
+    margin-bottom: -60px;
+}
+
+.customRichtext .about h1 {
+    margin-bottom: 45px;
+}
+.customRichtext .about p {
+    margin-bottom: 24px;
+}
+.productPage .finger-pricks .prod-row-desc h2 {
+    width: 420px; /* had to forcefully use fixed width to wrap text as per design */
+    margin: 0 auto;
+}
+.productPage .finger-pricks .prod-row-desc p {
+    width: 70%;
+    margin: 0 auto;
+}
+.productPage .water-resistant .banner-painless {
+    margin-left: 2%;
+    width: 38%;
+}
+.productPage .water-resistant .painless p {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.productPage .calibration .prod-row-desc h2 {
+    padding: 10px;
+    letter-spacing: 3px;
+}
+.productPage .calibration .prod-row-desc p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.productPage .monitoring .banner-painless {
+    margin-left: 2%;
+    width: 38%;
+}
+.faqCategories .about{
+	padding-top:60px;
+	padding-bottom: 50px;
+}
+.contact-thankyou .about{
+	padding-top:58px;
+	padding-bottom: 47px;
+}
+.contact-thankyou .about h1{
+	margin-bottom: 20px;
+}
+.contact_us_success .about-heading button{
+	margin-top:50px;
+}
+.contact_us_success .about{
+	padding-top:10px;     
+	padding-bottom: 90px;   
+}
+.lstProductImage{
+	margin-top:20px;
+}
+.about p span,.textimage p,.about p{
+		font-size:16px;
+    		line-height:26px;
+	}
+	.discoverit-sensor .customRichtext .about p{
+                padding-left: 12%;
+    padding-right: 12%;
+    font-size: 16px;
+    line-height: 26px;
+}
+.softwareBlock{
+                padding-top:40px;
+    }
+	.your-kids .about{
+        padding-top: 35px;
+		padding-bottom: 20px;
+	}
+	.two-navigation-banner h1{
+	font-size:46px;
+	}
+	
+	
+.summary-help .customRichtext > .about, .summary-products .customRichtext > .about{
+     padding-top: 57px;
+     }
+.summary-help .customRichtext > .about h1, .summary-products .customRichtext > .about h1{
+     margin-bottom: 56px;
+
+     }
+.summary-help .grid-summary{
+    margin-top: 99px;
+
+     }
+.summary-help .apply-help {
+                padding-top:3px;
+      }
+.summary-help .apply-help {
+                margin-bottom: 48px;
+      }
+	  
+.country-selection h3{
+    margin-bottom:30px;
+    margin-top: 33px;
+    }
+.modal-footer{
+    padding-bottom: 46px;
+    }
+
+.list-group-item{
+   padding-bottom:5px;
+}
+.country-selection{
+   padding-top:5px;
+   }
+.getting-started .banner-painless{
+    width: 35%;
+}
+.discover-summary .customRichtext .about {
+    padding-top: 56px;
+    }
+.discover-summary .customRichtext .about h1 {
+    margin-bottom: 56px;
+}
+
+.discover-summary .grid-summary {
+    margin-top: 100px;
+}
+.discover-summary .gs-row5 .apply-help {
+       margin-top: -7px;
+}
+.discover-summary .apply-help {
+                margin-bottom: 48px;
+      } 
+
+.italy.discover-your-meter .customRichtext .about {
+    padding-top: 70px;
+}
+.help-tutorials .rte .about{
+   padding-top: 55px;
+    padding-bottom: 50px;
+}
+.Thankyoupage .about h1{
+               margin-bottom:20px;
+}
+.Thankyoupage .padding-nav {  
+    padding-top: 18px;
+}
+ 
+.Thankyoupage .sub-container{
+margin-bottom: 40px;
+}
+  
+.Thankyoupage .about h3{
+                margin-bottom:0;
+}
+.Thankyoupage .apply-help h3{
+                    margin-bottom: 20px;
+}
+.Thankyoupage .gs-row5 .apply-help{
+                    margin-bottom: 100px;
+}
+.aboutus-text h1{
+  margin-bottom:20px;
+}
+.aboutus-text h5{
+  margin: 40px 0px 70px 0px;
+}
+.privacy_policy>.aboutus-text{
+  margin-bottom: 20px;
+}
+.login-container .reg-btn{
+    margin-top: 35px;
+}
+.Thankyoupage .about{
+	padding-top: 57px;
+}
+.terms-use .aboutus-text h1 {
+    margin-bottom: 30px !important;
+}
+
+.terms-use .privacy_policy .aboutus-text h2 {
+    margin-top: 34px;
+}
+.terms-use .aboutus-text {
+    margin-bottom: 53px;
+}
+.terms-use .privacy_policy .col-md-offset-2>h1{
+margin-top:21px;
+}
+.terms-use .aboutus-text h4{
+margin-top: 35px;
+}
+.terms-sale .privacy_policy .col-md-offset-2>h1 {
+    margin-top: 20px;
+    margin-bottom: 32px; 
+}
+.terms-sale .privacy_policy .aboutus-text h2 {
+    margin-top: 25px !important;
+}
+
+.terms-sale .privacy_policy .aboutus-text h4 {
+    margin-top: 35px;
+}
+
+.terms-sale .aboutus-text {
+    margin-bottom: 53px;
+}
+.aboutus-footer .aboutus-text{
+margin-bottom:10px;
+}
+
+.aboutus-footer .breadcrumb{
+margin-top:15px;
+}
+
+.aboutus-footer .aboutus-text h1{
+margin-top: 22px;
+margin-bottom:25px;
+}
+
+.aboutus-footer .aboutus-text .col-md-8>img{
+margin-bottom: 41px;
+}
+
+.aboutus-footer .aboutus-text h2{
+margin-bottom:22px;
+margin-top:4px;
+}
+
+.aboutus-footer .aboutus-text h3 { 
+    margin-top: 18px;
+    margin-bottom: 25px;
+}    
+.geo-disc h1{
+margin-top: 25px;
+}
+
+.geo-disc a.home-site-link.btn.btn-lg.btnAccept {
+    margin-top: 19px;
+}
+
+.geo-disc a.btn.btn-lg.btn-margin-right {
+    margin-top: 3px;
+}
+.italy.your-kids .gs-row5 .apply-help{
+    margin-bottom: 50px;
+}
+.your-medical.italy .gs-row5 .apply-help{
+    margin-bottom: 50px;
+}
+ .italyPanelText{        
+        font-size: 42px;        
+    } 
+.prod-two-column p{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10px;
+    line-height: 1.6em;
+    color: #fff;
+    font-family: Gotham-Book-Regular;
+    font-size: 15px;
+}
+.prod-row-desc .btn-info {
+    margin-top: 10px;
+}
+.italy.your-data .gs-row5 .apply-help{
+	margin-bottom:50px;
+}
+.discover-summary.italy .summary .grid-summary a {
+    top: 25%;
+}
+.Thankyoupage .bottom-text h4{
+	padding-top: 59px;
+}
+.Thankyoupage .apply-help{
+	padding: 5px 0px 0px;
+}
+.Thankyoupage .apply-help h4{
+	min-height: 142px;
+}
+.Thankyoupage .bottom-text>a{
+    position: absolute;
+    top: 322px;
+} 
+.getting-started .bottom-text>a {
+    position: absolute;
+    top: 321px !important;
+}
+.getting-started .bottom-text.experiencePanes h4 {
+    padding-top: 59px;
+}
+.getting-started .apply-help h4 {
+    min-height: 142px;
+}
+.summary-help .bottom-text>a {
+    position: absolute;
+    top: 321px !important;
+}
+.summary-help .bottom-text.experiencePanes h4 {
+    padding-top: 59px;
+}
+.summary-help .apply-help h4 {
+    min-height: 142px;
+}
+.ment-page .col-md-8.col-md-offset-2.text-center {
+    padding-bottom: 45px;
+}
+ .faq-sup .gs-row5 .apply-help {
+	padding-left: 22px;
+	padding-right: 18px;
+}
+.italy.discover-your-meter .customRichtext p{
+	color:#8e8e8e;
+}
+.discover-summary .bottom-text>a {
+    position: absolute;
+    top: 321px !important;
+}
+.discover-summary .bottom-text.experiencePanes h4 {
+    padding-top: 59px;
+}
+ .discover-summary .apply-help h4 {
+    min-height: 142px;
+} 
+.summary-products.italy .grid-summary {
+    margin-top: 100px;
+}
+}
+/** end of lg **/
+/****************** md **************************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+body{
+        font-size: 18px;
+    }
+.italy.your-kids .customRichtext { 
+    padding-bottom: 0;
+} 
+.italy.your-kids .customRichtext h2{
+    margin-bottom: 0;
+}
+.loginpage .error_show{
+    display: inherit;
+	padding-bottom: 0;
+    line-height: 1.1;
+} 
+.copyRight {
+    font-size: 35px;
+    position: relative;
+    top: 7px;
+}
+
+.loginpage .email-form-group .error_show {
+    margin-bottom: -3px !important;
+}
+
+#homeoverlaytext>h1 {
+	margin-bottom: 30px;
+}
+.your-kids .bottom-text>a {
+    top: 335px;
+    left: 10px;
+}
+	
+#shareCarousel .sharePopup{
+    margin-left:11%;
+} 
+.prod-two-column h2{
+    font-size: 20px;
+}
+.Homepage .customRichtext .about{
+    padding-bottom:30px;            
+}
+.prod-two-column p{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10px;
+    line-height: 1.6em;
+    color: #fff;
+    font-family: Gotham-Book-Regular;
+    font-size: 15px;
+}
+.prod-row-desc .btn-info {
+    margin-top: 10px;
+}
+ .italyPanelText{
+        font-size: 42px;
+    }
+	.maintenance .col-md-offset-2>p{
+		padding-bottom:50px;
+	} 
+	
+	.privacy_policy .col-md-offset-2>h1{
+		margin-top:-10px
+	}
+ .italyPanelText{        
+        font-size: 45px;        
+    } 
+.modal-dialog {
+    width:75%;
+    }
+#receiveNewsletter {
+    padding-bottom: 100px;
+}
+#receiveNewsletter .btn-validate-email{
+	margin-left:10px;
+    }
+#receiveNewsletter .form-group{
+	margin-left:-21px;
+}
+.expCarousel .carousel-control.left {
+	width:0%;
+}
+.prod-two-column #sharefuction{
+    top:34px;
+}
+.productOverlay .modal-dialog {
+    width: 68%;
+}
+
+.productOverlay .modal-body {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.account-details .side-menu li a{
+            min-width:150px;
+			text-align: right;
+}     
+#after-submit, #after-submitcon{
+  padding-left: 15px;
+ padding-right: 15px        
+}   
+.email-form-group {
+    margin-right: -8px;
+    margin-left: -10px;
+}
+.prod-two-column #btnProductShare {
+    padding: 10px 10px 10px 10px;
+    font-size: 12px;
+}   
+.link-txt{
+     font-size:12px;
+}
+.agreementTerms{
+      margin-top:  15px;
+}
+.sensor-panel .row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.sharePopup{
+ width:85px;
+}
+.hdcontentMinHeight {
+    min-height: 250px;
+}
+#shareCarousel .hdcontent .btnShareApp{       
+    margin-top:15%; 
+}
+.helpPanes h4 {
+    min-height: 185px;
+}
+
+.prod-two-column h2, .prod-two-column h3 {
+    font-size: 26px;
+}
+.hdcontent .btnShareApp{        
+        margin-top:55%;     
+        }
+.prod-row-desc h2 {     
+    margin-top: 0px;
+    margin-bottom: 5px; 
+}   
+.prod-row-desc p,.prod-row-desc li{
+font-size:14px;
+}
+.productPage .prod-row-desc li{
+	font-size:18px;
+} 
+.prod-row-desc .btn-info {      
+   margin-top: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;       
+}       
+.traffic_table .prod-spec-table th:nth-child(3) {       
+            
+    padding-left: 37px;     
+}       
+.traffic_table .prod-spec-table th:first-child{     
+width:195px;        
+}       
+html:lang(it) .your-data #buySupport, html:lang(it) .your-data  #buySupport2, html:lang(it) .your-data #buySupport3{      
+                top: 400px;      
+                left: 5px;       
+}       
+.traffic_table .prod-spec-table{        
+margin-top:0px;        
+}   
+.carousel-control.right, .carousel-control.left{
+    margin-top:28%;
+}
+.col-eq-height{
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;
+    }
+.col-eq-height-wrapper{
+        overflow: hidden;
+    }
+.link-txt {
+    padding-left: 5px;
+}
+.pInstruction {
+    padding: 0 10%;
+}
+.padding-nav {
+    padding-top: 9%;
+    }
+.prod-two-column h2, .prod-two-column h3{
+        letter-spacing: 2px;
+    }
+    .prod-row-desc{
+        padding-top: 15%;
+    }
+ 
+.login-container {
+            padding-right: 40px;
+            padding-left: 40px;
+            height: 660px;
+			margin-bottom: 70px;
+    }
+    .login-btn>.btn{
+        margin-left: 27px;
+    }
+    .bottom-text>a {
+        left:10px;
+    }   
+    .carousel-control.right{
+          width:10%;
+        }
+     .carousel-control.left {
+        width:5%;
+        }
+    .sub-container .divChk{
+        margin-bottom:0px;
+}
+.sub-container {
+    height: 730px;
+}
+#sharefuction{
+    right: 2%;
+    z-index:1000;
+    top:48px;
+    width:70px;
+}
+.about input[type='email']{
+    height:50px;
+	font-size:13px;
+}
+.softwareBlock .checkboxOrange label>p {
+
+    margin-top: -3px;
+}
+.customRichtext .about{
+  padding-top:50px;
+}
+.img-responsive{
+display:inline;
+}
+.two-navigation-banner {
+    margin: 0 10px;
+}
+.your-data .softwareBlock .checkboxOrange label>p {
+    width: auto;
+}
+.discover-your-meter .customRichtext .about {
+    padding-top: 50px;
+}
+.discover-your-meter .customRichtext .btn {
+    margin-top: 0px;
+}
+.prod-two-column h2, .prod-two-column h3 {
+    font-size: 20px;
+}
+.customRichtext .about h1 {
+    margin-bottom: 45px;
+}
+.customRichtext .about p {
+    margin-bottom: 54px;
+}
+.aboutus-text table table tr td{
+    word-break: break-all;
+}
+.relatedContentPanel .container.gs-row5 {
+    width: auto;
+}
+.relatedContentPanel .gs-row5 .apply-help {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.sp-product-yellow h2{
+        margin-top:0px;
+    }
+.faqCategories .about{
+	padding-top:90px;
+}
+.contact-thankyou .about{
+	padding-top:120px;
+	padding-bottom: 50px;
+}
+.contact_us_success .about-heading button{
+	margin-top:50px;
+}
+.contact_us_success .about{
+	padding-top:10px;     
+	padding-bottom: 90px;   
+}
+.lstProductImage{
+	margin-top:20px;
+}
+.about p span,.textimage p,.about p{
+		font-size:16px;
+    		line-height:26px;
+	}
+	.discoverit-sensor .customRichtext .about p{
+        padding-left: 12%;
+		padding-right: 12%;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.your-kids .about{
+        padding-top: 100px;
+	}
+	.two-navigation-banner h1{
+	font-size:46px;
+	}
+	
+.country-selection h3{
+    margin-bottom:30px;
+    margin-top: 33px;
+    }
+.modal-footer{
+    padding-bottom: 46px;
+    }
+
+.list-group-item{
+   padding-bottom:5px;
+}
+.country-selection{
+   padding-top:5px;
+   }
+
+.summary-help .customRichtext > .about, .summary-products .customRichtext > .about{
+     padding-top: 57px;
+     }
+.summary-help .customRichtext > .about h1, .summary-products .customRichtext > .about h1{
+     margin-bottom: 56px;
+
+     }
+.summary-help .grid-summary{
+    margin-top: 99px !important;
+
+     }
+.summary-help .apply-help {
+	padding-top:3px !important;
+      }
+.summary-help .apply-help {
+	margin-bottom: 48px !important;
+      }
+.getting-started .banner-painless{
+    width: 35%;
+}
+  .discover-summary .customRichtext .about {
+    padding-top: 56px;
+    }
+.discover-summary .customRichtext .about h1 {
+    margin-bottom: 56px;
+}
+
+.discover-summary .grid-summary {
+    margin-top: 100px;
+}
+.discover-summary .gs-row5 .apply-help {
+       margin-top: -7px;
+}
+.discover-summary .apply-help {
+                margin-bottom: 48px;
+      } 
+.getting-started .painless{
+    padding-top: 50px;
+	padding-bottom:50px;
+} 
+.discoverit-sensor .video_carousel {
+    padding-bottom: 40px;
+}
+.italy.discover-your-meter .customRichtext .about {
+    padding-top: 70px;
+}
+.carouselShareVideoDiv {
+   margin-top: -185px;
+    right: 36px;
+}
+.help-tutorials .rte .about{
+   padding-top: 55px;
+    padding-bottom: 50px;
+}
+.Thankyoupage .about h1{
+               margin-bottom:20px;
+}
+.Thankyoupage .padding-nav {  
+    padding-top: 18px;
+}
+ 
+.Thankyoupage .sub-container{
+margin-bottom: 40px;
+}
+  
+.Thankyoupage .about h3{
+                margin-bottom:0;
+}
+.Thankyoupage .apply-help h3{
+                    margin-bottom: 20px;
+}
+.Thankyoupage .gs-row5 .apply-help{
+                    margin-bottom: 100px;
+}
+.aboutus-text h1{
+  margin-bottom:20px
+}
+.aboutus-text h5{
+  margin: 40px 0px 70px 0px;
+}
+.privacy_policy>.aboutus-text{
+  margin-bottom: 20px;
+}
+.login-container .reg-btn{
+    margin-top: 35px;
+}
+.Thankyoupage .about{
+	padding-top: 57px;
+}
+.terms-use .aboutus-text h1 {
+    margin-bottom: 30px !important;
+}
+
+.terms-use .privacy_policy .aboutus-text h2 {
+    margin-top: 34px;
+}
+.terms-use .aboutus-text {
+    margin-bottom: 53px;
+}
+.terms-use .privacy_policy .col-md-offset-2>h1{
+
+margin-top:21px;
+}
+
+.terms-use .aboutus-text h4{
+margin-top: 35px;
+}
+.terms-sale .privacy_policy .col-md-offset-2>h1 {
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+.terms-sale .privacy_policy .aboutus-text h2 {
+    margin-top: 25px !important;
+}
+
+.terms-sale .privacy_policy .aboutus-text h4 {
+    margin-top: 35px;
+}
+
+.terms-sale .aboutus-text {
+    margin-bottom: 53px;
+}
+.aboutus-footer .aboutus-text{
+margin-bottom:10px;
+}
+
+.aboutus-footer .breadcrumb{
+margin-top:15px;
+}
+
+.aboutus-footer .aboutus-text h1{
+margin-top: 22px;
+margin-bottom:25px;
+}
+
+.aboutus-footer .aboutus-text .col-md-8>img{
+margin-bottom: 41px;
+}
+
+.aboutus-footer .aboutus-text h2{
+margin-bottom:22px;
+margin-top:4px;
+}
+
+.aboutus-footer .aboutus-text h3 { 
+    margin-top: 18px;
+    margin-bottom: 25px;
+}    
+.geo-disc h1{
+margin-top: 25px;
+}
+
+.geo-disc a.home-site-link.btn.btn-lg.btnAccept {
+    margin-top: 19px;
+}
+
+.geo-disc a.btn.btn-lg.btn-margin-right {
+    margin-top: 3px;
+}
+.discover-summary.italy .summary .grid-summary a {
+    top: 25%;
+}
+.discover-summary.italy .summary-block{
+    height: 222px;
+}
+.your-data .customRichtext .about p{
+    margin-bottom: 25px;
+}
+.your-data h4{
+    margin-top: 55px;
+    margin-bottom: 55px;
+}  
+.getting-started .bottom-text>a {
+    position: absolute;
+    top: 321px !important;
+}
+.getting-started .bottom-text.experiencePanes h4 {
+    padding-top: 59px;
+}
+.getting-started .apply-help h4 {
+    min-height: 142px;
+}
+.summary-help .bottom-text>a {
+    position: absolute;
+    top: 321px !important;
+}
+.summary-help .bottom-text.experiencePanes h4 {
+    padding-top: 59px;
+}
+.summary-help .apply-help h4 {
+    min-height: 142px;
+}
+.ment-page .col-md-8.col-md-offset-2.text-center {
+    padding-bottom: 45px;
+}
+.discover-your-meter .carouselShareVideoDiv {
+	right: 36px;
+}
+.productPage .apply-help span {
+	 word-wrap: break-word;
+}
+.faq-sup .gs-row5 .apply-help {
+	padding-left: 22px;
+	padding-right: 18px;
+
+}
+
+.Thankyoupage .apply-help .bottom-text>a {
+  top: 322px;
+}
+.italy.discoverit-sensor .bottom-text>a {
+top: 335px;
+}
+.italy.discover-your-meter .customRichtext p{
+	color:#8e8e8e;
+}
+.summary-products .bottom-text>a {
+	position: absolute;
+	top: 321px
+}
+.discover-summary .bottom-text>a {
+    position: absolute;
+    top: 321px !important;
+}
+.discover-summary .bottom-text.experiencePanes h4 {
+    padding-top: 59px;
+}
+ .discover-summary .apply-help h4 {
+    min-height: 142px;
+} 
+.summary-products.italy .grid-summary {
+    margin-top: 100px;
+}
+}
+
+/** end of md **/
+
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+body{
+    font-size: 18px;
+}
+.login-wrap .newCustomer .login-container {
+    padding-bottom: 114px;
+}
+.spinner-loading{
+	margin-right: 10px;
+}
+
+.login-wrap .login-container {
+    padding-bottom: 150px;
+}
+.prsnDetailGrid-content{
+	padding-left:10px;
+}
+.shareVideoTut{
+    top:-13px;
+}
+
+.your-kids .banner-painless p{
+   font-size: 28px;
+ }
+
+ .your-kids .col-eq-height .prod-row-desc h3 {
+    font-size: 36px;
+}
+.italy .your-kids .prod-two-column .prod-row-desc h3 {
+    font-size: 36px;
+} 
+#faq-place #faq-table .panel-body{
+	padding-left:0px;
+}
+html:lang(en) .getting-started  .painless  .img-responsive{
+      position: relative;
+      right: 18%;      
+        } 		
+.gs-row5 .experiencePanes {
+    margin-bottom: 20px !important;
+} 
+.modal-dialog {
+    width:75%;
+    }
+.summary-help .customRichtext > .about, .summary-products .customRichtext > .about{
+     padding-top: 56px;
+     }
+.summary-help .customRichtext > .about h1, .summary-products .customRichtext > .about h1{
+     margin-bottom: 55px;
+
+     }
+.summary-help .grid-summary{
+    margin-top: 99px !important;
+
+     }
+.summary-help .apply-help {
+                margin-bottom: 44px !important;
+      }
+   .discover-summary .customRichtext .about {
+    padding-top: 56px;
+    }
+	.discover-summary .customRichtext .about h1 {
+		margin-bottom: 56px;
+	}
+	.discover-summary .grid-summary {
+		margin-top: 100px;
+	}
+	.discover-summary .gs-row5 .apply-help {
+		   margin-top: -7px;
+	}
+	.discover-summary .apply-help {
+					margin-bottom: 48px;
+		  }	  
+.prodmessage{
+	padding-top:10px;
+}
+#shareCarousel .carousel-control.right,#shareCarousel .carousel-control.left {
+	margin-top: 70%;
+}
+.faqCategories .about .container-fluid {
+    padding:0;
+}
+.faqCategories .about .container-fluid .about-heading {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.faqCategories .about-heading .faq-links .faq-list li a {
+    font-size: 24px;
+    color: #6e6e6e;
+}
+#faq-place #faq-table .faq p.more {
+    font-family: Gotham-Book-Regular;
+    font-size: 26px;
+    color: #8e8e8e;
+    padding-top: 0;
+}
+.panel-heading .panel-title {
+font-size: 40px;
+            color: #000000;
+        }
+.faqCategories #faq-place h2 {
+	padding-left: 0px;
+}
+.faqCategories #faq-table .faq .col-xs-12 {
+	padding: 0;
+}
+.faqCategories  .preparing-skin .panel-default .col-xs-10 {
+    padding-left: 15px;
+}
+.faqCategories .about-heading h2 {
+ font-family: Gotham-Bold;
+ font-size: 40px;
+}
+.relatedContentPanel .apply-help .col-md-4 {
+margin-left: 10px;
+    margin-right: 10px;
+}
+.faqCategories .about-heading p {
+ font-family: Gotham-Book-Regular;
+ font-size: 28px;
+ color: #212121;
+}
+.faqCategories .about-heading .faq-links .faq-list  {
+    font-family: Gotham-Book-Regular;
+    font-size: 24px;
+    color: #6e6e6e;
+    padding: 0;
+
+}
+.faqCategories .about-heading .faq-links {
+    width: 50%;
+    margin: 0 auto;
+}
+.faqCategories #topquestions {
+    font-family: Gotham-Bold;
+    font-size: 40px;
+    color: #212121;
+}
+.faqCategories  .about{
+	padding-bottom:100px;
+}
+#faq-table .pnl-title {
+    font-family: Gotham-Medium-Regular;
+    font-size: 30px;
+}
+.greeting-recovery-container{
+width: 50.8%;
+margin-top: 93px;
+}
+.active-menu {
+    padding-bottom: 24px;
+}
+.reset-recovery-container{
+    width: 54%;
+    background-color: #F4F2F4;
+    margin-top: 5px;
+    margin-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.xs-recover-label{
+    font-size: 16px!important;
+}
+.recoverTitle{
+padding-top:50px;
+padding-bottom:20px;
+text-align: center;
+    }    
+.confirm-wrap{
+padding-top:30px;
+        }              
+.carouselShareVideoDiv {
+    margin-top: -100px;
+    right: 47px;
+}
+ .media-body .btn{
+    margin-top:0px;
+        }
+.login-container .reg-btn {
+    margin-top: 10px;
+}
+.login-container h2{
+        margin-top:15px;
+    margin-bottom:0px;
+    }
+.loginpage .about h1{
+    font-size:40px;
+    }
+.login-container p{
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+.loginpage .about{
+    padding-top:50px;
+    padding-bottom:50px;       
+        }
+.loginpage .accountPage{
+    padding-top:50px;
+        }
+.margin-title{
+    margin-left:13% !important;
+    }
+.form-btn, .form-btn:hover{
+    font-size:24px;
+        }
+.aboutus-text h1{
+    font-size:32px;
+    }
+.prod-spinnerError {
+    padding-top: 110px;
+}
+.productOverlay .modal-body h2{
+    font-size: 30px;
+    padding-top:40px;
+        }
+.productOverlay .button-orange {
+    float:none !important;
+    letter-spacing: 3px;
+    margin-top:40px;        
+}
+.productOverlay .margin-top{
+    margin-top:50px;
+}
+.productOverlay .margin-top h5 {
+    font-size: 22px;
+    color: #4f4f4f;
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+.onefivepadding span{
+    font-size:24px !important;
+    }
+.checkboxOrange label>p{
+    width:auto;
+    }
+#receiveNewsletter .footer-desc-text p{
+    font-size:22px;
+}
+#after-submit, #after-submitcon{
+    padding-left: 15px;
+    padding-right: 15px     
+    }   
+.email-form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.touchBlocks h3 span,.margin-about, .aboutus-text h4,.touchBlocks h5 span, .privacy_policy .aboutus-text h2, .privacy_policy .aboutus-text h3{
+    font-size:26px;
+}   
+#retrieve-pwd, #retrieve-pwdcon{
+margin-bottom: 20px;
+padding: 20px 20px;
+width: 78%;
+font-size: 14px;
+font-family: Gotham-Book-Regular;
+}
+.cancel-xs, .cancel-xs:hover {
+    margin-left: 5px;
+    margin-bottom: 40px;
+    width: 78%;
+    padding: 20px 15px!important;
+    font-size: 14px;
+    font-family: Gotham-Book-Regular;
+}
+
+.productPage .helpPanes p,.productPage .prod-row-desc p,.productPage .painless p,.sp-product-yellow p,.prod-row-desc li{
+    font-size:24px;
+        }
+.productPage .painless p i{
+    font-size:20px;
+            }
+.about input[type='email']{
+        height:80px;
+        font-size:26px;
+        text-align:center;
+    }    
+.img-read{
+    padding-top:0px;
+}
+.img-responsive{
+    display: inline;
+}
+.prod-row-desc .btn-info{       
+        margin-top: 50px;       
+        margin-bottom: 30px;        
+    }
+.customRichtext p{
+    padding-left:7%;padding-right:7%;
+    font-family:Gotham-Book-Regular;
+    color:#8e8e8e;
+    }
+.imgyourdata{       
+    width:100%;     
+    }    
+.traffic_table .prod-spec-table th:first-child{     
+    width:175px;        
+    }
+.login-btn>.btn{
+        margin-left: 92px;
+    }
+    .about{
+        padding-top:100px;
+    }    
+    .bg-orange ,.touchBlocks{
+        height:auto;
+        min-height:auto;
+    }
+    .bg-img {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.prod-row-desc{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        float: none !important;
+    }   
+    .formWrapper .checkboxOrange label>p{
+        font-size:22px;
+    	margin-top:-13px;
+    }
+    
+    .btn-validate-email{
+        margin-top:40px;
+        margin-bottom:25px;
+    }
+    .about h1,.about h2,.media-text h2,.media-text h3{
+        font-size: 40px;
+    }
+    
+    .media-text{
+        margin: 0px;
+    }
+
+.margin-bottom .media-left,.margin-bottom .media-body{
+        display:block !important;
+    }
+.margin-bottom .media-left,.margin-bottom .media-body{
+        width:100%;
+        text-align: center;
+}
+    .banner-painless{
+        position: relative;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 100%;
+        text-align: center;
+        margin-left:0%;
+    }
+    .padding-nav {
+    padding-top: 11%;
+}
+#lblEmailError2{
+    margin-bottom: 30px;
+}
+.pInstruction {
+    padding: 0px 37%;
+    }
+.sub-container .input-lg {
+    width: 90%;
+}
+.checkboxOrange label>p{
+ margin-top:0px;
+ }
+.hdcontent {
+    text-align: center;
+}
+.sub-container .divChk{
+        margin-bottom:0px;
+}
+.sub-container .btn-validate-email{
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+.sub-container {
+    height: 730px;
+}
+#sharefuction{
+        right: 2%;
+        z-index:1000;
+          top:48px;
+    width:70px;
+}
+#shareCarousel .btn.btnVideoShare{
+        margin-bottom: 100px;
+    }
+.btn.btnVideoShare{
+        margin-bottom: 68px;
+    }
+
+.agreementTerms{
+    margin-top:15px;
+    }
+.media-text  .row  .visible-xs img,.media-text  .row  .col-md-5 img{
+    margin-left: 0%;
+}
+.traffic_table .prod-spec-table img {
+    padding-right: 5px;
+}
+.traffic_table .prod-spec-table tr td:first-child {
+    padding-left: 20px;
+}
+.softwareBlock .checkboxOrange label>p {
+    width: auto;
+    font-size: 16px;    
+}
+.prod-two-column h2, .prod-two-column h2 {
+    font-size: 36px;
+}
+.prod-two-column p,.about p{
+font-size: 28px;
+    }
+.gs-row5 .apply-help .bottom-text {
+    min-height: 390px;
+    height:auto;
+}
+
+.productPage .gs-row5 .apply-help .bottom-text{
+min-height: 200px;
+}
+.gs-row5 .experiencePanes h4 {
+    min-height: 100px;
+        padding-top: 55px;
+}
+.gs-row5 .apply-help .bottom-text p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.gs-row5 .btn-link{
+        top: 250px;
+}
+.gs-row5 .link-txt{
+    font-size: 26px;
+    text-transform: uppercase;
+        }
+.gs-row5 .apply-help .bottom-text p {
+    font-size: 26px;
+}
+ .gs-row5 .btn-link img{
+ margin-bottom: 12px; 
+  } 
+.carousel-desc .btn,.item .banner-new .btn,#receiveNewsletter  .about p{
+    font-size: 24px;
+}
+#receiveNewsletter  .btn-validate-email{
+    margin-top:60px;
+    margin-bottom:30px;
+}
+.discoverit-sensor .customRichtext p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.sensor-panel table th {
+    font-size: 20px;
+    font-family: Gotham-Medium-Regular;
+}
+   .preparing-skin tr td:nth-child(2) {
+    vertical-align: middle;
+}
+
+.preparing-skin .panel-default {
+    margin-bottom: 0;
+}
+    .sensor-panel .panel-body {
+    padding-bottom: 0;
+}
+
+.expCarousel .carousel-inner h2, .expCarousel .carousel-inner h3 {
+    font-size: 40px;
+    margin-bottom: 22px;
+}
+#shareCarousel .item p {
+    font-size: 24px;
+}
+#shareCarousel .item b {
+    font-size: 26px;
+    font-family: Gotham-Medium-Regular;
+}
+.expCarousel {
+    margin-top: 50px;
+    min-height: 950px;
+}
+.video_carousel{
+padding-bottom:0;
+}
+
+.discoverit-sensor .customRichtext .about{
+padding-top:40px;
+}
+.discoverit-sensor .about{
+padding-top:35px;
+}
+.discoverit-sensor .customRichtext .about{
+padding-top:40px;
+}
+
+.discoverit-sensor .about h1{
+    margin-bottom: 50px;
+}
+.discoverit-sensor .about .btn-lg{
+    margin-top:50px;
+}
+.two-navigation-banner {
+    margin: 0 10px;
+}
+.discover-your-meter .customRichtext .btn {
+    margin-top: 30px;
+}
+.sensor-panel table{
+margin-top:40px;
+}
+.sensor-panel .panel-heading .panel-title {
+    font-size: 28px;
+    color: #212121;
+    font-family: Gotham-Medium-Regular;
+    }
+
+.help-tutorials .rte .about h2{
+font-size:40px;
+    margin-bottom: 16px;
+}
+.help-tutorials .rte .about {
+  padding-top: 90px;
+    padding-bottom: 95px;
+}
+.v-padding-top {
+    padding-top: 15px;
+}
+.col-resources:nth-child(odd){
+clear:both;
+        }
+.dynamicCross .col-md-3 img {
+    padding-top: 0px;
+}
+ .login-container {
+          margin-bottom: 50px;
+          height: auto;  
+          padding-bottom:75px;  
+    }
+
+.aboutus-text table table tr td{
+    word-break: break-all;
+}
+
+.country-selection h3{
+font-size:32px;
+padding-bottom: 50px;
+margin-bottom: 0px;
+font-family:Gotham-Bold;
+}
+.country-selection li{
+                padding-bottom:0;
+}
+.country-selection {
+    padding-left: 0;
+padding-top:0;
+}
+.product-basket .basketIcon .checkout-btn-div .btn{
+    padding-left: 21% !important;
+    padding-right: 21% !important;
+}
+select {
+    min-width: 175px;
+    min-height: 40px;
+    padding-left: 15px;
+ }
+ .testimonial .form-group label {
+	font-family: Gotham-Medium-Regular;
+    font-size: 22px;
+ }
+ .banner-painless p{
+    margin-left: 8%;
+    margin-right: 8%;
+	font-size:28px;
+}
+ .banner-painless h3{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Thankyoupage .about{
+    padding-top: 45px;
+}
+.Thankyoupage .sub-container{
+    margin-bottom: 25px;
+}
+.agreementTerms{
+      margin-top: 30px;
+}
+.help-tutorials .shareVideoTut{
+    top: -14px;
+}
+#lblCheckboxError{
+	padding-top:30px;
+}
+.subscribesuccess #lblCheckboxError{
+	padding-top:0px;
+}
+.AddressBtn, .AddressBtn:hover, .AddressBtn:focus {
+    margin-top: 37px;
+    margin-bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #e4572d;
+}
+.italy.getting-started .bottom-text>a {
+    top: 210px;
+}
+
+.italy.getting-started .bottom-text{
+   min-height: 288px;
+}
+.italy .prod-two-column p{
+	font-size:28px;
+}
+.italy.discover-your-meter .customRichtext p{
+	font-size:24px;
+}	
+.discoverit-sensor .gs-row5 .btn-link img, .getting-started .gs-row5 .btn-link img,
+.discover-your-meter .gs-row5 .btn-link img, .your-data .gs-row5 .btn-link img,
+.your-medical .gs-row5 .btn-link img, .your-kids .gs-row5 .btn-link img{
+        margin-bottom: 6px;
+}
+html:lang(en) .your-data .customRichtext .about h4{
+      font-size: 28px;
+	margin-bottom: 40px;
+    margin-top: 60px;
+}
+.italy.getting-started .textimage .media-text{
+	padding-top:0;
+    margin-top: 40px;
+} 
+.preparing-skin .panel-default>.panel-heading
+{
+    padding-bottom: 0px;
+} 
+.italy.discover-your-meter .media-text{
+      padding-top:0 !important;
+      margin-top: 50px !important;
+}
+.sub-footer a {
+text-align:center;
+}
+}
+/** end of sm **/
+
+/********************************* XS Portrait ************************/
+
+@media (max-width: 767px) {
+
+body{
+    font-size: 14px;
+}
+
+.Luxemberg .abouterror h1 {
+    letter-spacing: 0px;
+} 
+
+.CookiePolicyDesktop {
+    display: none;
+}
+.CookiePolicyMobile {
+    display: table;
+}
+
+.account-overview.modal-open {
+    overflow: hidden!important;
+    position: fixed!important;
+}
+.Checkoutpage.modal-open {
+    overflow: hidden!important;
+    position: fixed!important;		
+}
+
+.modal{
+-webkit-overflow-scrolling: touch;
+}
+
+.login-wrap .login-container .error_show #forgetPwdReset{
+ font-size: 11px;
+}
+	
+.login-wrap .login-container {
+	padding-bottom: 35px;
+}
+.subscribesuccess .sub-container h2{
+	margin-top:0px;
+    margin-bottom:15px;        
+        }
+.subscribesuccess .sub-container .divChk{
+	margin-bottom: 0px;
+    padding:15px 0px 0px 17px;
+                }
+.subscribesuccess #lblCheckboxError{
+	padding-top:0px;
+}
+.subscribesuccess .sub-container .btn-validate-email {
+    margin-top: 20px;
+}
+.thankyouWrappererror h3,.thankyouWrapper h3{
+	font-size:12px;
+        }
+.Homepage .customRichtext .about{
+                padding-top:20px;
+    padding-bottom:30px;            
+}
+#lblEmailError, #lblCheckboxError{
+	font-size:11px;
+}
+ #lblCheckboxError{
+	padding-top:10px;
+}
+.gs-row5 .experiencePanes {
+    margin-bottom: 20px !important;
+} 
+.maintenance .about {
+    padding-top: 40px;
+    padding-bottom: 30px;
+} 
+.prodmessage{
+	text-align: center;
+}
+.sensor-panel .panel-title {
+    padding-left: 0px;
+}
+.preparing-skin .pnl-title{
+	letter-spacing:0px;
+}
+header {
+    box-shadow: 0px 3px 5px #C5c3c5;
+}
+.accountPage .login,.accountPage .container{
+	padding-left:0px;
+    padding-right:0px;        
+}
+.forget-modal-title{
+	padding-top:0px;
+}
+.emaillabel {
+	padding-top:20px;
+}
+#forgot_password_form .modal-body{
+	margin-top:0px;
+}
+
+.about-heading >.success{
+    margin-top:40px;
+}
+.contact_us_success .form-btn{
+    margin-bottom:40px;
+    margin-top:10px;            
+}
+.contact-thankyou .about{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.preparing-skin #faq-table .panel-title {
+	padding-top: 30px;
+    padding-bottom: 30px;
+}
+#faq-table .panel-heading .glyphicon {
+    position: absolute;
+    top: 36%;
+}
+#faq-place #faq-table .faq.panel-default>.panel-heading span {
+padding-top: 0;
+        } 
+#faq-table .panel-heading .col-md-1{
+	padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left:0px;
+} 
+#faq-place #faq-table .panel-body p {
+margin-top:0px;
+padding:0px 0px 0px 15px;   
+}
+#faq-place #faq-table .panel-body {
+padding-bottom: 20px;
+}
+#faq-place #faq-table .faq p.more {
+    font-family: Gotham-Book-Regular;
+    font-size: 13px;
+    color: #8e8e8e;
+    padding-top: 0;
+}
+#faq-place #faq-table  .faq .panel-title {
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+.faqCategories  .about {
+	padding-bottom:40px;
+}
+.faqCategories .about .container-fluid {
+    padding:0;
+}
+.faqCategories .about .container-fluid .about-heading {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.faqCategories #faq-place h2 {
+	padding-left: 10px;
+	padding-top: 30px;
+}
+.faqCategories .about-heading .faq-links .faq-list li a {
+    font-size: 12px;
+    color: #6e6e6e;
+    font-family: Gotham-Book-Regular;
+}
+.faqCategories .about-heading .faq-links .faq-list li a.active {
+
+    font-family: Gotham-Medium-Regular;
+}
+.faqCategories #faq-table .faq .col-xs-12 {
+	padding: 0;
+}
+.faqCategories  .preparing-skin .panel-default .col-xs-10 {
+    padding-left: 10px;
+}
+.faqCategories .about-heading h2 {
+ font-family: Gotham-Bold;
+ font-size: 20px;
+}
+.relatedContentPanel .apply-help .col-md-4 {
+margin-left: 10px;
+    margin-right: 10px;
+}
+.faqCategories .about-heading p {
+ font-family: Gotham-Book-Regular;
+ font-size: 14px;
+ color: #212121;
+}
+.faqCategories .about-heading .faq-links .faq-list  {
+    font-family: Gotham-Book-Regular;
+    font-size: 12px;
+    color: #6e6e6e;
+    padding: 0;
+
+}
+.faqCategories .about-heading .faq-links {
+    width: 50%;
+    margin: 0 auto;
+}
+.faqCategories #topquestions {
+    font-family: Gotham-Bold;
+    font-size: 20px;
+    color: #212121;
+}
+#faq-table .pnl-title {
+    font-family: Gotham-Medium-Regular;
+    font-size: 15px;
+}
+.relatedContentPanel .apply-help  .experiencePanes h2 {
+    font-family: Gotham-Bold;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.fixdialcode {
+    width: 10%;
+}
+.cookie-btn,.cookie-btn:hover{
+    margin-bottom:15px;
+        }
+.errorPageText p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.reset-recovery-container{
+    width: 87%;
+    background-color: #F4F2F4;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.discover1{
+    padding-left:3px;
+}
+.recoverTitle{
+    text-align: center;
+    padding-top: 30px!important;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 140%;
+    }
+                
+                
+.confirm-wrap{
+padding-top:30px;
+        }
+
+.greeting-recovery-container{
+    width: 87%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 93px;
+    margin-bottom: 50px;
+}
+
+.xs-recover-label{
+    font-size: 16px!important;
+}
+.recoverTitle {
+font-size: 16px!important;
+
+}
+.aboutus-text table table tr td{
+    word-break: break-all;
+    }
+.dynamicCross .col-md-3 img {
+    padding-top: 0px;
+}
+.about_us>section>div>p:nth-last-child(1) span,.about_us>section>div>p:nth-last-child(2) span,.about_us>section>div>p:nth-last-child(3) span{
+     font-size: 12px !important;
+  }
+.loginpage .about h1{
+    font-size:20px;
+	letter-spacing: 5px;
+    margin-bottom:0;
+
+    }
+.loginpage .about{
+    padding-top:25px;
+    padding-bottom:25px;  
+ }
+.login-container h2{
+        margin-top:10px;
+    margin-bottom:0px;
+    }
+.login-container p{
+    padding-top:15px;
+    padding-bottom:15px;
+    }
+.loginpage .accountPage{
+    padding-top:15px;
+        }
+#faq-place .paging-nav a{
+    padding: 2px 4px; 
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.modal-dialog {
+    width:auto;
+    }
+#orders .paging-nav a{
+    padding: 2px 4px; 
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.productTitle {
+    font-size: 12px;
+    font-family: Gotham-Bold;
+    padding-top: 25px;
+    padding-left: 0px;
+    text-transform: uppercase;
+}
+.sticky_headerMobile{
+    background-color: #212121;
+    position: fixed;
+    top: 0px;
+    min-height: 100px;
+    z-index: 999;
+}
+.sticky_headerMobile .button-orange,.sticky_headerMobile .button-orange:hover{
+	font-size: 10px;
+}
+.productPriceDec {
+    font-size: 20px;
+    font-family: gotham-medium-regular;
+    margin-left: -5px;
+}
+span.productPrice {
+    font-family: gotham-medium-regular;
+    font-size: 30px;
+}
+.priceBlock {
+    padding-top: 5px;
+	padding-left: 0px;
+}
+.productStickyButton {
+    padding: 35px 10px 0px 0px;
+}
+.sticky_error {
+    padding: 10px 0px 10px 18px !important;
+	text-align: left !important;
+}
+.productStickyButton a {
+    font-size: 10px;
+}
+.form-btn, .form-btn:hover{
+    font-size:12px;
+        }
+.productOverlay .modal-body h2{
+    font-size:20px;
+        }
+.productOverlay #prod-title, .productOverlay #prod-price,#prod-quantity{
+    font-size:15px;
+    }
+.productOverlay .modal-body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.prodetail-buy .productOverlay  .button-orange, .prodetail-buy  .productOverlay  .button-orange:hover, .prodetail-buy .productOverlay  .button-orange:focus{
+        margin-top:30px;
+                }
+#prod-img{
+    padding-top:25px;
+	padding-bottom: 30px;
+}
+.productOverlay .padding-nav {
+    padding-top: 6%;
+}
+.productOverlay .vat{
+    font-size:8px !important;
+            }
+.checkboxOrange label>p{
+    width:auto;
+    }
+#receiveNewsletter .footer-desc-text p{
+    font-size:11px;
+}
+#after-submit, #after-submitcon{
+padding-left: 20px;
+padding-right: 20px     
+}
+#shareCarousel .sharePopup{
+    width: 85px;
+}
+#shareCarousel .carousel-inner h2,.margin-about, .aboutus-text h4, .privacy_policy .aboutus-text h2, .privacy_policy .aboutus-text h3{
+    font-size: 18px;
+ }
+ .carouselShareVideoDiv {
+    margin-top: -75px;
+    right: 40px;
+}
+
+#shareCarousel .carousel-indicators {
+    bottom: 0px;
+}
+.email-form-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.modal-footer {
+    padding-bottom: 0!important;
+}
+
+
+#retrieve-pwd, #retrieve-pwdcon{
+margin-bottom: 20px;
+padding: 20px 30px;
+width: 90%;
+font-size: 12px;
+font-family: Gotham-Book-Regular;
+}
+
+.cancel-xs, .cancel-xs:hover {
+    margin-left: 5px;
+    margin-bottom: 40px;
+    width: 90%;
+    padding: 20px 15px!important;
+    font-size: 12px;
+    font-family: Gotham-Book-Regular;
+}
+.emailAddressgroup{
+margin-left: 20px;
+margin-right: 20px;
+}
+
+#login_submit > .button-orange{
+    background-color: #E4572D;
+    background-image: none;
+    color: #ffffff;
+    border-radius: 0px;
+    font-family: 'Gotham-Medium-Regular';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-color: transparent !important;   
+    
+}
+#createAccountLink
+{
+    border-radius: 0px;
+    font-family: 'Gotham-Medium-Regular';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 14px 24px;
+    font-size: 14px;
+    border-color: transparent !important;
+    width: 90%;
+}
+.prod-row-desc h2{
+                font-size:18px;
+                }
+#add-address {
+margin: 20px auto;
+}   
+
+.checkboxOrange label:before {
+    top: 0;
+    color:white;        
+}
+.img-responsive {
+    display: inline;
+}
+.breadcrumb {       
+    margin-top: 0px;       
+}    
+     
+.italy .prod-two-column p {     
+    font-size: 13px;        
+}      
+
+.apply-help .helpPanes{
+    height: auto;
+}
+.banner-painless.text-center p {        
+    padding-left: 8%;       
+    padding-right: 8%;
+}   
+.apply-help .bottom-text h4{
+    font-size: 18px;
+}
+
+.input-group.bootstrap-touchspin {
+    height: 45px;
+    width: 85px;
+    border: 1px solid #ccc;
+    margin-left: 20%;
+}
+.prodetail-buy .button-orange, .prodetail-buy .button-orange:hover, .prodetail-buy .button-orange:focus {
+    padding: 14px 16px;
+    float: none !important;
+    clear: both;
+}
+#shareCarousel .col-xs-12.col-sm-12.col-md-8.iframevideo {
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+.table_for_sensor .panel-default>.panel-heading+.panel-collapse>.panel-body {
+border-top-color: #ddd;
+    padding: 20px;
+    padding-bottom: 0;
+
+}
+
+.table_for_sensor .table-bordered>tbody>tr>td {
+    font-size: 11px;
+}
+
+.item .btn.btnShareApp{
+    margin-bottom: 75px;
+    width:50px;
+}
+.softwareBlock .inside label[for="chkEmail"]{
+font-size:11px;
+}
+#macbutton, #pcbutton {
+   
+    font-size: 12px;
+}
+.customRichtext .about h3{
+    margin-bottom:25px;
+} 
+.customRichtext .about {
+    padding-top:42px;
+} 
+.customRichtext p{
+    padding-left:7%;padding-right:7%;
+    font-family:Gotam-Book-Regular;
+    color:#8e8e8e;
+    }
+
+.imgyourdata{ 
+    width:100%;
+}
+         
+.prod-row-desc .btn-info{       
+margin-top:20px;        
+margin-bottom:10px;     
+}
+ 
+.traffic_table .prod-spec-table th{     
+                width:auto;     
+}       
+.traffic_table .prod-spec-table th:nth-child(3), .traffic_table .prod-spec-table tr td:nth-child(3){        
+padding-left:20px;      
+}
+.about input[type='email']{
+    height:40px;
+    font-size:12px;
+    text-align:center;
+}
+.checkboxOrange label>p{
+    font-size:11px !important;
+    margin-top:-5px;
+}
+.banner-painless{
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left:0%;
+    width: 100%;
+    text-align: center;
+}
+
+.prod-two-column p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.prod-row-desc{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    float: none !important;
+}
+.about h1,.media-text h2,.media-text h3{
+    font-size:20px !important;
+    letter-spacing:2px;
+}
+.about p,.about p span,.aboutus-text p,.aboutus-text a, .aboutus-text a:hover,.aboutus-text table{
+    font-size:13px !important;
+    font-family: 'Gotham-Book-Regular' !important;
+}
+.aboutus-text h1{
+    font-size:22px;
+            }
+.media-text h2,.media-text h3{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.pSubInstruction {
+    padding: 10px;
+}
+.media-text{
+    margin:0px;
+    padding-top: 40px;
+}
+.media-xs{
+    text-align: center;
+}
+.m-login{
+    height:425px;
+}
+.form-group>.col-sm-5>.text-orange {
+    margin-left: 0px;
+}
+[mag-thumb]{
+    position:relative !important;
+}
+.gs-btn {
+    margin-right: 0px;
+    margin-top:0px;
+	font-size:12px;
+}
+.img-font{
+    font-size:50px;
+}
+.about-heading p,.inside p{
+    font-size: 12px;
+}
+
+.btn-validate-email{
+    margin-top:30px;
+    margin-bottom:25px;
+}
+
+.footer-desc-text {
+    padding-bottom: 30px;
+}
+.about h2,.about .about-heading h4,.Homepage .about h4,.discover-your-meter .about h3{
+    font-size:20px;
+    margin-bottom:15px;
+}
+.media-body p{
+    font-size:14px;
+    padding-top:0px;
+}
+.margin-bottom .media-left,.margin-bottom .media-body{
+    display:block !important;
+}
+.margin-bottom .media-left,.margin-bottom .media-body{
+    width:100%;
+    text-align: center;
+}
+.modal-content img {
+      display: inline;
+}
+.about{
+        padding-top:50px;
+    }
+    .painless h2, .painless h3{
+        font-size:20px;
+    }
+    .painless p{
+        font-size:14px;
+        }
+ 
+    #lblEmailError2{
+        margin-bottom: 20px;
+    }
+
+.productPage .prod-two-column h2{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+.country-xs .humberg{
+            top:50px;
+    }
+    .country-selection .about-heading .flag-name{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .country-selection .about-heading ul li,.country-selection .about-heading h2{
+        text-align: center;
+    }
+    .two-navigation-banner {
+        margin: 0;
+    }
+     .prep-desc{
+        margin:0px;
+    }
+    .preparing-skin .col-md-9 {
+        margin-left: 5px;
+    }
+    .preparing-skin p{
+        padding-top:20px;
+    }
+    .preparing-skin .panel-title{
+        padding-bottom:0px;
+    }
+.preparing-skin .panel-default .col-xs-10{
+        padding:0px;
+        padding-left: 20px;
+    }
+    .preparing-skin .panel-title{
+        padding-bottom:0px;
+    }
+    .preparing-skin {
+        padding-left:5px;
+        padding-right:5px;
+
+    }
+    .preparing-skin .panel-body{
+        padding-left:0px;
+    } 
+    .hdcontent h2.media-heading{
+        text-align: center;
+    }
+    .hdcontent p{
+        text-align: center;
+    }
+    .expCarousel{
+        margin-top: 50px;
+    }
+    .col-xs-12.col-sm-12.col-md-8.iframevideo iframe{
+        height:300px;
+        width: 100%;
+    }
+    .btnShareApp{
+      margin-left: 0px;
+      margin-right:0px !important;
+        
+    }
+    .hdcontent{
+        text-align: center;
+    }    
+    .apply-help{
+        padding: 0px;
+    }
+    .preparing-skin h1{
+        font-size: 25px;
+        padding: 15px;
+    }
+    .faq >.panel-heading>.row{
+        margin: 0px;
+    }
+    .faq .panel-title {
+        padding-bottom: 20px;
+    }
+    .faq.panel-default>.panel-heading span {
+         padding-top: 20px;
+    }
+    .faq .panel-body {
+        padding-left: 15px;
+    }
+    .pagination>li>a, .pagination>li>a:hover{
+      padding: 6px 12px;
+      margin-left: 2px;
+      margin-right: 2px;  
+    }
+    .paginate {
+        margin-top: 25px;
+    }
+    .search-results ul{
+     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    .search-results .srch-grid{
+        min-height: 0px;
+    }
+    .search-results li{
+        line-height:28px;
+    }
+    .search-results, .search-results .col-md-8{
+        padding-left:0px;
+        padding-right:0px;
+        margin-top:0px;
+    }
+    .search-record{
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+    .search-header .form-group{
+        padding:0px;
+        
+    }
+    .search-header{
+        padding-bottom: 40px;
+    }
+    .search-record p{
+        width:300px;          
+    }
+    .login-container {
+          padding: 10px;
+          margin-bottom: 50px;
+          height: auto;  
+    }
+    .login-btn>.btn{
+            margin-left: 20px;
+        }
+.sub-container{
+    padding: 10px;
+    height:890px;
+}
+.sub-container .divChk {
+    margin-bottom:0px;
+    padding-left: 17px;
+    padding-right: 0px;
+}
+.sub-container .input-lg {
+    margin-left: 15px;
+}
+.login-container .reg-btn {
+    margin-top: 20px;
+}
+.padding-checkout{
+    padding-top: 10px;
+}
+#before-submit {
+    padding: 0px 15px ;
+}
+#before-submit p {
+    padding-bottom: 20px;
+}
+
+.cancel-xs,.cancel-xs:hover{
+    padding-left: 119px;
+    padding-right: 119px;
+    margin-left: 5px;
+    margin-bottom:20px;
+}
+.cancel-xs-one,.cancel-xs-one:hover {
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: 0px;
+}
+.cancel-xs-two,.cancel-xs-two:hover {
+    padding-left: 96px;
+    padding-right: 96px;
+    margin-left: 5px;
+    margin-bottom:20px;
+}
+.country-selection{
+    text-align: center;
+}
+.checkboxOrange label>p{
+     width:auto;
+     margin-top:0px;
+     }
+.create-account .checkboxOrange label>p {
+    padding-bottom: 0px;
+}
+.AddressBtn, .AddressBtn:hover{
+    padding-right:10px;
+    padding-left:10px;
+    margin-right:0px;
+}
+.value-tax .checkboxOrange label{
+     left:0px;
+     }
+#btnCouponOk{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 16px 19px;
+    }
+#VoucherCode{
+	float:left;
+}	
+.productOverlay .margin-top{
+    margin-top:50px;
+        }
+ .productOverlay .margin-top h5{
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+    .productOverlay .cancel{    
+    padding: 7px 12px;          
+    letter-spacing:1px;
+    font-size:12px;
+   }
+.sub-container .btn-validate-email{
+        margin-top:0px;
+        }
+#sharefuction {
+    right: 15px;
+    z-index: 1000;
+    top: 49px;
+    width: 60px;
+}
+.share-btn {
+    margin-right: 0px;
+}
+#btnProductShare {
+    min-width: 60px;
+}
+.sharefuction img {
+    padding: 5px;
+	margin-bottom: 10px;
+}
+    /**Discover IT-your Data **/        
+.traffic_table .prod-spec-table tr td:first-child{      
+padding-left: 0;
+    text-align: center;
+    padding-right: 0;       
+}       
+.traffic_table .prod-spec-table img{        
+padding-right:5px;      
+}
+.traffic_table .prod-spec-table th{     
+  width:auto;       
+}       
+.traffic_table .prod-spec-table th:nth-child(3), .traffic_table .prod-spec-table tr td:nth-child(3){        
+    padding-left:8px !important;padding-right:8px !important;
+    text-align: center;              
+}
+.media-left {
+    padding-top: 6px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+}
+.bottom-text {
+   height: 260px;
+}
+.bottom-text h4 {
+    padding-top: 25px;
+	font-size: 18px;
+}
+.helpPanes h4 {
+    min-height: 0px;
+}
+.experiencePanes h4 {
+    min-height: 80px;
+}
+.bottom-text>a {
+    top: 200px;
+}
+.link-txt, .bottom-text p {
+    font-size: 14px;
+    padding-top:0px;
+}
+.bottom-text p{
+    padding-top:0px;
+    }
+#infoModal .modal-dialog{               
+    width:auto;             
+    }
+.agreementTerms{
+      margin-top: 30px;
+}
+.prod-row-desc h2{
+    margin-top:0px;
+}
+.mob-twocol-collage .img-calque1{
+        width: 100%;
+}
+.item .banner-new .btn,.item .banner-new .btn:hover, .carousel-desc .btn, .media-body .btn, .gs-btn, .disclaimer .btn, .prod-row-desc .btn, .item .btn, .login-container .form-group .login-btn .btn, #express, #btn-ok,.seebtn, .seebtn:hover, #voucher_btn-ok,.btnShareVideo, 
+.btnShareVideo:hover,.getinTouchWrapper .bg-orange .btn,.button-orange, .button-orange:hover, .button-orange:focus, .cancel, .cancel:hover{
+    padding:8px 15px;
+    font-size: 12px ;
+    font-family: Gotham-Book-Regular;
+}
+.turkey .disclaimer .btn{
+	font-size: 11px;
+}
+.AddressBtn, .AddressBtn:hover{
+        padding:12px;
+         margin-top: 26px; 
+    font-size: 10px;
+        }
+.account-details #updateForm .AddressBtn, .account-details #updateForm.AddressBtn:hover{
+        padding:12px;
+        margin-top: 35px; 
+        font-size: 10px;
+      }
+.carousel-inner h3{     
+    font-size: 20px;        
+}
+.carousel-inner p {
+    font-size: 12px;
+}
+.video_mask {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.touchBlocks h3 span,.touchBlocks h4 span,.touchBlocks h5 span{
+    font-size:13px;
+}
+.bg-orange h3,.bg-orange h5{
+    margin-bottom:20px;
+}
+.bg-img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:45px;
+}
+.img-read{
+    padding-top:0px;
+}
+
+.about h3, .about h4{
+font-size:16px;
+}
+.traffic_table .prod-spec-table th, .prod-spec-table td{
+    font-size:8px;
+}
+.traffic_table .prod-spec-table th:first-child{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 355px;
+    text-align: center;
+}
+.prod-spec-table th{
+    padding-top:10px !important;padding-bottom:10px !important;
+    letter-spacing: 1px;
+}
+.traffic_table .prod-spec-table th:nth-child(2){
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    width:auto;
+}
+.traffic_table .prod-spec-table td{
+    padding-top:15px;padding-bottom:15px;vertical-align: middle;
+}
+.softwareBlock .inside label[for="chkSoftware"]{
+font-size:11px;
+}
+.softwareBlock p.text-orange{
+font-size:12px;
+}
+
+#macbutton, #pcbutton {
+    font-size: 12px;
+}
+#macbutton{
+    padding-left: 11px;
+    padding-right: 11px;
+}
+#pcbutton{ 
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.softwareBlock .checkboxOrange label{
+    left:0;
+}
+.softwareBlock .checkboxOrange label>p {
+      width: auto;
+    margin-top: 0px;
+    font-size: 12px;
+}
+.softwareBlock .checkboxOrange {
+    margin-top: 50px;
+}
+#macbutton{
+    margin-bottom:0;
+}
+
+#getSoftware{
+    margin-top:24px;
+}
+#receiveNewsletter{
+        padding:0px;
+}
+.btn-validate-email{
+    margin:0 auto 15px;
+}
+.divChk{        
+    margin-bottom:25px;
+}
+.prod-row-desc p,.prod-row-desc li{
+    font-size: 14px;
+}
+.painless h2, .painless h3 {
+    font-size: 20px;
+}
+.painless p {
+    font-size: 12px;
+}
+.about h1,.about h2, .media-text h2 ,.media-text h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #0385a6;
+}
+
+.media-text img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.discover-your-meter .media-text img{
+    padding-top: 10px;
+    max-width: none;
+    width: 110px;
+    height: auto;
+}
+.discover-your-meter .media-text img{
+    padding-top: 40px;
+    padding-bottom: 0;
+    max-width: none;
+    width: 110px;
+    height: auto;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.apply-help .col-md-4 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.softwareBlock .inside p, .customRichtext p{
+    color:#8e8e8e;
+	
+}
+.your-data .customRichtext p sup i{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+	-moz-hyphens:none;
+	-ms-hyphens:none;
+	-webkit-hyphens: none;
+	hyphens: none;
+	word-break:keep-all;
+}
+.softwareBlock .about,.customRichtext .about {
+    padding-top: 42px;
+}
+.btn-validate-email{
+    margin:0 auto 15px;
+}
+.about h4{
+    margin-top:10px;
+        margin-bottom:30px;
+
+    }
+.divChk{
+    margin-bottom:10;
+}
+.active-menu{box-shadow:none;padding-bottom:0;}
+
+#receiveNewsletter .btn-validate-email{
+    margin-top:30px;
+}
+.productPage .prod-row-desc h2{
+font-size:20px;
+}
+.productPage .prod-row-desc p, .painless p,.prod-row-desc li{
+    font-size:14px;
+}
+
+.apply-help .helpPanes{
+    height:auto;
+}
+
+.apply-help .bottom-text {
+    min-height: 0px;
+}
+.onefivepadding{
+    padding-bottom:40px;
+    }
+.gs-row5 .link-txt{
+    white-space: normal;
+}
+
+.gs-row5 .bottom-text>a{
+    left:10px;
+}
+.gs-row5 .apply-help{
+padding-left:0;padding-right:0;
+    }
+
+.your-data .apply-help .col-md-4 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.your-data .gs-row5 .apply-help {
+    margin-bottom: 0px;
+}
+.softwareCheckbox{
+    margin-left: 15%;
+}
+
+.expCarousel {
+    margin-top: 25px;
+}
+.discoverit-sensor .customRichtext p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.preparing-skin th,.preparing-skin td{
+font-size:10px;
+}
+.preparing-skin tr td:nth-child(2){
+                vertical-align:middle;
+}
+.sensor-panel table{
+margin-bottom:0;
+}
+.preparing-skin .panel-default{
+margin-bottom:0;
+}
+
+.preparing-skin th{
+font-size:10px;
+}
+.table_for_sensor .table-bordered>tbody>tr>td {
+    font-size: 10px;
+font-family:Gotham-Book-Regular;
+}
+.expCarousel .carousel-inner h2, .expCarousel .carousel-inner h3{font-size:20px;
+margin-bottom: 10px;
+}
+.video_carousel{
+padding-bottom:0;
+}
+.discoverit-sensor .about .btn-lg{
+    margin-top:30px;
+}
+/*.discover-your-meter .video_carousel {
+    padding-bottom: 30px; 
+}*/
+.discover-your-meter .customRichtext .about {
+    padding-top: 25px;
+}
+.discover-your-meter .customRichtext .btn {
+    margin-top: 15px;
+}
+.apply-help img.imgSwap {
+    width: 20px;
+}
+.italy .prod-two-column h2, .italy .prod-two-column h3 {
+    font-size: 18px;
+}
+.italy .prod-two-column p {
+    font-size: 14px;
+}
+.sensor-panel table{
+margin-top:20px;
+}
+.sensor-panel .panel-heading .panel-title {
+    font-size: 18px;
+    color: #212121;
+    font-family: Gotham-Medium-Regular;
+    }
+    .help-tutorials .rte .about p{
+    font-size:14px;
+    }
+    .help-tutorials .rte .about {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .help-tutorials .rte .about h2{
+        margin-bottom:15px;
+                }    
+    .v-padding-top {
+        padding-top: 20px;
+    }
+
+.shareVideoTut{
+    top:-13px;
+    width: 50px;
+    padding: 10px;    
+}
+.shareVideoTut img {
+    padding: 5px;
+    width: 30px;
+}
+a.btnVideoshareTutStyle, a.btnVideoshareTutStyle:hover, a.btnVideoshareTutStyle:focus{
+	width:50px;
+}
+.col-resources:nth-child(odd){
+clear:both;
+ }  
+.productPage .finger-pricks .prod-row-desc h2 {
+    width: 250px; 
+    margin: 0 auto;
+}
+#accountOverview .details-container .well{
+min-height:230px !important;
+}
+.country-selection h3{
+                font-size:16px;
+margin-bottom: 30px;
+font-family:Gotham-Bold;
+}
+.country-selection li{
+    padding-bottom:10px;
+}
+.country-selection {
+    padding-left: 0;
+padding-top:0;
+}
+	.sp-product-yellow p i {        
+        font-size: 12px;        
+    }    
+    .sp-product-yellow h2{
+        margin-top: 0px !important;
+        color:#83630c;
+    }
+    .sp-product-yellow{
+        padding:450px 0px 45px;
+    } 
+    .sp-product-yellow .col-md-offset-2.col-md-8{
+        padding-top:47px;
+    }
+    .sp-product-yellow p i, .painless p i{
+        font-size: 12px;
+    }
+	select {
+		min-width: 175px;
+		min-height: 40px;
+		font-family: Gotham-Book-Regular;
+		padding-left: 15px;
+   }
+   .about h1 {
+		color: #E4572D;
+	}
+	.productOverlay .h3{
+		font-size:12px;
+	} 	
+	.testimonial .form-group label {
+		font-family: Gotham-Medium-Regular;
+        font-size: 11px;
+    }
+	header{
+        box-shadow: 0px 3px 5px #C5c3c5;
+    }
+.downloadnowOverlay .btn-padding,.downloadnowOverlay .btn-padding:hover {
+    padding-left: 18px;
+    padding-right: 19px;
+}
+.Thankyoupage .sub-container{
+    margin-bottom: 25px;
+}
+.errorPageText p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.recoverTitle {
+    font-size: 16px!important;
+    padding-left: 0;
+    padding-right: 0;
+}   
+.fixdialcode {
+    padding-right: 0;
+    margin-right: 5px;
+    width: 10%;
+    width: 10%;
+}
+#sharefuction {
+    right: 0px;
+    }
+.reset-recovery-container{
+    width: 87%;
+    background-color: #F4F2F4;
+    margin-top: 5px;
+    margin-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.recoverTitle{
+    text-align: center;
+    padding-top: 30px!important;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 140%;
+    }
+
+
+.confirm-wrap{
+padding-top:30px;
+        }
+
+.greeting-recovery-container{
+    width: 87%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 93px;
+    margin-bottom: 50px;
+}
+.recoverTitle {
+font-size: 16px!important;
+
+}
+
+.productPage .apply-help .bottom-text {
+    height: auto;
+    min-height: 110px;
+}
+.prod-spinnerError {
+    padding-top: 100px;
+    text-align: center;
+}
+.gs-row5 .experiencePanes {
+    margin-bottom:20px;
+        }
+.hdcontentMinHeight{
+    min-height:0px;
+}
+.checkboxOrange label:before {
+top: 0px;   
+    color:white;
+}
+.fixdialcode {
+    padding-right: 0;
+    margin-right: 5px;
+	width: 10%; 
+    }   
+.sharePopup{
+ width:85px;
+}
+.login-container h2, .sub-container h2,.login-container h1
+{
+    font-size: 24px;
+}
+#createAccountLink{
+    padding: 10px 15px;
+}
+#retrieve-pwd{
+    padding: 20px 7px;
+	white-space: normal;
+}
+#btnProductShare{
+    right: 0px;
+}
+.help-tutorials .btnVideoshareTutStyle  {
+	padding:9px;
+}
+.help-tutorials .share-test{
+	width:auto;
+}
+.help-tutorials .shareVideoTut img {
+    padding: 5px;
+}
+.help-tutorials .shareVideoTut{
+	padding:0px;
+    top:0px; 
+}
+.your-data .about h4{
+  margin-top: 30px;
+}
+.terms-use .aboutus-text ul li, .terms-use.aboutus-text ol li,.terms-sale .aboutus-text ul li, .terms-sale.aboutus-text ol li{
+    font-size:13px !important;
+}
+.Checkoutpage .vouchercoupon{
+	width:100%;
+    float:left;
+} 
+.faq-sup .relatedContentPanel .container .apply-help .col-md-4{
+	margin-left:6%;
+	margin-right:6%;
+}
+.italy.getting-started .bottom-text>a {
+    top: 155px;
+}
+.italy.getting-started .bottom-text{
+    height: 225px;
+}
+.italy.discover-your-meter .customRichtext p{
+	color: #4f4f4f;
+    font-size: 14px !important;
+}
+.downloadnowOverlay a{
+	margin-top:50px;
+	margin-bottom:30px;
+}
+.italy.getting-started .about h2{
+    color: #e4572d;
+}
+.preparing-skin .panel-default>.panel-heading
+{
+    padding-bottom: 0px;
+}
+.getting-started .rte .about p{
+	font-size:14px !important;
+} 
+#myModal-country .modal-body {
+    height: 280px;
+}
+#redirectUrl {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+.aboutus-footer .aboutus-text .col-md-8>img {
+    margin-bottom: 5px;
+}
+.aboutus-footer .aboutus-text h2 {
+    margin-bottom: 9px;
+    margin-top: 10px;
+}                   
+.aboutus-footer .aboutus-text h3{
+margin-top: -8px;
+}
+.aboutus-footer .aboutus-text {
+    margin-bottom: 25px;
+}
+}
+/** end of xs portrait **/
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+.apply-help .bottom-text p{
+padding-left:20px;
+    padding-right:20px;
+}
+ 
+#btnCouponOk {
+    margin-left: 0px;
+    margin-right: 5px;
+    padding: 16px 12px;
+}
+.about_us>section>div>p:nth-last-child(2) span a{
+    margin-left:30px;
+                }
+.aboutus-text h1{
+    font-size:22px;
+        }
+
+.sharePopup{
+ width:85px;
+}
+.helpPanes h4{
+        min-height: 100%;
+    }
+    .bottom-text h4{
+        margin-top: 0;
+    }
+    .painless h2, .painless h3 {
+        margin-top: 0;
+        font-size: 18px;
+    } 
+.input-group.bootstrap-touchspin{
+    margin-left:0px;
+    width:63px;        
+}
+
+}
+
+@media (min-width: 320px) {
+.painless img {
+    width: 100%;
+}
+.privacy_policy section>section>div>h2{
+    font-size : 26px!important; 
+ }
+span.margin-top.pInstruction {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+  .prod-row-desc{
+        padding-top: 38px;
+        padding-bottom: 0px;
+        float: none !important;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+    .prod-two-column h2{margin-bottom: 0;}
+   
+    .modal-header .close{
+        margin-top: 0;
+    }
+.prodetail-buy .button-orange,.prodetail-buy .button-orange:hover,.prodetail-buy .button-orange:focus{
+        padding: 14px 24px;
+        float: left;
+        clear: both;
+    }
+	.prod-two-column h3{
+                font-size: 20px;
+}
+.downloadnowOverlay a {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+}
+/*end of 320px*/
+
+@media (max-width: 320px) {
+	.gs-row5 .bottom-text>a{
+	left:0;
+	}
+	
+} 
+@media (min-width: 1024px) {
+.banner-painless{
+margin-left: 5%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.productTitle {
+        padding-left: 45px;
+    }
+.account-overview.modal-open {
+    overflow: hidden!important;
+    position: fixed!important;
+}
+.Checkoutpage.modal-open {
+    overflow: hidden!important;
+    position: fixed!important;		
+}
+
+.modal{
+-webkit-overflow-scrolling: touch;
+}
+
+.productStickyButton {
+    padding: 35px 50px 0px 0px;
+}
+.sticky_error {
+    padding-left: 45px !important;
+	padding-top: 5px !important;
+	padding-bottom: 10px !important;
+}
+.productTitle {
+    padding-top: 30px;
+}
+.priceBlock {
+    padding-top: 25px;
+	padding-left: 15px;
+}
+.fixdialcode {
+    padding-right: 0;
+    margin-right: 5px;
+    width: 7%;
+    }
+.login-wrap {
+    margin-right: auto!important;
+    margin-left: auto!important;
+}    
+.greeting-recovery-container{
+    width: 50.8%;
+    margin-top: 93px;
+}
+.reset-recovery-container{
+    background-color: #F4F2F4;
+    margin-top: 5px;
+    margin-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fixdialcode {
+    padding-right: 0;
+    margin-right: 10px;
+    width: 10%;
+}
+.recoverTitle{
+    padding-top:50px;
+    padding-bottom:20px;
+    text-align: center;
+}
+.confirm-wrap{
+    padding-top:30px;
+}
+.modal{ 
+-webkit-overflow-scrolling: touch;     
+}  
+}   
+
+@media (min-width:1200px) and (max-width: 1300px){
+	.carouselShareVideoDiv {
+    margin-top: -178px;
+    right: 109px;
+}
+#shareCarousel .sharePopup {
+    margin-left: 11%;
+}
+.carouselShareVideoDiv #sharefuction_1{
+	margin-left: 135px;
+}
+ 
+}
+
+@media (min-width: 1200px) and (max-width: 1345px) {
+.forgotpassword_popup .modal-footer .btn+.btn {
+    margin-left: 10px;
+}
+.forgotpassword_popup #before-submit {
+    padding: 20px 0 10px;
+}
+}
+.Luxemberg .formWrapper .divChk {
+    min-height: 190px;
+} 
+.Luxemberg .banner-margin-registration p {
+    font-size: 18px;
+    font-family: 'Gotham-Book-Regular';
+    padding-bottom: 75px;
+}
+.Luxemberg .alignrelative {
+    position: relative;
+}
+
+
+

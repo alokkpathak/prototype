@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Text and Image Component"
+    xtype="dialog">
+       
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="Product Banner"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sharebutton
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Share button"
+                        name="./sharebuttonname"
+                        xtype="textfield"/>
+                    <shareimagepath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Share Image"
+                        name="./shareimagepath"
+                        xtype="pathfield"/>
+                    <shareimageMobile
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Share image Mobile"
+                        mimeTypes="&quot;*.jpg;&quot;*.png&quot;"
+                        name="./shareimageMobile"
+                        sizeLimit="{Long}1"
+                        xtype="pathfield"/>
+                    <productLoadingMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Message for Loading Icon eg: Updating Price..."
+                        fieldLabel="Product Page load Icon Message"
+                        name="./productLoadingMessage"
+                        width="300"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Product Text">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <backgroundcolor
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldLabel="Background colour"
+                        name="./backgroundcolor"
+                        showHexValue="{Boolean}true"
+                        xtype="colorfield"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Max Length is 50"
+                        fieldLabel="Headline"
+                        maxLength="{Long}50"
+                        name="./ptitle"
+                        xtype="textfield"/>
+                    <desc
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Length is 300"
+                        fieldLabel="Description text "
+                        maxLength="300"
+                        name="./pdesc"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading1"
+                                        tag="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading2"
+                                        tag="h2"/>
+                                    <h3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading3"
+                                        tag="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading4"
+                                        tag="h4"/>
+                                    <p
+                                        jcr:primaryType="nt:unstructured"
+                                        description="paragraph"
+                                        tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <orange
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="text-orange"
+                                        text="orange"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </desc>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Product Info">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <skuId
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Sku ID(Unique product Id)"
+                        maxLength="{Long}10"
+                        name="./skuId"
+                        xtype="textfield"/>
+                    <isBundleProduct
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Tick if the Product is a Bundle Product."
+                        fieldLabel="Is Bundle Product"
+                        name="./isBundleProduct"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Max Character size is 50"
+                        fieldLabel="Headline"
+                        maxLength="{Long}50"
+                        name="./startertitle"
+                        xtype="textfield"/>
+                    <displayPriceQuantity
+                        jcr:primaryType="cq:Widget"
+						value="yes"
+						defaultValue="yes"
+						fieldLabel="Is Quantity/Price displayable?"
+						name="./displayPriceQuantity"
+						type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                    </displayPriceQuantity>
+                    <productPriceContent
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter The Product Price"
+                        fieldLabel="Enter The Product Price"
+                        name="./productpricecontent"
+                        xtype="textfield"/>
+                    <productPriceText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Product Pricetext"
+                        fieldLabel="Enter Product Pricetext"
+                        name="./productpricetext"
+                        xtype="textfield"/>
+                    <productPriceSubtext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Product Price Subtext"
+                        fieldLabel="Enter Product Price Subtext"
+                        name="./productpricesubtext"
+                        xtype="textfield"/>
+                    <vatlabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter VAT Label eg: Incl VAT"
+                        fieldLabel="Vatlabel"
+                        name="./vatlabel"
+                        xtype="textfield"/>
+                    <prodmaxmessage1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Product Max allowed Label: eg:Please note that Quantities are Limited to"
+                        fieldLabel="Product Max Message First line"
+                        name="./prodmaxmessage1"
+                        xtype="textfield"/>
+                    <prodmaxmessage2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Product Max allowed Label: eg:Starter Pack per Customer per Purchase"
+                        fieldLabel="Product Max Message second line"
+                        name="./prodmaxmessage2"
+                        xtype="textfield"/>
+                    <productaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Product Image alt"
+                        name="./productimagealt"
+                        xtype="textfield"/>
+                    <button
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="CTA"
+                        name="./starterbutton"
+                        xtype="textfield"/>
+                    <buttonLink
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Target Distributor URL"
+                        fieldLabel="Product Page target URL"
+                        name="./buttonLink"
+                        xtype="textfield"/>
+                    <newTabRedirect
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Open in new tab? (If button redirects to a page)"
+                        name="./newtabcheck"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <option1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="true"/>
+                            <option2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="false"/>
+                        </options>
+                    </newTabRedirect>
+                    <zoomaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for ZoomPanel Image alt"
+                        name="./zoomimagealt"
+                        xtype="textfield"/>
+                    <productcount
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        allowDecimals="{Boolean}false"
+                        fieldDescription="Max Product Count is 10"
+                        fieldLabel="Product Count"
+                        maxValue="{Long}10"
+                        name="./productcount"
+                        xtype="numberfield"/>
+                    <maxerrormessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Maximum Quantity Error"
+                        name="./maxerrormessage"
+                        xtype="textfield"/>
+                    <productnotavailable
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Product Not Available Message "
+                        name="./productnotavailablemessage"
+                        xtype="textfield"/>
+                    <redirectionUrltoviewProduct
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="URL to View this Product."
+                        name="./redirectionUrltoviewProduct"
+                        xtype="pathfield"/>
+                </items>
+            </tab3>
+            <tab4
+                jcr:primaryType="cq:Panel"
+                title="Images">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selectImages
+                        jcr:primaryType="cq:Widget"
+                        baseName="prodimage1_"
+                        fieldLabel="Images to be added"
+                        name="./selectProductImages"
+                        xtype="mtmulticompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <desktopImages
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="Upload only .jpg or .png images of 1MB or less with 1350x1350PX Resolution"
+                                fieldLabel="Desktop Images"
+                                name="imagePathDesktop"
+                                width="300"
+                                xtype="pathfield"/>
+                            <mobileImages
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="Upload only .jpg or .png images of 1MB or less with 1350x1350PX Resolution"
+                                fieldLabel="Mobile Image"
+                                name="imagePathMobile"
+                                width="300"
+                                xtype="textfield"/>
+                            <imgalt
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Alt Label"
+                                name="imagealttxt"
+                                width="300"
+                                xtype="textfield"/>
+                        </fieldConfigs>
+                    </selectImages>
+                    <arrowleftaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for ArrowLeft Image alt"
+                        name="./arrowleftimagealt"
+                        xtype="textfield"/>
+                    <multialtimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Multi Image alt"
+                        name="./multiimagealt"
+                        xtype="textfield"/>
+                    <arrowrightaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for Arrowright Image alt"
+                        name="./arrowrightimagealt"
+                        xtype="textfield"/>
+                </items>
+            </tab4>
+            <tab5
+                jcr:primaryType="cq:Panel"
+                title="Links">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Product Menu"
+                        name="./starterpacklinks"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </links>
+                    <modalaltimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the text for modal altimage alt"
+                        name="./modalimagealt"
+                        xtype="textfield"/>
+                </items>
+            </tab5>
+        </items>
+    </items>
+    
+</jcr:root>

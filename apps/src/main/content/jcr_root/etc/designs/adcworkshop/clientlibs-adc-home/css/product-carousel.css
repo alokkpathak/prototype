@@ -1,0 +1,202 @@
+.discoverCarousel{
+    padding-top: 90px;
+}
+.discoverCarousel .media-heading{
+    letter-spacing:2px;
+	font-size:32px;
+	margin-bottom:5px;
+}
+.discoverCarousel p, .discoverCarousel h1, .discoverCarousel .media-body
+{
+    color:#ffffff;
+}
+.carousel-caption{
+    z-index: 10;
+}
+.carouselCaption{
+    padding-left: 5%;
+    padding-right: 5%; 
+    margin-bottom: 90px;   
+}
+.carousel-control.right, .carousel-control.left {
+    background-image:none;
+    margin-top:18%;
+    width:12%;
+}
+.carousel-control.right, .carousel-control.left {
+    margin-top:0;
+}
+.carouselCaption h3{
+    margin-top: 0px;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+    font-size:42px;     
+    color:#ffffff;
+}
+.carouselCaption>p{ 
+    margin: 0px 15% 0px 15%;
+}
+.carouselCaption .media{
+    margin-top: 60px; 
+}
+.discoverCarousel .btn{
+    border-color:#E4572D;
+    color:white;
+}
+.carousel-indicators{               
+    bottom:20px;/*-b-*/     
+}
+#prodCarousel .media-object{
+    padding-top:30px;
+    padding-right: 20px;
+    max-width: none;
+}
+#prodCarousel .media-body p{
+    min-height:180px;
+}
+#prodCarousel a.left,#prodCarousel a.right{
+    width:5%;
+}
+#prodCarousel .carousel-control.right, #prodCarousel .carousel-control.left {
+    	height:40px;
+    }
+.carousel-control:focus{
+    outline: thin dotted !important;
+    outline: 5px auto -webkit-focus-ring-color !important; 
+    outline-offset: -2px !important;
+}
+/************************** lg *******************************/
+@media (min-width: 1200px) {
+    #prodCarousel .carousel-control.right, #prodCarousel .carousel-control.left {
+        margin-top:16%;
+    	height:40px;
+    }
+    #prodCarousel .media-object{
+        max-width:none;
+    	padding-top: 10px;
+    }
+	#prodCarousel .media-body p{
+    	line-height:40px;
+    	min-height:0px;
+        padding-bottom: 15px;
+	}
+    .carouselCaption .media-body{
+        padding-top:25px;
+    	height: 400px;
+    } 
+	
+}
+/************************ end of lg ***************************/
+/************************* md ********************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #prodCarousel .media-object{
+        max-width:none;
+    	padding-top:5px;
+    }
+    .carouselCaption .media-body{
+        padding-top:25px;
+        height: 355px;
+    }
+	#prodCarousel a.left, #prodCarousel a.right{
+		margin-top:21%;
+	}
+	#prodCarousel .media-body p{
+    min-height:230px;
+}
+}
+/********************** end of md *****************************/
+/*********************************** sm ************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .discoverCarousel .media-heading{
+        margin-top:50px;
+    }
+    .carousel-control.right, .carousel-control.left{
+        margin-top:39%;
+    	height:40px;
+    }
+    .discoverCarousel {
+        padding-top: 90px;
+    }
+    #prodCarousel .media-body p {
+        min-height: 300px;
+    }
+    #prodCarousel .media-object{
+        padding-top:30px;
+        max-width:none;
+    } 
+}
+/******************************* end of sm **********************/
+
+
+/*****************************    Mobile ******************/
+
+@media (max-width: 767px) {
+    .discoverCarousel{
+        padding-top: 75px;
+    }
+    #prodCarousel .carousel-control.right, #prodCarousel .carousel-control.left{
+		height:auto;
+    }
+    .carousel-inner p {
+   		font-size: 12px;
+	}
+    #prodCarousel>.carousel-inner>.item>.container, #prodCarousel>.carousel-inner>.item>.container>.col-md-12, .carouselCaption{
+        padding-left:0;
+        padding-right:0;
+    }
+    .carouselCaption>p {
+        margin: 0px;
+    }   
+    .carouselCaption h3{
+        margin-top:0px;
+        color:#ffffff;
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .carouselCaption .media{
+        margin-top:25px;
+    }
+	.discoverCarousel .media-heading{
+		font-size:16px;
+	}
+    .carouselCaption .media, .carouselCaption .media-body, .carouselCaption .media-left{
+        display:block !important;
+    }
+    .carouselCaption .media-body{
+        width:100%;
+        text-align: center;
+    }   
+    .carouselCaption .media-object{
+        padding-left: 40px;
+        padding-right:0px !important;
+    }
+    .carouselCaption .btn{
+        margin-right: 0px;
+        margin-top:0px;
+    } 
+    #prodCarousel .media-body p {
+        min-height: 160px;
+    }
+    .carouselCaption .media-heading{
+        margin-top: 15px;
+    }
+    .carouselCaption{
+        margin-bottom: 40px;
+    }
+    #prodCarousel .carousel-control img{
+        position:absolute;
+        top:30%;
+    }
+    #prodCarousel .media-object{
+        padding-top:0px;
+        max-width: 100% !important;
+    }
+    /*defect 461*/
+    #prodCarousel a.left{
+        width:2%;
+    }
+    #prodCarousel a.right{
+     width:13%;
+    }
+}
+/***************************** end of XS Portrait ******************/
