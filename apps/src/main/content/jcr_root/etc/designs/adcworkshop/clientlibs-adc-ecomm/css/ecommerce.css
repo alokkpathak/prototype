@@ -39,7 +39,7 @@ display: none;
     border:none;        
 }
 .italy #updateForm h5,.italy #shippingDetails h5 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
 	font-weight: bold;
 }
 .orderTablePlaceHolder {
@@ -52,7 +52,7 @@ display: none;
  }
 .faqTablePlaceHolder a,.orderTablePlaceHolder a {
 	font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Gotham-Medium-Regular !important;
 	cursor: pointer;
 	margin: 0 5px;
 	color: #8e8e8e;
@@ -260,7 +260,7 @@ margin-left: 0;
 }
 .create-account>.col-md-12 .panel, .shipping-address>.col-md-12 .panel, .payment>.col-md-12 .panel {
     border-top: 1px solid #e1e1e1;
-    padding-top: 25px;
+    padding-top: 33px;
     padding-bottom: 30px;
 }
 .create-account>.col-md-12 .panel {
@@ -274,21 +274,19 @@ margin-bottom: 3px;
 margin-right: 20px;
     }
 .checkout-banner a#bsktDetails .back{
-	font-family: Arial, Helvetica, sans-serif;   
-    font-weight:bold;
+	font-family: Gotham-Medium-Regular;     
 } 
 .checkout-banner #bsktDetails{
 	border-bottom: 1px solid #f8ddd8;
 }
 .checkout-banner a#bsktDetailsView .details{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
 color: #4f4f4f;
     border-bottom: 1px solid #dcdcdc;  
         }  
 .checkout-banner a#bsktDetailsView {
 	color: #4f4f4f;
-	font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
+	font-family: Gotham-Medium-Regular;
 }
 #payment #condCheckId p{
 	display:inline;
@@ -309,7 +307,7 @@ padding-left: 0;
     margin: 0;
     font-size: 14px;
     padding-left: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     }
 
 
@@ -330,19 +328,14 @@ font-size: 16px;
 	padding-bottom:100px;
     }
 .Checkoutpage .about {
-   /* padding-top: 57px;
-    padding-bottom: 23px; */
-
-	padding-top: 25px;
-    padding-bottom: 0px;
-        margin-top: -25px;
-    margin-bottom: 0px;
+    padding-top: 57px;
+    padding-bottom: 23px;
 }
 .checkout-steps input ,.checkout-steps select,.addressOverlay input,.addressOverlay select{
-	height:30px;
+	height:50px;
     }
 .checkout-steps .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 .checkout-steps .checkboxOrange{
     margin-top:-10px;
@@ -382,11 +375,11 @@ padding-left: 30px;
 
 }
 #create-account .panel-heading {
-padding-bottom: 5px; 
+padding-bottom: 30px; 
 
 }
 #create-account .btnCheckoutNext {
-    margin-bottom: 10px;
+    margin-bottom: 42px;
 }
 #paymentSection {
     margin-top: 25px !important;
@@ -411,12 +404,12 @@ padding-right: 0px;
     padding-top: 23px;
     }
 	#create-account .create-user select{
-font-size: 13px;
+font-size: 18px;
     color: #4f4f4f;
 
 }
 #create-account .text-orange span {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
     font-size: 14px;
 }
 .checkout-banner #bsktDetails .glyphicon-menu-left {
@@ -480,7 +473,7 @@ padding-right: 5px;
 font-size: 15px;
         }
         .checkout-banner a {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
             }
 .padding-checkout span {
 	font-family: Gotham-Bold;
@@ -497,19 +490,19 @@ font-family: Arial, Helvetica, sans-serif;
     font-size:15px;
 }				
 #shippingDetails p {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
     font-size: 16px;
     color: #212121;
 }
 #shippingDetails .value-tax label ,.addressOverlay .modal-dialog label{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 16px;
     color: #4f4f4f;
     text-transform: uppercase;
 }
 #shippingDetails .value-tax .checkboxOrange label p{
 font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Book-Regular;
     color: #8e8e8e;
     text-transform: none;
 }
@@ -518,7 +511,7 @@ font-size: 16px;
     color: #8e8e8e;   
 }
 #shippingDetails .address-select p {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
     font-size: 18px;
 }
 #shippingDetails .active-address p {
@@ -537,7 +530,7 @@ font-size: 20px;
     font-family: Gotham-Bold;
 }
 #shippingDetails .address-select p.detailsPara {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 18px;
 
 }
@@ -546,16 +539,16 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 0 ;
     font-size: 14px;
     padding-left: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     }
 #create-account .form label {
-font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: black;
+font-family: Gotham-Medium-Regular;
+    font-size: 16px;
+    color: #4f4f4f;
 }
 
 #paymentDetails .text-orange span {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
     font-size: 14px;
 }
 .payment-step .payment h4 ,.payment-step .payment h3{
@@ -616,20 +609,18 @@ margin-left: 100px;
     margin-right: 40px;
 	margin-left: 0 !important;
     padding-top: 50px;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Gotham-Medium-Regular !important;
     font-size: 16px;
-    color: #000000;
+    color: #4f4f4f;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    margin-top: -30px;
 
 } 
 .cardPayment .brandLabel{
-	padding-top : 0px;
+	padding-top : 15px;
     padding-bottom: 10px;
 }
 .cardPayment .brandSelect .brandSelectBox {
-height: 27px;
+height: 46px;
 border: 2px solid #c6c6c6 !important;
         }
 .cardPayment .cardNumberLabel{
@@ -637,7 +628,7 @@ padding-bottom : 10px;
 }
 .cardPayment .expiryMonthLabel{
 	padding-bottom : 10px;
-    padding-top: 28px;
+    padding-top: 50px;
 }
 .cardPayment .cardHolderLabel {
 padding-bottom : 10px;
@@ -677,14 +668,14 @@ margin-right: 20px;
 .cardPayment .expiryMonthSelect .expiryMonthSelectBox {
     border: none;
     outline: none;
-width: 50px;
-    height: 35px;
+width: 100%;
+    height: 100%;
         }
      .cardPayment  .expiryYearSelect .expiryYearSelectBox {
         border: none;
     outline: none;
-width: 70px;
-    height: 35px;
+width: 100%;
+    height: 100%;
                 }
 .cardPayment #ccNumber {
 width: 58% !important;
@@ -695,8 +686,8 @@ width: 58% !important;
 border: 2px solid #c6c6c6 !important;
 }
 .cardPayment .cardHolderInputField {
-width: 25% !important;
-    height: 30px !important;
+width: 58% !important;
+    height: 46px !important;
     border: 2px solid #c6c6c6;
 }
 .italy .cardPayment #ccCvv {
@@ -714,7 +705,6 @@ border: 2px solid #c6c6c6 !important;
 
 .cardPayment .customInput {
 padding-left: 0;
-margin-top:-45px;
 }
 .cardPayment .customSelect { 
 padding: 0;
@@ -733,7 +723,7 @@ border: 2px solid #d61031!important;
 margin-left: 0px;
 color: #d61031;
      font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
                 }
 .cardPayment form.cnpForm input, .cardPayment form.cnpForm select, .cardPayment form.cnpForm textarea {
     font-size: 13px !important;
@@ -742,14 +732,12 @@ color: #d61031;
     color: rgb(142, 142, 142);
     }
 .cardPayment .cardSubmitButton, .cardPayment .cardSubmitButton:hover{
-background-color : #009c3b !important;
-border-color : #009c3b !important;
-font-family: Arial, Helvetica, sans-serif !important;
+background-color : #E4572D !important;
+border-color : #E4572D !important;
+font-family: Gotham-Medium-Regular !important;
     text-transform: uppercase;
-    padding: 12px 20px !important;
+    padding: 18px 36px !important;
         height: auto;
-    border-radius: 10px;
-    color:white;
 }
 
 .cardPayment .expiryMonthLabel, .cardPayment .expiryMonthSelect, .cardPayment .expiryYearSelect {
@@ -797,7 +785,7 @@ font-family: Arial, Helvetica, sans-serif !important;
 }
 #persDetails .form-group label {
     font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 16px;
 	color:#4f4f4f;
 }
@@ -805,7 +793,7 @@ font-family: Arial, Helvetica, sans-serif !important;
 	height: 50px;
 	border-radius: 0px;
     margin-bottom: 10px; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Book-Regular;
     font-size:18px;
 }
 #personal-details .profileDetailAddresses>.button-center{
@@ -832,7 +820,7 @@ font-family: Arial, Helvetica, sans-serif !important;
     word-break: break-word;
 }
 #persDetails .registerDescText{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
 	font-size:18px;
     color:#212121;
 }
@@ -841,7 +829,7 @@ font-family: Arial, Helvetica, sans-serif !important;
 	font-size:16px;
 }
 .address-panes .active-address .addressTitle{
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Gotham-Book-Regular !important;
 	font-size:17px !important;
     color:#fff;
 }
@@ -854,12 +842,12 @@ font-family: Arial, Helvetica, sans-serif !important;
     color:#fff;
 }
 .address-panes .active-address .detailsPara{
-	font-family: Arial, Helvetica, sans-serif !important;
+	font-family: Gotham-Medium-Regular !important;
 	font-size:18px !important;
      color:#fff;
 }
 .address-panes .addressTitle{
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Gotham-Book-Regular !important;
 	font-size:17px !important;
    	color:#6e6e6e;
 }
@@ -869,7 +857,7 @@ font-family: Arial, Helvetica, sans-serif !important;
     color:#212121;
 }
 .address-panes .detailsPara{
-	font-family: Arial, Helvetica, sans-serif !important;
+	font-family: Gotham-Medium-Regular !important;
 	font-size:18px !important;
     color:#4f4f4f;
 }
@@ -884,7 +872,7 @@ font-family: Arial, Helvetica, sans-serif !important;
 	font-family: Gotham-bold;
 }
 #personal-details .button-center .form-group p{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
     color: #8e8e8e;
 	font-size:15px;
 }
@@ -928,7 +916,7 @@ padding-right:25px !important;
     text-align: left;
     padding-left: 3px;
     padding-top:10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
 }
 .acWellText2{
     float: right;
@@ -936,14 +924,14 @@ padding-right:25px !important;
     text-align: left;
     padding-left: 3px;
     padding-top:10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
 }
 .acWellText3{
     float: right;
     width: 85%;
     text-align: left;
     padding-left: 3px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
 }
 .acWellImg{
     width: 15%;
@@ -958,7 +946,7 @@ padding-right:25px !important;
 }
 
 #order_status span{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Book-Regular;
     color:#00aa04;
 }
 
@@ -976,13 +964,13 @@ padding-right:25px !important;
 }
 
 #stdWarrenty #warrenty-success p{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
     color:#212121;
     font-size:18px;
 }
 
 #warrentyForm .serialNo{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
     color:#4f4f4f;
     font-size:16px;
 }
@@ -993,13 +981,13 @@ padding-right:25px !important;
 }
 
 #warrenty-section>p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Book-Regular;
     color: #212121;
     font-size: 18px;
 }
 
 #warrentyForm .serialNumberLabel{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
     color:#4f4f4f;
     font-size:16px;
 }
@@ -1096,7 +1084,7 @@ padding-right:25px !important;
     font-size: 12px;
 }
 .checkout-banner {
-    padding: 20px 14px 20px 14px;
+    padding: 60px 14px 37px 14px;
 }
 .checkout-banner a{
 	cursor: pointer;
@@ -1126,13 +1114,13 @@ color: #4f4f4f;
 }
 .checkout-step.active{
     color: white;
-    background-color: #009c3b;
+    background-color: #E4572D;
     display: inline-block;
     width: 40px;
 }
 
 .checkout-steps h2.panel-title, .payment-step h2.panel-title{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Gotham-Bold;
 	padding-top: 22px;
     font-size:24px;
 	cursor: pointer;
@@ -1291,7 +1279,7 @@ label[for="sa_taxcode"]{
 }
 
 .returnFields>span{
-	font-family: 'Arial, Helvetica, sans-serif';
+	font-family: 'Gotham-book-Regular';
 	font-size: 15px;
 }
 
@@ -1303,7 +1291,7 @@ label[for="sa_taxcode"]{
     color: #d61031;
     font-size: 14px;
     padding-left: 0px;
-    font-family: Arial, Helvetica, sans-serif;}
+    font-family: Gotham-Medium-Regular;}
 /******************Payment*******************/
 .order-summary .table>tbody>tr>td{
 	padding-top: 25px ;
@@ -1339,7 +1327,7 @@ label[for="sa_taxcode"]{
     padding-left: 40px;
     padding-right: 30px;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Book-Regular;
         }
 	.basket table tr{
 		border-bottom: 2px solid #EAEDED;
@@ -1454,7 +1442,7 @@ a{
 }
 a,a:hover{
 	text-decoration: none;
-	font-weight: normal;
+	font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 .basket-table{
@@ -1497,7 +1485,7 @@ a,a:hover{
     background-image: none;
     color:black;
     border-radius:0px; 
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
     text-transform: uppercase;
     letter-spacing: 2px;
 	border: 2px solid black;
@@ -1510,7 +1498,7 @@ a,a:hover{
     color:white;
     border-radius:0px; 
     text-transform: uppercase;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
     letter-spacing: 2px;
 	border: 2px solid white;
     padding: 16px 24px;
@@ -1558,7 +1546,7 @@ a,a:hover{
 	left: 20px;
 	width:80%;
     letter-spacing: 1px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
     bottom: 25px;
     text-decoration:none;
 }
@@ -1569,7 +1557,7 @@ a,a:hover{
 	letter-spacing: 2px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
 }
 
 .account-details .user_orders .details-container h2, .account-details .user_orders .details-container h4 {
@@ -1632,16 +1620,16 @@ a,a:hover{
 	font-size: 14px;
 }
 #orders tr td {
-                font-family: 'Arial, Helvetica, sans-serif';
+                font-family: 'Gotham-Book-Regular';
 	color: #4f4f4f;
 }
 #timeFrame select {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
 	color: #4f4f4f;
 	font-size: 18px;
 }
 #orders tr td span {
-                font-family: 'Arial, Helvetica, sans-serif';
+                font-family: 'Gotham-Book-Regular';
 	font-size: 32px
 }
 #order_status span {
@@ -1650,7 +1638,7 @@ a,a:hover{
 }
 .vat {
 	font-size: 14px !important;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
 	color: #8E8E8E;
 }
 #orderTable, #lastOrderTable{
@@ -1675,7 +1663,7 @@ a,a:hover{
 	margin-bottom: 25px;
 }
 .active-address{
-	background-color: #009c3b;
+	background-color: #E4572D;
 }
 .active-address p{
 	color: white;
@@ -1703,7 +1691,7 @@ a,a:hover{
 }
 
 .checkout-container .well{
-	min-height: 239px;	
+	min-height: 400px;	
 }
 
 #editAddr{
@@ -1734,16 +1722,16 @@ a,a:hover{
 	font-family: Gotham-bold;
 }
 .detailsPara{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
 	color: black;
 }
 .headPara{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
 	color: white;
 	font-size: 15px;
 }
 .well .headPara, .sensor-block  .headPara  {
-    font-family: Arial, Helvetica, sans-serif!important;
+    font-family: Gotham-Medium-Regular!important;
     color: white;
     font-size: 18px!important;
 }
@@ -1821,13 +1809,13 @@ a,a:hover{
 	vertical-align: middle;
 }
 #singleTablePlace tr td span{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
     font-size: 32px;
 }
 
 #singleTablePlace .vat {
     font-size: 14px !important;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Gotham-Medium-Regular;
 }
 
 #singleTablePlace .tableHighlight td{
@@ -1864,7 +1852,7 @@ border-top:none;
 
 #singleTablePlace .orderBasketText{
 	font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: gotham-book-regular;
     text-transform: lowercase;
 }
 #singleTablePlace .productSingleOrderText{
@@ -1874,13 +1862,13 @@ border-top:none;
 }
 #singleTablePlace .productSingleOrderQuant{
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: gotham-book-regular;
     text-transform: lowercase;
     color:#4f4f4f;
 }
 #singleTablePlace .productSingleOrderQuantNo{
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: gotham-book-regular;
     text-transform: lowercase;
     color:#4f4f4f;
 }
@@ -1913,7 +1901,7 @@ border-top:none;
 	display: none;
 }
 .active-border, .active-address{
-	border-color: #009c3b;
+	border-color: #E4572D;
 }
 
 /**********************Express checout EC*****************/
@@ -1924,7 +1912,7 @@ border-top:none;
 }
 .address-wrapper p{
 	font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     line-height: 0.7em;
     color: #505050;
 }
@@ -1972,7 +1960,7 @@ input[type=radio]{
 }
 
 #orderTablePlaceMobile,#lastOrderTableMobile {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
 }
 
 #orders .button-orange{
@@ -2020,7 +2008,7 @@ select.expiryMonthSelectBox ,select.expiryYearSelectBox,.brandSelectBox{
     border-bottom: 1px solid #e1e1e1;
 }
 #bsktDetailsView{
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Gotham-Medium-Regular;
    border-bottom: 1px solid #e1e1e1; 
 }
 .Checkoutpage .logo_scetion {
@@ -2196,7 +2184,7 @@ label[for="billingDiffers"]{
 }
 
 .checkout-steps .create-account  .btnCheckoutNext,.checkout-steps .create-account  .agreeCheck{
-	margin-top:-10px;
+	margin-top:-40px;
 }
 .acWellImg {
 	margin-top: 8px;
@@ -2385,14 +2373,14 @@ input#contact_submit{
 #tablePlaceMobileshipping .mobileSummeryProductsPrice{
  margin-top:70px;
  font-size: 36px;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: Gotham-Medium-Regular;
  color: #212121;
 }
 
 #tablePlaceMobileshipping .pounds, #tablePlaceMobileshipping .separator, #tablePlaceMobileshipping .pence, #tablePlaceMobileshipping .summeryCurremcy{
     margin-top: 35px;
     font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     color: #212121;
 }
 .prsnDetailGridImg {
@@ -2437,7 +2425,7 @@ input#contact_submit{
  width:75%
 }
 #singleTablePlace tr td span{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
     font-size: 36px;
 }
 
@@ -2453,7 +2441,7 @@ input#contact_submit{
 
 #singleTablePlace .vat {
     font-size: 20px !important;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Gotham-Medium-Regular;
 }
 
 #orders .button-orange{
@@ -2480,7 +2468,7 @@ font-family:Arial, Helvetica, sans-serif;
     font-size: 30px !important;
 }
 .checkout-steps input, .checkout-steps select, .addressOverlay input, .addressOverlay select{
-	height:30px!important;
+	height:70px;
     }
  .checkout-steps .create-account .agreementTerms,.checkout-steps .checkboxOrange label{
 	margin-top:0px;
@@ -2537,22 +2525,22 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 .relatedContentPanel .apply-help  .experiencePanes p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Book-Regular;
     font-size: 26px;
     color: #818181;
 }
 .relatedContentPanel .apply-help  .experiencePanes #buySupport .link-txt {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 26px;
     color: #e4572d;
 }
 .relatedContentPanel .apply-help  .experiencePanes #buySupport2 .link-txt {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 26px;
     color: #e4572d;
 }
 .relatedContentPanel .apply-help  .experiencePanes #buySupport3 .link-txt {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 26px;
     color: #e4572d;
 }
@@ -2561,7 +2549,7 @@ color: #009c3b;
     font-size: 46px;
     }
 #bsktDetails {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Medium-Regular;
         font-size: 22px;
     }
 .panel-heading .panel-title {
@@ -2569,13 +2557,13 @@ font-size: 40px;
             color: #000000;
         }
     #create-account .form label, .checkout-steps .form label {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 22px;
                     color: #4f4f4f; 
 
                 }
                 .create-account .checkboxOrange label>p {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
 		font-size: 21px;
 		width:750px;
                         }
@@ -2585,7 +2573,7 @@ font-size: 40px;
             color: #000000;
     } 
 #shippingDetails p{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
 		font-size: 28px;
         color: #212121;
     }
@@ -2596,7 +2584,7 @@ font-size: 21px;
 font-size: 22px;
 }
     #shippingDetails h5{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
         font-size: 24px;
         color: #8e8e8e;
     }
@@ -2613,12 +2601,12 @@ font-family: Gotham-Bold;
     }
 
 #shippingDetails .address-select p {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
     font-size: 26px
 
 }
 #shippingDetails .active-address p {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
     font-size: 26px;
     color: #ffffff;
 }
@@ -2627,7 +2615,7 @@ font-size: 30px;
 color: #ffffff;
 }
 #shippingDetails .active-address p.detailsPara {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
 color: #ffffff;
     font-size: 26px;
 }
@@ -2637,7 +2625,7 @@ font-size: 30px;
     font-family: Gotham-Bold;
 }
 #shippingDetails .address-select p.detailsPara {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 26px;
 }
  h3 {
@@ -2672,7 +2660,7 @@ font-size: 24px;
         color: #212121;
     }
 #paymentDetails #couponform p{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
 font-size: 28px;
 color: #212121;
 }
@@ -2719,7 +2707,7 @@ color: #212121;
 		margin-bottom: 20px;
 		border-color: black;
 		background-color: #F4F2F4;
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Gotham-Medium-Regular;
 		font-size:20px;
 	}
 	
@@ -2782,7 +2770,7 @@ color: #212121;
 
 #persDetails .form-group .form-control{
 	font-size: 22px;
-   	font-family:Arial, Helvetica, sans-serif;
+   	font-family:Gotham-Book-Regular;
 }
 
 #persDetails .profileDetailAddresses h4 {
@@ -2947,7 +2935,7 @@ display:block;
 
 .orderTablePlaceMobileHolder a {
 	font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Gotham-Medium-Regular !important;
 	cursor: pointer;
 	margin: 0 5px;
 	color: #8e8e8e;
@@ -3161,7 +3149,7 @@ margin-left: 0px;
 #tablePlaceMobileshipping .mobileSummeryProductsPrice{
  margin-top:35px;
  font-size: 18px;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: Gotham-Medium-Regular;
  color: #212121;
 }
 .summaryMobileQty {
@@ -3173,7 +3161,7 @@ margin-left: 0px;
 #tablePlaceMobileshipping .pounds, #tablePlaceMobileshipping .separator, #tablePlaceMobileshipping .pence, #tablePlaceMobileshipping .summeryCurremcy{
     margin-top: 35px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     color: #212121;
 }
 
@@ -3357,7 +3345,7 @@ padding-left: 0;
     font-size: 14px;
 }
 #singleTablePlace tr td span{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 18px;
 }
 
@@ -3379,7 +3367,7 @@ font-size: 15px !important;
 
 #singleTablePlace .vat {
     font-size: 10px !important;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Gotham-Medium-Regular;
 }
 
 .account-details #details-selector .selectpicker {      
@@ -3402,7 +3390,7 @@ margin-top: 34px;
 	font-size: 12px;
 }	
 .checkout-steps input, .checkout-steps select, .addressOverlay input, .addressOverlay select{
-	height:30px;
+	height:40px;
     }
 .checkout-steps .form-group {
     margin-bottom: 25px;
@@ -3473,7 +3461,7 @@ padding-top: 60px;
 
 #persDetails .form-group .form-control{
                 font-size: 12px;
-                font-family:Arial, Helvetica, sans-serif;
+                font-family:Gotham-Book-Regular;
 }
 
 #persDetails  .error_show, #persDetails .error1, #persDetails .error2, #persDetails .error3, #persDetails .error4, #persDetails .error5 {
@@ -3485,7 +3473,7 @@ padding-top: 60px;
     color: #d61031;
     font-size: 11px;
     padding-left: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
 }
 
 .acWellImg {
@@ -3497,7 +3485,7 @@ padding-top: 60px;
 }
 
 .account-details .addressOverlay #updateForm .testimonial .form-group label {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 12px;
 }
 
@@ -3606,18 +3594,18 @@ margin-top: 50px;
                                 padding: 0px;
     }
                 #orders tr td {
-                                font-family: Arial, Helvetica, sans-serif;
+                                font-family: Gotham-Book-Regular;
                                 font-size: 12px;
                 }
                 #orders tr td br:after {
-                                font-family: Arial, Helvetica, sans-serif;
+                                font-family: Gotham-Medium-Regular;
                                 font-size: 12px;
                 }
                 #orders .table td {
                                 width: 36%;
                 }
                 #orders tr td span {
-                                font-family: Arial, Helvetica, sans-serif;
+                                font-family: Gotham-Medium-Regular;
                                 font-size: 18px;
                 }
                 .vat {
@@ -3708,7 +3696,7 @@ color: #009c3b !important;
     font-size: 23px;
     }
 #bsktDetails {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 11px;
     float: none !important;
     text-align: center;
@@ -3724,13 +3712,13 @@ color: #009c3b !important;
     color: #000000;
         }
 #create-account .form label, .checkout-steps .form label {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 11px;
                     color: #4f4f4f;
 
                 }
                 .create-account .checkboxOrange label>p {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
 		font-size: 11px;
 
                         }
@@ -3740,7 +3728,7 @@ font-size: 20px;
             color: #000000;
     } 
  #shippingDetails p{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
 		font-size: 14px;
         color: #212121;
     }
@@ -3759,7 +3747,7 @@ padding-left: 0;
     padding-right: 0;
 }
 #shippingDetails h5{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
         font-size: 12px;
         color: #8e8e8e;
     }
@@ -3776,7 +3764,7 @@ font-family: Gotham-Bold;
     }
 
 #shippingDetails .address-select p {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
     font-size: 13px;
 
 }
@@ -3798,7 +3786,7 @@ font-size: 15px;
     font-family: Gotham-Bold;
 }
 #shippingDetails .address-select p.detailsPara {
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 13px;
 
 }
@@ -3831,29 +3819,29 @@ font-size: 12px;
         color: #212121;
     }
 #paymentDetails #couponform p{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Book-Regular;
 font-size: 14px;
 color: #212121;
 }
 /*Payment end*/
 /*Help FAQ*/
 .relatedContentPanel .apply-help  .experiencePanes p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Book-Regular;
     font-size: 13px;
     color: #818181;
 }
 .relatedContentPanel .apply-help  .experiencePanes #buySupport .link-txt {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 13px;
     color: #e4572d;
 }
 .relatedContentPanel .apply-help  .experiencePanes #buySupport2 .link-txt {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 13px;
     color: #e4572d;
 }
 .relatedContentPanel .apply-help  .experiencePanes #buySupport3 .link-txt {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham-Medium-Regular;
     font-size: 13px;
     color: #e4572d;
 }
@@ -3919,12 +3907,12 @@ color: #212121;
 		margin-bottom: 20px;
 		border-color: black;
 		background-color: #F4F2F4;
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Gotham-Medium-Regular;
 		font-size:14px;
 	}
 	.acct-logout{
 		color: black;
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Gotham-Medium-Regular;
 	}
 	.account-details {
 		margin-top: 0px;
@@ -4113,7 +4101,7 @@ color: #212121;
     margin-top: 15px;
 }
 .active-border, .active-address {
-    border-color: #009c3b;
+    border-color: #E4572D;
 }
 .active-address #removeAddr .glyphicon-trash:before {
     color: #ffffff;
@@ -4131,7 +4119,7 @@ color: #212121;
     margin-top: 125px;
 }
 .relatedContentPanel .apply-help .experiencePanes a{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Gotham-Medium-Regular;
     font-size: 13px; 
                 }
 .relatedContentPanel .container{
@@ -4160,7 +4148,7 @@ box-shadow: none;
 float: none !important;
 background-color : #E4572D !important;
 border-color : #E4572D !important;
-font-family: Arial, Helvetica, sans-serif !important;
+font-family: Gotham-Medium-Regular !important;
     font-size: 14px;
     padding: 13px 10px !important;
     text-transform: uppercase;
@@ -4436,7 +4424,7 @@ margin-right: 1px;
     font-size: 12px;
 }
 .well .headPara ,.sensor-block  .headPara {
-    font-family: Arial, Helvetica, sans-serif!important;
+    font-family: Gotham-Medium-Regular!important;
     color: white;
     font-size: 20px!important;
 }
@@ -4463,15 +4451,15 @@ margin-right: 1px;
     font-family: Gotham-Bold;
 }
 #orders tr td{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Gotham-Book-Regular;
     font-size: 12px;
 }
 #orders tr td br:after{
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Gotham-Medium-Regular;
    font-size: 12px;
 }
 #orders tr td span{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Gotham-Medium-Regular;
   font-size: 18px;
 }
 .vat {

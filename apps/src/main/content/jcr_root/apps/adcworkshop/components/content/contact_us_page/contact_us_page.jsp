@@ -27,7 +27,7 @@
 <!-- contact form -->
     <section class="contact-form container">
 		<div class ="col-md-12 text-right required-field">
-                <p class="text-orange">* ${properties.requiredfield}</p>
+                <p class="text-orange"><label style="color:red;">*</label> ${properties.requiredfield}</p>
         </div>
         <p class="hidden text-center ContactError" id="3001"></p>
         <div class="col-md-offset-2 col-md-8">
@@ -51,7 +51,7 @@
             </div>
 
             <div class="form-group">
-                <label for="title" class="col-sm-3 text-right margin-title" name="title" >${properties.title} *</label>
+                <label for="title" class="col-sm-3 text-right margin-title" name="title" >${properties.title} <label style="color:red;">*</label></label>
                 <div class="col-sm-9">
                      <select class="form-control " id="title" aria-required="true" data-mandatory="true"  data-lbl="${properties.title}">
                         <option value="select">${properties.defaultoption}</option>
@@ -66,7 +66,7 @@
 
 
             <div class="form-group">
-                <label for="contact_firstName" class="col-sm-3 text-right" >${properties.firstname} *</label>
+                <label for="contact_firstName" class="col-sm-3 text-right" >${properties.firstname} <label style="color:red;">*</label></label>
                 <div class="col-sm-9 ">
                    <input type="text" class="form-control" id="contact_firstName" name="firstName" data-lbl="${properties.firstname}"  maxlength="25" aria-required="true"/>
                    <span class="error col-sm-12"></span>
@@ -74,7 +74,7 @@
 
             </div>
                 <div class="form-group">
-                <label for="contact_lastName" class="col-sm-3 text-right">${properties.lastname} *</label>
+                <label for="contact_lastName" class="col-sm-3 text-right">${properties.lastname} <label style="color:red;">*</label></label>
                 <div class="col-sm-9 ">
                     <input type="text" class="form-control" id="contact_lastName" name="lastName" data-lbl="${properties.lastname}" maxlength="25" aria-required="true"/>
                     <span class="error col-sm-12"></span>
@@ -82,7 +82,7 @@
                 
             </div>
             <div class="form-group">
-                <label for="contact_email" class="col-sm-3 text-right">${properties.emailaddr} * </label>
+                <label for="contact_email" class="col-sm-3 text-right">${properties.emailaddr} <label style="color:red;">*</label></label>
                 <div class="col-sm-9">
                     <input type="email" class="form-control " id="contact_email" name="email" data-lbl="${properties.emailaddr}"  maxlength="120" aria-required="true"/>
                     <span class="error col-sm-12"></span>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="form-group">
-                <label for="contact_question" class="col-sm-3 text-right" >${properties.question} * </label>
+                <label for="contact_question" class="col-sm-3 text-right" >${properties.question} <label style="color:red;">*</label> </label>
                 <div class="col-sm-9">
                     <select class="form-control " id="contact_question" name="question" data-mandatory="true" aria-required="true" data-lbl="${properties.question}">
                         <option value="select">${properties.defaultoption}</option>
@@ -104,7 +104,7 @@
             </div>
 
             <div class="form-group">
-                <label for="contact_Message" class="col-sm-3 text-right">${properties.message} *</label>
+                <label for="contact_Message" class="col-sm-3 text-right">${properties.message} <label style="color:red;">*</label></label>
                 <div class="col-sm-9 ">
                     <textarea class="form-control" type="text" rows="10" id="contact_Message" name="Message" data-lbl="${properties.message}"  maxlength="1000" aria-required="true"></textarea>
                     <span id="errormess" class="error col-sm-12">Message ${properties.is_mandatory}</span>
