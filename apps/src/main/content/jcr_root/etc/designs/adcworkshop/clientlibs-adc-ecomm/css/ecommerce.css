@@ -732,8 +732,8 @@ color: #d61031;
     color: rgb(142, 142, 142);
     }
 .cardPayment .cardSubmitButton, .cardPayment .cardSubmitButton:hover{
-background-color : #E4572D !important;
-border-color : #E4572D !important;
+background-color : #009c3b !important;
+border-color : #009c3b !important;
 font-family: Gotham-Medium-Regular !important;
     text-transform: uppercase;
     padding: 18px 36px !important;
@@ -1114,7 +1114,7 @@ color: #4f4f4f;
 }
 .checkout-step.active{
     color: white;
-    background-color: #E4572D;
+    background-color: #009c3b;
     display: inline-block;
     width: 40px;
 }
@@ -1663,7 +1663,7 @@ a,a:hover{
 	margin-bottom: 25px;
 }
 .active-address{
-	background-color: #E4572D;
+	background-color: #009c3b;
 }
 .active-address p{
 	color: white;
@@ -4588,7 +4588,7 @@ html:lang(en) .account-review .modal-footer .btn+.btn {
 	.user_orders #orders .details-container>h4{
 		padding-bottom: 8px;
 	}
-	 
+
 	#persDetails .address-panes .active-address p{
 		margin-top: 10px;
 	}

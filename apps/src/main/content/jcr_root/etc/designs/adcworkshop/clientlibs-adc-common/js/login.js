@@ -563,7 +563,8 @@
                     var loginUrl = $("#login-url").attr('value');
                     if (search["email"] != "" && $('#login_email').hasClass("valid")) {
                         $(".login-loading").show();
-                        app.appGateway.ajaxPost(loginUrl, search, loginSuccessCallback, loginErrorCallback);
+                        //app.appGateway.ajaxPost(loginUrl, search, loginSuccessCallback, loginErrorCallback);
+                        app.appGateway.ajaxGet("/etc/designs/personaldetails.json", loginSuccessCallback, loginErrorCallback);
                     }
                 }
             } else {
@@ -573,7 +574,8 @@
                 search["email"] = $("#login_email").val();
                 var loginUrl = $("#login-url").attr('value');
                 $(".login-loading").show();
-                app.appGateway.ajaxPost(loginUrl, search, loginSuccessCallback, loginErrorCallback);
+                //app.appGateway.ajaxPost(loginUrl, search, loginSuccessCallback, loginErrorCallback);
+                app.appGateway.ajaxGet("/etc/designs/personaldetails1.json", loginSuccessCallback, loginErrorCallback);
             }
         }
 
